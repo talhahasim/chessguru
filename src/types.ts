@@ -1,0 +1,86 @@
+export type Color = "w" | "b";
+
+export type Band = "0-300" | "300-600" | "600-900" | "900-1500";
+
+/** chess.com-style move classifications. */
+export type Classification =
+  | "brilliant"
+  | "great"
+  | "best"
+  | "excellent"
+  | "good"
+  | "book"
+  | "inaccuracy"
+  | "mistake"
+  | "blunder"
+  | "miss";
+
+/**
+ * Arrow / square markup. Optional colour prefix:
+ *   "e2e4"   -> orange arrow (chess.com default)
+ *   "g:e2e4" -> green, "r:" red, "b:" blue, "y:" yellow
+ * Squares use the same prefix: "r:f7".
+ */
+export type Mark = string;
+
+export type Step = {
+  /** Moves (SAN) played at the start of this step. Several moves are played quickly one after another. */
+  moves?: string[];
+  /** What the narrator says. Wrap words in *stars* to highlight them. Keep it short and simple. */
+  say: string;
+  /** Arrows drawn after the moves land. */
+  arrows?: Mark[];
+  /** Coloured squares drawn after the moves land. */
+  squares?: Mark[];
+  /** Squares that get a pulsing ring to grab attention. */
+  pulse?: string[];
+  /** Override the Stockfish classification of the last move of this step (e.g. "brilliant"). */
+  badge?: Classification;
+  /** Extra seconds to hold this step on screen. */
+  extraHold?: number;
+};
+
+export type Lesson = {
+  id: string;
+  band: Band;
+  title: string;
+  /** Side we are teaching. The board is shown from this side. */
+  hero: Color;
+  startFen?: string;
+  /** Number of opening plies that get a "book" badge. */
+  bookPlies?: number;
+  /** Two hook lines shown in the first seconds. *stars* highlight words. */
+  hook: [string, string];
+  /** How the video ends. Defaults to checkmate. */
+  finale?: { banner: string; sub?: string };
+  steps: Step[];
+  /** 2-3 super simple lines shown at the end. */
+  takeaways: string[];
+};
+
+/** Engine evaluation from White's point of view. */
+export type WhiteEval =
+  | { type: "cp"; value: number }
+  | { type: "mate"; value: number }
+  | { type: "mated"; loser: Color };
+
+export type PositionAnalysis = {
+  fen: string;
+  eval: WhiteEval;
+  /** Engine best move in this position (UCI), null if the game is over. */
+  best: string | null;
+  bestSan: string | null;
+  depth: number;
+};
+
+export type LessonAnalysis = {
+  /** Fingerprint of the analysed line, used to detect stale analysis. */
+  line: string;
+  positions: PositionAnalysis[];
+};
+
+export type AnalysisFile = {
+  engine: string;
+  depth: number;
+  lessons: Record<string, LessonAnalysis>;
+};

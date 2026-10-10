@@ -1,0 +1,85 @@
+import type { Lesson } from "../types";
+
+export const laskerTrap: Lesson = {
+  id: "lasker-trap",
+  band: "900-1500",
+  title: "Lasker Trap",
+  hero: "b",
+  bookPlies: 6,
+  hook: ["Promote a pawn to a *knight*?", "Yes. And it *wins the queen*."],
+  finale: { banner: "QUEEN WON!", sub: "Thanks to a knight promotion" },
+  steps: [
+    { moves: ["d4", "d5", "c4", "e5"], say: "We give a pawn. The *Albin Countergambit*." },
+    { moves: ["dxe5", "d4"], say: "Our pawn pushes forward. *Annoying* for White." },
+    { moves: ["e3"], say: "White attacks it. *This is the mistake.*", arrows: ["r:e3d4"] },
+    { moves: ["Bb4+"], say: "Bishop check!", arrows: ["r:b4e1"] },
+    { moves: ["Bd2", "dxe3"], say: "We take on e3. Now we hit *f2* and the bishop.", arrows: ["e3f2", "e3d2"] },
+    { moves: ["Bxb4"], say: "White takes our bishop. *Big mistake.*" },
+    { moves: ["exf2+"], say: "Pawn takes f2. *Check!*", arrows: ["r:f2e1"] },
+    { moves: ["Ke2"], say: "The king must move." },
+    { moves: ["fxg1=N+"], say: "Pawn takes the knight and becomes... a *KNIGHT*! With check!", badge: "brilliant", arrows: ["r:g1e2"] },
+    { say: "Why a knight? A queen gives *no check*. The knight *does*.", pulse: ["g1"] },
+    { moves: ["Rxg1"], say: "White takes our new knight." },
+    { moves: ["Bg4+"], say: "Bishop check! And it *hits the queen*.", arrows: ["r:g4e2", "g4d1"], pulse: ["d1"] },
+    { moves: ["Ke1", "Qxd1+"], say: "The king steps back... and we *take their queen*!" },
+  ],
+  takeaways: [
+    "Promote to a knight when it gives *check*.",
+    "Checks first, captures second.",
+    "Against the Albin, avoid *e3*.",
+  ],
+};
+
+export const fishingPoleTrap: Lesson = {
+  id: "fishing-pole-trap",
+  band: "900-1500",
+  title: "Fishing Pole Trap",
+  hero: "b",
+  bookPlies: 7,
+  hook: ["Throw your knight as *bait*...", "...and catch a *checkmate*."],
+  steps: [
+    { moves: ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O"], say: "The Ruy Lopez. White castles. Very normal." },
+    { moves: ["Ng4"], say: "Knight to g4. Risky... but it's our *fishing pole*!" },
+    { moves: ["h3"], say: "White kicks the knight." },
+    { moves: ["h5"], say: "We *leave it there*. The knight is the *bait*.", pulse: ["g4"] },
+    { moves: ["hxg4"], say: "White takes the free knight..." },
+    { moves: ["hxg4"], say: "We take back. Now the h-file is *wide open*.", arrows: ["g:h8h1"] },
+    { moves: ["Ne1"], say: "The knight runs away." },
+    { moves: ["Qh4"], say: "Queen to h4. *Threat:* queen to h1 is mate!", arrows: ["h4h1"], pulse: ["h1"] },
+    { moves: ["f3"], say: "White makes room for the king." },
+    { moves: ["g3"], say: "Pawn to g3. Now *nothing* can stop mate.", arrows: ["h4h1", "r:g3f2"] },
+    { moves: ["Bxc6"], say: "White tries anything..." },
+    { moves: ["Qh1#"], say: "Queen to h1. *Checkmate!*", arrows: ["g:h8h1"] },
+  ],
+  takeaways: [
+    "Taking the bait *opens the h-file*.",
+    "Rook + queen on an open file = *mate*.",
+    "Risky trap: it only works if they *take the bait*.",
+  ],
+};
+
+export const siberianTrap: Lesson = {
+  id: "siberian-trap",
+  band: "900-1500",
+  title: "Siberian Trap",
+  hero: "b",
+  bookPlies: 15,
+  hook: ["Their queen *looks* safe.", "One knight jump: *checkmate*."],
+  steps: [
+    { moves: ["e4", "c5", "d4", "cxd4", "c3"], say: "White gives a pawn to attack. The *Smith-Morra Gambit*." },
+    { moves: ["dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4"], say: "We take it. Everyone develops." },
+    { moves: ["Qc7"], say: "Queen to c7. Look at her *diagonal*.", arrows: ["c7h2"], pulse: ["h2"] },
+    { moves: ["O-O", "Nf6", "Qe2"], say: "White castles. Our knight comes out." },
+    { moves: ["Ng4"], say: "Knight to g4. Now *two pieces* hit h2.", arrows: ["g4h2", "c7h2"] },
+    { say: "Only White's *knight* protects h2.", arrows: ["b:f3h2"], pulse: ["f3"] },
+    { moves: ["h3"], say: "White kicks our knight. *Natural... but wrong!*" },
+    { moves: ["Nd4"], say: "Knight to d4! It attacks the *queen*.", badge: "brilliant", arrows: ["r:d4e2"] },
+    { moves: ["Nxd4"], say: "White takes it... but now *nobody guards h2*." },
+    { moves: ["Qh2#"], say: "Queen takes h2. *Checkmate!*" },
+  ],
+  takeaways: [
+    "Queen + knight vs *h2* = danger.",
+    "Kill or distract the *defender*.",
+    "Attack two things at once.",
+  ],
+};
