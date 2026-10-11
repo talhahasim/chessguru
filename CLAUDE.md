@@ -31,6 +31,14 @@ The first frame of every video must be a finished cover that can be used as the 
 - Chess notation in text is spoken naturally by `spokenize` ("...Qe7" → "queen e7"); add respellings for hard
   names to `PRONUNCIATION`, or give a step a separate `voice` text.
 
+## Instagram automation
+
+- `.github/workflows/post-reel.yml` posts 2 Reels/day via the official Instagram API (`scripts/post-reel.ts`).
+- No database/tables: "already posted" is derived from the `♟ <title> | <band> Elo` line in recent IG captions
+  (`marker()` — don't change its format or old posts get reposted). Supabase is used only as temporary public
+  storage; files are deleted right after posting.
+- Never use unofficial Instagram libraries / password login.
+
 ## Other conventions
 
 - Lessons live in `src/lessons/band-*.ts`; keep captions short, very simple English, `*stars*` for emphasis.

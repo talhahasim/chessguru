@@ -1,0 +1,35 @@
+name: Refresh Instagram token
+
+# Long-lived Instagram tokens expire after 60 days unless refreshed.
+# Refreshing weekly keeps the token alive indefinitely.
+on:
+  schedule:
+    - cron: "17 6 * * 1" # every Monday
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Refresh token
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          # Only used if Instagram hands out a different token string: a fine-grained token
+          # with "Secrets: read and write" on this repo, so the new token can be saved.
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          set -euo pipefail
+          if [ -z "${IG_ACCESS_TOKEN:-}" ]; then echo "::notice::IG_ACCESS_TOKEN is not set yet, skipping."; exit 0; fi
+          res=$(curl -sS --fail-with-body -G "https://graph.instagram.com/refresh_access_token" \
+            --data-urlencode "grant_type=ig_refresh_token" --data-urlencode "access_token=${IG_ACCESS_TOKEN}")
+          new=$(echo "$res" | jq -r .access_token)
+          echo "::add-mask::$new"
+          echo "Token valid for another $(( $(echo "$res" | jq -r .expires_in) / 86400 )) days."
+          if [ "$new" != "$IG_ACCESS_TOKEN" ]; then
+            if [ -z "${GH_TOKEN:-}" ]; then
+              echo "::error::Instagram returned a new token but GH_PAT is not set. Update the IG_ACCESS_TOKEN secret manually."
+              exit 1
+            fi
+            gh secret set IG_ACCESS_TOKEN --repo "$GITHUB_REPOSITORY" --body "$new"
+            echo "Saved the new token to IG_ACCESS_TOKEN."
+          fi

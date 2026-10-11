@@ -13,7 +13,8 @@
     "timeline": "tsx scripts/timeline.ts",
     "sfx": "tsx scripts/gen-sfx.ts",
     "typecheck": "tsc --noEmit",
-    "voice": "tsx scripts/voice.ts"
+    "voice": "tsx scripts/voice.ts",
+    "post": "tsx scripts/post-reel.ts"
   },
   "license": "UNLICENSED",
   "dependencies": {
@@ -21,6 +22,7 @@
     "@remotion/cli": "4.0.534",
     "@remotion/fonts": "4.0.534",
     "@remotion/renderer": "4.0.534",
+    "@supabase/supabase-js": "^2.117.3",
     "chess.js": "^1.4.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",

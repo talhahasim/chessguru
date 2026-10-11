@@ -80,6 +80,60 @@ Sesler: `af_heart` (varsayılan, kadın, ABD), `am_michael` / `am_puck` / `am_fe
 `bf_emma` / `bm_george` (İngiliz) ve diğerleri. Zaman çizelgesi ses sürelerine göre otomatik ayarlanır,
 altyazı kelimeleri konuşmayla eşzamanlı belirir. Zor isimlerin okunuşu `src/lib/narration.ts` → `PRONUNCIATION`.
 
+## Instagram otomasyonu (günde 2 Reel)
+
+`.github/workflows/post-reel.yml` her gün **12:07 ve 19:07 (New York saati, yaz saatinde)** = Türkiye saatiyle
+19:07 ve 02:07 çalışır ve:
+
+1. Instagram'daki son paylaşımların açıklamalarına bakar (`♟ <Tuzak adı> | <Elo>` satırı), henüz paylaşılmamış
+   sıradaki tuzağı seçer. Sıra Elo gruplarını dönüşümlü gezer (0–300, 300–600, 600–900, 900–1500, …).
+   Hiçbir yerde veri/tablo tutulmaz.
+2. Videoyu + kapağı render eder (ilk kare = kapak).
+3. İkisini Supabase Storage'da herkese açık `chessguru-reels` kovasına yükler (Instagram API videoyu bir URL'den çeker).
+4. Reel'i resmi **Instagram API** ile paylaşır.
+5. Dosyaları Supabase'ten **siler**.
+
+Tüm tuzaklar paylaşılınca iş akışı hata verir (GitHub sana mail atar) — yeni tuzak ekleme zamanı.
+Secret'lar eklenmeden zamanlanmış çalışmalar sessizce atlanır.
+
+### Bir kerelik kurulum
+
+**1. Instagram hesabı**
+- Yeni hesabı aç, profil fotoğrafı + bio ekle.
+- Ayarlar → Hesap türü ve araçlar → **Profesyonel hesaba geç** → **İçerik Üreticisi (Creator)**.
+- Öneri: yeni hesapla ilk 3–5 günü elle birkaç paylaşım/etkileşimle "ısıt"; ilk günden günde 2 otomatik paylaşım spam gibi algılanabilir.
+
+**2. Meta geliştirici uygulaması**
+- https://developers.facebook.com → My Apps → **Create App** → kullanım amacı: *Other* → tür: **Business**.
+- Uygulamaya **Instagram** ürününü ekle → **API setup with Instagram login**.
+- *Generate access tokens* bölümünde Instagram hesabını ekle ve giriş yap
+  (izinler: `instagram_business_basic`, `instagram_business_content_publish`).
+- Oluşan **access token**'ı (uzun ömürlü, 60 gün) ve hesabın **Instagram user ID**'sini kopyala.
+- Uygulama "Development" modunda kalabilir: sadece kendi hesabına paylaşım yaptığı için App Review gerekmez.
+
+**3. Supabase**
+- Mevcut projelerinden biri yeterli: Project Settings → API → **Project URL** ve **service_role / secret key**.
+- Kova (`chessguru-reels`) ilk çalışmada otomatik oluşturulur; dosyalar paylaşımdan sonra silinir.
+
+**4. GitHub secret'ları** — repo → Settings → Secrets and variables → Actions → *New repository secret*:
+
+| Secret | Değer |
+| --- | --- |
+| `IG_ACCESS_TOKEN` | Instagram access token |
+| `IG_USER_ID` | Instagram user ID (boş bırakılırsa token'dan bulunur) |
+| `SUPABASE_URL` | `https://<ref>.supabase.co` |
+| `SUPABASE_SERVICE_ROLE_KEY` | service_role / secret key |
+| `GH_PAT` | (isteğe bağlı) token yenilenince secret'ı güncellemek için, "Secrets: read and write" izinli fine-grained token |
+
+**5. Test**
+- Actions → *Post chess reel* → **Run workflow** → `dry_run` işaretli: sadece render eder ve açıklamayı yazdırır
+  (video artifact olarak indirilebilir).
+- `dry_run` işaretsiz çalıştırırsan gerçekten paylaşır.
+
+`refresh-ig-token.yml` her pazartesi token'ı yeniler, böylece 60 günlük süre hiç dolmaz.
+
+Yerelde: `DRY_RUN=1 npm run post` (veya `LESSON=lasker-trap DRY_RUN=1 npm run post`).
+
 ## Yeni tuzak eklemek
 
 `src/lessons/band-*.ts` dosyalarından birine yeni bir `Lesson` ekleyin ve `src/lessons/index.ts` içindeki listeye koyun:

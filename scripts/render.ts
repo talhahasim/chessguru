@@ -8,14 +8,9 @@
  *
  * Set REMOTION_BROWSER_EXECUTABLE to use an existing Chrome/Chromium.
  */
-import path from "node:path";
-import fs from "node:fs";
-import { fileURLToPath } from "node:url";
-import { bundle } from "@remotion/bundler";
-import { renderMedia, renderStill, selectComposition } from "@remotion/renderer";
-import { LESSONS, compositionId } from "../src/lessons/index.ts";
+import { LESSONS } from "../src/lessons/index.ts";
+import { renderLesson } from "./render-lib.ts";
 
-const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const filters = process.argv.slice(2);
 const lessons = LESSONS.filter((l) => !filters.length || filters.includes(l.band) || filters.includes(l.id));
 if (!lessons.length) {
@@ -23,38 +18,8 @@ if (!lessons.length) {
   process.exit(1);
 }
 
-const browserExecutable = process.env.REMOTION_BROWSER_EXECUTABLE ?? null;
-
 const main = async () => {
-  console.log("Bundling…");
-  const serveUrl = await bundle({ entryPoint: path.join(root, "src", "index.ts"), publicDir: path.join(root, "public") });
-  for (const lesson of lessons) {
-    const id = compositionId(lesson);
-    const inputProps = { lessonId: lesson.id };
-    const composition = await selectComposition({ serveUrl, id, inputProps, browserExecutable });
-    const outputLocation = path.join(root, "out", lesson.band, `${lesson.id}.mp4`);
-    fs.mkdirSync(path.dirname(outputLocation), { recursive: true });
-    let last = -1;
-    await renderMedia({
-      composition,
-      serveUrl,
-      codec: "h264",
-      crf: 18,
-      outputLocation,
-      inputProps,
-      browserExecutable,
-      onProgress: ({ progress }) => {
-        const pct = Math.floor(progress * 10) * 10;
-        if (pct !== last) {
-          last = pct;
-          process.stdout.write(`\r${id}: ${pct}%   `);
-        }
-      },
-    });
-    const cover = outputLocation.replace(/\.mp4$/, "-cover.jpg");
-    await renderStill({ composition, serveUrl, frame: 0, output: cover, imageFormat: "jpeg", jpegQuality: 95, inputProps, browserExecutable });
-    console.log(`\r✓ ${path.relative(root, outputLocation)} + cover            `);
-  }
+  for (const lesson of lessons) await renderLesson(lesson);
 };
 
 main().catch((e) => {

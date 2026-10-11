@@ -1,0 +1,85 @@
+name: Post chess reel
+
+on:
+  schedule:
+    # GitHub cron is UTC. 16:07 / 23:07 UTC = 12:07 / 19:07 New York in summer (EDT), 11:07 / 18:07 in winter (EST).
+    - cron: "7 16 * * *"
+    - cron: "7 23 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only render and print the caption (no upload, no post)"
+        type: boolean
+        default: true
+      lesson:
+        description: "Force a lesson id (e.g. scholars-mate). Empty = next unposted one."
+        type: string
+        required: false
+
+concurrency:
+  group: post-reel
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      # Until the secrets are added (see README "Instagram otomasyonu"), scheduled runs are skipped quietly.
+      - name: Check configuration
+        id: cfg
+        env:
+          IG: ${{ secrets.IG_ACCESS_TOKEN }}
+          SB: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          if [ -n "$IG" ] && [ -n "$SB" ] || [ "${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}" = "true" ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Instagram/Supabase secrets are not set yet, skipping."
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.cfg.outputs.ok == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.cfg.outputs.ok == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+        if: steps.cfg.outputs.ok == 'true'
+
+      - name: Install Chrome dependencies for Remotion
+        if: steps.cfg.outputs.ok == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libnss3 libdbus-1-3 libatk1.0-0 libgbm-dev libasound2t64 libxrandr2 \
+            libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 libcups2
+
+      - run: npx remotion browser ensure
+        if: steps.cfg.outputs.ok == 'true'
+
+      - name: Check lessons (moves, Stockfish analysis, voiceover)
+        if: steps.cfg.outputs.ok == 'true'
+        run: npm run validate
+
+      - name: Render and post
+        if: steps.cfg.outputs.ok == 'true'
+        run: npx tsx scripts/post-reel.ts
+        env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '0' }}
+          LESSON: ${{ inputs.lesson }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      - name: Keep the rendered video as a build artifact
+        if: always() && steps.cfg.outputs.ok == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel
+          path: out/
+          retention-days: 3
+          if-no-files-found: ignore
