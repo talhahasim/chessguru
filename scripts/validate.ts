@@ -14,7 +14,7 @@ import { classify } from "../src/lib/evals.ts";
 import { replayLesson } from "../src/lib/line.ts";
 import { buildTimeline, FPS } from "../src/lib/timeline.ts";
 import { parseMark } from "../src/theme.ts";
-import { narrationSegments, winnerOf } from "../src/lib/narration.ts";
+import { narrationSegments } from "../src/lib/narration.ts";
 import { voiceClipsFor } from "../src/lib/voice.ts";
 import analysis from "../src/data/analysis.json" with { type: "json" };
 import type { AnalysisFile } from "../src/types.ts";
@@ -58,7 +58,6 @@ for (const lesson of LESSONS) {
     const chars = h.replace(/\*/g, "").length;
     if (chars > 44) err(lesson.id, `hook line ${i + 1} is ${chars} chars; keep it ≤ 44 so the cover stays inside the 3:4 safe area`);
   });
-  if (!lesson.finale && !line.isMate) err(lesson.id, "line does not end in checkmate but no custom finale is set");
 
   const data = engineDataFor(lesson, line);
   if (!data.fresh) err(lesson.id, "Stockfish analysis missing or stale. Run: npm run analyze");
@@ -79,8 +78,8 @@ for (const lesson of LESSONS) {
         warn(lesson.id, `${m.move.san} is marked ${badge} but Stockfish calls it ${engineClass}`);
     }
   }
-  const clips = voiceClipsFor(lesson, line);
-  const missingVoice = narrationSegments(lesson, winnerOf(lesson, line)).filter((seg) => !clips.has(seg.key));
+  const clips = voiceClipsFor(lesson);
+  const missingVoice = narrationSegments(lesson).filter((seg) => !clips.has(seg.key));
   if (missingVoice.length) err(lesson.id, `voiceover missing or stale for ${missingVoice.map((m) => m.key).join(", ")}. Run: npm run voice`);
   const tl = buildTimeline(lesson);
   const secs = tl.duration / FPS;

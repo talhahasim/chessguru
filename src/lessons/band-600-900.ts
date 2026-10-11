@@ -35,7 +35,6 @@ export const elephantTrap: Lesson = {
   hero: "b",
   bookPlies: 8,
   hook: ["White thinks they *won a pawn*.", "Really, they just *lost a piece*."],
-  finale: { banner: "PIECE WON!", sub: "Black is a whole piece up" },
   steps: [
     { moves: ["d4", "d5", "c4", "e6", "Nc3", "Nf6"], say: "The Queen's Gambit. Very normal stuff." },
     { moves: ["Bg5"], say: "White pins our knight to the *queen*.", arrows: ["r:g5d8"] },

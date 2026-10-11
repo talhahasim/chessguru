@@ -19,8 +19,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { LESSONS } from "../src/lessons/index.ts";
-import { replayLesson } from "../src/lib/line.ts";
-import { narrationSegments, winnerOf } from "../src/lib/narration.ts";
+import { narrationSegments } from "../src/lib/narration.ts";
 import type { VoiceFile } from "../src/types.ts";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -45,8 +44,7 @@ const jobs: Job[] = [];
 const keep = new Map<string, Set<string>>();
 
 for (const lesson of LESSONS) {
-  const line = replayLesson(lesson);
-  const segments = narrationSegments(lesson, winnerOf(lesson, line));
+  const segments = narrationSegments(lesson);
   const clips = (manifest.lessons[lesson.id] ??= {});
   const files = new Set<string>();
   keep.set(lesson.id, files);

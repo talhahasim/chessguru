@@ -44,6 +44,10 @@ export type Step = {
 
 export type Lesson = {
   id: string;
+  /** "trap" (default): we set the trap. "defense": we are the target and dodge/punish it. */
+  kind?: "trap" | "defense";
+  /** For defense lessons: id of the trap lesson it answers. */
+  defends?: string;
   band: Band;
   title: string;
   /** Side we are teaching. The board is shown from this side. */
@@ -53,8 +57,6 @@ export type Lesson = {
   bookPlies?: number;
   /** Two hook lines shown in the first seconds. *stars* highlight words. */
   hook: [string, string];
-  /** How the video ends. Defaults to checkmate. */
-  finale?: { banner: string; sub?: string };
   steps: Step[];
   /** 2-3 super simple lines shown at the end. */
   takeaways: string[];

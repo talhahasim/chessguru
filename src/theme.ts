@@ -14,6 +14,8 @@ export const theme = {
 
   green: "#81b64c",
   greenShadow: "#45753c",
+  blue: "#3f86c4",
+  blueShadow: "#285b88",
   red: "#e02828",
 
   evalWhite: "#ffffff",

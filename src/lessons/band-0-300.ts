@@ -51,7 +51,6 @@ export const backRankMate: Lesson = {
   hero: "w",
   startFen: "6k1/5ppp/8/8/1q6/8/1P3PPP/3R2K1 b - - 0 1",
   hook: ["They have a *queen*. We have a rook.", "We still win in *1 move*."],
-  finale: { banner: "CHECKMATE!", sub: "A rook beat a queen" },
   steps: [
     { say: "Black has a *queen*. Black is winning... right?", pulse: ["b4"] },
     { say: "Look at their king. It's stuck *behind its own pawns*. No exit!", squares: ["r:f7", "r:g7", "r:h7"], pulse: ["g8"] },

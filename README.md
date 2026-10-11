@@ -26,8 +26,11 @@ Her videonun akışı:
 3. **Adım adım hamleler** – Taşlar kayarak oynar, chess.com tarzı oklar / kırmızı kareler / yanıp sönen halkalar,
    Stockfish değerlendirme çubuğu, hamle rozetleri (Book, Best, Brilliant !!, Blunder ?? …) ve
    koç balonunda kelime kelime beliren basit İngilizce açıklama.
-4. **Final** – "CHECKMATE!" (veya "QUEEN WON!") bannerı + konfeti.
-5. **REMEMBER** – 2–3 maddelik özet + FOLLOW çağrısı.
+4. **REMEMBER** – son hamleden ("…Checkmate!") hemen sonra 2–3 maddelik özet + FOLLOW çağrısı
+   (tuzak videolarında: "How to defend it? Next video!").
+
+Her tuzağın ayrı bir **savunma videosu** var (`src/lessons/defenses.ts`): tuzağa düşen tarafın gözünden,
+tuzağın nasıl durdurulacağını gösterir (mavi kalkanlı Elo etiketi). Instagram'da önce tuzak, sonra savunması paylaşılır.
 
 ## Kurulum
 

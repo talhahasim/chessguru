@@ -39,6 +39,15 @@ The first frame of every video must be a finished cover that can be used as the 
   storage; files are deleted right after posting.
 - Never use unofficial Instagram libraries / password login.
 
+## Trap + defense pairs
+
+- Every trap (`src/lessons/band-*.ts`) has a separate "how to stop it" video (`src/lessons/defenses.ts`,
+  `kind: "defense"`, `defends: <trap id>`), shown from the side the trap is aimed at. Never put both in one video.
+- Defense videos use the blue shield Elo pill and "THE DEFENSE" intro; their hero moves must be Stockfish best/excellent.
+- Trap videos end with the CTA "How to defend it? Next video!" (+ voice "...Follow so you don't miss it!").
+- Posting order = trap, then its defense (`postingOrder()` in `scripts/post-reel.ts`).
+- No end banner ("CHECKMATE! / White wins"): after the last step the video goes straight to REMEMBER.
+
 ## Other conventions
 
 - Lessons live in `src/lessons/band-*.ts`; keep captions short, very simple English, `*stars*` for emphasis.

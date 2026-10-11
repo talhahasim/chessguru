@@ -10,7 +10,6 @@ export const T = {
   move: 13, // frames a piece takes to slide
   quickGap: 7, // pause between quickly played moves in one step
   afterMove: 4, // delay before arrows / badge appear
-  finale: 78,
   outro: 165,
   voiceLead: 3, // frames between a segment starting and its voice starting
   voiceTail: 18, // breathing room after a voice clip before the next segment
@@ -43,7 +42,6 @@ export type Timeline = {
   intro: { start: number; end: number };
   steps: StepEvent[];
   moves: MoveEvent[];
-  finale: { start: number; end: number };
   outro: { start: number; end: number };
   /** When the outro's "REMEMBER" title, each takeaway and the follow button appear. */
   outroCues: { remember: number; takeaways: number[]; cta: number };
@@ -53,7 +51,7 @@ export type Timeline = {
 
 export const buildTimeline = (lesson: Lesson): Timeline => {
   const line = replayLesson(lesson);
-  const clips = voiceClipsFor(lesson, line);
+  const clips = voiceClipsFor(lesson);
   const voice: VoiceCue[] = [];
   /** Places a clip at `from` and returns the frame where it has finished (+ tail), or `from` if there is none. */
   const say = (key: string, from: number) => {
@@ -87,8 +85,7 @@ export const buildTimeline = (lesson: Lesson): Timeline => {
     t = Math.max(minEnd, voiceDone) + Math.round((step.extraHold ?? 0) * FPS);
     steps.push({ index, start, end: t, settled, moves: stepMoves, plyAfter: ply });
   });
-  const finale = { start: t, end: (t = Math.max(t + T.finale, say("finale", t + 6) + 6)) };
-
+  // No end banner: after the last step (e.g. "...Checkmate!") the video goes straight to the recap.
   // Outro: title, then each takeaway as it is spoken, then the follow button.
   const outroStart = t;
   const remember = outroStart + 8;
@@ -101,7 +98,7 @@ export const buildTimeline = (lesson: Lesson): Timeline => {
   const cta = cursor + 4;
   const ctaDone = say("cta", cta);
   const outro = { start: outroStart, end: (t = Math.max(outroStart + T.outro, ctaDone + 30)) };
-  return { line, hook, intro, steps, moves, finale, outro, outroCues: { remember, takeaways, cta }, voice, duration: t };
+  return { line, hook, intro, steps, moves, outro, outroCues: { remember, takeaways, cta }, voice, duration: t };
 };
 
 /** Board state at a frame: how many plies are complete, and the move currently sliding (if any). */

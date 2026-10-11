@@ -7,7 +7,6 @@ export const laskerTrap: Lesson = {
   hero: "b",
   bookPlies: 6,
   hook: ["Promote a pawn to a *knight*?", "Yes. And it *wins the queen*."],
-  finale: { banner: "QUEEN WON!", sub: "Thanks to a knight promotion" },
   steps: [
     { moves: ["d4", "d5", "c4", "e5"], say: "We give a pawn. The *Albin Countergambit*." },
     { moves: ["dxe5", "d4"], say: "Our pawn pushes forward. *Annoying* for White." },

@@ -1,5 +1,5 @@
+import { LESSONS } from "../lessons";
 import type { Lesson } from "../types";
-import { sideToMove, type ReplayedLine } from "./line";
 
 export type NarrationSegment = { key: string; text: string };
 
@@ -33,24 +33,21 @@ export const spokenize = (text: string): string => {
   return s.replace(/(^|[.!?:]\s+)([a-z])/g, (_, a, b) => a + b.toUpperCase());
 };
 
-export const finaleText = (lesson: Lesson, winner: "White" | "Black") => {
-  const banner = lesson.finale?.banner ?? "CHECKMATE!";
-  const sub = lesson.finale?.sub ?? `${winner} wins`;
-  const b = banner.charAt(0) + banner.slice(1).toLowerCase();
-  return `${b} ${sub}.`;
-};
-
 /** Every piece of narration in a video, in order. Keys are stable ids used by the timeline. */
-export const narrationSegments = (lesson: Lesson, winner: "White" | "Black"): NarrationSegment[] => [
+export const narrationSegments = (lesson: Lesson): NarrationSegment[] => [
   { key: "hook", text: spokenize(`${lesson.hook[0]} ${lesson.hook[1]}`) },
   { key: "intro", text: spokenize(`${lesson.title}!`) },
   ...lesson.steps.map((step, i) => ({ key: `step-${i}`, text: spokenize(step.voice ?? step.say) })),
-  { key: "finale", text: spokenize(finaleText(lesson, winner)) },
   { key: "remember", text: "Remember!" },
   ...lesson.takeaways.map((t, i) => ({ key: `takeaway-${i}`, text: spokenize(t) })),
-  { key: "cta", text: "Follow for more traps!" },
+  {
+    key: "cta",
+    text:
+      lesson.kind === "defense"
+        ? "New trap tomorrow. Follow!"
+        : LESSONS.some((l) => l.defends === lesson.id)
+          ? "How to defend it? It's in the next video. Follow so you don't miss it!"
+          : "Follow for more traps!",
+  },
 ];
 
-/** Who wins at the end of the lesson line. */
-export const winnerOf = (lesson: Lesson, line: ReplayedLine): "White" | "Black" =>
-  line.isMate ? (sideToMove(line.finalFen) === "w" ? "Black" : "White") : lesson.hero === "w" ? "White" : "Black";

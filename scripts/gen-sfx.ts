@@ -79,18 +79,4 @@ writeWav("pop.wav", make(0.14, (t) => Math.sin(2 * Math.PI * (500 + 1400 * Math.
   }));
 }
 
-// Win jingle: bright major arpeggio.
-writeWav("win.wav", make(1.2, (t) => {
-  const notes = [523.25, 659.25, 783.99, 1046.5];
-  let v = 0;
-  notes.forEach((f, i) => {
-    const s = i * 0.09;
-    if (t >= s) {
-      const tt = t - s;
-      v += (Math.sin(2 * Math.PI * f * tt) + 0.3 * Math.sin(2 * Math.PI * f * 2 * tt)) * Math.exp(-tt * 3.2);
-    }
-  });
-  return v;
-}));
-
 console.log("Wrote", fs.readdirSync(outDir).join(", "));

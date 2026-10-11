@@ -1,18 +1,23 @@
 import React from "react";
-import { AbsoluteFill, Img, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { theme, BAND_LABEL } from "../theme";
 import type { Lesson } from "../types";
+import { LESSONS } from "../lessons";
 import { fontFamily } from "../fonts";
 import { RichText } from "./Caption";
 
-export const BandPill: React.FC<{ band: string; scale?: number }> = ({ band, scale = 1 }) => (
+// Material Design "shield" icon (Apache 2.0).
+const SHIELD = "M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z";
+
+/** Elo badge. Trap videos: green with a king. Defense videos: blue with a shield. */
+export const BandPill: React.FC<{ band: string; scale?: number; defense?: boolean }> = ({ band, scale = 1, defense }) => (
   <div
     style={{
       display: "inline-flex",
       alignItems: "center",
       gap: 10 * scale,
-      background: theme.green,
-      boxShadow: `0 ${6 * scale}px 0 ${theme.greenShadow}`,
+      background: defense ? theme.blue : theme.green,
+      boxShadow: `0 ${6 * scale}px 0 ${defense ? theme.blueShadow : theme.greenShadow}`,
       borderRadius: 12 * scale,
       padding: `${8 * scale}px ${20 * scale}px`,
       fontFamily,
@@ -23,7 +28,13 @@ export const BandPill: React.FC<{ band: string; scale?: number }> = ({ band, sca
       whiteSpace: "nowrap",
     }}
   >
-    <Img src={staticFile("pieces/wK.svg")} style={{ width: 40 * scale, height: 40 * scale }} />
+    {defense ? (
+      <svg viewBox="0 0 24 24" width={36 * scale} height={36 * scale}>
+        <path d={SHIELD} fill="#fff" />
+      </svg>
+    ) : (
+      <Img src={staticFile("pieces/wK.svg")} style={{ width: 40 * scale, height: 40 * scale }} />
+    )}
     {BAND_LABEL[band]} ELO
   </div>
 );
@@ -43,7 +54,7 @@ export const Header: React.FC<{ lesson: Lesson; width: number; appearAt: number 
         transform: `translateY(${(1 - s) * -40}px)`,
       }}
     >
-      <BandPill band={lesson.band} />
+      <BandPill band={lesson.band} defense={lesson.kind === "defense"} />
       <div
         style={{
           fontFamily,
@@ -79,7 +90,7 @@ export const HookOverlay: React.FC<{ lesson: Lesson; duration: number; width: nu
         style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.55) 28%, rgba(0,0,0,0.12) 40%, rgba(0,0,0,0.12) 62%, rgba(0,0,0,0.6) 72%, rgba(0,0,0,0.9) 100%)" }}
       />
       <div style={{ position: "absolute", top: HOOK_LAYOUT.pillY, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
-        <BandPill band={lesson.band} scale={1.1} />
+        <BandPill band={lesson.band} scale={1.1} defense={lesson.kind === "defense"} />
       </div>
       <div
         style={{
@@ -127,71 +138,11 @@ export const IntroCard: React.FC<{ lesson: Lesson; start: number; duration: numb
   const out = interpolate(frame, [start + duration - 8, start + duration], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <div style={{ width, display: "flex", flexDirection: "column", alignItems: "center", gap: 18, opacity: out, transform: `scale(${0.7 + 0.3 * s})` }}>
-      <div style={{ fontFamily, fontWeight: 800, color: theme.textMuted, fontSize: 40, letterSpacing: 6 }}>THE TRAP</div>
+      <div style={{ fontFamily, fontWeight: 800, color: theme.textMuted, fontSize: 40, letterSpacing: 6 }}>
+        {lesson.kind === "defense" ? "THE DEFENSE" : "THE TRAP"}
+      </div>
       <div style={{ fontFamily, fontWeight: 900, color: "#fff", fontSize: 88, textAlign: "center", lineHeight: 1.05 }}>{lesson.title}</div>
       <div style={{ fontFamily, fontWeight: 700, color: theme.green, fontSize: 42 }}>Let's set it up, step by step</div>
-    </div>
-  );
-};
-
-const CONFETTI_COLORS = ["#81b64c", "#ffe14d", "#ffffff", "#1baca6", "#f7c631", "#fa412d"];
-
-export const Confetti: React.FC<{ start: number; width: number; height: number; count?: number }> = ({ start, width, height, count = 90 }) => {
-  const frame = useCurrentFrame();
-  const t = frame - start;
-  if (t < 0) return null;
-  return (
-    <AbsoluteFill style={{ pointerEvents: "none" }}>
-      {Array.from({ length: count }, (_, i) => {
-        const x0 = random(`x${i}`) * width;
-        const vx = (random(`vx${i}`) - 0.5) * 14;
-        const vy = -18 - random(`vy${i}`) * 22;
-        const g = 1.1;
-        const x = x0 + vx * t;
-        const y = height * 0.55 + vy * t + 0.5 * g * t * t;
-        const rot = random(`r${i}`) * 360 + t * (random(`rs${i}`) * 20 - 10);
-        const w = 14 + random(`w${i}`) * 14;
-        return (
-          <div
-            key={i}
-            style={{
-              position: "absolute",
-              left: x,
-              top: y,
-              width: w,
-              height: w * 0.45,
-              background: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
-              transform: `rotate(${rot}deg)`,
-              opacity: interpolate(t, [50, 75], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
-            }}
-          />
-        );
-      })}
-    </AbsoluteFill>
-  );
-};
-
-export const FinaleBanner: React.FC<{ banner: string; sub: string; start: number }> = ({ banner, sub, start }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const s = spring({ frame: frame - start, fps, config: { damping: 9, stiffness: 140 } });
-  return (
-    <div
-      style={{
-        background: "rgba(38, 36, 33, 0.94)",
-        borderRadius: 24,
-        padding: "34px 60px",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: 8,
-        transform: `scale(${s}) rotate(${(1 - s) * -8}deg)`,
-        boxShadow: "0 20px 60px rgba(0,0,0,0.6)",
-        border: `4px solid ${theme.green}`,
-      }}
-    >
-      <div style={{ fontFamily, fontWeight: 900, fontSize: 104, color: "#fff", letterSpacing: 2, lineHeight: 1 }}>{banner}</div>
-      <div style={{ fontFamily, fontWeight: 700, fontSize: 44, color: theme.green }}>{sub}</div>
     </div>
   );
 };
@@ -263,7 +214,11 @@ export const Outro: React.FC<{
         }}
       >
         <div style={{ fontFamily, fontWeight: 800, fontSize: 38, color: theme.textMuted, flex: 1 }}>
-          More traps for {BAND_LABEL[lesson.band]} Elo
+          {lesson.kind === "defense"
+            ? "New trap tomorrow"
+            : LESSONS.some((l) => l.defends === lesson.id)
+              ? "How to defend it? Next video!"
+              : `More traps for ${BAND_LABEL[lesson.band]} Elo`}
         </div>
         <div
           style={{

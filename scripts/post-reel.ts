@@ -22,7 +22,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
-import { BANDS, LESSONS } from "../src/lessons/index.ts";
+import { BANDS, LESSONS, defenseOf } from "../src/lessons/index.ts";
 import { BAND_LABEL } from "../src/theme.ts";
 import type { Lesson } from "../src/types.ts";
 import { renderLesson } from "./render-lib.ts";
@@ -57,17 +57,33 @@ export const buildCaption = (lesson: Lesson) => {
     "",
     ...lesson.takeaways.map((t) => `✅ ${plain(t)}`),
     "",
-    "Follow for a new chess trap every day!",
+    lesson.kind === "defense"
+      ? "Follow for a new chess trap (and how to stop it) every day!"
+      : defenseOf(lesson)
+        ? "🛡 How to stop this trap: next reel. Follow so you don't miss it!"
+        : "Follow for a new chess trap every day!",
     "",
     [...HASHTAGS, tag].join(" "),
   ].join("\n");
 };
 
-/** Posting order: rotate through the Elo bands (0-300, 300-600, 600-900, 900-1500, 0-300, …). */
+/**
+ * Posting order: traps rotate through the Elo bands (0-300, 300-600, 600-900, 900-1500, 0-300, …)
+ * and each trap is followed by its defense video, so one day = a trap + how to stop it.
+ */
 export const postingOrder = (): Lesson[] => {
-  const perBand = BANDS.map((b) => LESSONS.filter((l) => l.band === b));
+  const traps = BANDS.map((b) => LESSONS.filter((l) => l.band === b && l.kind !== "defense"));
   const out: Lesson[] = [];
-  for (let i = 0; i < Math.max(...perBand.map((l) => l.length)); i++) for (const list of perBand) if (list[i]) out.push(list[i]);
+  for (let i = 0; i < Math.max(...traps.map((l) => l.length)); i++)
+    for (const list of traps) {
+      const trap = list[i];
+      if (!trap) continue;
+      out.push(trap);
+      const defense = defenseOf(trap);
+      if (defense) out.push(defense);
+    }
+  // Defense videos without a matching trap still get posted, at the end.
+  for (const l of LESSONS) if (!out.includes(l)) out.push(l);
   return out;
 };
 

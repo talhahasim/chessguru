@@ -4,7 +4,7 @@ import { Board, type BoardArrow } from "./components/Board";
 import { Caption } from "./components/Caption";
 import { EvalBar } from "./components/EvalBar";
 import { PlayerBar } from "./components/PlayerBar";
-import { Confetti, FinaleBanner, Header, HOOK_LAYOUT, HookOverlay, IntroCard, Outro } from "./components/Scenes";
+import { Header, HOOK_LAYOUT, HookOverlay, IntroCard, Outro } from "./components/Scenes";
 import { engineDataFor } from "./lib/analysis";
 import { evalBarFill } from "./lib/evals";
 import { boardFromFen, isCheck, kingSquare, sideToMove } from "./lib/line";
@@ -53,7 +53,7 @@ const clocksAt = (tl: Timeline, frame: number, firstToMove: Color) => {
     since = m.start;
     turn = turn === "w" ? "b" : "w";
   }
-  const lastActivity = Math.min(f, tl.finale.start);
+  const lastActivity = Math.min(f, tl.outro.start);
   used[turn] += Math.max(0, lastActivity - since) / FPS;
   return { w: START_CLOCK - used.w * 2.2, b: START_CLOCK - used.b * 2.2, turn };
 };
@@ -122,18 +122,13 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
   const boardNow = boardFromFen(shownFen);
   const clocks = clocksAt(tl, frame, sideToMove(tl.line.startFen));
   const [heroRating, villainRating] = RATINGS[lesson.band];
-  const gameOver = frame >= tl.finale.start || inHook;
+  const gameOver = frame >= tl.outro.start || inHook;
 
   // ---- Caption ------------------------------------------------------------
   const lastStepMove = step?.moves.at(-1);
   const chipClass = lastStepMove ? engine.classes[lastStepMove.ply - 1] : null;
   const chip =
     step && lastStepMove && chipClass ? { san: lastStepMove.move.san, classification: chipClass, at: step.settled } : null;
-
-  // ---- Finale -------------------------------------------------------------
-  const winner = finalIsMate ? (sideToMove(tl.line.finalFen) === "w" ? "Black" : "White") : hero === "w" ? "White" : "Black";
-  const banner = lesson.finale?.banner ?? "CHECKMATE!";
-  const sub = lesson.finale?.sub ?? `${winner} wins`;
 
   // During the hook the board block is shrunk between the hook lines, then zooms into place.
   const boardCenterY = L.boardY + L.boardSize / 2;
@@ -243,16 +238,6 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
         </div>
       ) : null}
 
-      {/* Finale */}
-      {frame >= tl.finale.start && frame < tl.outro.start + 12 ? (
-        <>
-          <Confetti start={tl.finale.start} width={L.W} height={L.H} />
-          <AbsoluteFill style={{ top: L.boardY, height: L.boardSize, justifyContent: "center", alignItems: "center" }}>
-            <FinaleBanner banner={banner} sub={sub} start={tl.finale.start} />
-          </AbsoluteFill>
-        </>
-      ) : null}
-
       {/* Outro */}
       {frame >= tl.outro.start ? (
         <>
@@ -310,9 +295,6 @@ const Sounds: React.FC<{ tl: Timeline }> = ({ tl }) => {
           </Sequence>
         ) : null,
       )}
-      <Sequence from={tl.finale.start} durationInFrames={40}>
-        <Html5Audio src={sfx("win")} volume={0.7 * v} />
-      </Sequence>
       <Sequence from={tl.outro.start} durationInFrames={20}>
         <Html5Audio src={sfx("whoosh")} volume={0.5 * v} />
       </Sequence>

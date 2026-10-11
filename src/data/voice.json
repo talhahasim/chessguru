@@ -54,11 +54,6 @@
     "file": "voice/scholars-mate/step-7-597e4811.mp3",
     "seconds": 3.264
    },
-   "finale": {
-    "text": "Checkmate! White wins.",
-    "file": "voice/scholars-mate/finale-8efa32fa.mp3",
-    "seconds": 1.343
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/scholars-mate/remember-267df169.mp3",
@@ -80,9 +75,9 @@
     "seconds": 3.241
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/scholars-mate/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/scholars-mate/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "fools-mate": {
@@ -121,11 +116,6 @@
     "file": "voice/fools-mate/step-4-829756e2.mp3",
     "seconds": 2.814
    },
-   "finale": {
-    "text": "Checkmate! Black wins.",
-    "file": "voice/fools-mate/finale-bd5a32ad.mp3",
-    "seconds": 1.369
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/fools-mate/remember-267df169.mp3",
@@ -147,9 +137,9 @@
     "seconds": 2.009
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/fools-mate/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/fools-mate/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "back-rank-mate": {
@@ -183,11 +173,6 @@
     "file": "voice/back-rank-mate/step-3-066c016a.mp3",
     "seconds": 3.157
    },
-   "finale": {
-    "text": "Checkmate! A rook beat a queen.",
-    "file": "voice/back-rank-mate/finale-36fe07c4.mp3",
-    "seconds": 1.747
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/back-rank-mate/remember-267df169.mp3",
@@ -209,9 +194,9 @@
     "seconds": 3.678
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/back-rank-mate/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/back-rank-mate/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "legals-mate": {
@@ -275,11 +260,6 @@
     "file": "voice/legals-mate/step-9-3343779a.mp3",
     "seconds": 3.804
    },
-   "finale": {
-    "text": "Checkmate! White wins.",
-    "file": "voice/legals-mate/finale-8efa32fa.mp3",
-    "seconds": 1.343
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/legals-mate/remember-267df169.mp3",
@@ -301,9 +281,9 @@
     "seconds": 2.187
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/legals-mate/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/legals-mate/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "blackburne-shilling": {
@@ -367,11 +347,6 @@
     "file": "voice/blackburne-shilling/step-9-3bba19b6.mp3",
     "seconds": 3.593
    },
-   "finale": {
-    "text": "Checkmate! Black wins.",
-    "file": "voice/blackburne-shilling/finale-bd5a32ad.mp3",
-    "seconds": 1.369
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/blackburne-shilling/remember-267df169.mp3",
@@ -393,9 +368,9 @@
     "seconds": 3.409
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/blackburne-shilling/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/blackburne-shilling/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "stafford-trap": {
@@ -459,11 +434,6 @@
     "file": "voice/stafford-trap/step-9-29893e9c.mp3",
     "seconds": 1.949
    },
-   "finale": {
-    "text": "Checkmate! Black wins.",
-    "file": "voice/stafford-trap/finale-bd5a32ad.mp3",
-    "seconds": 1.369
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/stafford-trap/remember-267df169.mp3",
@@ -485,9 +455,9 @@
     "seconds": 2.174
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/stafford-trap/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/stafford-trap/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "englund-gambit-trap": {
@@ -561,11 +531,6 @@
     "file": "voice/englund-gambit-trap/step-11-4d69020f.mp3",
     "seconds": 1.749
    },
-   "finale": {
-    "text": "Checkmate! Black wins.",
-    "file": "voice/englund-gambit-trap/finale-bd5a32ad.mp3",
-    "seconds": 1.369
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/englund-gambit-trap/remember-267df169.mp3",
@@ -587,9 +552,9 @@
     "seconds": 2.067
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/englund-gambit-trap/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/englund-gambit-trap/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "elephant-trap": {
@@ -658,11 +623,6 @@
     "file": "voice/elephant-trap/step-10-e4902b38.mp3",
     "seconds": 2.355
    },
-   "finale": {
-    "text": "Piece won! Black is a whole piece up.",
-    "file": "voice/elephant-trap/finale-552723c8.mp3",
-    "seconds": 2.059
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/elephant-trap/remember-267df169.mp3",
@@ -684,9 +644,9 @@
     "seconds": 1.883
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/elephant-trap/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/elephant-trap/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "kieninger-trap": {
@@ -755,11 +715,6 @@
     "file": "voice/kieninger-trap/step-10-3f1cbecc.mp3",
     "seconds": 2.243
    },
-   "finale": {
-    "text": "Checkmate! Black wins.",
-    "file": "voice/kieninger-trap/finale-bd5a32ad.mp3",
-    "seconds": 1.369
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/kieninger-trap/remember-267df169.mp3",
@@ -781,9 +736,9 @@
     "seconds": 1.886
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/kieninger-trap/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/kieninger-trap/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "lasker-trap": {
@@ -862,11 +817,6 @@
     "file": "voice/lasker-trap/step-12-0428b129.mp3",
     "seconds": 2.364
    },
-   "finale": {
-    "text": "Queen won! Thanks to a knight promotion.",
-    "file": "voice/lasker-trap/finale-6c2b858b.mp3",
-    "seconds": 2.188
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/lasker-trap/remember-267df169.mp3",
@@ -888,9 +838,9 @@
     "seconds": 1.988
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/lasker-trap/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/lasker-trap/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "fishing-pole-trap": {
@@ -964,11 +914,6 @@
     "file": "voice/fishing-pole-trap/step-11-6aa24411.mp3",
     "seconds": 1.899
    },
-   "finale": {
-    "text": "Checkmate! Black wins.",
-    "file": "voice/fishing-pole-trap/finale-bd5a32ad.mp3",
-    "seconds": 1.369
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/fishing-pole-trap/remember-267df169.mp3",
@@ -990,9 +935,9 @@
     "seconds": 2.732
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/fishing-pole-trap/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/fishing-pole-trap/cta-36405e76.mp3",
+    "seconds": 3.687
    }
   },
   "siberian-trap": {
@@ -1056,11 +1001,6 @@
     "file": "voice/siberian-trap/step-9-a3c2f584.mp3",
     "seconds": 1.924
    },
-   "finale": {
-    "text": "Checkmate! Black wins.",
-    "file": "voice/siberian-trap/finale-bd5a32ad.mp3",
-    "seconds": 1.369
-   },
    "remember": {
     "text": "Remember!",
     "file": "voice/siberian-trap/remember-267df169.mp3",
@@ -1082,9 +1022,803 @@
     "seconds": 1.358
    },
    "cta": {
-    "text": "Follow for more traps!",
-    "file": "voice/siberian-trap/cta-fd3186ce.mp3",
-    "seconds": 1.326
+    "text": "How to defend it? It's in the next video. Follow so you don't miss it!",
+    "file": "voice/siberian-trap/cta-36405e76.mp3",
+    "seconds": 3.687
+   }
+  },
+  "stop-scholars-mate": {
+   "hook": {
+    "text": "They want mate in 4. Here's how to stop it.",
+    "file": "voice/stop-scholars-mate/hook-30dcc1c0.mp3",
+    "seconds": 2.599
+   },
+   "intro": {
+    "text": "Stop the Scholar's Mate!",
+    "file": "voice/stop-scholars-mate/intro-6402bc41.mp3",
+    "seconds": 1.332
+   },
+   "step-0": {
+    "text": "Normal start. But watch that bishop on c4.",
+    "file": "voice/stop-scholars-mate/step-0-70aa8a01.mp3",
+    "seconds": 2.938
+   },
+   "step-1": {
+    "text": "Queen out! Threat: Queen takes f7, checkmate!",
+    "file": "voice/stop-scholars-mate/step-1-44aa1c2b.mp3",
+    "seconds": 2.814
+   },
+   "step-2": {
+    "text": "Pawn to g6! It kicks the queen away.",
+    "file": "voice/stop-scholars-mate/step-2-7e59d787.mp3",
+    "seconds": 2.518
+   },
+   "step-3": {
+    "text": "The queen comes back. Same threat on f7!",
+    "file": "voice/stop-scholars-mate/step-3-b1133c42.mp3",
+    "seconds": 2.697
+   },
+   "step-4": {
+    "text": "Knight to f6 blocks it. F7 is safe!",
+    "file": "voice/stop-scholars-mate/step-4-ab3b2e67.mp3",
+    "seconds": 2.953
+   },
+   "step-5": {
+    "text": "Now we attack the bishop. Their queen came out too early.",
+    "file": "voice/stop-scholars-mate/step-5-9438eeb1.mp3",
+    "seconds": 3.025
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/stop-scholars-mate/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Queen on h5? Play g6.",
+    "file": "voice/stop-scholars-mate/takeaway-0-aab4fbb4.mp3",
+    "seconds": 2.162
+   },
+   "takeaway-1": {
+    "text": "Queen on f3? Block with knight f6.",
+    "file": "voice/stop-scholars-mate/takeaway-1-233aa99e.mp3",
+    "seconds": 2.667
+   },
+   "takeaway-2": {
+    "text": "Early queen means easy target.",
+    "file": "voice/stop-scholars-mate/takeaway-2-b19dd721.mp3",
+    "seconds": 1.772
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/stop-scholars-mate/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "avoid-fools-mate": {
+   "hook": {
+    "text": "Never lose to the fastest mate. Just follow one rule.",
+    "file": "voice/avoid-fools-mate/hook-5eb42610.mp3",
+    "seconds": 3.194
+   },
+   "intro": {
+    "text": "Avoid Fool's Mate!",
+    "file": "voice/avoid-fools-mate/intro-98f9bbdd.mp3",
+    "seconds": 1.154
+   },
+   "step-0": {
+    "text": "We pushed the f-pawn. Not great, but not lost.",
+    "file": "voice/avoid-fools-mate/step-0-c4e71ae9.mp3",
+    "seconds": 2.769
+   },
+   "step-1": {
+    "text": "Black's queen now eyes h4. Our king is open.",
+    "file": "voice/avoid-fools-mate/step-1-8527b8ae.mp3",
+    "seconds": 2.974
+   },
+   "step-2": {
+    "text": "Pushing the g-pawn now is checkmate. Don't do it!",
+    "file": "voice/avoid-fools-mate/step-2-46ef84f1.mp3",
+    "seconds": 2.694
+   },
+   "step-3": {
+    "text": "Play e4 instead. If the queen checks, g3 blocks.",
+    "file": "voice/avoid-fools-mate/step-3-e10138cb.mp3",
+    "seconds": 3.573
+   },
+   "step-4": {
+    "text": "Bring out pieces. Keep the king safe.",
+    "file": "voice/avoid-fools-mate/step-4-f61a8082.mp3",
+    "seconds": 2.099
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/avoid-fools-mate/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Keep your f and g pawns home early.",
+    "file": "voice/avoid-fools-mate/takeaway-0-4b84eec2.mp3",
+    "seconds": 2.012
+   },
+   "takeaway-1": {
+    "text": "Start with e4 or d4, then knights.",
+    "file": "voice/avoid-fools-mate/takeaway-1-1273ea4b.mp3",
+    "seconds": 2.395
+   },
+   "takeaway-2": {
+    "text": "Open line to your king? Close it.",
+    "file": "voice/avoid-fools-mate/takeaway-2-2bf5911f.mp3",
+    "seconds": 1.917
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/avoid-fools-mate/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "stop-back-rank-mate": {
+   "hook": {
+    "text": "Winning? Don't lose to one rook. One tiny move saves you.",
+    "file": "voice/stop-back-rank-mate/hook-dc00335f.mp3",
+    "seconds": 3.325
+   },
+   "intro": {
+    "text": "Stop Back Rank Mate!",
+    "file": "voice/stop-back-rank-mate/intro-16ffeb07.mp3",
+    "seconds": 1.262
+   },
+   "step-0": {
+    "text": "We have a queen. We're winning!",
+    "file": "voice/stop-back-rank-mate/step-0-4b15fbd4.mp3",
+    "seconds": 1.511
+   },
+   "step-1": {
+    "text": "But our king has no exit. Its own pawns block it.",
+    "file": "voice/stop-back-rank-mate/step-1-4776e97a.mp3",
+    "seconds": 3.096
+   },
+   "step-2": {
+    "text": "Rook to d8 would be checkmate.",
+    "file": "voice/stop-back-rank-mate/step-2-936f1ff6.mp3",
+    "seconds": 1.702
+   },
+   "step-3": {
+    "text": "So first: Pawn to h6. Now the king can breathe.",
+    "file": "voice/stop-back-rank-mate/step-3-07767ca8.mp3",
+    "seconds": 3.351
+   },
+   "step-4": {
+    "text": "Rook check on the back row...",
+    "file": "voice/stop-back-rank-mate/step-4-d47d32da.mp3",
+    "seconds": 1.356
+   },
+   "step-5": {
+    "text": "No problem. The king escapes to h7!",
+    "file": "voice/stop-back-rank-mate/step-5-bfb4c623.mp3",
+    "seconds": 2.661
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/stop-back-rank-mate/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "King stuck on the back row means danger.",
+    "file": "voice/stop-back-rank-mate/takeaway-0-e283f58c.mp3",
+    "seconds": 2.117
+   },
+   "takeaway-1": {
+    "text": "Make one escape square (h6 or g6).",
+    "file": "voice/stop-back-rank-mate/takeaway-1-c5a804e9.mp3",
+    "seconds": 2.723
+   },
+   "takeaway-2": {
+    "text": "Then grab material safely.",
+    "file": "voice/stop-back-rank-mate/takeaway-2-e7a6448f.mp3",
+    "seconds": 1.586
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/stop-back-rank-mate/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "stop-legals-mate": {
+   "hook": {
+    "text": "They try Lay-gahl's Mate... And just lose their queen.",
+    "file": "voice/stop-legals-mate/hook-f78127c2.mp3",
+    "seconds": 2.782
+   },
+   "intro": {
+    "text": "Stop Lay-gahl's Mate!",
+    "file": "voice/stop-legals-mate/intro-6d04bb9b.mp3",
+    "seconds": 1.279
+   },
+   "step-0": {
+    "text": "We pin their knight to the queen.",
+    "file": "voice/stop-legals-mate/step-0-709b7956.mp3",
+    "seconds": 1.41
+   },
+   "step-1": {
+    "text": "Here, don't play g6. That's when the trap works.",
+    "file": "voice/stop-legals-mate/step-1-b21d6877.mp3",
+    "seconds": 2.97
+   },
+   "step-2": {
+    "text": "Knight to f6! It guards d5 and g4.",
+    "file": "voice/stop-legals-mate/step-2-e6e93a96.mp3",
+    "seconds": 3.132
+   },
+   "step-3": {
+    "text": "White tries the trick anyway: Knight takes e5!",
+    "file": "voice/stop-legals-mate/step-3-808e11a9.mp3",
+    "seconds": 2.894
+   },
+   "step-4": {
+    "text": "This time, take the queen!",
+    "file": "voice/stop-legals-mate/step-4-cd379ce9.mp3",
+    "seconds": 1.443
+   },
+   "step-5": {
+    "text": "Bishop check. King to e7, like before...",
+    "file": "voice/stop-legals-mate/step-5-2b20a2b7.mp3",
+    "seconds": 2.559
+   },
+   "step-6": {
+    "text": "Knight check... But that square is covered!",
+    "file": "voice/stop-legals-mate/step-6-6d5f6575.mp3",
+    "seconds": 2.098
+   },
+   "step-7": {
+    "text": "Our knight takes it. No mate. We're a queen up!",
+    "file": "voice/stop-legals-mate/step-7-e5891807.mp3",
+    "seconds": 2.417
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/stop-legals-mate/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Pinned their knight? Play knight f6 next.",
+    "file": "voice/stop-legals-mate/takeaway-0-c8d35e86.mp3",
+    "seconds": 2.204
+   },
+   "takeaway-1": {
+    "text": "Guard d5 and the trap dies.",
+    "file": "voice/stop-legals-mate/takeaway-1-6f75a2ce.mp3",
+    "seconds": 1.93
+   },
+   "takeaway-2": {
+    "text": "Never play g6 there.",
+    "file": "voice/stop-legals-mate/takeaway-2-628252e8.mp3",
+    "seconds": 1.541
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/stop-legals-mate/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "beat-blackburne-shilling": {
+   "hook": {
+    "text": "That free pawn is poison. Do this instead.",
+    "file": "voice/beat-blackburne-shilling/hook-ada8273d.mp3",
+    "seconds": 2.53
+   },
+   "intro": {
+    "text": "Beat the Blackburne Trap!",
+    "file": "voice/beat-blackburne-shilling/intro-6b000efc.mp3",
+    "seconds": 1.32
+   },
+   "step-0": {
+    "text": "Normal opening.",
+    "file": "voice/beat-blackburne-shilling/step-0-f1ea9ba9.mp3",
+    "seconds": 1.026
+   },
+   "step-1": {
+    "text": "Black plays knight d4. Now e5 looks free...",
+    "file": "voice/beat-blackburne-shilling/step-1-14a2fe6e.mp3",
+    "seconds": 3.072
+   },
+   "step-2": {
+    "text": "If we take it, queen g5 starts a deadly attack.",
+    "file": "voice/beat-blackburne-shilling/step-2-56d21c42.mp3",
+    "seconds": 3.095
+   },
+   "step-3": {
+    "text": "Instead, take the knight!",
+    "file": "voice/beat-blackburne-shilling/step-3-05592808.mp3",
+    "seconds": 1.319
+   },
+   "step-4": {
+    "text": "Then castle. We're safe and better.",
+    "file": "voice/beat-blackburne-shilling/step-4-840c1c2d.mp3",
+    "seconds": 1.899
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/beat-blackburne-shilling/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Knight on d4? Take it, not e5.",
+    "file": "voice/beat-blackburne-shilling/takeaway-0-157bf35d.mp3",
+    "seconds": 2.393
+   },
+   "takeaway-1": {
+    "text": "Free pawns can be poison.",
+    "file": "voice/beat-blackburne-shilling/takeaway-1-4110bf69.mp3",
+    "seconds": 1.421
+   },
+   "takeaway-2": {
+    "text": "Castle early, stay safe.",
+    "file": "voice/beat-blackburne-shilling/takeaway-2-19e9045d.mp3",
+    "seconds": 1.516
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/beat-blackburne-shilling/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "beat-stafford-gambit": {
+   "hook": {
+    "text": "Beat the Stafford Gambit. Just don't play this move.",
+    "file": "voice/beat-stafford-gambit/hook-4de446fa.mp3",
+    "seconds": 2.815
+   },
+   "intro": {
+    "text": "Beat the Stafford Gambit!",
+    "file": "voice/beat-stafford-gambit/intro-8f873ebc.mp3",
+    "seconds": 1.327
+   },
+   "step-0": {
+    "text": "Black gives a pawn: The Stafford Gambit.",
+    "file": "voice/beat-stafford-gambit/step-0-f80dc59f.mp3",
+    "seconds": 2.253
+   },
+   "step-1": {
+    "text": "Their bishop now aims at f2.",
+    "file": "voice/beat-stafford-gambit/step-1-85ce0f25.mp3",
+    "seconds": 1.699
+   },
+   "step-2": {
+    "text": "Don't pin with bishop g5. That's exactly the trap!",
+    "file": "voice/beat-stafford-gambit/step-2-3f69bfc4.mp3",
+    "seconds": 3.238
+   },
+   "step-3": {
+    "text": "Bishop to e2. It guards g4 and our king.",
+    "file": "voice/beat-stafford-gambit/step-3-374d543e.mp3",
+    "seconds": 2.995
+   },
+   "step-4": {
+    "text": "Black attacks f2 anyway...",
+    "file": "voice/beat-stafford-gambit/step-4-72d307f9.mp3",
+    "seconds": 1.628
+   },
+   "step-5": {
+    "text": "Just take the knight. We're a piece up!",
+    "file": "voice/beat-stafford-gambit/step-5-450a5d80.mp3",
+    "seconds": 1.889
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/beat-stafford-gambit/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Against the Stafford: Bishop e2, not bishop g5.",
+    "file": "voice/beat-stafford-gambit/takeaway-0-e943de8f.mp3",
+    "seconds": 3.482
+   },
+   "takeaway-1": {
+    "text": "Guard f2 and g4.",
+    "file": "voice/beat-stafford-gambit/takeaway-1-2ce8b115.mp3",
+    "seconds": 1.622
+   },
+   "takeaway-2": {
+    "text": "Then castle and stay calm.",
+    "file": "voice/beat-stafford-gambit/takeaway-2-260ac3a0.mp3",
+    "seconds": 1.486
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/beat-stafford-gambit/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "beat-englund-gambit": {
+   "hook": {
+    "text": "Took the Englund pawn? One knight move wins.",
+    "file": "voice/beat-englund-gambit/hook-64e0fbba.mp3",
+    "seconds": 2.623
+   },
+   "intro": {
+    "text": "Beat the Englund Gambit!",
+    "file": "voice/beat-englund-gambit/intro-b45a6622.mp3",
+    "seconds": 1.341
+   },
+   "step-0": {
+    "text": "The Englund Gambit. We grabbed a pawn.",
+    "file": "voice/beat-englund-gambit/step-0-d04eaf94.mp3",
+    "seconds": 2.154
+   },
+   "step-1": {
+    "text": "Black's queen grabs b2 and hits our rook.",
+    "file": "voice/beat-englund-gambit/step-1-24e6d7ad.mp3",
+    "seconds": 2.474
+   },
+   "step-2": {
+    "text": "Bishop c3 loses here! It gets pinned, then mate.",
+    "file": "voice/beat-englund-gambit/step-2-99ac6591.mp3",
+    "seconds": 3.047
+   },
+   "step-3": {
+    "text": "Knight to c3! Next, our rook hunts the queen.",
+    "file": "voice/beat-englund-gambit/step-3-2a067ba4.mp3",
+    "seconds": 2.782
+   },
+   "step-4": {
+    "text": "Rook attacks the queen. She must run.",
+    "file": "voice/beat-englund-gambit/step-4-9c30a595.mp3",
+    "seconds": 2.047
+   },
+   "step-5": {
+    "text": "Our knight jumps in. Black is in trouble.",
+    "file": "voice/beat-englund-gambit/step-5-ffc9d05c.mp3",
+    "seconds": 2.259
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/beat-englund-gambit/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Queen on b2? Play knight c3, then rook b1.",
+    "file": "voice/beat-englund-gambit/takeaway-0-b6a63389.mp3",
+    "seconds": 3.073
+   },
+   "takeaway-1": {
+    "text": "Never bishop c3 there: It gets pinned.",
+    "file": "voice/beat-englund-gambit/takeaway-1-96b4a873.mp3",
+    "seconds": 2.319
+   },
+   "takeaway-2": {
+    "text": "Chase the greedy queen!",
+    "file": "voice/beat-englund-gambit/takeaway-2-41f51aec.mp3",
+    "seconds": 1.293
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/beat-englund-gambit/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "dodge-elephant-trap": {
+   "hook": {
+    "text": "D5 looks free. It's not. Here's the safe move.",
+    "file": "voice/dodge-elephant-trap/hook-cf0e69fe.mp3",
+    "seconds": 3.252
+   },
+   "intro": {
+    "text": "Dodge the Elephant Trap!",
+    "file": "voice/dodge-elephant-trap/intro-cafb63a4.mp3",
+    "seconds": 1.327
+   },
+   "step-0": {
+    "text": "The Queen's Gambit. We pin their knight.",
+    "file": "voice/dodge-elephant-trap/step-0-37f6caec.mp3",
+    "seconds": 1.959
+   },
+   "step-1": {
+    "text": "Pawns trade. Now d5 looks free.",
+    "file": "voice/dodge-elephant-trap/step-1-5ff12259.mp3",
+    "seconds": 2.343
+   },
+   "step-2": {
+    "text": "But knight takes d5 loses a piece! Their knight isn't really pinned.",
+    "file": "voice/dodge-elephant-trap/step-2-32033d4f.mp3",
+    "seconds": 3.694
+   },
+   "step-3": {
+    "text": "Play e3. Calm and solid.",
+    "file": "voice/dodge-elephant-trap/step-3-1af4f96d.mp3",
+    "seconds": 1.962
+   },
+   "step-4": {
+    "text": "Develop and castle. Trap dodged.",
+    "file": "voice/dodge-elephant-trap/step-4-a6d23b1a.mp3",
+    "seconds": 2.175
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/dodge-elephant-trap/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Pinned to the queen means not fully pinned.",
+    "file": "voice/dodge-elephant-trap/takeaway-0-ee76e4a0.mp3",
+    "seconds": 2.155
+   },
+   "takeaway-1": {
+    "text": "Free pawn? Check what they get.",
+    "file": "voice/dodge-elephant-trap/takeaway-1-92afbcec.mp3",
+    "seconds": 1.68
+   },
+   "takeaway-2": {
+    "text": "Solid moves win at your level.",
+    "file": "voice/dodge-elephant-trap/takeaway-2-4796cc1e.mp3",
+    "seconds": 1.596
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/dodge-elephant-trap/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "dodge-kieninger-trap": {
+   "hook": {
+    "text": "Avoid a smothered mate... With one pawn move.",
+    "file": "voice/dodge-kieninger-trap/hook-6d03b35b.mp3",
+    "seconds": 2.577
+   },
+   "intro": {
+    "text": "Dodge the Kee-ning-er Trap!",
+    "file": "voice/dodge-kieninger-trap/intro-83cab186.mp3",
+    "seconds": 1.439
+   },
+   "step-0": {
+    "text": "The Budapest Gambit.",
+    "file": "voice/dodge-kieninger-trap/step-0-4b1c6e09.mp3",
+    "seconds": 1.237
+   },
+   "step-1": {
+    "text": "Black hits e5 three times.",
+    "file": "voice/dodge-kieninger-trap/step-1-edddc4b2.mp3",
+    "seconds": 1.823
+   },
+   "step-2": {
+    "text": "If we play a3, a smothered mate is coming!",
+    "file": "voice/dodge-kieninger-trap/step-2-df3cb111.mp3",
+    "seconds": 2.663
+   },
+   "step-3": {
+    "text": "Play e3 instead. Our king gets air.",
+    "file": "voice/dodge-kieninger-trap/step-3-51121eda.mp3",
+    "seconds": 2.362
+   },
+   "step-4": {
+    "text": "Black wins the pawn back. That's fine.",
+    "file": "voice/dodge-kieninger-trap/step-4-64999267.mp3",
+    "seconds": 2.125
+   },
+   "step-5": {
+    "text": "Develop and castle. No mate here!",
+    "file": "voice/dodge-kieninger-trap/step-5-3a1fc797.mp3",
+    "seconds": 2.06
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/dodge-kieninger-trap/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Budapest Gambit? Play e3 early.",
+    "file": "voice/dodge-kieninger-trap/takeaway-0-44d0cc78.mp3",
+    "seconds": 2.195
+   },
+   "takeaway-1": {
+    "text": "Don't let your king get boxed in.",
+    "file": "voice/dodge-kieninger-trap/takeaway-1-a78c30e3.mp3",
+    "seconds": 1.592
+   },
+   "takeaway-2": {
+    "text": "A3 there is a trap!",
+    "file": "voice/dodge-kieninger-trap/takeaway-2-0e59f137.mp3",
+    "seconds": 1.23
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/dodge-kieninger-trap/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "dodge-lasker-trap": {
+   "hook": {
+    "text": "The Albin hides a nasty trap. Here's how to dodge it.",
+    "file": "voice/dodge-lasker-trap/hook-a4530159.mp3",
+    "seconds": 3.077
+   },
+   "intro": {
+    "text": "Dodge the Lasker Trap!",
+    "file": "voice/dodge-lasker-trap/intro-833111ee.mp3",
+    "seconds": 1.334
+   },
+   "step-0": {
+    "text": "The Albin Countergambit.",
+    "file": "voice/dodge-lasker-trap/step-0-a3a630a7.mp3",
+    "seconds": 1.417
+   },
+   "step-1": {
+    "text": "Their pawn pushes to d4. Annoying.",
+    "file": "voice/dodge-lasker-trap/step-1-f29baa7f.mp3",
+    "seconds": 2.424
+   },
+   "step-2": {
+    "text": "Attacking it with e3 falls into the trap!",
+    "file": "voice/dodge-lasker-trap/step-2-7979dc88.mp3",
+    "seconds": 2.294
+   },
+   "step-3": {
+    "text": "Play knight f3. Just develop.",
+    "file": "voice/dodge-lasker-trap/step-3-2c7cb7d2.mp3",
+    "seconds": 2.037
+   },
+   "step-4": {
+    "text": "Knights out. Next one goes to b3.",
+    "file": "voice/dodge-lasker-trap/step-4-2cbc16fc.mp3",
+    "seconds": 2.27
+   },
+   "step-5": {
+    "text": "Now we attack d4 and win it back.",
+    "file": "voice/dodge-lasker-trap/step-5-07ca66a5.mp3",
+    "seconds": 1.973
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/dodge-lasker-trap/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Against the Albin: Knight f3, not e3.",
+    "file": "voice/dodge-lasker-trap/takeaway-0-1da6f6b9.mp3",
+    "seconds": 2.691
+   },
+   "takeaway-1": {
+    "text": "Win the d4 pawn later.",
+    "file": "voice/dodge-lasker-trap/takeaway-1-d0c349bb.mp3",
+    "seconds": 1.469
+   },
+   "takeaway-2": {
+    "text": "Knights before pawns.",
+    "file": "voice/dodge-lasker-trap/takeaway-2-16ea2c14.mp3",
+    "seconds": 1.245
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/dodge-lasker-trap/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "dodge-fishing-pole": {
+   "hook": {
+    "text": "A free knight? It's bait. Don't bite. Do this.",
+    "file": "voice/dodge-fishing-pole/hook-d64cb090.mp3",
+    "seconds": 2.593
+   },
+   "intro": {
+    "text": "Dodge the Fishing Pole!",
+    "file": "voice/dodge-fishing-pole/intro-da2b0204.mp3",
+    "seconds": 1.213
+   },
+   "step-0": {
+    "text": "The Roo-ee Lopez. We castle.",
+    "file": "voice/dodge-fishing-pole/step-0-dd8c9cf8.mp3",
+    "seconds": 1.738
+   },
+   "step-1": {
+    "text": "Black leaves the knight hanging...",
+    "file": "voice/dodge-fishing-pole/step-1-df770d1a.mp3",
+    "seconds": 1.405
+   },
+   "step-2": {
+    "text": "It's bait! Taking opens the h-file for their rook.",
+    "file": "voice/dodge-fishing-pole/step-2-43b33f8a.mp3",
+    "seconds": 2.793
+   },
+   "step-3": {
+    "text": "Don't take! Play c3, then d4.",
+    "file": "voice/dodge-fishing-pole/step-3-25eea51f.mp3",
+    "seconds": 2.194
+   },
+   "step-4": {
+    "text": "We grab the center. Their knight is still stuck.",
+    "file": "voice/dodge-fishing-pole/step-4-3011a3a7.mp3",
+    "seconds": 2.448
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/dodge-fishing-pole/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Free knight next to your king? Bait.",
+    "file": "voice/dodge-fishing-pole/takeaway-0-1b31fe96.mp3",
+    "seconds": 2.016
+   },
+   "takeaway-1": {
+    "text": "Don't open the h-file.",
+    "file": "voice/dodge-fishing-pole/takeaway-1-96aecf55.mp3",
+    "seconds": 1.29
+   },
+   "takeaway-2": {
+    "text": "Play the center instead.",
+    "file": "voice/dodge-fishing-pole/takeaway-2-2601a985.mp3",
+    "seconds": 1.249
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/dodge-fishing-pole/cta-452c6be1.mp3",
+    "seconds": 1.75
+   }
+  },
+  "dodge-siberian-trap": {
+   "hook": {
+    "text": "Don't kick that knight! Here's the safe move.",
+    "file": "voice/dodge-siberian-trap/hook-effa443a.mp3",
+    "seconds": 2.196
+   },
+   "intro": {
+    "text": "Dodge the Siberian Trap!",
+    "file": "voice/dodge-siberian-trap/intro-c9a065db.mp3",
+    "seconds": 1.474
+   },
+   "step-0": {
+    "text": "We play the Smith-Morra Gambit.",
+    "file": "voice/dodge-siberian-trap/step-0-279cf8c7.mp3",
+    "seconds": 1.631
+   },
+   "step-1": {
+    "text": "Everyone develops.",
+    "file": "voice/dodge-siberian-trap/step-1-899590c1.mp3",
+    "seconds": 1.201
+   },
+   "step-2": {
+    "text": "Knight to g4. Two pieces hit h2.",
+    "file": "voice/dodge-siberian-trap/step-2-e2a42496.mp3",
+    "seconds": 2.716
+   },
+   "step-3": {
+    "text": "Kicking it with h3 loses! Knight d4 is coming.",
+    "file": "voice/dodge-siberian-trap/step-3-396683e4.mp3",
+    "seconds": 3.213
+   },
+   "step-4": {
+    "text": "Rook to d1. Now our queen has f1 to escape.",
+    "file": "voice/dodge-siberian-trap/step-4-03b6ef61.mp3",
+    "seconds": 3.006
+   },
+   "step-5": {
+    "text": "Knight to b5 kicks their queen.",
+    "file": "voice/dodge-siberian-trap/step-5-8272f408.mp3",
+    "seconds": 1.874
+   },
+   "remember": {
+    "text": "Remember!",
+    "file": "voice/dodge-siberian-trap/remember-267df169.mp3",
+    "seconds": 0.633
+   },
+   "takeaway-0": {
+    "text": "Knight g4 and queen c7? No h3.",
+    "file": "voice/dodge-siberian-trap/takeaway-0-15df0c68.mp3",
+    "seconds": 3.064
+   },
+   "takeaway-1": {
+    "text": "Give your queen an escape square.",
+    "file": "voice/dodge-siberian-trap/takeaway-1-eebbdab4.mp3",
+    "seconds": 1.521
+   },
+   "takeaway-2": {
+    "text": "Attack their queen first.",
+    "file": "voice/dodge-siberian-trap/takeaway-2-44cd5c4b.mp3",
+    "seconds": 1.341
+   },
+   "cta": {
+    "text": "New trap tomorrow. Follow!",
+    "file": "voice/dodge-siberian-trap/cta-452c6be1.mp3",
+    "seconds": 1.75
    }
   }
  }
