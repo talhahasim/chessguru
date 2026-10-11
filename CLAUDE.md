@@ -25,6 +25,7 @@ The first frame of every video must be a finished cover that can be used as the 
 
 - Narration = hook, title, every step's `say` (or `voice`), finale, "Remember!", each takeaway, CTA
   (`src/lib/narration.ts`). Audio is Kokoro TTS (free, local) via `npm run voice` → `public/voice/` + `src/data/voice.json`.
+- Voice: **`af_heart`** (chosen by the user). Don't switch voices unless asked.
 - The timeline stretches to the real clip lengths and caption words appear in sync with the speech.
 - After changing ANY lesson text run `npm run voice`; `npm run validate` errors on missing/stale clips.
 - Chess notation in text is spoken naturally by `spokenize` ("...Qe7" → "queen e7"); add respellings for hard
