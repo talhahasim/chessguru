@@ -114,7 +114,45 @@ const ig = async (method: "GET" | "POST", pathname: string, params: Record<strin
   return json;
 };
 
-const igUserId = async () => process.env.IG_USER_ID || (await ig("GET", "me", { fields: "user_id,username" })).user_id;
+const igAccount = async () => {
+  const me = await ig("GET", "me", { fields: "user_id,username" });
+  return { id: String(me.user_id), username: String(me.username) };
+};
+const igUserId = async () => process.env.IG_USER_ID || (await igAccount()).id;
+
+/** Supabase client with the public bucket created on first use. */
+const storage = async () => {
+  const url = process.env.SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) throw new Error("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set");
+  const supabase = createClient(url, key, { auth: { persistSession: false } });
+  // Public bucket so Instagram can download the files.
+  const { error } = await supabase.storage.createBucket(BUCKET, { public: true });
+  if (error && !/already exists/i.test(error.message)) throw new Error(`Supabase Storage: ${error.message}`);
+  return supabase;
+};
+
+/** Dry-run check of the credentials: who the token belongs to, and that upload → public URL → delete works. */
+const checkSetup = async (cover: string) => {
+  if (process.env.IG_ACCESS_TOKEN) {
+    const me = await igAccount();
+    console.log(`✓ Instagram token OK: @${me.username} (user id ${me.id})`);
+    if (process.env.IG_USER_ID && process.env.IG_USER_ID !== me.id)
+      console.warn(`! IG_USER_ID (${process.env.IG_USER_ID}) differs from the token's account (${me.id})`);
+  } else console.log("- IG_ACCESS_TOKEN not set, skipped Instagram check");
+
+  if (process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY) {
+    const supabase = await storage();
+    const name = `setup-check-${Date.now()}.jpg`;
+    const { error } = await supabase.storage.from(BUCKET).upload(name, fs.readFileSync(cover), { contentType: "image/jpeg" });
+    if (error) throw new Error(`Supabase upload failed: ${error.message}`);
+    const url = supabase.storage.from(BUCKET).getPublicUrl(name).data.publicUrl;
+    const res = await fetch(url);
+    await supabase.storage.from(BUCKET).remove([name]);
+    if (!res.ok) throw new Error(`Uploaded file is not publicly reachable (${res.status}): ${url}`);
+    console.log(`✓ Supabase Storage OK: upload, public URL and delete work (bucket "${BUCKET}")`);
+  } else console.log("- Supabase secrets not set, skipped storage check");
+};
 
 /** Captions of the account's recent posts (enough to cover every lesson we have). */
 const recentCaptions = async (userId: string) => {
@@ -179,18 +217,12 @@ const main = async () => {
   const { video, cover } = await renderLesson(lesson);
 
   if (DRY_RUN) {
-    console.log(`\n--- DRY RUN: not uploading or posting ---\n${caption}\n`);
+    console.log(`\n--- DRY RUN: not posting ---\n${caption}\n`);
+    await checkSetup(cover);
     return;
   }
 
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) throw new Error("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set");
-  const supabase = createClient(url, key, { auth: { persistSession: false } });
-
-  // Public bucket so Instagram can download the files; created on first use.
-  const { error: bucketError } = await supabase.storage.createBucket(BUCKET, { public: true });
-  if (bucketError && !/already exists/i.test(bucketError.message)) throw bucketError;
+  const supabase = await storage();
 
   const stamp = Date.now();
   const files = [
