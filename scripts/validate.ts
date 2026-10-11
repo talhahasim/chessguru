@@ -51,6 +51,11 @@ for (const lesson of LESSONS) {
     for (const sq of step.pulse ?? []) if (!/^[a-h][1-8]$/.test(sq)) err(lesson.id, `step ${i + 1}: bad pulse square ${sq}`);
     if (step.badge && !step.moves?.length) err(lesson.id, `step ${i + 1}: badge without a move`);
   }
+  // Frame 0 is the cover (see CLAUDE.md): each hook line must fit in 2 rows to stay inside Instagram's 3:4 grid crop.
+  lesson.hook.forEach((h, i) => {
+    const chars = h.replace(/\*/g, "").length;
+    if (chars > 44) err(lesson.id, `hook line ${i + 1} is ${chars} chars; keep it ≤ 44 so the cover stays inside the 3:4 safe area`);
+  });
   if (!lesson.finale && !line.isMate) err(lesson.id, "line does not end in checkmate but no custom finale is set");
 
   const data = engineDataFor(lesson, line);

@@ -81,6 +81,7 @@ export const myTrap: Lesson = {
 
 - `*kelime*` → vurgulu (yeşil / sarı) kelime.
 - Ok ve kare renkleri: önek yok = turuncu, `g:` yeşil, `r:` kırmızı, `b:` mavi, `y:` sarı (örn. `"r:g4d1"`).
+- Hook satırları en fazla 44 karakter olmalı (kapak kuralı, bkz. `CLAUDE.md`); `validate` bunu kontrol eder.
 - Ardından `npm run analyze && npm run validate`.
 
 Rozetler Stockfish'ten otomatik hesaplanır (chess.com eşikleri: kazanma yüzdesi kaybı <2 excellent, <5 good,
