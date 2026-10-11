@@ -4,7 +4,7 @@ import { Board, type BoardArrow } from "./components/Board";
 import { Caption } from "./components/Caption";
 import { EvalBar } from "./components/EvalBar";
 import { PlayerBar } from "./components/PlayerBar";
-import { Confetti, FinaleBanner, Header, HookOverlay, IntroCard, Outro } from "./components/Scenes";
+import { Confetti, FinaleBanner, Header, HOOK_LAYOUT, HookOverlay, IntroCard, Outro } from "./components/Scenes";
 import { engineDataFor } from "./lib/analysis";
 import { evalBarFill } from "./lib/evals";
 import { boardFromFen, isCheck, kingSquare, sideToMove } from "./lib/line";
@@ -90,11 +90,11 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
   }
   if (inHook && lastPly > 0) {
     const m = tl.moves[lastPly - 1];
-    arrows.push({ mark: `g:${m.move.from}${m.move.to}`, appearAt: 14 });
+    arrows.push({ mark: `g:${m.move.from}${m.move.to}`, appearAt: -30 }); // fully drawn on frame 0 (cover)
   }
 
   const finalIsMate = tl.line.isMate;
-  const mateAt = finalIsMate ? (inHook ? 8 : tl.moves[lastPly - 1].end + 4) : null;
+  const mateAt = finalIsMate ? (inHook ? -30 : tl.moves[lastPly - 1].end + 4) : null;
   const mateInfo =
     finalIsMate && shownPly === lastPly && mateAt !== null
       ? {
@@ -135,8 +135,16 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
   const banner = lesson.finale?.banner ?? "CHECKMATE!";
   const sub = lesson.finale?.sub ?? `${winner} wins`;
 
-  const camera = inHook ? interpolate(frame, [0, tl.hook.end], [1.06, 1.0]) : 1;
-  const shake = inHook && frame < 10 ? Math.sin(frame * 2.3) * (10 - frame) * 1.6 : 0;
+  // During the hook the board block is shrunk between the hook lines, then zooms into place.
+  const boardCenterY = L.boardY + L.boardSize / 2;
+  const zoom = interpolate(frame, [tl.hook.end - 14, tl.hook.end + 4], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.inOut(Easing.cubic),
+  });
+  const camScale = HOOK_LAYOUT.boardScale + (1 - HOOK_LAYOUT.boardScale) * zoom;
+  const camY = (HOOK_LAYOUT.boardCenterY - boardCenterY) * (1 - zoom);
+  const shake = frame > 0 && frame < 12 ? Math.sin(frame * 2.3) * (12 - frame) * 1.4 : 0;
   const outroDim = interpolate(frame, [tl.outro.start, tl.outro.start + 10], [0, 0.35], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
   return (
@@ -144,7 +152,12 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
       {/* subtle vignette like the chess.com dark UI */}
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 35%, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.25) 100%)" }} />
 
-      <AbsoluteFill style={{ transform: `scale(${camera}) translateX(${shake}px)` }}>
+      <AbsoluteFill
+        style={{
+          transform: `translate(${shake}px, ${camY}px) scale(${camScale})`,
+          transformOrigin: `${L.W / 2}px ${boardCenterY}px`,
+        }}
+      >
         {/* Header */}
         {!inHook ? (
           <div style={{ position: "absolute", left: L.side, top: L.headerY }}>
@@ -183,7 +196,7 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
                     from: lastMoveEv.move.from,
                     to: lastMoveEv.move.to,
                     classification,
-                    badgeAt: inHook ? 6 : lastMoveEv.end + 2,
+                    badgeAt: inHook ? -30 : lastMoveEv.end + 2,
                   }
                 : null
             }
@@ -246,7 +259,7 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
       {/* Hook */}
       {inHook ? (
         <Sequence durationInFrames={tl.hook.end}>
-          <HookOverlay lesson={lesson} duration={tl.hook.end} topY={36} bottomY={1316} width={L.W - 80} />
+          <HookOverlay lesson={lesson} duration={tl.hook.end} width={L.W - 80} />
         </Sequence>
       ) : null}
 

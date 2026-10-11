@@ -18,14 +18,16 @@ export const RichText: React.FC<{
   emBackground?: string;
   /** Thick outline for text drawn straight over the board. */
   stroke?: boolean;
-}> = ({ text, start, fontSize, color, emColor, perWord = 2.2, align = "left", emBackground, stroke }) => {
+  /** Show all words immediately (no pop-in). */
+  instant?: boolean;
+}> = ({ text, start, fontSize, color, emColor, perWord = 2.2, align = "left", emBackground, stroke, instant }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const words = richWords(text);
   return (
     <div style={{ display: "flex", flexWrap: "wrap", justifyContent: align === "center" ? "center" : "flex-start", columnGap: fontSize * 0.26, rowGap: fontSize * 0.08 }}>
       {words.map((w, i) => {
-        const s = spring({ frame: frame - start - i * perWord, fps, config: { damping: 12, stiffness: 220, mass: 0.5 } });
+        const s = instant ? 1 : spring({ frame: frame - start - i * perWord, fps, config: { damping: 12, stiffness: 220, mass: 0.5 } });
         return (
           <span
             key={i}

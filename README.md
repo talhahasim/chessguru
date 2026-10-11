@@ -19,6 +19,8 @@ göre yapıldı; videolar [Remotion](https://www.remotion.dev) ile üretiliyor, 
 Her videonun akışı:
 
 1. **Hook (≈3 sn)** – Final pozisyon (mat) + büyük iki satır yazı ("Checkmate in *4 moves*.").
+   **İlk kare (frame 0) hazır kapak/thumbnail'dir**: tüm yazılar Instagram profil ızgarasının gösterdiği
+   ortadaki 3:4 alanın (y 240–1680) içinde. `npm run render` ayrıca `out/<elo>/<tuzak>-cover.jpg` üretir.
 2. **Başlık kartı** – Tuzağın adı, tahta başlangıç pozisyonuna döner.
 3. **Adım adım hamleler** – Taşlar kayarak oynar, chess.com tarzı oklar / kırmızı kareler / yanıp sönen halkalar,
    Stockfish değerlendirme çubuğu, hamle rozetleri (Book, Best, Brilliant !!, Blunder ?? …) ve

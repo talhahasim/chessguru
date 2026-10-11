@@ -60,52 +60,63 @@ export const Header: React.FC<{ lesson: Lesson; width: number; appearAt: number 
   );
 };
 
-/** First seconds: big hook text over the final (winning) position. */
-export const HookOverlay: React.FC<{ lesson: Lesson; duration: number; topY: number; bottomY: number; width: number }> = ({
-  lesson,
-  duration,
-  topY,
-  bottomY,
-  width,
-}) => {
+/**
+ * First seconds: big hook text over the final (winning) position.
+ * Frame 0 is fully composed so it works as the Reels/TikTok cover, and all text
+ * stays inside the centre 3:4 area that Instagram shows in the profile grid.
+ */
+export const HookOverlay: React.FC<{ lesson: Lesson; duration: number; width: number }> = ({ lesson, duration, width }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const s1 = spring({ frame, fps, config: { damping: 10, stiffness: 160, mass: 0.7 } });
-  const s2 = spring({ frame: frame - 26, fps, config: { damping: 11, stiffness: 160, mass: 0.7 } });
-  const out = interpolate(frame, [duration - 8, duration], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const flash = interpolate(frame, [0, 6], [0.7, 0], { extrapolateRight: "clamp" });
+  // Text is already on screen at frame 0 and "punches" in place, so the first frame is a clean thumbnail.
+  const punch = spring({ frame, fps, config: { damping: 9, stiffness: 170, mass: 0.6 } });
+  const punch2 = spring({ frame: frame - 18, fps, config: { damping: 9, stiffness: 170, mass: 0.6 } });
+  const out = interpolate(frame, [duration - 10, duration], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const left = (1080 - width) / 2;
   return (
     <AbsoluteFill style={{ opacity: out }}>
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.35) 35%, rgba(0,0,0,0.35) 65%, rgba(0,0,0,0.82) 100%)" }} />
-      <div
-        style={{
-          position: "absolute",
-          top: topY,
-          left: (1080 - width) / 2,
-          width,
-          transform: `scale(${interpolate(s1, [0, 1], [1.8, 1])})`,
-          opacity: s1,
-          textShadow: "0 6px 0 rgba(0,0,0,0.55)",
-        }}
-      >
-        <RichText text={lesson.hook[0]} start={0} perWord={0} fontSize={84} color="#ffffff" emColor="#ffe14d" align="center" stroke />
+      <AbsoluteFill
+        style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.55) 28%, rgba(0,0,0,0.12) 40%, rgba(0,0,0,0.12) 62%, rgba(0,0,0,0.6) 72%, rgba(0,0,0,0.9) 100%)" }}
+      />
+      <div style={{ position: "absolute", top: HOOK_LAYOUT.pillY, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
+        <BandPill band={lesson.band} scale={1.1} />
       </div>
       <div
         style={{
           position: "absolute",
-          top: bottomY,
-          left: (1080 - width) / 2,
+          top: HOOK_LAYOUT.line1Y,
+          left,
           width,
-          opacity: s2,
-          transform: `translateY(${(1 - s2) * 60}px)`,
+          transform: `scale(${1.12 - 0.12 * punch})`,
           textShadow: "0 6px 0 rgba(0,0,0,0.55)",
         }}
       >
-        <RichText text={lesson.hook[1]} start={26} perWord={0} fontSize={80} color="#ffffff" emColor="#ffe14d" align="center" stroke />
+        <RichText text={lesson.hook[0]} start={0} fontSize={84} color="#ffffff" emColor="#ffe14d" align="center" stroke instant />
       </div>
-      <AbsoluteFill style={{ background: "#fff", opacity: flash }} />
+      <div
+        style={{
+          position: "absolute",
+          top: HOOK_LAYOUT.line2Y,
+          left,
+          width,
+          transform: `scale(${frame < 18 ? 1 : 1.08 - 0.08 * punch2})`,
+          textShadow: "0 6px 0 rgba(0,0,0,0.55)",
+        }}
+      >
+        <RichText text={lesson.hook[1]} start={0} fontSize={80} color="#ffffff" emColor="#ffe14d" align="center" stroke instant />
+      </div>
     </AbsoluteFill>
   );
+};
+
+/** Hook layout (1080x1920). Instagram's grid shows y 240..1680, so everything lives in there. */
+export const HOOK_LAYOUT = {
+  pillY: 262,
+  line1Y: 345,
+  line2Y: 1278,
+  /** Board block is scaled down and moved so it sits between the two text lines. */
+  boardScale: 0.65,
+  boardCenterY: 912,
 };
 
 /** Title card shown while the board resets to the start position. */

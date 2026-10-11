@@ -1,5 +1,6 @@
 /**
- * Renders the videos to out/<band>/<lesson>.mp4
+ * Renders the videos to out/<band>/<lesson>.mp4 plus a cover image
+ * out/<band>/<lesson>-cover.jpg (frame 0 = the hook, laid out for Instagram's 3:4 grid crop).
  *
  *   npm run render                      # everything
  *   npm run render -- 0-300             # one Elo band
@@ -11,7 +12,7 @@ import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import { bundle } from "@remotion/bundler";
-import { renderMedia, selectComposition } from "@remotion/renderer";
+import { renderMedia, renderStill, selectComposition } from "@remotion/renderer";
 import { LESSONS, compositionId } from "../src/lessons/index.ts";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -50,7 +51,9 @@ const main = async () => {
         }
       },
     });
-    console.log(`\r✓ ${path.relative(root, outputLocation)}            `);
+    const cover = outputLocation.replace(/\.mp4$/, "-cover.jpg");
+    await renderStill({ composition, serveUrl, frame: 0, output: cover, imageFormat: "jpeg", jpegQuality: 95, inputProps, browserExecutable });
+    console.log(`\r✓ ${path.relative(root, outputLocation)} + cover            `);
   }
 };
 
