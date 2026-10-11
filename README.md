@@ -60,6 +60,11 @@ npx remotion still elo-0-300-scholars-mate shot.png --frame=45   # tek kare (thu
 `analyze` sadece hamleleri değişen dersleri yeniden analiz eder (`--force` ile hepsi).
 Native Stockfish ikilisi kullanmak isterseniz (daha hızlı): `STOCKFISH_PATH=/usr/bin/stockfish npm run analyze`.
 
+## Profil fotoğrafı
+
+`branding/profile-king.png` (önerilen) ve `branding/profile-board.png`, 1080×1080. Yeniden üretmek için:
+`npx remotion still profile-pic branding/profile-king.png --props='{"variant":"king"}'`
+
 ## Seslendirme (Kokoro TTS)
 
 Seslendirme dosyaları (`public/voice/`) repoda olduğu için render için kurulum gerekmez. Metinleri değiştirince
