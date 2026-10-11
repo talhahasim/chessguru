@@ -23,6 +23,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import { BANDS, LESSONS, defenseOf } from "../src/lessons/index.ts";
+import { HANDLE } from "../src/brand.ts";
 import { BAND_LABEL } from "../src/theme.ts";
 import type { Lesson } from "../src/types.ts";
 import { renderLesson } from "./render-lib.ts";
@@ -58,10 +59,10 @@ export const buildCaption = (lesson: Lesson) => {
     ...lesson.takeaways.map((t) => `✅ ${plain(t)}`),
     "",
     lesson.kind === "defense"
-      ? "Follow for a new chess trap (and how to stop it) every day!"
+      ? `Follow @${HANDLE} for a new chess trap (and how to stop it) every day!`
       : defenseOf(lesson)
-        ? "🛡 How to stop this trap: next reel. Follow so you don't miss it!"
-        : "Follow for a new chess trap every day!",
+        ? `🛡 How to stop this trap: next reel. Follow @${HANDLE} so you don't miss it!`
+        : `Follow @${HANDLE} for a new chess trap every day!`,
     "",
     [...HASHTAGS, tag].join(" "),
   ].join("\n");

@@ -5,6 +5,7 @@ import { Caption } from "./components/Caption";
 import { EvalBar } from "./components/EvalBar";
 import { PlayerBar } from "./components/PlayerBar";
 import { Header, HOOK_LAYOUT, HookOverlay, IntroCard, Outro } from "./components/Scenes";
+import { Watermark } from "./components/Watermark";
 import { engineDataFor } from "./lib/analysis";
 import { evalBarFill } from "./lib/evals";
 import { boardFromFen, isCheck, kingSquare, sideToMove } from "./lib/line";
@@ -254,6 +255,9 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
           <HookOverlay lesson={lesson} duration={tl.hook.end} width={L.W - 80} />
         </Sequence>
       ) : null}
+
+      {/* Watermark (also visible on the frame-0 cover) */}
+      <Watermark y={1628} />
 
       {/* Progress bar */}
       <div style={{ position: "absolute", left: 0, bottom: 0, height: 10, width: L.W * (frame / tl.duration), background: theme.green }} />

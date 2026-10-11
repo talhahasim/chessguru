@@ -31,6 +31,11 @@ The first frame of every video must be a finished cover that can be used as the 
 - Chess notation in text is spoken naturally by `spokenize` ("...Qe7" → "queen e7"); add respellings for hard
   names to `PRONUNCIATION`, or give a step a separate `voice` text.
 
+## Branding
+
+- Instagram account: **@checksmatedaily** (`src/brand.ts`). Every video shows a subtle watermark (small, ~40% opacity,
+  under the caption area, inside the 3:4 grid crop) — keep it unobtrusive; captions say "Follow @checksmatedaily".
+
 ## Instagram automation
 
 - `.github/workflows/post-reel.yml` posts 2 Reels/day via the official Instagram API (`scripts/post-reel.ts`).
