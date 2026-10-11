@@ -3,6 +3,10 @@
 Remotion project that renders beginner chess trap videos (English, 1080x1920, chess.com-style green/white board,
 Stockfish analysis). See README.md for commands.
 
+## Communication
+
+- Talk to the user in **Turkish**. All video content (hooks, captions, takeaways, banners) stays in **English**.
+
 ## Rule: frame 0 is the thumbnail (applies to EVERY video)
 
 The first frame of every video must be a finished cover that can be used as the Instagram / TikTok / Shorts thumbnail.
