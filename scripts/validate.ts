@@ -14,6 +14,8 @@ import { classify } from "../src/lib/evals.ts";
 import { replayLesson } from "../src/lib/line.ts";
 import { buildTimeline, FPS } from "../src/lib/timeline.ts";
 import { parseMark } from "../src/theme.ts";
+import { narrationSegments, winnerOf } from "../src/lib/narration.ts";
+import { voiceClipsFor } from "../src/lib/voice.ts";
 import analysis from "../src/data/analysis.json" with { type: "json" };
 import type { AnalysisFile } from "../src/types.ts";
 
@@ -77,6 +79,9 @@ for (const lesson of LESSONS) {
         warn(lesson.id, `${m.move.san} is marked ${badge} but Stockfish calls it ${engineClass}`);
     }
   }
+  const clips = voiceClipsFor(lesson, line);
+  const missingVoice = narrationSegments(lesson, winnerOf(lesson, line)).filter((seg) => !clips.has(seg.key));
+  if (missingVoice.length) err(lesson.id, `voiceover missing or stale for ${missingVoice.map((m) => m.key).join(", ")}. Run: npm run voice`);
   const tl = buildTimeline(lesson);
   const secs = tl.duration / FPS;
   if (secs > 90) warn(lesson.id, `video is ${secs.toFixed(0)}s long (Shorts work best under 60-90s)`);

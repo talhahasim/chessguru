@@ -36,6 +36,8 @@ export type Step = {
   pulse?: string[];
   /** Override the Stockfish classification of the last move of this step (e.g. "brilliant"). */
   badge?: Classification;
+  /** Optional different text for the voiceover (defaults to `say`). */
+  voice?: string;
   /** Extra seconds to hold this step on screen. */
   extraHold?: number;
 };
@@ -83,4 +85,19 @@ export type AnalysisFile = {
   engine: string;
   depth: number;
   lessons: Record<string, LessonAnalysis>;
+};
+
+export type VoiceClip = {
+  /** Text that was spoken (used to detect stale audio). */
+  text: string;
+  /** File inside public/, e.g. "voice/scholars-mate/step-0-1a2b3c4d.mp3". */
+  file: string;
+  seconds: number;
+};
+
+export type VoiceFile = {
+  engine: string;
+  voice: string;
+  speed: number;
+  lessons: Record<string, Record<string, VoiceClip>>;
 };

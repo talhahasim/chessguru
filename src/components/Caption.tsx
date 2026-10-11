@@ -61,7 +61,9 @@ export const Caption: React.FC<{
   start: number;
   say: string;
   chip?: { san: string; classification: Classification; at: number } | null;
-}> = ({ width, start, say, chip }) => {
+  /** Voice clip of this caption: words then appear in time with the speech. */
+  voice?: { from: number; frames: number } | null;
+}> = ({ width, start, say, chip, voice }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const enter = spring({ frame: frame - start, fps, config: { damping: 14, stiffness: 200 } });
@@ -133,7 +135,14 @@ export const Caption: React.FC<{
               </span>
             </div>
           ) : null}
-          <RichText text={say} start={start + 3} fontSize={50} color={theme.bubbleText} emColor="#3d8b2f" />
+          <RichText
+            text={say}
+            start={voice ? voice.from - 2 : start + 3}
+            perWord={voice ? Math.max(1.5, (voice.frames * 0.92) / Math.max(1, richWords(say).length)) : 2.2}
+            fontSize={50}
+            color={theme.bubbleText}
+            emColor="#3d8b2f"
+          />
         </div>
       </div>
     </div>

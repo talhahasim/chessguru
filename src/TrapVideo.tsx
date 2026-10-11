@@ -232,7 +232,14 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
       ) : null}
       {step && stepDef ? (
         <div style={{ position: "absolute", left: L.side - 10, top: L.captionY }}>
-          <Caption key={step.index} width={L.W - L.side * 2 + 20} start={step.start} say={stepDef.say} chip={chip} />
+          <Caption
+            key={step.index}
+            width={L.W - L.side * 2 + 20}
+            start={step.start}
+            say={stepDef.say}
+            chip={chip}
+            voice={tl.voice.find((v) => v.key === `step-${step.index}`) ?? null}
+          />
         </div>
       ) : null}
 
@@ -251,7 +258,7 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
         <>
           <AbsoluteFill style={{ background: `rgba(0,0,0,${outroDim})` }} />
           <div style={{ position: "absolute", left: 40, top: 900 }}>
-            <Outro lesson={lesson} start={tl.outro.start} width={L.W - 80} />
+            <Outro lesson={lesson} start={tl.outro.start} cues={tl.outroCues} width={L.W - 80} />
           </div>
         </>
       ) : null}
@@ -273,34 +280,41 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
 
 const Sounds: React.FC<{ tl: Timeline }> = ({ tl }) => {
   const sfx = (name: string) => staticFile(`sfx/${name}.wav`);
+  // Sound effects sit under the voiceover when there is one.
+  const v = tl.voice.length ? 0.6 : 1;
   return (
     <>
+      {tl.voice.map((c) => (
+        <Sequence key={c.key} from={c.from} durationInFrames={c.frames + 6}>
+          <Html5Audio src={staticFile(c.file)} volume={1} />
+        </Sequence>
+      ))}
       <Sequence from={0} durationInFrames={30}>
-        <Html5Audio src={sfx("impact")} volume={0.9} />
+        <Html5Audio src={sfx("impact")} volume={0.9 * v} />
       </Sequence>
       <Sequence from={tl.hook.end - 6} durationInFrames={20}>
-        <Html5Audio src={sfx("whoosh")} volume={0.6} />
+        <Html5Audio src={sfx("whoosh")} volume={0.6 * v} />
       </Sequence>
       {tl.moves.map((m) => {
         const name = /[+#]/.test(m.move.san) ? "check" : m.move.captured ? "capture" : "move";
         return (
           <Sequence key={m.ply} from={m.end - 2} durationInFrames={15}>
-            <Html5Audio src={sfx(name)} volume={0.9} />
+            <Html5Audio src={sfx(name)} volume={0.9 * v} />
           </Sequence>
         );
       })}
       {tl.steps.map((s) =>
         s.moves.length ? (
           <Sequence key={`pop-${s.index}`} from={s.settled} durationInFrames={8}>
-            <Html5Audio src={sfx("pop")} volume={0.35} />
+            <Html5Audio src={sfx("pop")} volume={0.35 * v} />
           </Sequence>
         ) : null,
       )}
       <Sequence from={tl.finale.start} durationInFrames={40}>
-        <Html5Audio src={sfx("win")} volume={0.7} />
+        <Html5Audio src={sfx("win")} volume={0.7 * v} />
       </Sequence>
       <Sequence from={tl.outro.start} durationInFrames={20}>
-        <Html5Audio src={sfx("whoosh")} volume={0.5} />
+        <Html5Audio src={sfx("whoosh")} volume={0.5 * v} />
       </Sequence>
     </>
   );

@@ -196,11 +196,16 @@ export const FinaleBanner: React.FC<{ banner: string; sub: string; start: number
   );
 };
 
-export const Outro: React.FC<{ lesson: Lesson; start: number; width: number }> = ({ lesson, start, width }) => {
+export const Outro: React.FC<{
+  lesson: Lesson;
+  start: number;
+  cues: { remember: number; takeaways: number[]; cta: number };
+  width: number;
+}> = ({ lesson, start, cues, width }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = spring({ frame: frame - start, fps, config: { damping: 15 } });
-  const ctaAt = start + 18 + lesson.takeaways.length * 22;
+  const ctaAt = cues.cta;
   const cta = spring({ frame: frame - ctaAt, fps, config: { damping: 10 } });
   const pulse = 1 + 0.04 * Math.sin(((frame - ctaAt) / fps) * Math.PI * 3);
   return (
@@ -219,7 +224,7 @@ export const Outro: React.FC<{ lesson: Lesson; start: number; width: number }> =
     >
       <div style={{ fontFamily, fontWeight: 900, fontSize: 52, color: theme.green, letterSpacing: 4 }}>REMEMBER</div>
       {lesson.takeaways.map((t, i) => {
-        const at = start + 14 + i * 22;
+        const at = cues.takeaways[i];
         const si = spring({ frame: frame - at, fps, config: { damping: 13 } });
         return (
           <div key={i} style={{ display: "flex", gap: 20, alignItems: "flex-start", opacity: si, transform: `translateX(${(1 - si) * -40}px)` }}>

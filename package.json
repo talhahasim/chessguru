@@ -12,7 +12,8 @@
     "still": "remotion still",
     "timeline": "tsx scripts/timeline.ts",
     "sfx": "tsx scripts/gen-sfx.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "voice": "tsx scripts/voice.ts"
   },
   "license": "UNLICENSED",
   "dependencies": {

@@ -5,7 +5,8 @@ animasyonlu satranç tuzağı/taktik videoları. Görünüm chess.com'un yeşil-
 göre yapıldı; videolar [Remotion](https://www.remotion.dev) ile üretiliyor, her hamle **Stockfish 19** ile analiz ediliyor
 (ücretsiz, `stockfish` npm paketi).
 
-Çıktı: 1080×1920 dikey video (Shorts / Reels / TikTok), 30 fps, H.264 + ses.
+Çıktı: 1080×1920 dikey video (Shorts / Reels / TikTok), 30 fps, H.264 + ses, **İngilizce seslendirme**
+([Kokoro TTS](https://github.com/thewh1teagle/kokoro-onnx), ücretsiz, bilgisayarında çalışır).
 
 ## Videolar
 
@@ -56,6 +57,29 @@ npx remotion still elo-0-300-scholars-mate shot.png --frame=45   # tek kare (thu
 `analyze` sadece hamleleri değişen dersleri yeniden analiz eder (`--force` ile hepsi).
 Native Stockfish ikilisi kullanmak isterseniz (daha hızlı): `STOCKFISH_PATH=/usr/bin/stockfish npm run analyze`.
 
+## Seslendirme (Kokoro TTS)
+
+Seslendirme dosyaları (`public/voice/`) repoda olduğu için render için kurulum gerekmez. Metinleri değiştirince
+veya ses değiştirmek istersen bir kerelik kurulum:
+
+```bash
+python3 -m venv .venv && .venv/bin/pip install kokoro-onnx soundfile
+mkdir -p models && cd models
+curl -LO https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+curl -LO https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+cd ..
+```
+
+```bash
+npm run voice                          # sadece metni değişen klipleri üretir
+npm run voice -- --voice am_michael    # sesi değiştir (hepsini yeniden üretir)
+npm run voice -- --speed 1.1           # daha hızlı konuşma
+```
+
+Sesler: `af_heart` (varsayılan, kadın, ABD), `am_michael` / `am_puck` / `am_fenrir` (erkek, ABD),
+`bf_emma` / `bm_george` (İngiliz) ve diğerleri. Zaman çizelgesi ses sürelerine göre otomatik ayarlanır,
+altyazı kelimeleri konuşmayla eşzamanlı belirir. Zor isimlerin okunuşu `src/lib/narration.ts` → `PRONUNCIATION`.
+
 ## Yeni tuzak eklemek
 
 `src/lessons/band-*.ts` dosyalarından birine yeni bir `Lesson` ekleyin ve `src/lessons/index.ts` içindeki listeye koyun:
@@ -82,7 +106,8 @@ export const myTrap: Lesson = {
 - `*kelime*` → vurgulu (yeşil / sarı) kelime.
 - Ok ve kare renkleri: önek yok = turuncu, `g:` yeşil, `r:` kırmızı, `b:` mavi, `y:` sarı (örn. `"r:g4d1"`).
 - Hook satırları en fazla 44 karakter olmalı (kapak kuralı, bkz. `CLAUDE.md`); `validate` bunu kontrol eder.
-- Ardından `npm run analyze && npm run validate`.
+- Ardından `npm run analyze && npm run voice && npm run validate`.
+- Seslendirme metni altyazıdan farklı olsun istersen adıma `voice: "..."` ekle.
 
 Rozetler Stockfish'ten otomatik hesaplanır (chess.com eşikleri: kazanma yüzdesi kaybı <2 excellent, <5 good,
 <10 inaccuracy, <20 mistake, üstü blunder; motorun en iyi hamlesi = best). `badge` ile sadece "brilliant/great"
@@ -107,7 +132,8 @@ public/           taş SVG'leri, font, ses efektleri
   chess.com'un kendi taş/tahta görselleri telifli olduğu için kopyalanmadı; renkler ve yerleşim chess.com "Green" temasına göre ayarlandı.
   Kendi lisanslı taş setiniz varsa `public/pieces/wK.svg … bP.svg` dosyalarını değiştirmeniz yeterli.
 - **Font:** Montserrat (SIL Open Font License, `public/fonts/OFL.txt`).
-- **Sesler:** `scripts/gen-sfx.ts` ile prosedürel üretildi (telif yok).
+- **Ses efektleri:** `scripts/gen-sfx.ts` ile prosedürel üretildi (telif yok).
+- **Seslendirme:** Kokoro-82M (Apache 2.0), ticari kullanım serbest.
 - **Motor:** Stockfish 19 (GPLv3), sadece analiz için ayrı süreç olarak çalışır.
 - **Remotion:** bireyler ve ≤3 çalışanlı şirketler için ücretsiz; daha büyük şirketler şirket lisansı almalı (remotion.pro).
 - "chess.com" adı / logosu videolarda kullanılmıyor.

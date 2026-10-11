@@ -21,6 +21,15 @@ The first frame of every video must be a finished cover that can be used as the 
 - When adding or changing a lesson / layout, check the cover:
   `npx remotion still <composition-id> cover.png --frame=0` and look at it before rendering.
 
+## Rule: every video has an English voiceover
+
+- Narration = hook, title, every step's `say` (or `voice`), finale, "Remember!", each takeaway, CTA
+  (`src/lib/narration.ts`). Audio is Kokoro TTS (free, local) via `npm run voice` → `public/voice/` + `src/data/voice.json`.
+- The timeline stretches to the real clip lengths and caption words appear in sync with the speech.
+- After changing ANY lesson text run `npm run voice`; `npm run validate` errors on missing/stale clips.
+- Chess notation in text is spoken naturally by `spokenize` ("...Qe7" → "queen e7"); add respellings for hard
+  names to `PRONUNCIATION`, or give a step a separate `voice` text.
+
 ## Other conventions
 
 - Lessons live in `src/lessons/band-*.ts`; keep captions short, very simple English, `*stars*` for emphasis.

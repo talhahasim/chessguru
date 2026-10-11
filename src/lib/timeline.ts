@@ -1,5 +1,6 @@
 import type { Lesson } from "../types";
 import { replayLesson, type PlayedMove, type ReplayedLine } from "./line";
+import { voiceClipsFor } from "./voice";
 
 export const FPS = 30;
 
@@ -11,6 +12,8 @@ export const T = {
   afterMove: 4, // delay before arrows / badge appear
   finale: 78,
   outro: 165,
+  voiceLead: 3, // frames between a segment starting and its voice starting
+  voiceTail: 18, // breathing room after a voice clip before the next segment
 };
 
 const wordCount = (s: string) => s.replace(/\*/g, "").split(/\s+/).filter(Boolean).length;
@@ -31,6 +34,9 @@ export type StepEvent = {
   plyAfter: number;
 };
 
+/** A voice clip placed on the timeline. */
+export type VoiceCue = { key: string; file: string; from: number; frames: number };
+
 export type Timeline = {
   line: ReplayedLine;
   hook: { start: number; end: number };
@@ -39,19 +45,35 @@ export type Timeline = {
   moves: MoveEvent[];
   finale: { start: number; end: number };
   outro: { start: number; end: number };
+  /** When the outro's "REMEMBER" title, each takeaway and the follow button appear. */
+  outroCues: { remember: number; takeaways: number[]; cta: number };
+  voice: VoiceCue[];
   duration: number;
 };
 
 export const buildTimeline = (lesson: Lesson): Timeline => {
   const line = replayLesson(lesson);
+  const clips = voiceClipsFor(lesson, line);
+  const voice: VoiceCue[] = [];
+  /** Places a clip at `from` and returns the frame where it has finished (+ tail), or `from` if there is none. */
+  const say = (key: string, from: number) => {
+    const c = clips.get(key);
+    if (!c) return from;
+    const frames = Math.ceil(c.seconds * FPS);
+    voice.push({ key, file: c.file, from, frames });
+    return from + frames + T.voiceTail;
+  };
+
   let t = 0;
-  const hook = { start: t, end: (t += T.hook) };
-  const intro = { start: t, end: (t += T.intro) };
+  const hookEnd = Math.max(T.hook, say("hook", 2));
+  const hook = { start: t, end: (t = hookEnd) };
+  const intro = { start: t, end: (t = Math.max(t + T.intro, say("intro", t + T.voiceLead))) };
   const steps: StepEvent[] = [];
   const moves: MoveEvent[] = [];
   let ply = 0;
   lesson.steps.forEach((step, index) => {
     const start = t;
+    const voiceDone = say(`step-${index}`, start + T.voiceLead);
     const stepMoves: MoveEvent[] = [];
     (step.moves ?? []).forEach((_, i, arr) => {
       const played = line.moves[ply++];
@@ -61,12 +83,25 @@ export const buildTimeline = (lesson: Lesson): Timeline => {
       t += T.move + (i < arr.length - 1 ? T.quickGap : 0);
     });
     const settled = t + (stepMoves.length ? T.afterMove : 0);
-    t = settled + readingFrames(step.say) + Math.round((step.extraHold ?? 0) * FPS);
+    const minEnd = settled + (clips.has(`step-${index}`) ? 20 : readingFrames(step.say));
+    t = Math.max(minEnd, voiceDone) + Math.round((step.extraHold ?? 0) * FPS);
     steps.push({ index, start, end: t, settled, moves: stepMoves, plyAfter: ply });
   });
-  const finale = { start: t, end: (t += T.finale) };
-  const outro = { start: t, end: (t += T.outro) };
-  return { line, hook, intro, steps, moves, finale, outro, duration: t };
+  const finale = { start: t, end: (t = Math.max(t + T.finale, say("finale", t + 6) + 6)) };
+
+  // Outro: title, then each takeaway as it is spoken, then the follow button.
+  const outroStart = t;
+  const remember = outroStart + 8;
+  let cursor = clips.has("remember") ? say("remember", remember) - T.voiceTail + 4 : remember + 6;
+  const takeaways = lesson.takeaways.map((_, i) => {
+    const at = cursor;
+    cursor = clips.has(`takeaway-${i}`) ? say(`takeaway-${i}`, at) - T.voiceTail + 8 : at + 22;
+    return at;
+  });
+  const cta = cursor + 4;
+  const ctaDone = say("cta", cta);
+  const outro = { start: outroStart, end: (t = Math.max(outroStart + T.outro, ctaDone + 30)) };
+  return { line, hook, intro, steps, moves, finale, outro, outroCues: { remember, takeaways, cta }, voice, duration: t };
 };
 
 /** Board state at a frame: how many plies are complete, and the move currently sliding (if any). */
