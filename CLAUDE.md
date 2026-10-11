@@ -42,6 +42,7 @@ The first frame of every video must be a finished cover that can be used as the 
 - No database/tables: "already posted" is derived from the `♟ <title> | <band> Elo` line in recent IG captions
   (`marker()` — don't change its format or old posts get reposted). Supabase is used only as temporary public
   storage; files are deleted right after posting.
+- Scheduled posting only runs when the repo variable `POSTING_ENABLED` is `true` (paused during account warm-up).
 - Never use unofficial Instagram libraries / password login.
 
 ## Trap + defense pairs

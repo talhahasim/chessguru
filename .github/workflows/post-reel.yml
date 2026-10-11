@@ -25,17 +25,26 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 40
     steps:
-      # Until the secrets are added (see README "Instagram otomasyonu"), scheduled runs are skipped quietly.
+      # Scheduled runs only post when the repository variable POSTING_ENABLED is "true"
+      # (Settings → Secrets and variables → Actions → Variables) and the secrets are set.
+      # Manual runs (Run workflow) always work, e.g. for a dry run.
       - name: Check configuration
         id: cfg
         env:
           IG: ${{ secrets.IG_ACCESS_TOKEN }}
           SB: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ENABLED: ${{ vars.POSTING_ENABLED }}
+          EVENT: ${{ github.event_name }}
+          DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
         run: |
-          if [ -n "$IG" ] && [ -n "$SB" ] || [ "${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}" = "true" ]; then
+          if [ "$DRY" = "true" ]; then
             echo "ok=true" >> "$GITHUB_OUTPUT"
-          else
+          elif [ -z "$IG" ] || [ -z "$SB" ]; then
             echo "::notice::Instagram/Supabase secrets are not set yet, skipping."
+          elif [ "$EVENT" = "schedule" ] && [ "$ENABLED" != "true" ]; then
+            echo "::notice::Scheduled posting is paused (set the repository variable POSTING_ENABLED=true to start)."
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
           fi
 
       - uses: actions/checkout@v4
