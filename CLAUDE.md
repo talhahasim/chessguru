@@ -61,6 +61,12 @@ The first frame of every video must be a finished cover that can be used as the 
 - Every video ends with a "Send this to a friend…" ask (screen + voice) before FOLLOW; captions ask a
   YES/NO question and for a DM share. Instagram reportedly weighs watch time, likes/reach and sends/reach most.
 
+## Pre-post review loop
+
+- A Routine runs ~80 min before every post (14:45 and 21:45 UTC): fetch stats via `stats.yml`, diagnose, apply AT MOST
+  ONE small improvement to upcoming lessons (only with meaningful data; one variable at a time), validate, push,
+  and prepend a Turkish entry to `docs/growth-log.md`. Read the growth log before changing anything.
+
 ## Other conventions
 
 - Lessons live in `src/lessons/band-*.ts`; keep captions short, very simple English, `*stars*` for emphasis.
