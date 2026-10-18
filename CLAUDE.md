@@ -23,9 +23,9 @@ The first frame of every video must be a finished cover that can be used as the 
 
 ## Rule: every video has an English voiceover
 
-- Narration = hook, title, every step's `say` (or `voice`), finale, "Remember!", each takeaway, CTA
+- Narration = hook, every step's `say` (or `voice`), CTA (takeaways are shown on screen only, to keep the outro short)
   (`src/lib/narration.ts`). Audio is Kokoro TTS (free, local) via `npm run voice` → `public/voice/` + `src/data/voice.json`.
-- Voice: **`af_heart`** (chosen by the user). Don't switch voices unless asked.
+- Voice: **`af_heart`** at speed **1.1** (chosen by the user). Don't switch voices unless asked.
 - The timeline stretches to the real clip lengths and caption words appear in sync with the speech.
 - After changing ANY lesson text run `npm run voice`; `npm run validate` errors on missing/stale clips.
 - Chess notation in text is spoken naturally by `spokenize` ("...Qe7" → "queen e7"); add respellings for hard
@@ -54,6 +54,12 @@ The first frame of every video must be a finished cover that can be used as the 
 - Trap videos end with the CTA "How to defend it? Next video!" (+ voice "...Follow so you don't miss it!").
 - Posting order = trap, then its defense (`postingOrder()` in `scripts/post-reel.ts`).
 - No end banner ("CHECKMATE! / White wins"): after the last step the video goes straight to REMEMBER.
+
+## Retention & engagement (from the first stats: 13 s average watch on a 48 s video)
+
+- No title card after the hook; opening moves play fast (`T.move`, `T.quickGap`); target length 25–40 s.
+- Every video ends with a "Send this to a friend…" ask (screen + voice) before FOLLOW; captions ask a
+  YES/NO question and for a DM share. Instagram reportedly weighs watch time, likes/reach and sends/reach most.
 
 ## Other conventions
 

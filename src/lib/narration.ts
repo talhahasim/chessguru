@@ -36,18 +36,15 @@ export const spokenize = (text: string): string => {
 /** Every piece of narration in a video, in order. Keys are stable ids used by the timeline. */
 export const narrationSegments = (lesson: Lesson): NarrationSegment[] => [
   { key: "hook", text: spokenize(`${lesson.hook[0]} ${lesson.hook[1]}`) },
-  { key: "intro", text: spokenize(`${lesson.title}!`) },
   ...lesson.steps.map((step, i) => ({ key: `step-${i}`, text: spokenize(step.voice ?? step.say) })),
-  { key: "remember", text: "Remember!" },
-  ...lesson.takeaways.map((t, i) => ({ key: `takeaway-${i}`, text: spokenize(t) })),
   {
     key: "cta",
     text:
       lesson.kind === "defense"
-        ? "New trap tomorrow. Follow!"
+        ? "Send this to a friend before they fall for it. New trap tomorrow!"
         : LESSONS.some((l) => l.defends === lesson.id)
-          ? "How to defend it? It's in the next video. Follow so you don't miss it!"
-          : "Follow for more traps!",
+          ? "Send this to a friend who falls for it. The defense is in the next video. Follow!"
+          : "Send this to a friend who falls for it. Follow for more traps!",
   },
 ];
 

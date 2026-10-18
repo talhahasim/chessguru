@@ -6,6 +6,9 @@ import { LESSONS } from "../lessons";
 import { fontFamily } from "../fonts";
 import { RichText } from "./Caption";
 
+// Material Design "send" icon (Apache 2.0).
+const SEND_ICON = "M2.01 21L23 12 2.01 3 2 10l15 2-15 2z";
+
 // Material Design "shield" icon (Apache 2.0).
 const SHIELD = "M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z";
 
@@ -202,6 +205,25 @@ export const Outro: React.FC<{
           </div>
         );
       })}
+      {/* "Send to a friend" ask: DM shares are one of Instagram's strongest reach signals. */}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 16,
+          opacity: cta,
+          transform: `translateY(${(1 - cta) * 20}px)`,
+          fontFamily,
+          fontWeight: 800,
+          fontSize: 40,
+          color: "#ffe14d",
+        }}
+      >
+        <svg viewBox="0 0 24 24" width={46} height={46}>
+          <path d={SEND_ICON} fill="#ffe14d" />
+        </svg>
+        {lesson.kind === "defense" ? "Send this to a friend before they fall for it" : "Send this to a friend who falls for it"}
+      </div>
       <div
         style={{
           marginTop: 10,

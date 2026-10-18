@@ -58,6 +58,11 @@ export const buildCaption = (lesson: Lesson) => {
     "",
     ...lesson.takeaways.map((t) => `✅ ${plain(t)}`),
     "",
+    lesson.kind === "defense" ? "Did you know this defense? YES or NO 👇" : "Have you ever fallen for this? YES or NO 👇",
+    lesson.kind === "defense"
+      ? "📩 Send this to a friend before they fall for it"
+      : "📩 Send this to a friend who always falls for it",
+    "",
     lesson.kind === "defense"
       ? `Follow @${HANDLE} for a new chess trap (and how to stop it) every day!`
       : defenseOf(lesson)

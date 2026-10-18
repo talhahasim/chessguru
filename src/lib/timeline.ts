@@ -6,13 +6,12 @@ export const FPS = 30;
 
 export const T = {
   hook: 96,
-  intro: 42,
-  move: 13, // frames a piece takes to slide
-  quickGap: 7, // pause between quickly played moves in one step
+  move: 11, // frames a piece takes to slide
+  quickGap: 4, // pause between quickly played moves in one step
   afterMove: 4, // delay before arrows / badge appear
   outro: 165,
   voiceLead: 3, // frames between a segment starting and its voice starting
-  voiceTail: 18, // breathing room after a voice clip before the next segment
+  voiceTail: 12, // breathing room after a voice clip before the next segment
 };
 
 const wordCount = (s: string) => s.replace(/\*/g, "").split(/\s+/).filter(Boolean).length;
@@ -65,7 +64,8 @@ export const buildTimeline = (lesson: Lesson): Timeline => {
   let t = 0;
   const hookEnd = Math.max(T.hook, say("hook", 2));
   const hook = { start: t, end: (t = hookEnd) };
-  const intro = { start: t, end: (t = Math.max(t + T.intro, say("intro", t + T.voiceLead))) };
+  // No title card: the hook goes straight into the moves (viewers dropped off here).
+  const intro = { start: t, end: t };
   const steps: StepEvent[] = [];
   const moves: MoveEvent[] = [];
   let ply = 0;
@@ -86,18 +86,14 @@ export const buildTimeline = (lesson: Lesson): Timeline => {
     steps.push({ index, start, end: t, settled, moves: stepMoves, plyAfter: ply });
   });
   // No end banner: after the last step (e.g. "...Checkmate!") the video goes straight to the recap.
-  // Outro: title, then each takeaway as it is spoken, then the follow button.
+  // Outro: the takeaways pop in quickly (on screen only) while the CTA is spoken, then the follow button.
+  // (Speaking every takeaway made the outro ~30% of the video and viewers left.)
   const outroStart = t;
-  const remember = outroStart + 8;
-  let cursor = clips.has("remember") ? say("remember", remember) - T.voiceTail + 4 : remember + 6;
-  const takeaways = lesson.takeaways.map((_, i) => {
-    const at = cursor;
-    cursor = clips.has(`takeaway-${i}`) ? say(`takeaway-${i}`, at) - T.voiceTail + 8 : at + 22;
-    return at;
-  });
-  const cta = cursor + 4;
-  const ctaDone = say("cta", cta);
-  const outro = { start: outroStart, end: (t = Math.max(outroStart + T.outro, ctaDone + 30)) };
+  const remember = outroStart + 6;
+  const takeaways = lesson.takeaways.map((_, i) => remember + 8 + i * 8);
+  const cta = takeaways[takeaways.length - 1] + 12;
+  const ctaDone = say("cta", remember + 10);
+  const outro = { start: outroStart, end: (t = Math.max(outroStart + 120, ctaDone + 20, cta + 60)) };
   return { line, hook, intro, steps, moves, outro, outroCues: { remember, takeaways, cta }, voice, duration: t };
 };
 
