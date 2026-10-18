@@ -133,10 +133,9 @@ Secret'lar eklenmeden zamanlanmış çalışmalar sessizce atlanır.
 | `SUPABASE_SERVICE_ROLE_KEY` | service_role / secret key |
 | `GH_PAT` | (isteğe bağlı) token yenilenince secret'ı güncellemek için, "Secrets: read and write" izinli fine-grained token |
 
-**5. Paylaşımı başlat / durdur**
-- Zamanlanmış paylaşım, repo değişkeni **`POSTING_ENABLED`** `true` olana kadar kapalıdır:
-  repo → Settings → Secrets and variables → Actions → **Variables** sekmesi → *New repository variable* →
-  Name `POSTING_ENABLED`, Value `true`. Durdurmak için `false` yap ya da sil.
+**5. Paylaşımı durdur / başlat**
+- Zamanlanmış paylaşım açıktır. Durdurmak için: repo → Settings → Secrets and variables → Actions → **Variables** →
+  *New repository variable* → Name `POSTING_PAUSED`, Value `true`. Tekrar başlatmak için değişkeni sil ya da `false` yap.
 
 **6. Test**
 - Actions → *Post chess reel* → **Run workflow** → `dry_run` işaretli: sadece render eder ve açıklamayı yazdırır

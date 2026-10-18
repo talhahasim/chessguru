@@ -1,0 +1,22 @@
+name: Instagram stats
+
+# Performance report of the latest Reels (views, reach, likes, comments, shares, saves, watch time).
+# Shown in the run's summary page.
+on:
+  schedule:
+    - cron: "37 9 * * 1" # every Monday
+  workflow_dispatch:
+
+jobs:
+  stats:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/stats.ts
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}

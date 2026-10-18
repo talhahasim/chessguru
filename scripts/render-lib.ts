@@ -33,6 +33,9 @@ export const renderLesson = async (lesson: Lesson) => {
     serveUrl: url,
     codec: "h264",
     crf: 18,
+    // Standard limited-range yuv420p + BT.709 so iPhones (Photos/Files) and Instagram play it everywhere.
+    pixelFormat: "yuv420p",
+    colorSpace: "bt709",
     outputLocation: video,
     inputProps,
     browserExecutable,

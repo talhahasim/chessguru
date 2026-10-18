@@ -14,7 +14,8 @@
     "sfx": "tsx scripts/gen-sfx.ts",
     "typecheck": "tsc --noEmit",
     "voice": "tsx scripts/voice.ts",
-    "post": "tsx scripts/post-reel.ts"
+    "post": "tsx scripts/post-reel.ts",
+    "stats": "tsx scripts/stats.ts"
   },
   "license": "UNLICENSED",
   "dependencies": {
