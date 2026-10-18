@@ -10,6 +10,25 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-18 21:46 UTC — planlı inceleme (değişiklik yok)
+
+| Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Stop the Scholar's Mate (18:36) | 38,5 sn | 137 | 121 | 1 | 0 | 0 | 0 | 8,5 sn | ~%22 |
+| Scholar's Mate (16:06) | 48 sn | 1227 | 969 | 16 | 0 | 0 | 14 | 15,2 sn | ~%32 |
+
+Takipçi: 4 (+1). Son `post-reel` çalışması başarılı; hata yok.
+
+**Teşhis:** Savunma videosu 3 saatte durdu (134 → 137 izlenme), tuzak videosu büyümeye devam ediyor (1094 → 1227).
+Savunma videosu hem eski sürüm hem de tuzaktan 2,5 saat sonra paylaşıldı; tek veriyle hook'un suçlu olduğu söylenemez.
+
+**Değişiklik:** Yok. En yeni paylaşım < 6 saat ve < 150 izlenme; c7a3eaa paketi henüz hiçbir videoda test edilmedi.
+
+**Sonraki hipotez:** Légal's Mate (bu gece, c7a3eaa sürümü) ile izlenme oranı > %40, ilk yorum/paylaşım.
+Bir sonraki savunma videosu (Stop Légal's Mate) da < %25 kalırsa savunma hook'ları güçlendirilecek.
+
+---
+
 ## 2026-10-18 21:10 UTC — ikinci ölçüm (değişiklik yok)
 
 | Video | Paylaşım | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
