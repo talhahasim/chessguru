@@ -9,6 +9,15 @@
  *   LIMIT=60 npx tsx scripts/stats.ts
  */
 import fs from "node:fs";
+import { LESSONS } from "../src/lessons/index.ts";
+import { buildTimeline, FPS } from "../src/lib/timeline.ts";
+import { BAND_LABEL } from "../src/theme.ts";
+
+/** Video length (s) of a post, from the lesson in its caption, as the CURRENT code renders it. */
+const lengthOf = (caption = "") => {
+  const lesson = LESSONS.find((l) => caption.includes(`♟ ${l.title} | ${BAND_LABEL[l.band]} Elo`));
+  return lesson ? buildTimeline(lesson).duration / FPS : undefined;
+};
 
 const API = `https://graph.instagram.com/${process.env.IG_API_VERSION ?? "v23.0"}`;
 const token = process.env.IG_ACCESS_TOKEN;
@@ -55,6 +64,9 @@ const main = async () => {
     const n = (v: number | undefined) => (v === undefined ? "–" : String(v));
     const views = i.views;
     const engagement = views ? `${(((i.total_interactions ?? 0) / views) * 100).toFixed(1)}%` : "–";
+    const len = lengthOf(m.caption);
+    const watchPct =
+      len && i.ig_reels_avg_watch_time !== undefined ? `${Math.round((i.ig_reels_avg_watch_time / 1000 / len) * 100)}%` : "–";
     rows.push([
       m.timestamp.slice(0, 16).replace("T", " "),
       title(m.caption),
@@ -65,11 +77,13 @@ const main = async () => {
       n(i.shares),
       n(i.saved),
       i.ig_reels_avg_watch_time !== undefined ? `${(i.ig_reels_avg_watch_time / 1000).toFixed(1)}s` : "–",
+      len ? `${len.toFixed(0)}s` : "–",
+      watchPct,
       engagement,
     ]);
   }
 
-  const header = ["Posted (UTC)", "Video", "Views", "Reach", "Likes", "Comments", "Shares", "Saves", "Avg watch", "Engagement"];
+  const header = ["Posted (UTC)", "Video", "Views", "Reach", "Likes", "Comments", "Shares", "Saves", "Avg watch", "Length*", "Watch %", "Engagement"];
   const md = [
     `### @${me.username}: ${me.followers_count} followers · ${me.follows_count} following · ${me.media_count} posts`,
     "",
@@ -77,6 +91,7 @@ const main = async () => {
     `| ${header.map(() => "---").join(" | ")} |`,
     ...rows.map((r) => `| ${r.join(" | ")} |`),
     "",
+    "*Length = how long the video is with the current code; older posts may have been longer (see docs/growth-log.md).",
     insightsError
       ? `> Per-post insights unavailable: ${insightsError}. Add the \`instagram_business_manage_insights\` permission to the token.`
       : "",
