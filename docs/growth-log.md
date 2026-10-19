@@ -10,6 +10,40 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-19 22:35 UTC — planlı inceleme (içerik değişikliği yok, zamanlama düzeltmesi)
+
+| Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Englund Gambit Trap (22:23) | 41 sn | 0 | 0 | 0 | 0 | 0 | 0 | – | – (13 dk) |
+| Stop Légal's Mate (15:42) | 31,9 sn | 470 | 424 | 0 | 0 | 0 | 0 | 6,0 sn | ~%19 |
+| Légal's Mate (dün 01:11) | 38,6 sn | 1408 | 1187 | 35 | 0 | 6 | 16 | 14,6 sn | ~%38 |
+| Stop the Scholar's Mate (18.10 18:36) | 38,5 sn | 145 | 125 | 1 | 0 | 0 | 0 | 9,0 sn | ~%23 |
+| Scholar's Mate (18.10 16:06) | 48 sn | 1310 | 1078 | 19 | 0 | 2 | 15 | 15,4 sn | ~%32 |
+
+Takipçi: 4.
+
+**Zamanlama sorunu:** 18:17 yedek cron'u GitHub'da 4 saat gecikip 22:21'de başladı; son paylaşımın üzerinden 5 saatten fazla
+geçtiği için Englund Gambit Trap'i 22:23'te paylaştı (rutin ~22:40'ta paylaşacaktı, yani pratikte sadece ~15 dk erken).
+Ama aynı gecikme 01:17 cron'unda olursa (03:23 sonrası) gecenin ortasında 3. bir video çıkardı.
+**Düzeltme:** cron (schedule) çalışmalarında `MIN_GAP_HOURS` 9 saat; rutin/manuel tetiklemelerde 5 saat kaldı.
+Slotlar (~15:45 / ~22:40) arası 7 ve 17 saat olduğundan yedek cron artık sadece rutin bir slotu kaçırırsa paylaşır.
+
+**Teşhis:** Savunma videoları kesin olarak zayıf: Stop Légal's Mate yeni sürüme rağmen %19 izlenme oranı (ort. 6 sn),
+424 erişimde 0 beğeni/kaydetme/paylaşım. Aynı çiftin tuzak videosu %38 ve 35 beğeni. Eski sürümdeki Stop the Scholar's Mate
+de %23'tü → sorun sürüm değil, savunma formatının açılışı. Tuzak hook'ları bir gösteri vaat ediyor ("queen sacrifice →
+checkmate"); savunma hook'ları ders veriyor ("Here's how to stop it") ve ilk 6 saniyede kaybediyor.
+
+**Değişiklik (içerik):** Yok. En yeni paylaşım (Englund) 13 dakikalık; kural gereği bu incelemede içerik değişmiyor.
+Bir sonraki savunma videosu (Beat the Englund Gambit) yarın 15:35 incelemesinden sonra çıkacağı için değişiklik orada
+yapılabilir, ona da yetişir.
+
+**Sonraki hipotez / plan (yarın 15:35):** Tek değişken: savunma hook'larını tehdit/meydan okuma formatına çevirmek
+(ör. "You play this move... and *lose in 6 moves*." / "Can you spot the *trap*?"), kalan savunma videolarına uygulanır.
+Hedef: savunma videolarında izlenme oranı > %30 ve ilk beğeniler. Englund Gambit Trap'in sonuçları da tuzak formatının
+%38'i tekrarlayıp tekrarlamadığını gösterecek.
+
+---
+
 ## 2026-10-19 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

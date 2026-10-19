@@ -68,7 +68,7 @@ The first frame of every video must be a finished cover that can be used as the 
   `docs/growth-log.md`, then **dispatch `post-reel.yml` with `dry_run=false`** so the Reel goes out right after the
   review (~16:00 / ~23:00 UTC = 19:00 / 02:00 Turkey). Read the growth log before changing anything.
 - The GitHub cron in `post-reel.yml` (18:17 / 01:17 UTC) is only a fallback; `post-reel.ts` skips when the last post is
-  < `MIN_GAP_HOURS` (5 h) old, so a slot is never posted twice.
+  < `MIN_GAP_HOURS` old (9 h for these cron runs, 5 h for dispatches), so a late cron never adds a third daily post.
 
 ## Other conventions
 
