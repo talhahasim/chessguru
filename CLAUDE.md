@@ -61,11 +61,14 @@ The first frame of every video must be a finished cover that can be used as the 
 - Every video ends with a "Send this to a friend…" ask (screen + voice) before FOLLOW; captions ask a
   YES/NO question and for a DM share. Instagram reportedly weighs watch time, likes/reach and sends/reach most.
 
-## Pre-post review loop
+## Pre-post review loop (also triggers the post)
 
-- A Routine runs ~80 min before every post (14:45 and 21:45 UTC): fetch stats via `stats.yml`, diagnose, apply AT MOST
-  ONE small improvement to upcoming lessons (only with meaningful data; one variable at a time), validate, push,
-  and prepend a Turkish entry to `docs/growth-log.md`. Read the growth log before changing anything.
+- A Routine runs at **15:35 and 22:35 UTC**: fetch stats via `stats.yml`, diagnose, apply AT MOST ONE small improvement
+  to upcoming lessons (only with meaningful data; one variable at a time), validate, push, prepend a Turkish entry to
+  `docs/growth-log.md`, then **dispatch `post-reel.yml` with `dry_run=false`** so the Reel goes out right after the
+  review (~16:00 / ~23:00 UTC = 19:00 / 02:00 Turkey). Read the growth log before changing anything.
+- The GitHub cron in `post-reel.yml` (18:17 / 01:17 UTC) is only a fallback; `post-reel.ts` skips when the last post is
+  < `MIN_GAP_HOURS` (5 h) old, so a slot is never posted twice.
 
 ## Other conventions
 

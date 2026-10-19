@@ -160,17 +160,24 @@ const checkSetup = async (cover: string) => {
 };
 
 /** Captions of the account's recent posts (enough to cover every lesson we have). */
-const recentCaptions = async (userId: string) => {
-  const captions: string[] = [];
+/** Captions and timestamps of the account's recent posts (newest first). */
+const recentPosts = async (userId: string) => {
+  const posts: { caption: string; timestamp: string }[] = [];
   let after: string | undefined;
   for (let page = 0; page < 10; page++) {
-    const res = await ig("GET", `${userId}/media`, { fields: "caption", limit: "100", ...(after ? { after } : {}) });
-    for (const m of res.data ?? []) if (m.caption) captions.push(m.caption);
+    const res = await ig("GET", `${userId}/media`, { fields: "caption,timestamp", limit: "100", ...(after ? { after } : {}) });
+    for (const m of res.data ?? []) posts.push({ caption: m.caption ?? "", timestamp: m.timestamp });
     after = res.paging?.cursors?.after;
     if (!res.paging?.next) break;
   }
-  return captions;
+  return posts;
 };
+
+/**
+ * Minimum hours between two posts. The routine triggers posts on time; the GitHub schedule is only a
+ * late fallback, and this guard stops it from posting a second time in the same slot.
+ */
+const MIN_GAP_HOURS = Number(process.env.MIN_GAP_HOURS ?? 5);
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
@@ -209,7 +216,14 @@ const main = async () => {
     lesson = postingOrder()[0];
   } else {
     userId = await igUserId();
-    const captions = await recentCaptions(userId);
+    const posts = await recentPosts(userId);
+    const newest = posts[0] ? new Date(posts[0].timestamp.replace(/\+0000$/, "Z")) : null;
+    const hoursAgo = newest ? (Date.now() - newest.getTime()) / 3_600_000 : Infinity;
+    if (!DRY_RUN && hoursAgo < MIN_GAP_HOURS) {
+      console.log(`Last post was ${hoursAgo.toFixed(1)} h ago (< ${MIN_GAP_HOURS} h): this slot is already done, skipping.`);
+      return;
+    }
+    const captions = posts.map((p) => p.caption);
     lesson = postingOrder().find((l) => !captions.some((c) => c.includes(marker(l))));
     if (!lesson) {
       // Fail loudly so GitHub emails the owner: time to add new lessons.
