@@ -10,6 +10,32 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-19 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Légal's Mate (01:11, c7a3eaa) | 38,6 sn | 1400 | 1176 | 34 | 0 | 6 | 16 | 14,6 sn | ~%38 |
+| Stop the Scholar's Mate (dün 18:36) | 38,5 sn | 145 | 125 | 1 | 0 | 0 | 0 | 9,0 sn | ~%23 |
+| Scholar's Mate (dün 16:06) | 48 sn | 1306 | 1074 | 19 | 0 | 2 | 15 | 15,3 sn | ~%32 |
+
+Takipçi: 4. Son `post-reel` (01:09) başarılı. `refresh-ig-token` 13:11'de hata verdi: token geçerli (60 gün), ama
+Instagram yeni token döndürdü ve `GH_PAT` secret'ı olmadığı için kaydedilemedi — paylaşımı engellemiyor, mevcut token
+~60 gün daha çalışır.
+
+**Teşhis:** c7a3eaa paketinin ilk testi (Légal's Mate) net iyileşme gösteriyor: erişim başına beğeni %1,8 → %2,9,
+ilk gerçek paylaşımlar (6; erişim başına %0,5), izlenme oranı %32 → %38 (hedef %40'a yakın). Ortalama izlenme süresi
+~15 sn'de sabit; yani kısalma oranı yükseltti ama izleyiciler hâlâ ~15. saniyede çıkıyor. Yorum hâlâ 0 —
+YES/NO sorusu henüz yorum getirmedi.
+
+**Değişiklik:** Yok. c7a3eaa paketi sadece 1 paylaşımda test edildi (kural: ≥ 2). Stop Légal's Mate (31,9 sn,
+c7a3eaa sürümünün ilk savunma videosu) 15:42 UTC'de rutin tarafından zamanında paylaşıldı.
+
+**Sonraki hipotez:** Stop Légal's Mate izlenme oranı > %35 olursa savunma formatı sorun değil (eski sürüm suçluydu);
+< %25 kalırsa savunma hook'ları güçlendirilecek. Tuzaklarda ~15. saniyedeki düşüş sürerse bir sonraki tek değişken
+olarak orta bölüme (ilk hamlelerden hemen sonra) bir "re-hook" eklenmesi denenecek.
+
+---
+
 ## 2026-10-18 21:46 UTC — planlı inceleme (değişiklik yok)
 
 | Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
