@@ -35,11 +35,6 @@ analiz değişmedi, sesler yeniden üretildi, validate 0 hata.
 | Kieninger Trap | 18,9 → 12,3 sn | 35,8 → 29,0 sn |
 | Siberian Trap | 23,8 → 15,5 sn | 38,0 → 29,5 sn |
 
-**Ek (sahibin isteği, aynı commit grubu):** Stockfish hamle rozetleri (book/best/excellent/good/brilliant/mistake…) zaten her
-hamlede taşın üstündeydi ama telefonda küçüktü (karenin %44'ü ≈ 50 px). Artık karenin %52'si; brilliant/great/mistake/
-blunder %68 (≈ 77 px) ve daha sert "pop" ile çıkıyor; mat/kral rozetleri %56. Bu değişiklik tüm videoları etkiler, yani
-Lasker/Fool's ölçümü iki değişikliği birlikte ölçer (can alıcı anın öne çekilmesi + büyük rozetler) — bilerek kabul edildi.
-
 **Hipotez:** Ortalama izlenme ~15 sn'de kalsa bile izlenme oranı %36 → %50+; ödülü görenler arttığı için
 erişim başına paylaşım ve kaydetme yükselir ve izlenme 1400 tavanını aşar. Lasker Trap ve Fool's Mate ile ölçülecek;
 iki tuzakta sonuç görmeden tuzaklarda başka değişiklik yok.
