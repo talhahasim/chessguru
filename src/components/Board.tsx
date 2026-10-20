@@ -280,17 +280,24 @@ export const Board: React.FC<BoardProps> = ({
 
       {/* Badges */}
       {badgeShown ? (
-        <BadgeAt square={lastMove!.to} orientation={orientation} sq={sq} appearAt={lastMove!.badgeAt!}>
-          <MoveBadge classification={lastMove!.classification!} size={sq * 0.44} />
+        <BadgeAt
+          square={lastMove!.to}
+          orientation={orientation}
+          sq={sq}
+          size={badgeSize(lastMove!.classification!, sq)}
+          appearAt={lastMove!.badgeAt!}
+          punch={KEY_CLASSES.has(lastMove!.classification!)}
+        >
+          <MoveBadge classification={lastMove!.classification!} size={badgeSize(lastMove!.classification!, sq)} />
         </BadgeAt>
       ) : null}
       {mate && frame >= mate.appearAt ? (
         <>
-          <BadgeAt square={mate.loserKing} orientation={orientation} sq={sq} appearAt={mate.appearAt}>
-            <ResultBadge kind="mated" size={sq * 0.44} />
+          <BadgeAt square={mate.loserKing} orientation={orientation} sq={sq} size={sq * RESULT_BADGE} appearAt={mate.appearAt}>
+            <ResultBadge kind="mated" size={sq * RESULT_BADGE} />
           </BadgeAt>
-          <BadgeAt square={mate.winnerKing} orientation={orientation} sq={sq} appearAt={mate.appearAt + 6}>
-            <ResultBadge kind="winner" size={sq * 0.44} />
+          <BadgeAt square={mate.winnerKing} orientation={orientation} sq={sq} size={sq * RESULT_BADGE} appearAt={mate.appearAt + 6}>
+            <ResultBadge kind="winner" size={sq * RESULT_BADGE} />
           </BadgeAt>
         </>
       ) : null}
@@ -298,20 +305,33 @@ export const Board: React.FC<BoardProps> = ({
   );
 };
 
-const BadgeAt: React.FC<{ square: string; orientation: Color; sq: number; appearAt: number; children: React.ReactNode }> = ({
-  square,
-  orientation,
-  sq,
-  appearAt,
-  children,
-}) => {
+/** Moves worth a bigger badge and a harder pop: the moments the video is about. */
+const KEY_CLASSES = new Set<Classification>(["brilliant", "great", "mistake", "blunder", "miss"]);
+const RESULT_BADGE = 0.56;
+// Big enough to read on a phone (chess.com review style); key moves bigger still.
+const badgeSize = (c: Classification, sq: number) => sq * (KEY_CLASSES.has(c) ? 0.68 : 0.52);
+
+const BadgeAt: React.FC<{
+  square: string;
+  orientation: Color;
+  sq: number;
+  size: number;
+  appearAt: number;
+  punch?: boolean;
+  children: React.ReactNode;
+}> = ({ square, orientation, sq, size, appearAt, punch, children }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const { x, y } = sqXY(square, orientation);
-  const s = spring({ frame: frame - appearAt, fps, config: { damping: 9, stiffness: 180, mass: 0.6 } });
+  const s = spring({
+    frame: frame - appearAt,
+    fps,
+    config: punch ? { damping: 6, stiffness: 200, mass: 0.7 } : { damping: 9, stiffness: 180, mass: 0.6 },
+  });
   // Keep badges inside the board on the right / top edge.
-  const cx = Math.min(x * sq + sq * 0.88, 8 * sq - sq * 0.24);
-  const cy = Math.max(y * sq + sq * 0.12, sq * 0.24);
+  const margin = size * 0.55;
+  const cx = Math.min(x * sq + sq * 0.86, 8 * sq - margin);
+  const cy = Math.max(y * sq + sq * 0.14, margin);
   return (
     <div
       style={{
