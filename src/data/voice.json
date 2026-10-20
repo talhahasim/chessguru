@@ -771,9 +771,9 @@
   },
   "avoid-fools-mate": {
    "hook": {
-    "text": "Never lose to the fastest mate. Just follow one rule.",
-    "file": "voice/avoid-fools-mate/hook-855d1b64.mp3",
-    "seconds": 2.971
+    "text": "Wrong pawn move means instant mate. Find the safe move.",
+    "file": "voice/avoid-fools-mate/hook-dcb4c57b.mp3",
+    "seconds": 3.196
    },
    "step-0": {
     "text": "We pushed the f-pawn. Not great, but not lost.",
@@ -808,9 +808,9 @@
   },
   "stop-back-rank-mate": {
    "hook": {
-    "text": "Winning? Don't lose to one rook. One tiny move saves you.",
-    "file": "voice/stop-back-rank-mate/hook-edfb39f1.mp3",
-    "seconds": 3.14
+    "text": "A queen up... And you still lose? Not if you play this.",
+    "file": "voice/stop-back-rank-mate/hook-721ee221.mp3",
+    "seconds": 2.795
    },
    "step-0": {
     "text": "We have a queen. We're winning!",
@@ -902,9 +902,9 @@
   },
   "beat-blackburne-shilling": {
    "hook": {
-    "text": "That free pawn is poison. Do this instead.",
-    "file": "voice/beat-blackburne-shilling/hook-157640e5.mp3",
-    "seconds": 2.324
+    "text": "Take this pawn and get mated. Play this instead.",
+    "file": "voice/beat-blackburne-shilling/hook-b8fc4e2f.mp3",
+    "seconds": 2.573
    },
    "step-0": {
     "text": "Normal opening.",
@@ -939,9 +939,9 @@
   },
   "beat-stafford-gambit": {
    "hook": {
-    "text": "Beat the Stafford Gambit. Just don't play this move.",
-    "file": "voice/beat-stafford-gambit/hook-758ac80a.mp3",
-    "seconds": 2.636
+    "text": "One natural move here means checkmate. Play this instead.",
+    "file": "voice/beat-stafford-gambit/hook-dd9d23b0.mp3",
+    "seconds": 3.139
    },
    "step-0": {
     "text": "Black gives a pawn: The Stafford Gambit.",
@@ -981,9 +981,9 @@
   },
   "beat-englund-gambit": {
    "hook": {
-    "text": "Took the Englund pawn? One knight move wins.",
-    "file": "voice/beat-englund-gambit/hook-01cb2906.mp3",
-    "seconds": 2.404
+    "text": "The obvious move gets you mated. Play this instead.",
+    "file": "voice/beat-englund-gambit/hook-99312b72.mp3",
+    "seconds": 2.723
    },
    "step-0": {
     "text": "The Englund Gambit. We grabbed a pawn.",
@@ -1023,9 +1023,9 @@
   },
   "dodge-elephant-trap": {
    "hook": {
-    "text": "D5 looks free. It's not. Here's the safe move.",
-    "file": "voice/dodge-elephant-trap/hook-eac2f26d.mp3",
-    "seconds": 3.081
+    "text": "Take the free pawn and lose a piece. Play this instead.",
+    "file": "voice/dodge-elephant-trap/hook-216c3754.mp3",
+    "seconds": 2.846
    },
    "step-0": {
     "text": "The Queen's Gambit. We pin their knight.",
@@ -1060,9 +1060,9 @@
   },
   "dodge-kieninger-trap": {
    "hook": {
-    "text": "Avoid a smothered mate... With one pawn move.",
-    "file": "voice/dodge-kieninger-trap/hook-ee064c55.mp3",
-    "seconds": 2.402
+    "text": "One pawn move means smothered mate. Play this instead.",
+    "file": "voice/dodge-kieninger-trap/hook-a2e928e6.mp3",
+    "seconds": 2.826
    },
    "step-0": {
     "text": "The Budapest Gambit.",
@@ -1102,9 +1102,9 @@
   },
   "dodge-lasker-trap": {
    "hook": {
-    "text": "The Albin hides a nasty trap. Here's how to dodge it.",
-    "file": "voice/dodge-lasker-trap/hook-2080003f.mp3",
-    "seconds": 2.885
+    "text": "Attack this pawn and lose your queen. Play this instead.",
+    "file": "voice/dodge-lasker-trap/hook-7e621cb1.mp3",
+    "seconds": 2.77
    },
    "step-0": {
     "text": "The Albin Countergambit.",
@@ -1144,9 +1144,9 @@
   },
   "dodge-fishing-pole": {
    "hook": {
-    "text": "A free knight? It's bait. Don't bite. Do this.",
-    "file": "voice/dodge-fishing-pole/hook-1bd0cc3d.mp3",
-    "seconds": 2.384
+    "text": "Take the free knight and get mated. Don't bite. Play this.",
+    "file": "voice/dodge-fishing-pole/hook-aa32a482.mp3",
+    "seconds": 2.915
    },
    "step-0": {
     "text": "The Roo-ee Lopez. We castle.",
@@ -1181,9 +1181,9 @@
   },
   "dodge-siberian-trap": {
    "hook": {
-    "text": "Don't kick that knight! Here's the safe move.",
-    "file": "voice/dodge-siberian-trap/hook-d8daf8c0.mp3",
-    "seconds": 2.06
+    "text": "Kick this knight and get mated. Play this instead.",
+    "file": "voice/dodge-siberian-trap/hook-4c3a5ef4.mp3",
+    "seconds": 2.536
    },
    "step-0": {
     "text": "We play the Smith-Morra Gambit.",

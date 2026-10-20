@@ -31,7 +31,7 @@ export const avoidFoolsMate: Lesson = {
   band: "0-300",
   title: "Avoid Fool's Mate",
   hero: "w",
-  hook: ["Never lose to the *fastest mate*.", "Just follow *one rule*."],
+  hook: ["Wrong pawn move = *instant mate*.", "Find the *safe* move."],
   steps: [
     { moves: ["f3"], say: "We pushed the f-pawn. *Not great*, but not lost." },
     { moves: ["e5"], say: "Black's queen now *eyes h4*. Our king is open.", arrows: ["r:d8h4", "r:h4e1"] },
@@ -50,7 +50,7 @@ export const stopBackRankMate: Lesson = {
   title: "Stop Back Rank Mate",
   hero: "b",
   startFen: "6k1/5ppp/8/8/1q6/8/1P3PPP/3R2K1 b - - 0 1",
-  hook: ["Winning? Don't lose to *one rook*.", "One tiny move *saves you*."],
+  hook: ["A *queen up*... and you still lose?", "Not if you play *this*."],
   steps: [
     { say: "We have a *queen*. We're winning!", pulse: ["b4"] },
     { say: "But our king has *no exit*. Its own pawns block it.", squares: ["r:f7", "r:g7", "r:h7"], pulse: ["g8"] },
@@ -94,7 +94,7 @@ export const beatBlackburneShilling: Lesson = {
   title: "Beat the Blackburne Trap",
   hero: "w",
   bookPlies: 5,
-  hook: ["That free pawn is *poison*.", "Do *this* instead."],
+  hook: ["Take this pawn and *get mated*.", "Play *this* instead."],
   steps: [
     { moves: ["e4", "e5", "Nf3", "Nc6", "Bc4"], say: "Normal opening." },
     { moves: ["Nd4"], say: "Black plays Nd4. Now e5 looks *free*...", pulse: ["e5"] },
@@ -113,7 +113,7 @@ export const beatStafford: Lesson = {
   title: "Beat the Stafford Gambit",
   hero: "w",
   bookPlies: 8,
-  hook: ["Beat the *Stafford Gambit*.", "Just *don't* play this move."],
+  hook: ["One *natural* move here = *checkmate*.", "Play *this* instead."],
   steps: [
     { moves: ["e4", "e5", "Nf3", "Nf6", "Nxe5", "Nc6"], say: "Black gives a pawn: the *Stafford Gambit*." },
     { moves: ["Nxc6", "dxc6", "d3", "Bc5"], say: "Their bishop now aims at *f2*.", arrows: ["r:c5f2"] },
@@ -135,7 +135,7 @@ export const beatEnglund: Lesson = {
   title: "Beat the Englund Gambit",
   hero: "w",
   bookPlies: 8,
-  hook: ["Took the Englund pawn?", "One knight move *wins*."],
+  hook: ["The *obvious* move gets you *mated*.", "Play *this* instead."],
   steps: [
     { moves: ["d4", "e5", "dxe5", "Nc6", "Nf3", "Qe7"], say: "The *Englund Gambit*. We grabbed a pawn." },
     { moves: ["Bf4", "Qb4+", "Bd2", "Qxb2"], say: "Black's queen grabs b2 and hits our *rook*.", arrows: ["r:b2a1"] },
@@ -155,7 +155,7 @@ export const dodgeElephantTrap: Lesson = {
   title: "Dodge the Elephant Trap",
   hero: "w",
   bookPlies: 10,
-  hook: ["d5 looks *free*. It's not.", "Here's the *safe* move."],
+  hook: ["Take the free pawn and *lose a piece*.", "Play *this* instead."],
   steps: [
     { moves: ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Nbd7"], say: "The Queen's Gambit. We pin their knight." },
     { moves: ["cxd5", "exd5"], say: "Pawns trade. Now d5 looks *free*.", pulse: ["d5"] },
@@ -174,7 +174,7 @@ export const dodgeKieningerTrap: Lesson = {
   title: "Dodge the Kieninger Trap",
   hero: "w",
   bookPlies: 12,
-  hook: ["Avoid a *smothered mate*...", "...with *one pawn move*."],
+  hook: ["One pawn move = *smothered mate*.", "Play *this* instead."],
   steps: [
     { moves: ["d4", "Nf6", "c4", "e5", "dxe5", "Ng4"], say: "The *Budapest Gambit*." },
     { moves: ["Nf3", "Nc6", "Bf4", "Bb4+", "Nbd2", "Qe7"], say: "Black hits e5 *three times*.", arrows: ["e7e5", "g4e5", "c6e5"] },
@@ -196,7 +196,7 @@ export const dodgeLaskerTrap: Lesson = {
   title: "Dodge the Lasker Trap",
   hero: "w",
   bookPlies: 6,
-  hook: ["The Albin hides a *nasty trap*.", "Here's how to *dodge it*."],
+  hook: ["Attack this pawn and *lose your queen*.", "Play *this* instead."],
   steps: [
     { moves: ["d4", "d5", "c4", "e5"], say: "The *Albin Countergambit*." },
     { moves: ["dxe5", "d4"], say: "Their pawn pushes to d4. *Annoying*." },
@@ -216,7 +216,7 @@ export const dodgeFishingPole: Lesson = {
   title: "Dodge the Fishing Pole",
   hero: "w",
   bookPlies: 7,
-  hook: ["A free knight? It's *bait*.", "Don't bite. Do *this*."],
+  hook: ["Take the free knight and *get mated*.", "Don't bite. Play *this*."],
   steps: [
     { moves: ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6", "O-O"], say: "The Ruy Lopez. We castle." },
     { moves: ["Ng4", "h3", "h5"], say: "Black leaves the knight *hanging*...", pulse: ["g4"] },
@@ -235,7 +235,7 @@ export const dodgeSiberianTrap: Lesson = {
   title: "Dodge the Siberian Trap",
   hero: "w",
   bookPlies: 15,
-  hook: ["Don't kick that knight!", "Here's the *safe* move."],
+  hook: ["Kick this knight and *get mated*.", "Play *this* instead."],
   steps: [
     { moves: ["e4", "c5", "d4", "cxd4", "c3"], say: "We play the *Smith-Morra Gambit*." },
     { moves: ["dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4", "Qc7", "O-O", "Nf6", "Qe2"], say: "Everyone develops." },

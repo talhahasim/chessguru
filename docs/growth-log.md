@@ -10,6 +10,38 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-20 15:35 UTC — planlı inceleme: savunma hook'ları tehdit formatına çevrildi
+
+| Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Englund Gambit Trap (19.10 22:23) | 41 sn | 1481 | 1231 | 31 | 0 | 3 | 23 | 14,5 sn | ~%36 |
+| Stop Légal's Mate (19.10 15:42) | 31,9 sn | 494 | 444 | 0 | 0 | 0 | 0 | 6,1 sn | ~%19 |
+| Légal's Mate (19.10 01:11) | 38,6 sn | 1415 | 1192 | 35 | 0 | 6 | 16 | 14,6 sn | ~%38 |
+| Stop the Scholar's Mate (18.10 18:36) | 38,5 sn | 146 | 126 | 1 | 0 | 0 | 0 | 9,2 sn | ~%24 |
+| Scholar's Mate (18.10 16:06) | 48 sn | 1317 | 1085 | 20 | 0 | 2 | 15 | 15,4 sn | ~%32 |
+
+Takipçi: **12 (+8)**. 01:17 yedek cron'u 06:01'de (5 saat geç) başladı ve yeni 9 saat kuralı sayesinde paylaşmadan
+çıktı → düzeltme işe yarıyor.
+
+**Teşhis:** Tuzak formatı tekrarlanabilir: üç tuzak videosu da ~1300–1500 izlenme, %32–38 izlenme oranı, erişim başına
+%2,5+ beğeni ve kaydetme. Englund kaydetmede en iyisi (23). Savunma videoları ise iki sürümde de çöküyor
+(%19–24, beğeni ~0, ortalama 6–9 sn). Fark açılışta: tuzak hook'u bir gösteri vaat ediyor, savunma hook'u ders veriyor.
+
+**Değişiklik (tek değişken: savunma hook metni):** Henüz paylaşılmamış 10 savunma videosunun hook'u, izleyicinin
+kendisini tehdit eden/kaybettiren formata çevrildi. Satır 1 = yanlış hamlenin bedeli, satır 2 = kısa çağrı. Örnekler:
+- Beat the Englund Gambit: "The *obvious* move gets you *mated*." / "Play *this* instead."
+- Dodge the Fishing Pole: "Take the free knight and *get mated*." / "Don't bite. Play *this*."
+- Avoid Fool's Mate: "Wrong pawn move = *instant mate*." / "Find the *safe* move."
+
+Hareketler, adımlar ve analiz değişmedi. Hook sesleri yeniden üretildi (af_heart 1.1). 10 kapağın hepsi kontrol edildi;
+Englund, Kieninger ve Fool's Mate'te taşan satırlar kısaltıldı. Validate 0 hata.
+
+**Sonraki hipotez:** Beat the Englund Gambit (bugün) ve sonraki savunma videolarında izlenme oranı > %30, ort. izlenme
+> 10 sn ve ilk beğeniler. İki savunma videosunda sonuç görülmeden başka değişiklik yok. Tuzaklarda sonraki aday: yorum
+için YES/NO yerine daha kışkırtıcı bir soru.
+
+---
+
 ## 2026-10-19 22:35 UTC — planlı inceleme (içerik değişikliği yok, zamanlama düzeltmesi)
 
 | Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
