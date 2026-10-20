@@ -62,28 +62,23 @@
     "seconds": 3.314
    },
    "step-0": {
-    "text": "White pushes the f-pawn. That pawn was guarding the king.",
-    "file": "voice/fools-mate/step-0-997085f0.mp3",
-    "seconds": 3.02
+    "text": "White pushes the f-pawn. The king gets weaker.",
+    "file": "voice/fools-mate/step-0-fe9370fd.mp3",
+    "seconds": 2.646
    },
    "step-1": {
-    "text": "We push our pawn. Now our queen can come out.",
-    "file": "voice/fools-mate/step-1-bd8ac43a.mp3",
-    "seconds": 2.341
+    "text": "We open a path for our queen.",
+    "file": "voice/fools-mate/step-1-9f12560e.mp3",
+    "seconds": 1.457
    },
    "step-2": {
-    "text": "White pushes another pawn. Huge mistake.",
-    "file": "voice/fools-mate/step-2-6075f0c2.mp3",
-    "seconds": 2.273
+    "text": "Another pawn push. Huge mistake!",
+    "file": "voice/fools-mate/step-2-943ef785.mp3",
+    "seconds": 2.026
    },
    "step-3": {
-    "text": "Look at this line to the king. Nothing is blocking it!",
-    "file": "voice/fools-mate/step-3-3bf67e8a.mp3",
-    "seconds": 2.677
-   },
-   "step-4": {
     "text": "Queen to h4. The king is trapped. Checkmate!",
-    "file": "voice/fools-mate/step-4-07b46121.mp3",
+    "file": "voice/fools-mate/step-3-07b46121.mp3",
     "seconds": 2.66
    },
    "cta": {
@@ -193,54 +188,34 @@
     "seconds": 2.907
    },
    "step-0": {
-    "text": "Normal opening. White's bishop eyes f7.",
-    "file": "voice/blackburne-shilling/step-0-96f10b98.mp3",
-    "seconds": 2.759
+    "text": "Knight to d4. Now e5 looks free...",
+    "file": "voice/blackburne-shilling/step-0-37c8069e.mp3",
+    "seconds": 2.417
    },
    "step-1": {
-    "text": "Knight to d4. Risky! Now our e5 pawn looks free.",
-    "file": "voice/blackburne-shilling/step-1-d8f60cd1.mp3",
-    "seconds": 3.569
+    "text": "White takes it. Here we go.",
+    "file": "voice/blackburne-shilling/step-1-6299a539.mp3",
+    "seconds": 1.435
    },
    "step-2": {
-    "text": "White takes the free pawn. Here we go.",
-    "file": "voice/blackburne-shilling/step-2-1204fa91.mp3",
-    "seconds": 1.979
+    "text": "Queen to g5! She hits the knight and g2.",
+    "file": "voice/blackburne-shilling/step-2-5501eb53.mp3",
+    "seconds": 2.769
    },
    "step-3": {
-    "text": "Queen to g5! She attacks the knight and the g2 pawn.",
-    "file": "voice/blackburne-shilling/step-3-e24478d6.mp3",
-    "seconds": 3.369
+    "text": "White grabs f7. We grab g2!",
+    "file": "voice/blackburne-shilling/step-3-805e39b9.mp3",
+    "seconds": 2.315
    },
    "step-4": {
-    "text": "White gets greedy. Knight takes f7, hitting our rook.",
-    "file": "voice/blackburne-shilling/step-4-6efff80a.mp3",
-    "seconds": 3.185
+    "text": "The rook runs. Queen takes e4. Check!",
+    "file": "voice/blackburne-shilling/step-4-7fdb65b6.mp3",
+    "seconds": 2.269
    },
    "step-5": {
-    "text": "We don't care! Queen takes g2. Now their rook is attacked.",
-    "file": "voice/blackburne-shilling/step-5-dd61d4fd.mp3",
-    "seconds": 3.45
-   },
-   "step-6": {
-    "text": "White saves the rook.",
-    "file": "voice/blackburne-shilling/step-6-2310fb33.mp3",
-    "seconds": 1.081
-   },
-   "step-7": {
-    "text": "Queen takes e4. Check!",
-    "file": "voice/blackburne-shilling/step-7-9e6164b9.mp3",
-    "seconds": 1.519
-   },
-   "step-8": {
-    "text": "White blocks with the bishop.",
-    "file": "voice/blackburne-shilling/step-8-6c9e018d.mp3",
-    "seconds": 1.374
-   },
-   "step-9": {
-    "text": "Knight to f3. The bishop can't take: It's pinned. Checkmate!",
-    "file": "voice/blackburne-shilling/step-9-cd61a1da.mp3",
-    "seconds": 3.464
+    "text": "Knight to f3. The bishop is pinned. Checkmate!",
+    "file": "voice/blackburne-shilling/step-5-b67d1377.mp3",
+    "seconds": 2.768
    },
    "cta": {
     "text": "Send this to a friend who falls for it. The defense is in the next video. Follow!",
@@ -255,53 +230,33 @@
     "seconds": 2.875
    },
    "step-0": {
-    "text": "White takes our e5 pawn.",
-    "file": "voice/stafford-trap/step-0-c5e065cf.mp3",
-    "seconds": 1.615
+    "text": "We give a pawn. The Stafford Gambit.",
+    "file": "voice/stafford-trap/step-0-b0d40339.mp3",
+    "seconds": 1.911
    },
    "step-1": {
-    "text": "We give away a pawn on purpose. The Stafford Gambit!",
-    "file": "voice/stafford-trap/step-1-c0aca50c.mp3",
-    "seconds": 2.824
+    "text": "Our bishop aims at f2.",
+    "file": "voice/stafford-trap/step-1-34b8ad97.mp3",
+    "seconds": 1.381
    },
    "step-2": {
-    "text": "Trade. Now our bishops have open lines.",
-    "file": "voice/stafford-trap/step-2-9cb2bf40.mp3",
-    "seconds": 2.137
+    "text": "White pins our knight to the queen.",
+    "file": "voice/stafford-trap/step-2-44174359.mp3",
+    "seconds": 1.585
    },
    "step-3": {
-    "text": "Bishop to c5. It's aiming at f2.",
-    "file": "voice/stafford-trap/step-3-82af0c8a.mp3",
-    "seconds": 2.343
+    "text": "We move it anyway! Take my queen!",
+    "file": "voice/stafford-trap/step-3-38f3e24c.mp3",
+    "seconds": 1.906
    },
    "step-4": {
-    "text": "White pins our knight to the queen. Looks scary.",
-    "file": "voice/stafford-trap/step-4-9b1fe7c0.mp3",
-    "seconds": 2.371
+    "text": "White takes it. Bishop takes f2. Check!",
+    "file": "voice/stafford-trap/step-4-2114acfe.mp3",
+    "seconds": 2.305
    },
    "step-5": {
-    "text": "We move it anyway! Knight takes e4. Take my queen!",
-    "file": "voice/stafford-trap/step-5-fc16d721.mp3",
-    "seconds": 2.924
-   },
-   "step-6": {
-    "text": "White grabs the queen. Wrong!",
-    "file": "voice/stafford-trap/step-6-a30f037f.mp3",
-    "seconds": 1.708
-   },
-   "step-7": {
-    "text": "Bishop takes f2. Check!",
-    "file": "voice/stafford-trap/step-7-6be5d711.mp3",
-    "seconds": 1.542
-   },
-   "step-8": {
-    "text": "The king has only one square.",
-    "file": "voice/stafford-trap/step-8-1be482b1.mp3",
-    "seconds": 1.494
-   },
-   "step-9": {
     "text": "Bishop to g4. Checkmate!",
-    "file": "voice/stafford-trap/step-9-7d29f674.mp3",
+    "file": "voice/stafford-trap/step-5-7d29f674.mp3",
     "seconds": 1.843
    },
    "cta": {
@@ -389,59 +344,34 @@
     "seconds": 3.137
    },
    "step-0": {
-    "text": "The Queen's Gambit. Very normal stuff.",
-    "file": "voice/elephant-trap/step-0-eedaf836.mp3",
-    "seconds": 2.115
+    "text": "White pins our knight. We quietly set the trap.",
+    "file": "voice/elephant-trap/step-0-715b8063.mp3",
+    "seconds": 2.449
    },
    "step-1": {
-    "text": "White pins our knight to the queen.",
-    "file": "voice/elephant-trap/step-1-44174359.mp3",
-    "seconds": 1.585
+    "text": "White grabs d5. 'Your knight is pinned!'",
+    "file": "voice/elephant-trap/step-1-65361d77.mp3",
+    "seconds": 2.34
    },
    "step-2": {
-    "text": "Knight to d7. This quietly sets the trap.",
-    "file": "voice/elephant-trap/step-2-04f41104.mp3",
-    "seconds": 2.592
-   },
-   "step-3": {
-    "text": "Pawns trade on d5.",
-    "file": "voice/elephant-trap/step-3-74fe15c7.mp3",
-    "seconds": 1.359
-   },
-   "step-4": {
-    "text": "White grabs d5. 'Your knight is pinned!' they think.",
-    "file": "voice/elephant-trap/step-4-6eb17481.mp3",
-    "seconds": 2.743
-   },
-   "step-5": {
     "text": "Surprise! We take anyway and give our queen.",
-    "file": "voice/elephant-trap/step-5-4cd8efd7.mp3",
+    "file": "voice/elephant-trap/step-2-4cd8efd7.mp3",
     "seconds": 2.291
    },
-   "step-6": {
-    "text": "White takes the queen.",
-    "file": "voice/elephant-trap/step-6-f4a07280.mp3",
-    "seconds": 1.107
+   "step-3": {
+    "text": "White takes it. Bishop check!",
+    "file": "voice/elephant-trap/step-3-0cf50593.mp3",
+    "seconds": 1.534
    },
-   "step-7": {
-    "text": "Bishop check! White must block.",
-    "file": "voice/elephant-trap/step-7-bb48f086.mp3",
-    "seconds": 1.602
+   "step-4": {
+    "text": "Only the queen can block. We take it.",
+    "file": "voice/elephant-trap/step-4-167cbbb7.mp3",
+    "seconds": 1.953
    },
-   "step-8": {
-    "text": "Only the queen can block.",
-    "file": "voice/elephant-trap/step-8-df0bfe15.mp3",
-    "seconds": 1.34
-   },
-   "step-9": {
-    "text": "We take their queen with check.",
-    "file": "voice/elephant-trap/step-9-6eec5ece.mp3",
-    "seconds": 1.281
-   },
-   "step-10": {
-    "text": "And we take the bishop. We're a whole piece up!",
-    "file": "voice/elephant-trap/step-10-fdb25a09.mp3",
-    "seconds": 2.239
+   "step-5": {
+    "text": "Then the bishop. We're a whole piece up!",
+    "file": "voice/elephant-trap/step-5-149d6a7a.mp3",
+    "seconds": 1.836
    },
    "cta": {
     "text": "Send this to a friend who falls for it. The defense is in the next video. Follow!",
@@ -461,53 +391,33 @@
     "seconds": 2.036
    },
    "step-1": {
-    "text": "Our knights attack e5.",
-    "file": "voice/kieninger-trap/step-1-acb709ea.mp3",
-    "seconds": 1.365
+    "text": "Now three pieces hit e5.",
+    "file": "voice/kieninger-trap/step-1-f2c8d4a3.mp3",
+    "seconds": 1.674
    },
    "step-2": {
-    "text": "White protects it with the bishop.",
-    "file": "voice/kieninger-trap/step-2-1a9bdd5a.mp3",
-    "seconds": 1.539
-   },
-   "step-3": {
-    "text": "Bishop check!",
-    "file": "voice/kieninger-trap/step-3-72dd1225.mp3",
-    "seconds": 0.774
-   },
-   "step-4": {
-    "text": "White blocks with the knight.",
-    "file": "voice/kieninger-trap/step-4-17eed2a2.mp3",
-    "seconds": 1.28
-   },
-   "step-5": {
-    "text": "Queen to e7. Now three pieces hit e5.",
-    "file": "voice/kieninger-trap/step-5-b4e93b15.mp3",
-    "seconds": 2.848
-   },
-   "step-6": {
     "text": "White attacks our bishop.",
-    "file": "voice/kieninger-trap/step-6-a81bfb0f.mp3",
+    "file": "voice/kieninger-trap/step-2-a81bfb0f.mp3",
     "seconds": 1.268
    },
-   "step-7": {
+   "step-3": {
     "text": "We ignore it and take e5! Leave the bishop.",
-    "file": "voice/kieninger-trap/step-7-2c3ffade.mp3",
+    "file": "voice/kieninger-trap/step-3-2c3ffade.mp3",
     "seconds": 2.417
    },
-   "step-8": {
+   "step-4": {
     "text": "White takes the free bishop...",
-    "file": "voice/kieninger-trap/step-8-bbcad221.mp3",
+    "file": "voice/kieninger-trap/step-4-bbcad221.mp3",
     "seconds": 1.371
    },
-   "step-9": {
-    "text": "Look: The e2 pawn is pinned. The king is boxed in.",
-    "file": "voice/kieninger-trap/step-9-3d47ee95.mp3",
-    "seconds": 2.945
+   "step-5": {
+    "text": "The e2 pawn is pinned. The king is boxed in.",
+    "file": "voice/kieninger-trap/step-5-0a54145b.mp3",
+    "seconds": 2.718
    },
-   "step-10": {
+   "step-6": {
     "text": "Knight to d3. Smothered checkmate!",
-    "file": "voice/kieninger-trap/step-10-24d4967d.mp3",
+    "file": "voice/kieninger-trap/step-6-24d4967d.mp3",
     "seconds": 2.171
    },
    "cta": {
@@ -523,68 +433,38 @@
     "seconds": 2.958
    },
    "step-0": {
-    "text": "We give a pawn. The Albin Countergambit.",
-    "file": "voice/lasker-trap/step-0-de99ba09.mp3",
-    "seconds": 2.278
+    "text": "We push to d4. White attacks it: Mistake!",
+    "file": "voice/lasker-trap/step-0-ba2222e1.mp3",
+    "seconds": 2.669
    },
    "step-1": {
-    "text": "Our pawn pushes forward. Annoying for White.",
-    "file": "voice/lasker-trap/step-1-d9e089f0.mp3",
-    "seconds": 2.477
+    "text": "Bishop check, then we take e3.",
+    "file": "voice/lasker-trap/step-1-96b9b1ae.mp3",
+    "seconds": 1.745
    },
    "step-2": {
-    "text": "White attacks it. This is the mistake.",
-    "file": "voice/lasker-trap/step-2-8d615b6c.mp3",
-    "seconds": 1.972
+    "text": "White grabs our bishop. Pawn takes f2. Check!",
+    "file": "voice/lasker-trap/step-2-c4fd6913.mp3",
+    "seconds": 2.727
    },
    "step-3": {
-    "text": "Bishop check!",
-    "file": "voice/lasker-trap/step-3-72dd1225.mp3",
-    "seconds": 0.774
+    "text": "And it becomes... A knight! With check!",
+    "file": "voice/lasker-trap/step-3-a267e409.mp3",
+    "seconds": 1.933
    },
    "step-4": {
-    "text": "We take on e3. Now we hit f2 and the bishop.",
-    "file": "voice/lasker-trap/step-4-35ae0884.mp3",
-    "seconds": 2.868
+    "text": "A queen gives no check. The knight does.",
+    "file": "voice/lasker-trap/step-4-fd64011a.mp3",
+    "seconds": 2.011
    },
    "step-5": {
-    "text": "White takes our bishop. Big mistake.",
-    "file": "voice/lasker-trap/step-5-a48dc822.mp3",
-    "seconds": 2.005
+    "text": "White takes it. Bishop check hits the queen.",
+    "file": "voice/lasker-trap/step-5-79ce5886.mp3",
+    "seconds": 2.276
    },
    "step-6": {
-    "text": "Pawn takes f2. Check!",
-    "file": "voice/lasker-trap/step-6-c1934c3f.mp3",
-    "seconds": 1.575
-   },
-   "step-7": {
-    "text": "The king must move.",
-    "file": "voice/lasker-trap/step-7-cadc4cff.mp3",
-    "seconds": 1.008
-   },
-   "step-8": {
-    "text": "Pawn takes the knight and becomes... A knight! With check!",
-    "file": "voice/lasker-trap/step-8-2bd384da.mp3",
-    "seconds": 2.849
-   },
-   "step-9": {
-    "text": "Why a knight? A queen gives no check. The knight does.",
-    "file": "voice/lasker-trap/step-9-52e83a5d.mp3",
-    "seconds": 2.554
-   },
-   "step-10": {
-    "text": "White takes our new knight.",
-    "file": "voice/lasker-trap/step-10-fefa01b9.mp3",
-    "seconds": 1.223
-   },
-   "step-11": {
-    "text": "Bishop check! And it hits the queen.",
-    "file": "voice/lasker-trap/step-11-1d3c7808.mp3",
-    "seconds": 1.742
-   },
-   "step-12": {
     "text": "The king steps back... And we take their queen!",
-    "file": "voice/lasker-trap/step-12-855fde1a.mp3",
+    "file": "voice/lasker-trap/step-6-855fde1a.mp3",
     "seconds": 2.27
    },
    "cta": {
@@ -600,63 +480,33 @@
     "seconds": 2.364
    },
    "step-0": {
-    "text": "The Roo-ee Lopez. White castles. Very normal.",
-    "file": "voice/fishing-pole-trap/step-0-9924921f.mp3",
-    "seconds": 2.706
+    "text": "Knight to g4. It's our fishing pole!",
+    "file": "voice/fishing-pole-trap/step-0-555cdc45.mp3",
+    "seconds": 2.248
    },
    "step-1": {
-    "text": "Knight to g4. Risky... But it's our fishing pole!",
-    "file": "voice/fishing-pole-trap/step-1-e90975a4.mp3",
-    "seconds": 2.972
+    "text": "White kicks it. We leave it there.",
+    "file": "voice/fishing-pole-trap/step-1-a455825f.mp3",
+    "seconds": 1.57
    },
    "step-2": {
-    "text": "White kicks the knight.",
-    "file": "voice/fishing-pole-trap/step-2-9898b199.mp3",
-    "seconds": 1.031
+    "text": "White bites! Now the h-file is open.",
+    "file": "voice/fishing-pole-trap/step-2-4d50fa50.mp3",
+    "seconds": 2.118
    },
    "step-3": {
-    "text": "We leave it there. The knight is the bait.",
-    "file": "voice/fishing-pole-trap/step-3-ffd074e7.mp3",
-    "seconds": 2.027
+    "text": "Queen to h4. Threat: Mate on h1!",
+    "file": "voice/fishing-pole-trap/step-3-f7a4530b.mp3",
+    "seconds": 2.644
    },
    "step-4": {
-    "text": "White takes the free knight...",
-    "file": "voice/fishing-pole-trap/step-4-1ab1e9a6.mp3",
-    "seconds": 1.27
+    "text": "Pawn to g3. Now nothing stops mate.",
+    "file": "voice/fishing-pole-trap/step-4-6161ad1c.mp3",
+    "seconds": 2.49
    },
    "step-5": {
-    "text": "We take back. Now the h-file is wide open.",
-    "file": "voice/fishing-pole-trap/step-5-0cf474ca.mp3",
-    "seconds": 2.549
-   },
-   "step-6": {
-    "text": "The knight runs away.",
-    "file": "voice/fishing-pole-trap/step-6-33748c6f.mp3",
-    "seconds": 1.071
-   },
-   "step-7": {
-    "text": "Queen to h4. Threat: Queen to h1 is mate!",
-    "file": "voice/fishing-pole-trap/step-7-b6b98087.mp3",
-    "seconds": 3.111
-   },
-   "step-8": {
-    "text": "White makes room for the king.",
-    "file": "voice/fishing-pole-trap/step-8-f4e39897.mp3",
-    "seconds": 1.37
-   },
-   "step-9": {
-    "text": "Pawn to g3. Now nothing can stop mate.",
-    "file": "voice/fishing-pole-trap/step-9-9af49766.mp3",
-    "seconds": 2.645
-   },
-   "step-10": {
-    "text": "White tries anything...",
-    "file": "voice/fishing-pole-trap/step-10-2240f136.mp3",
-    "seconds": 1.099
-   },
-   "step-11": {
     "text": "Queen to h1. Checkmate!",
-    "file": "voice/fishing-pole-trap/step-11-f5cf6579.mp3",
+    "file": "voice/fishing-pole-trap/step-5-f5cf6579.mp3",
     "seconds": 1.733
    },
    "cta": {
@@ -672,53 +522,33 @@
     "seconds": 2.645
    },
    "step-0": {
-    "text": "White gives a pawn to attack. The Smith-Morra Gambit.",
-    "file": "voice/siberian-trap/step-0-6cb8fb20.mp3",
-    "seconds": 2.871
+    "text": "The Smith-Morra Gambit. Our queen eyes h2.",
+    "file": "voice/siberian-trap/step-0-3e8873ce.mp3",
+    "seconds": 2.599
    },
    "step-1": {
-    "text": "We take it. Everyone develops.",
-    "file": "voice/siberian-trap/step-1-227a1b32.mp3",
-    "seconds": 1.679
+    "text": "Knight to g4. Two pieces hit h2.",
+    "file": "voice/siberian-trap/step-1-98e3a75b.mp3",
+    "seconds": 2.563
    },
    "step-2": {
-    "text": "Queen to c7. Look at her diagonal.",
-    "file": "voice/siberian-trap/step-2-459f0894.mp3",
-    "seconds": 2.295
+    "text": "White kicks it. Natural... But wrong!",
+    "file": "voice/siberian-trap/step-2-f2b003ba.mp3",
+    "seconds": 2.036
    },
    "step-3": {
-    "text": "White castles. Our knight comes out.",
-    "file": "voice/siberian-trap/step-3-0854d4e6.mp3",
-    "seconds": 1.892
-   },
-   "step-4": {
-    "text": "Knight to g4. Now two pieces hit h2.",
-    "file": "voice/siberian-trap/step-4-4106d574.mp3",
-    "seconds": 2.786
-   },
-   "step-5": {
-    "text": "Only White's knight protects h2.",
-    "file": "voice/siberian-trap/step-5-fbb89d1d.mp3",
-    "seconds": 1.793
-   },
-   "step-6": {
-    "text": "White kicks our knight. Natural... But wrong!",
-    "file": "voice/siberian-trap/step-6-2ccb5728.mp3",
-    "seconds": 2.23
-   },
-   "step-7": {
     "text": "Knight to d4! It attacks the queen.",
-    "file": "voice/siberian-trap/step-7-cc9c3b29.mp3",
+    "file": "voice/siberian-trap/step-3-cc9c3b29.mp3",
     "seconds": 2.109
    },
-   "step-8": {
-    "text": "White takes it... But now nobody guards h2.",
-    "file": "voice/siberian-trap/step-8-38befe5e.mp3",
-    "seconds": 2.74
+   "step-4": {
+    "text": "White takes it... Now nobody guards h2.",
+    "file": "voice/siberian-trap/step-4-99c90720.mp3",
+    "seconds": 2.536
    },
-   "step-9": {
+   "step-5": {
     "text": "Queen takes h2. Checkmate!",
-    "file": "voice/siberian-trap/step-9-59b5796a.mp3",
+    "file": "voice/siberian-trap/step-5-59b5796a.mp3",
     "seconds": 1.808
    },
    "cta": {

@@ -10,6 +10,37 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-20 ~16:00 UTC — ek deney (sahibin isteği): tuzak videolarında "can alıcı an" öne çekildi
+
+Sahip, tuzak videolarının ~1400 izlenme tavanını kırmak için bir deney istedi. Savunma hook değişikliğinden ayrı bir video
+türü olduğu için iki deney birbirine karışmaz (tuzak ↔ savunma ayrı ölçülüyor).
+
+**Teşhis:** Tuzaklarda ortalama izlenme süresi uzunluktan bağımsız olarak ~15 sn'de sabit (48 sn → 15,3; 39 sn → 14,6;
+41 sn → 14,5). Ama can alıcı an (brilliant hamle / hata / mat) 17–33. saniyede geliyordu (Englund 32,7 sn,
+Légal 18,5 sn). İzleyicilerin çoğu ödülü hiç görmeden çıkıyor → tamamlanma, tekrar izleme ve paylaşım düşük kalıyor;
+Instagram da videoyu ilk ~1200 kişilik test kitlesinin dışına taşımıyor.
+
+**Değişiklik (tek değişken: ödüle kadar geçen süre):** Henüz paylaşılmamış 8 tuzakta açılış hamleleri tek adımda,
+tek kısa cümleyle oynanıyor; gereksiz ara cümleler çıkarıldı. Hamleler birebir aynı (assert ile kontrol edildi),
+analiz değişmedi, sesler yeniden üretildi, validate 0 hata.
+
+| Tuzak | Can alıcı an (önce → sonra) | Süre (önce → sonra) |
+| --- | --- | --- |
+| Lasker Trap (bu gece) | 22,6 → 13,1 sn | 41,8 → 29,6 sn |
+| Fool's Mate | 16,2 → 11,5 sn | 25,3 → 20,6 sn |
+| Blackburne Shilling (mat) | 30,4 → 18,0 sn | 40,3 → 27,2 sn |
+| Elephant Trap | 17,6 → 11,2 sn | 36,6 → 26,8 sn |
+| Fishing Pole (mat) | 31,7 → 18,8 sn | 39,9 → 26,9 sn |
+| Stafford Trap | 18,3 → 11,8 sn | 36,3 → 25,4 sn |
+| Kieninger Trap | 18,9 → 12,3 sn | 35,8 → 29,0 sn |
+| Siberian Trap | 23,8 → 15,5 sn | 38,0 → 29,5 sn |
+
+**Hipotez:** Ortalama izlenme ~15 sn'de kalsa bile izlenme oranı %36 → %50+; ödülü görenler arttığı için
+erişim başına paylaşım ve kaydetme yükselir ve izlenme 1400 tavanını aşar. Lasker Trap ve Fool's Mate ile ölçülecek;
+iki tuzakta sonuç görmeden tuzaklarda başka değişiklik yok.
+
+---
+
 ## 2026-10-20 15:35 UTC — planlı inceleme: savunma hook'ları tehdit formatına çevrildi
 
 | Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

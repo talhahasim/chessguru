@@ -31,10 +31,9 @@ export const foolsMate: Lesson = {
   hero: "b",
   hook: ["The *fastest* checkmate in chess.", "Only *2 moves*. Seriously."],
   steps: [
-    { moves: ["f3"], say: "White pushes the f-pawn. That pawn was *guarding the king*.", squares: ["r:e1"] },
-    { moves: ["e5"], say: "We push our pawn. Now our *queen can come out*.", arrows: ["g:d8h4"] },
-    { moves: ["g4"], say: "White pushes ANOTHER pawn. *Huge mistake.*" },
-    { say: "Look at this line to the king. *Nothing* is blocking it!", arrows: ["d8h4", "r:h4e1"], pulse: ["e1"] },
+    { moves: ["f3"], say: "White pushes the f-pawn. The king gets *weaker*.", squares: ["r:e1"] },
+    { moves: ["e5"], say: "We open a path for our *queen*.", arrows: ["g:d8h4"] },
+    { moves: ["g4"], say: "Another pawn push. *Huge mistake!*", arrows: ["d8h4", "r:h4e1"], pulse: ["e1"] },
     { moves: ["Qh4#"], say: "Queen to h4. The king is *trapped*. *Checkmate!*" },
   ],
   takeaways: [

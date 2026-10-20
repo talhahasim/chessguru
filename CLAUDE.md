@@ -57,7 +57,9 @@ The first frame of every video must be a finished cover that can be used as the 
 
 ## Retention & engagement (from the first stats: 13 s average watch on a 48 s video)
 
-- No title card after the hook; opening moves play fast (`T.move`, `T.quickGap`); target length 25–40 s.
+- No title card after the hook; opening moves play fast (`T.move`, `T.quickGap`); target length 20–30 s.
+- The key moment (brilliant move / the mistake / mate) must land by **~12 s**: viewers leave at ~15 s on average.
+  Group setup moves into one step with one short line instead of narrating every move.
 - Every video ends with a "Send this to a friend…" ask (screen + voice) before FOLLOW; captions ask a
   YES/NO question and for a DM share. Instagram reportedly weighs watch time, likes/reach and sends/reach most.
 
