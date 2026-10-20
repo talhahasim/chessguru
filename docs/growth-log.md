@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-20 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Beat the Englund Gambit (15:44, yeni hook) | 26 sn | 961 | 750 | 4 | 0 | 0 | 5 | 11,2 sn | **~%43** |
+| Englund Gambit Trap (19.10 22:23) | 41 sn | 1492 | 1240 | 31 | 0 | 3 | 23 | 14,5 sn | ~%35 |
+| Stop Légal's Mate (19.10 15:42, eski hook) | 31,9 sn | 494 | 444 | 0 | 0 | 0 | 0 | 6,1 sn | ~%19 |
+| Légal's Mate (19.10 01:11) | 38,6 sn | 1416 | 1193 | 35 | 0 | 6 | 16 | 14,5 sn | ~%38 |
+
+Takipçi: 13 (+1). 18:17 yedek cron'u 21:36'da başladı ve 9 saat kuralıyla atladı.
+
+**Teşhis:** Tehdit formatındaki savunma hook'unun ilk sonucu çok güçlü: 7 saatte 961 izlenme (Stop Légal's Mate'in toplamının
+~2 katı), ortalama izlenme 6,1 → 11,2 sn, izlenme oranı %19 → %43 (tuzak videolarından bile yüksek), ilk kaydetmeler (5)
+ve beğeniler (4). Tek veri noktası ama fark büyük.
+
+**Değişiklik:** Yok. Savunma hook'u 1 paylaşımda, tuzak sıkıştırması 0 paylaşımda test edildi (kural: ≥ 2).
+Lasker Trap (sıkıştırılmış sürüm, 29,6 sn, can alıcı an 13,1 sn) 22:38 UTC'de paylaşıldı:
+https://www.instagram.com/reel/Deu7IS1hkJ5/
+
+**Sonraki hipotez:** Lasker Trap izlenme oranı > %45 ve 1500+ izlenme (tavanın kırılması). Dodge the Lasker Trap
+(yarın 15:35) savunma hook'unun ikinci testi.
+
+---
+
 ## 2026-10-20 ~16:00 UTC — ek deney (sahibin isteği): tuzak videolarında "can alıcı an" öne çekildi
 
 Sahip, tuzak videolarının ~1400 izlenme tavanını kırmak için bir deney istedi. Savunma hook değişikliğinden ayrı bir video
