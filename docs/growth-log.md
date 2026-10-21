@@ -10,6 +10,36 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-21 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lasker Trap (20.10 22:38, sıkıştırılmış) | 29,6 sn | 1396 | 1078 | 14 | **1** | 0 | 6 | 13,8 sn | **~%46** |
+| Beat the Englund Gambit (20.10 15:44, yeni hook) | 26,2 sn | 1370 | 1078 | 11 | 0 | 0 | 12 | 12,4 sn | **~%47** |
+| Englund Gambit Trap (19.10 22:23) | 41 sn | 1502 | 1247 | 31 | 0 | 3 | 23 | 14,5 sn | ~%35 |
+| Stop Légal's Mate (19.10 15:42, eski hook) | 31,9 sn | 498 | 446 | 1 | 0 | 0 | 0 | 6,2 sn | ~%20 |
+| Légal's Mate (19.10 01:11) | 38,6 sn | 1422 | 1196 | 36 | 0 | 6 | 16 | 14,6 sn | ~%38 |
+
+Takipçi: 15 (+2). 01:17 yedek cron'u 06:02'de başladı ve 9 saat kuralıyla atladı.
+
+**Teşhis:**
+- Savunma hook'u: Beat the Englund Gambit 1370 izlenmeye çıktı (eski hook'lu savunmanın ~3 katı) ve %47 ile
+  tuzaklarla aynı seviyede. Savunma formatı artık zayıf halka değil.
+- Tuzak sıkıştırması (Lasker): izlenme oranı %35–38 → %46 (hedef %45 ✓), ilk yorum geldi. Ama izlenme ~1400'de kaldı
+  (tavan kırılmadı) ve erişim başına beğeni %2,6–2,9 → %1,3, paylaşım 0. Ortalama izlenme yine ~14 sn → insanlar ödülü
+  görüyor ama videoyu bitirip paylaşmıyor. Lasker 900–1500 bandında ve diğerlerinden daha karmaşık (alt-terfi);
+  konu etkisi de olabilir, tek veriyle karar yok.
+
+**Değişiklik:** Yok. Savunma hook'u bugünkü Dodge the Lasker Trap ile 2. testini alıyor; tuzak sıkıştırması 1 paylaşımda.
+
+**Paylaşım:** Dodge the Lasker Trap 15:38 UTC → https://www.instagram.com/reel/Dewv0cSC4gB/
+
+**Sonraki hipotez:** Fool's Mate (bu gece, sıkıştırılmış, 0–300 bandı, 20,6 sn) ile sıkıştırmanın 2. testi: bandın
+etkisini ayırmak için izlenme > 1500 ve beğeni/erişim > %2,5 bekleniyor. Tavan sürerse sıradaki tek değişken
+erişimi artıracak bir şey olmalı (ör. paylaşım sorusu / "send to a friend" anının videonun ortasına alınması).
+
+---
+
 ## 2026-10-20 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
