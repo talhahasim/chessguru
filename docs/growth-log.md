@@ -10,6 +10,33 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-21 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dodge the Lasker Trap (15:38, yeni hook) | 23,9 sn | 203 | 175 | 4 | 0 | 0 | 0 | 7,7 sn | ~%32 |
+| Lasker Trap (20.10 22:38, sıkıştırılmış) | 29,6 sn | 1431 | 1102 | 14 | 0 | 0 | 7 | 13,8 sn | ~%47 |
+| Beat the Englund Gambit (20.10 15:44, yeni hook) | 26,2 sn | 1371 | 1079 | 11 | 0 | 0 | 12 | 12,4 sn | ~%47 |
+| Englund Gambit Trap (19.10 22:23) | 41 sn | 1503 | 1249 | 31 | 0 | 3 | 23 | 14,5 sn | ~%35 |
+
+Takipçi: 15. Lasker'daki tek yorum 0'a düştü (silinmiş / spam olabilir). 18:17 yedek cron'u 21:42'de başladı ve atladı.
+
+**Teşhis:** Savunma hook'unun ikinci testi zayıf: Dodge the Lasker Trap 7 saatte 203 izlenme (Beat the Englund aynı sürede
+961), %32, ort. 7,7 sn. Yine de eski hook'lu savunmalardan (%19–20, ~0 beğeni) iyi: 4 beğeni / 175 erişim (%2,3).
+Fark büyük ihtimalle konudan: Lasker/Albin 900–1500 bandında, tuzağı zaten Lasker Trap videosu gösterdi; Englund ise
+daha bilinen bir açılış. Sonuç: tehdit formatı eski formattan iyi ama tek başına garanti değil → savunma hook'unu
+koruyoruz, ek değişiklik yok.
+
+**Değişiklik:** Yok. Tuzak sıkıştırması bu geceki Fool's Mate ile 2. testini alıyor.
+
+**Paylaşım:** Fool's Mate 22:38 UTC → https://www.instagram.com/reel/Dexf5c9CXmr/
+
+**Sonraki hipotez:** Fool's Mate (0–300, 20,6 sn) > 1500 izlenme ve beğeni/erişim > %2,5 olursa sıkıştırma kalıcı;
+Lasker'daki düşük beğeni konudandı. Değilse tavan için sıradaki tek değişken: paylaşım çağrısını can alıcı anın hemen
+arkasına almak.
+
+---
+
 ## 2026-10-21 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre (paylaşılan) | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
