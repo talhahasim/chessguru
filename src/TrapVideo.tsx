@@ -4,7 +4,7 @@ import { Board, type BoardArrow } from "./components/Board";
 import { Caption } from "./components/Caption";
 import { EvalBar } from "./components/EvalBar";
 import { PlayerBar } from "./components/PlayerBar";
-import { Header, HOOK_LAYOUT, HookOverlay, IntroCard, Outro } from "./components/Scenes";
+import { Header, HOOK_LAYOUT, HookOverlay, IntroCard, Outro, SendNudge } from "./components/Scenes";
 import { Watermark } from "./components/Watermark";
 import { engineDataFor } from "./lib/analysis";
 import { evalBarFill } from "./lib/evals";
@@ -77,6 +77,22 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
   const shownFen = tl.line.fens[shownPly];
   const lastMoveEv = anim ?? (shownPly > 0 ? tl.moves.find((m) => m.ply === shownPly) ?? null : null);
   const classification = lastMoveEv ? engine.classes[lastMoveEv.ply - 1] : null;
+
+  // Key moment = first brilliant/great step, else the mating step; the send sticker follows it.
+  const keyIndex = (() => {
+    const i = lesson.steps.findIndex((st) => st.badge === "brilliant" || st.badge === "great");
+    if (i >= 0) return i;
+    const m = lesson.steps.findIndex((st) => st.moves?.some((mv) => mv.includes("#")));
+    return m >= 0 ? m : lesson.steps.length - 1;
+  })();
+  const nudge = (() => {
+    if (lesson.kind === "defense") return null;
+    let start = tl.steps[keyIndex].settled + 15;
+    // When the key moment is the last step, the outro's own send ask follows right away: show it one step earlier.
+    if (start + 60 > tl.outro.start && keyIndex > 0) start = tl.steps[keyIndex - 1].settled + 15;
+    const duration = Math.min(105, tl.outro.start - start);
+    return duration >= 45 ? { start, duration } : null;
+  })();
 
   // Markup of the current step (arrows etc. appear once its moves have landed).
   const step = inHook ? null : stepAt(tl, frame);
@@ -256,8 +272,11 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
         </Sequence>
       ) : null}
 
-      {/* Watermark (also visible on the frame-0 cover) */}
-      <Watermark y={1628} />
+      {/* Trap videos: "send this" sticker right after the key moment, where viewers still are. */}
+      {nudge ? <SendNudge start={nudge.start} duration={nudge.duration} y={1588} /> : null}
+
+      {/* Watermark (also visible on the frame-0 cover); the send sticker briefly takes its place. */}
+      {nudge && frame >= nudge.start && frame < nudge.start + nudge.duration ? null : <Watermark y={1628} />}
 
       {/* Progress bar */}
       <div style={{ position: "absolute", left: 0, bottom: 0, height: 10, width: L.W * (frame / tl.duration), background: theme.green }} />

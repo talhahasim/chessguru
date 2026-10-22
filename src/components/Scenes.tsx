@@ -261,3 +261,52 @@ export const Outro: React.FC<{
     </div>
   );
 };
+
+/**
+ * Mid-video "send" sticker shown right after a trap's key moment. Viewers leave at ~10-15 s on average,
+ * so most never reach the outro's send ask; this puts the same ask where they still are (screen only, no voice).
+ */
+export const SendNudge: React.FC<{ start: number; duration: number; y: number }> = ({ start, duration, y }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const local = frame - start;
+  if (local < 0 || local >= duration) return null;
+  const pop = spring({ frame: local, fps, config: { damping: 10, stiffness: 170, mass: 0.6 } });
+  const out = interpolate(local, [duration - 10, duration], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: y,
+        left: 0,
+        right: 0,
+        display: "flex",
+        justifyContent: "center",
+        opacity: out,
+        transform: `scale(${0.6 + 0.4 * pop})`,
+        zIndex: 30,
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 14,
+          padding: "12px 28px",
+          borderRadius: 999,
+          background: "#ffe14d",
+          boxShadow: "0 8px 24px rgba(0,0,0,0.45)",
+          fontFamily,
+          fontWeight: 800,
+          fontSize: 36,
+          color: "#1d1d1b",
+        }}
+      >
+        <svg viewBox="0 0 24 24" width={38} height={38}>
+          <path d={SEND_ICON} fill="#1d1d1b" />
+        </svg>
+        Send this to a friend who falls for it
+      </div>
+    </div>
+  );
+};

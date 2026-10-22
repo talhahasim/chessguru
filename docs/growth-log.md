@@ -10,6 +10,38 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-22 15:35 UTC — inceleme: tuzaklara videonun ortasında "send" etiketi
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fool's Mate (21.10 22:38, sıkıştırılmış) | 20,6 sn | **1542** | 1253 | 10 | **2** | 1 | 3 | 10,5 sn | **~%51** |
+| Dodge the Lasker Trap (21.10 15:38, yeni hook) | 23,9 sn | 341 | 280 | 4 | 0 | 0 | 0 | 9,0 sn | ~%38 |
+| Lasker Trap (20.10 22:38, sıkıştırılmış) | 29,6 sn | 1442 | 1108 | 14 | 0 | 0 | 8 | 13,8 sn | ~%47 |
+| Beat the Englund Gambit (20.10 15:44, yeni hook) | 26,2 sn | 1374 | 1083 | 11 | 0 | 0 | 12 | 12,3 sn | ~%47 |
+| Englund Gambit Trap (19.10, eski uzun) | 41 sn | 1507 | 1253 | 31 | 0 | 3 | 23 | 14,4 sn | ~%35 |
+| Légal's Mate (19.10, eski uzun) | 38,6 sn | 1426 | 1198 | 36 | 0 | 6 | 16 | 14,6 sn | ~%38 |
+
+Takipçi: 16 (+1). 01:17 yedek cron'u 06:07'de başladı ve atladı.
+
+**Sıkıştırmanın sonucu (2 test):** İzlenme oranı %35–38 → %47–51 ✓, Fool's Mate en çok izlenen video (1542) ve ilk 2 yorum.
+Ama erişim ~1100–1250'de sabit (tavan kırılmadı) ve erişim başına beğeni %2,6–3,0 → %0,8–1,3, kaydetme %1,3–1,8 → %0,2–0,7
+düştü. Kısalık kalıcı (izlenme oranı ve yorum için iyi); erişimi büyütecek kaldıraç izlenme oranı değil, etkileşim.
+
+**Teşhis:** Ortalama izleme 10–14 sn, ama tek "send" çağrısı outro'da (son birkaç saniye) → izleyicilerin çoğu hiç görmüyor.
+Instagram'ın en güçlü erişim sinyali DM paylaşımı ve şu ana kadar toplam sadece 12 paylaşım var.
+
+**Değişiklik (tek değişken, sadece tuzaklar):** Can alıcı andan hemen sonra (brilliant/great adımı, yoksa mat adımı; mat son
+adımsa bir önceki adım) ekranın altında sarı bir "➤ Send this to a friend who falls for it" etiketi ~3,5 sn çıkıyor
+(`SendNudge`). Sadece ekranda, seslendirme yok → süre değişmedi. O sırada filigranın yerini alıyor. Kapak (kare 0)
+etkilenmiyor. Savunma videolarına uygulanmadı (ayrı ölçüm).
+
+**Paylaşım:** Avoid Fool's Mate (savunma, yeni hook) 15:39 UTC → https://www.instagram.com/reel/DezUuQsxC5d/
+
+**Sonraki hipotez:** Blackburne Shilling (bu gece) ve Elephant Trap ile erişim başına paylaşım > %0,5 ve beğeni > %2;
+tavanı (≈1500) aşan ilk video.
+
+---
+
 ## 2026-10-21 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

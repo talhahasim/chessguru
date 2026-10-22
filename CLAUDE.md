@@ -60,6 +60,8 @@ The first frame of every video must be a finished cover that can be used as the 
 - No title card after the hook; opening moves play fast (`T.move`, `T.quickGap`); target length 20–30 s.
 - The key moment (brilliant move / the mistake / mate) must land by **~12 s**: viewers leave at ~15 s on average.
   Group setup moves into one step with one short line instead of narrating every move.
+- Trap videos also pop a yellow "Send this to a friend who falls for it" sticker (screen only) right after the key
+  moment (`SendNudge`); it briefly takes the watermark's place.
 - Every video ends with a "Send this to a friend…" ask (screen + voice) before FOLLOW; captions ask a
   YES/NO question and for a DM share. Instagram reportedly weighs watch time, likes/reach and sends/reach most.
 
