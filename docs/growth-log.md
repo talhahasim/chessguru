@@ -10,6 +10,33 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-22 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Avoid Fool's Mate (15:39, yeni hook) | 24 sn | 216 | 187 | 0 | 0 | 0 | 0 | 6,1 sn | ~%25 |
+| Fool's Mate (21.10 22:38) | 20,6 sn | 1545 | 1253 | 10 | 2 | 1 | 3 | 10,5 sn | ~%51 |
+| Dodge the Lasker Trap (21.10 15:38, yeni hook) | 23,9 sn | 342 | 281 | 4 | 0 | 0 | 0 | 9,1 sn | ~%38 |
+| Beat the Englund Gambit (20.10 15:44, yeni hook) | 26,2 sn | 1374 | 1083 | 11 | 0 | 0 | 12 | 12,3 sn | ~%47 |
+
+Takipçi: 16. 18:17 yedek cron'u 21:35'te başladı ve atladı.
+
+**Teşhis:** Yeni hook'lu 3 savunma videosu: 1374 / 342 / 216 izlenme. Beat the Englund bir istisna gibi duruyor; diğer ikisi
+eski hook'lu savunmalara (151 / 499) yakın. Avoid Fool's Mate 7 saatte 216 izlenme, %25, 0 beğeni. Savunma videolarının
+asıl sorunu hook metni değil, format: Instagram onları ilk test kitlesinin (≈200–300 kişi) ötesine taşımıyor, çünkü
+izleyici ilk 6–9 sn'de çıkıyor. Tuzak videoları her seferinde ~1100–1250 kişiye ulaşıyor.
+
+**Değişiklik:** Yok. Tuzaklardaki "send" etiketi bu geceki Blackburne Shilling ile ilk testini alıyor.
+
+**Paylaşım:** Blackburne Shilling Trap 22:38 UTC → https://www.instagram.com/reel/De0EpfnBUoG/
+
+**Sonraki hipotez / aday (savunmalar için, sahibe sorulacak):** Savunmayı bir bulmaca gibi açmak ("White to move.
+Only *one* move doesn't lose. Find it!") → izleyici cevabı görmek için kalır ve yorum yazar. Alternatif: savunma
+videolarını günde 2 paylaşımın dışında tutup tuzak sıklığını artırmak (CLAUDE.md'deki tuzak+savunma kuralı değişir →
+sahibin kararı).
+
+---
+
 ## 2026-10-22 15:35 UTC — inceleme: tuzaklara videonun ortasında "send" etiketi
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
