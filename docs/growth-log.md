@@ -10,6 +10,31 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-23 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Blackburne Shilling (22.10 22:38, "send" etiketi)** | 27,2 sn | **1564** | **1294** | 20 | 0 | **8** | 15 | 11,7 sn | ~%43 |
+| Avoid Fool's Mate (22.10 15:39, savunma) | 24 sn | 397 | 338 | 2 | 0 | 1 | 1 | 7,9 sn | ~%32 |
+| Fool's Mate (21.10 22:38) | 20,6 sn | 1549 | 1260 | 10 | 2 | 1 | 3 | 10,5 sn | ~%51 |
+| Lasker Trap (20.10 22:38) | 29,6 sn | 1445 | 1110 | 15 | 0 | 0 | 8 | 13,8 sn | ~%47 |
+
+Takipçi: **18 (+2)**. 01:17 yedek cron'u 06:02'de başladı ve atladı.
+
+**Teşhis (etiketin ilk testi):** Blackburne şimdiye kadarki en iyi video: en yüksek izlenme (1564) ve erişim (1294),
+**8 paylaşım** (erişim başına %0,62; önceki rekor 6, son iki kısa tuzakta 0–1), kaydetme %1,2, beğeni %1,5. Hedef
+(paylaşım > %0,5) tutturuldu; tavan hafifçe aşıldı. Tek veri; Elephant Trap (bu gece) ikinci test.
+Avoid Fool's Mate 24 saatte 397'ye çıktı ama savunmalar hâlâ tuzakların ~1/4'ü.
+
+**Değişiklik:** Yok (etiket 1 paylaşımda test edildi). Savunma formatı (bulmaca açılışı) sahibin cevabını bekliyor.
+
+**Paylaşım:** Beat the Blackburne Trap 15:39 UTC → https://www.instagram.com/reel/De15e7Li_vz/
+
+**Sonraki hipotez:** Elephant Trap'te de paylaşım/erişim > %0,5 olursa etiket kalıcı; sonra etiketin savunmalara da
+eklenmesi bir aday.
+
+---
+
 ## 2026-10-22 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
