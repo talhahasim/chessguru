@@ -91,7 +91,7 @@ export const buildTimeline = (lesson: Lesson): Timeline => {
   const outroStart = t;
   const remember = outroStart + 6;
   const takeaways = lesson.takeaways.map((_, i) => remember + 8 + i * 8);
-  const cta = takeaways[takeaways.length - 1] + 12;
+  const cta = takeaways.length ? takeaways[takeaways.length - 1] + 12 : remember + 14;
   const ctaDone = say("cta", remember + 10);
   const outro = { start: outroStart, end: (t = Math.max(outroStart + 120, ctaDone + 20, cta + 60)) };
   return { line, hook, intro, steps, moves, outro, outroCues: { remember, takeaways, cta }, voice, duration: t };

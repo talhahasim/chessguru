@@ -17,6 +17,7 @@ import {
   stopLegalsMate,
   stopScholarsMate,
 } from "./defenses";
+import { QUIZZES } from "./quizzes";
 
 export const LESSONS: Lesson[] = [
   scholarsMate,
@@ -44,6 +45,8 @@ export const LESSONS: Lesson[] = [
   dodgeLaskerTrap,
   dodgeFishingPole,
   dodgeSiberianTrap,
+  // "Brilliant or blunder?" quizzes
+  ...QUIZZES,
 ];
 
 export const BANDS: Band[] = ["0-300", "300-600", "600-900", "900-1500"];
@@ -58,6 +61,7 @@ export const getLesson = (id: string): Lesson => {
 export const compositionId = (lesson: Lesson) => `elo-${lesson.band}-${lesson.id}`;
 
 export const isDefense = (lesson: Lesson) => lesson.kind === "defense";
+export const isQuiz = (lesson: Lesson) => lesson.kind === "quiz";
 
 /** The defense video that answers a trap, if there is one. */
 export const defenseOf = (trap: Lesson) => LESSONS.find((l) => l.defends === trap.id) ?? null;

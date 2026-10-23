@@ -1,0 +1,33 @@
+name: Reply to quiz comments
+
+# Answers "brilliant" / "blunder" comments under the "Brilliant or blunder?" quiz Reels
+# (scripts/reply-comments.ts). Hourly: GitHub often starts schedules late, which is fine here.
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only print what would be replied (also checks comment access)"
+        type: boolean
+        default: true
+
+concurrency:
+  group: reply-comments
+  cancel-in-progress: false
+
+jobs:
+  reply:
+    runs-on: ubuntu-24.04
+    if: ${{ github.event_name == 'workflow_dispatch' || vars.POSTING_PAUSED != 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/reply-comments.ts
+        env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '0' }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}

@@ -8,6 +8,7 @@
  *
  *   npm run validate
  */
+import { Chess } from "chess.js";
 import { LESSONS, compositionId } from "../src/lessons/index.ts";
 import { engineDataFor } from "../src/lib/analysis.ts";
 import { classify } from "../src/lib/evals.ts";
@@ -76,6 +77,23 @@ for (const lesson of LESSONS) {
       });
       if (!["best", "excellent", "good"].includes(engineClass))
         warn(lesson.id, `${m.move.san} is marked ${badge} but Stockfish calls it ${engineClass}`);
+    }
+  }
+  // Quizzes: the hidden answer must be honest, or the comment replies would tell people the wrong thing.
+  if (lesson.kind === "quiz") {
+    const last = line.moves.at(-1);
+    if (!lesson.answer) err(lesson.id, "quiz without an answer");
+    else if (last && data.fresh) {
+      const cls = data.classes[last.ply - 1];
+      const best = a.lessons[lesson.id].positions[last.ply - 1].best;
+      if (lesson.answer === "blunder" && cls !== "blunder")
+        err(lesson.id, `answer is blunder but Stockfish calls ${last.move.san} ${cls}`);
+      if (lesson.answer === "brilliant") {
+        const after = new Chess(line.fens[last.ply]);
+        const canTake = after.moves({ verbose: true }).some((mv) => mv.to === last.move.to && mv.captured);
+        if (best !== last.move.lan) err(lesson.id, `answer is brilliant but ${last.move.san} is not Stockfish's best move (${best})`);
+        if (!canTake) err(lesson.id, `answer is brilliant but ${last.move.san} sacrifices nothing (the piece can't be taken)`);
+      }
     }
   }
   const clips = voiceClipsFor(lesson);

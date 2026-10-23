@@ -40,11 +40,13 @@ export const narrationSegments = (lesson: Lesson): NarrationSegment[] => [
   {
     key: "cta",
     text:
-      lesson.kind === "defense"
-        ? "Send this to a friend before they fall for it. New trap tomorrow!"
-        : LESSONS.some((l) => l.defends === lesson.id)
-          ? "Send this to a friend who falls for it. The defense is in the next video. Follow!"
-          : "Send this to a friend who falls for it. Follow for more traps!",
+      lesson.kind === "quiz"
+        ? "Brilliant or blunder? Comment your answer. I reply to everyone!"
+        : lesson.kind === "defense"
+          ? "Send this to a friend before they fall for it. New trap tomorrow!"
+          : LESSONS.some((l) => l.defends === lesson.id)
+            ? "Send this to a friend who falls for it. The defense is in the next video. Follow!"
+            : "Send this to a friend who falls for it. Follow for more traps!",
   },
 ];
 

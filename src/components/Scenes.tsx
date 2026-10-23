@@ -5,9 +5,12 @@ import type { Lesson } from "../types";
 import { LESSONS } from "../lessons";
 import { fontFamily } from "../fonts";
 import { RichText } from "./Caption";
+import { CLASS_INFO } from "../lib/classes";
 
 // Material Design "send" icon (Apache 2.0).
 const SEND_ICON = "M2.01 21L23 12 2.01 3 2 10l15 2-15 2z";
+// Material Design "comment" icon (Apache 2.0).
+const COMMENT_ICON = "M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z";
 
 // Material Design "shield" icon (Apache 2.0).
 const SHIELD = "M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z";
@@ -162,6 +165,7 @@ export const Outro: React.FC<{
   const ctaAt = cues.cta;
   const cta = spring({ frame: frame - ctaAt, fps, config: { damping: 10 } });
   const pulse = 1 + 0.04 * Math.sin(((frame - ctaAt) / fps) * Math.PI * 3);
+  if (lesson.kind === "quiz") return <QuizOutro start={start} ctaAt={ctaAt} width={width} />;
   return (
     <div
       style={{
@@ -306,6 +310,108 @@ export const SendNudge: React.FC<{ start: number; duration: number; y: number }>
           <path d={SEND_ICON} fill="#1d1d1b" />
         </svg>
         Send this to a friend who falls for it
+      </div>
+    </div>
+  );
+};
+
+/** Quiz outro: the question again as two big options, then "comment your answer". The answer is never shown. */
+const QuizOutro: React.FC<{ start: number; ctaAt: number; width: number }> = ({ start, ctaAt, width }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const s = spring({ frame: frame - start, fps, config: { damping: 15 } });
+  const cta = spring({ frame: frame - ctaAt, fps, config: { damping: 10 } });
+  const pulse = 1 + 0.04 * Math.sin(((frame - ctaAt) / fps) * Math.PI * 3);
+  const option = (label: string, glyph: string, color: string, delay: number) => {
+    const o = spring({ frame: frame - start - delay, fps, config: { damping: 9, stiffness: 160 } });
+    return (
+      <div
+        style={{
+          flex: 1,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 14,
+          padding: "26px 0",
+          borderRadius: 20,
+          background: color,
+          boxShadow: "0 8px 0 rgba(0,0,0,0.35)",
+          transform: `scale(${0.5 + 0.5 * o})`,
+          fontFamily,
+          fontWeight: 900,
+          fontSize: 50,
+          color: "#fff",
+        }}
+      >
+        <span style={{ fontSize: 56 }}>{glyph}</span>
+        {label}
+      </div>
+    );
+  };
+  return (
+    <div
+      style={{
+        width,
+        background: "rgba(33, 32, 29, 0.97)",
+        borderRadius: 26,
+        padding: "36px 40px 40px",
+        boxShadow: "0 -10px 50px rgba(0,0,0,0.5)",
+        transform: `translateY(${(1 - s) * 500}px)`,
+        display: "flex",
+        flexDirection: "column",
+        gap: 28,
+      }}
+    >
+      <div style={{ fontFamily, fontWeight: 900, fontSize: 52, color: "#fff", letterSpacing: 2, textAlign: "center" }}>WHAT DO YOU THINK?</div>
+      <div style={{ display: "flex", gap: 24 }}>
+        {option("Brilliant", "!!", CLASS_INFO.brilliant.color, 4)}
+        {option("Blunder", "??", CLASS_INFO.blunder.color, 10)}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 16,
+          opacity: cta,
+          transform: `translateY(${(1 - cta) * 20}px)`,
+          fontFamily,
+          fontWeight: 800,
+          fontSize: 42,
+          color: "#ffe14d",
+        }}
+      >
+        <svg viewBox="0 0 24 24" width={48} height={48}>
+          <path d={COMMENT_ICON} fill="#ffe14d" />
+        </svg>
+        Comment your answer!
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: 20,
+          opacity: cta,
+          transform: `scale(${0.8 + 0.2 * cta})`,
+        }}
+      >
+        <div style={{ fontFamily, fontWeight: 800, fontSize: 38, color: theme.textMuted, flex: 1 }}>I reply to every answer</div>
+        <div
+          style={{
+            background: theme.green,
+            boxShadow: `0 8px 0 ${theme.greenShadow}`,
+            borderRadius: 16,
+            padding: "18px 40px",
+            fontFamily,
+            fontWeight: 900,
+            fontSize: 44,
+            color: "#fff",
+            transform: `scale(${pulse})`,
+          }}
+        >
+          FOLLOW
+        </div>
       </div>
     </div>
   );

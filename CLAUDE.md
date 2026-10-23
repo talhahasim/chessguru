@@ -55,6 +55,17 @@ The first frame of every video must be a finished cover that can be used as the 
 - Posting order = trap, then its defense (`postingOrder()` in `scripts/post-reel.ts`).
 - No end banner ("CHECKMATE! / White wins"): after the last step the video goes straight to REMEMBER.
 
+## "Brilliant or blunder?" quizzes
+
+- `src/lessons/quizzes.ts`, `kind: "quiz"`: the last move is the question; `answer` must match Stockfish
+  (`npm run validate`: a blunder must be classed blunder; a brilliant must be the engine's best move AND a real
+  sacrifice). The video NEVER reveals the answer: no eval bar, no move badges/chips, neutral yellow cover arrow,
+  quiz outro ("WHAT DO YOU THINK? !! Brilliant / ?? Blunder – Comment your answer!"), no answer in the caption.
+- `scripts/reply-comments.ts` (`reply-comments.yml`, hourly) replies under quiz Reels: correct answers get a ✅ reply,
+  wrong ones a ❌ "not quite" reply (varied pools, never giving the answer away); comments with no clear answer
+  are ignored. "Already replied" = one of the comment's replies is ours (no state stored).
+- Posting order: from the 8th trap+defense pair on, one quiz follows each pair (`QUIZ_AFTER_PAIRS`).
+
 ## Retention & engagement (from the first stats: 13 s average watch on a 48 s video)
 
 - No title card after the hook; opening moves play fast (`T.move`, `T.quickGap`); target length 20–30 s.

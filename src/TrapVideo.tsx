@@ -67,6 +67,10 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
   const hero = lesson.hero;
   const villain: Color = hero === "w" ? "b" : "w";
   const lastPly = tl.line.moves.length;
+  // Quiz videos ask "brilliant or blunder?" about the last move: nothing may give the answer away,
+  // so they show no move badges at all (an opponent "blunder" badge would hint) and no eval bar.
+  const quiz = lesson.kind === "quiz";
+  const hidden = (ply: number) => quiz && ply > 0;
 
   // ---- Board state ------------------------------------------------------
   const state = boardStateAt(tl, frame);
@@ -76,7 +80,7 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
   const shownPly = anim && state.progress >= 1 ? anim.ply : state.ply;
   const shownFen = tl.line.fens[shownPly];
   const lastMoveEv = anim ?? (shownPly > 0 ? tl.moves.find((m) => m.ply === shownPly) ?? null : null);
-  const classification = lastMoveEv ? engine.classes[lastMoveEv.ply - 1] : null;
+  const classification = lastMoveEv && !hidden(lastMoveEv.ply) ? engine.classes[lastMoveEv.ply - 1] : null;
 
   // Key moment = first brilliant/great step, else the mating step; the send sticker follows it.
   const keyIndex = (() => {
@@ -86,7 +90,7 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
     return m >= 0 ? m : lesson.steps.length - 1;
   })();
   const nudge = (() => {
-    if (lesson.kind === "defense") return null;
+    if (lesson.kind === "defense" || quiz) return null;
     let start = tl.steps[keyIndex].settled + 15;
     // When the key moment is the last step, the outro's own send ask follows right away: show it one step earlier.
     if (start + 60 > tl.outro.start && keyIndex > 0) start = tl.steps[keyIndex - 1].settled + 15;
@@ -107,7 +111,8 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
   }
   if (inHook && lastPly > 0) {
     const m = tl.moves[lastPly - 1];
-    arrows.push({ mark: `g:${m.move.from}${m.move.to}`, appearAt: -30 }); // fully drawn on frame 0 (cover)
+    // Fully drawn on frame 0 (cover); neutral yellow for quizzes so the colour doesn't hint at the answer.
+    arrows.push({ mark: `${quiz ? "y" : "g"}:${m.move.from}${m.move.to}`, appearAt: -30 });
   }
 
   const finalIsMate = tl.line.isMate;
@@ -143,7 +148,7 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
 
   // ---- Caption ------------------------------------------------------------
   const lastStepMove = step?.moves.at(-1);
-  const chipClass = lastStepMove ? engine.classes[lastStepMove.ply - 1] : null;
+  const chipClass = lastStepMove && !hidden(lastStepMove.ply) ? engine.classes[lastStepMove.ply - 1] : null;
   const chip =
     step && lastStepMove && chipClass ? { san: lastStepMove.move.san, classification: chipClass, at: step.settled } : null;
 
@@ -193,9 +198,11 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
         </div>
 
         {/* Eval bar + board */}
-        <div style={{ position: "absolute", left: boardX - L.evalW - L.evalGap, top: L.boardY }}>
-          <EvalBar width={L.evalW} height={L.boardSize} orientation={hero} fill={fill} label={k > 0.5 || inHook ? evalTo : evalFrom} />
-        </div>
+        {!quiz ? (
+          <div style={{ position: "absolute", left: boardX - L.evalW - L.evalGap, top: L.boardY }}>
+            <EvalBar width={L.evalW} height={L.boardSize} orientation={hero} fill={fill} label={k > 0.5 || inHook ? evalTo : evalFrom} />
+          </div>
+        ) : null}
         <div style={{ position: "absolute", left: boardX, top: L.boardY, boxShadow: "0 12px 40px rgba(0,0,0,0.45)", borderRadius: 6 }}>
           <Board
             size={L.boardSize}

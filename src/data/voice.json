@@ -1050,6 +1050,94 @@
     "file": "voice/dodge-siberian-trap/cta-5b17383c.mp3",
     "seconds": 3.367
    }
+  },
+  "quiz-scholars-nf6": {
+   "hook": {
+    "text": "Black attacks the queen. Brilliant or blunder?",
+    "file": "voice/quiz-scholars-nf6/hook-c1e4b085.mp3",
+    "seconds": 2.444
+   },
+   "step-0": {
+    "text": "White's queen comes out early.",
+    "file": "voice/quiz-scholars-nf6/step-0-b61c4582.mp3",
+    "seconds": 1.457
+   },
+   "step-1": {
+    "text": "Knight to f6 hits the queen. Brilliant... Or blunder?",
+    "file": "voice/quiz-scholars-nf6/step-1-84c6a361.mp3",
+    "seconds": 3.171
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-scholars-nf6/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-opera-qb8": {
+   "hook": {
+    "text": "He gives away his queen! Brilliant or blunder?",
+    "file": "voice/quiz-opera-qb8/hook-64301284.mp3",
+    "seconds": 2.484
+   },
+   "step-0": {
+    "text": "Bishop takes. The knight takes back.",
+    "file": "voice/quiz-opera-qb8/step-0-171a24d4.mp3",
+    "seconds": 1.741
+   },
+   "step-1": {
+    "text": "Queen to b8, check! Brilliant... Or blunder?",
+    "file": "voice/quiz-opera-qb8/step-1-b28a71c5.mp3",
+    "seconds": 2.567
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-opera-qb8/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-noahs-ark-qxd4": {
+   "hook": {
+    "text": "White wins the pawn back. Brilliant or blunder?",
+    "file": "voice/quiz-noahs-ark-qxd4/hook-3177111a.mp3",
+    "seconds": 2.678
+   },
+   "step-0": {
+    "text": "Black trades knights and grabs d4.",
+    "file": "voice/quiz-noahs-ark-qxd4/step-0-b86a30bc.mp3",
+    "seconds": 2.036
+   },
+   "step-1": {
+    "text": "Queen takes it back. Brilliant... Or blunder?",
+    "file": "voice/quiz-noahs-ark-qxd4/step-1-92947bce.mp3",
+    "seconds": 2.366
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-noahs-ark-qxd4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-reti-qd8": {
+   "hook": {
+    "text": "Queen check... Into the king? Brilliant or blunder?",
+    "file": "voice/quiz-reti-qd8/hook-0410cc07.mp3",
+    "seconds": 2.711
+   },
+   "step-0": {
+    "text": "White castles. Black grabs a knight.",
+    "file": "voice/quiz-reti-qd8/step-0-2894f8d0.mp3",
+    "seconds": 2.059
+   },
+   "step-1": {
+    "text": "Queen to d8, check! Brilliant... Or blunder?",
+    "file": "voice/quiz-reti-qd8/step-1-01cebd4a.mp3",
+    "seconds": 2.567
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-reti-qd8/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }

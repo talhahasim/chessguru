@@ -44,8 +44,13 @@ export type Step = {
 
 export type Lesson = {
   id: string;
-  /** "trap" (default): we set the trap. "defense": we are the target and dodge/punish it. */
-  kind?: "trap" | "defense";
+  /**
+   * "trap" (default): we set the trap. "defense": we are the target and dodge/punish it.
+   * "quiz": "Brilliant or blunder?" – the last move is the question; the video never reveals the answer.
+   */
+  kind?: "trap" | "defense" | "quiz";
+  /** For quiz lessons: the honest (Stockfish-checked) answer for the last move. Never shown in the video. */
+  answer?: "brilliant" | "blunder";
   /** For defense lessons: id of the trap lesson it answers. */
   defends?: string;
   band: Band;

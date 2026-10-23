@@ -3401,6 +3401,226 @@
      "depth": 20
     }
    ]
+  },
+  "quiz-scholars-nf6": {
+   "line": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1|e2e4 e7e5 f1c4 b8c6 d1h5 g8f6",
+   "positions": [
+    {
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+     "eval": {
+      "type": "cp",
+      "value": 35
+     },
+     "best": "e2e4",
+     "bestSan": "e4",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+     "eval": {
+      "type": "cp",
+      "value": 32
+     },
+     "best": "c7c5",
+     "bestSan": "c5",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+     "eval": {
+      "type": "cp",
+      "value": 34
+     },
+     "best": "g1f3",
+     "bestSan": "Nf3",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq - 1 2",
+     "eval": {
+      "type": "cp",
+      "value": 8
+     },
+     "best": "g8f6",
+     "bestSan": "Nf6",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR w KQkq - 2 3",
+     "eval": {
+      "type": "cp",
+      "value": 15
+     },
+     "best": "g1f3",
+     "bestSan": "Nf3",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 3 3",
+     "eval": {
+      "type": "cp",
+      "value": -23
+     },
+     "best": "g7g6",
+     "bestSan": "g6",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+     "eval": {
+      "type": "mate",
+      "value": 1
+     },
+     "best": "h5f7",
+     "bestSan": "Qxf7#",
+     "depth": 20
+    }
+   ]
+  },
+  "quiz-opera-qb8": {
+   "line": "4kb1r/p2r1ppp/4qn2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 2 15|b5d7 f6d7 b3b8",
+   "positions": [
+    {
+     "fen": "4kb1r/p2r1ppp/4qn2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 2 15",
+     "eval": {
+      "type": "cp",
+      "value": 981
+     },
+     "best": "b5d7",
+     "bestSan": "Bxd7+",
+     "depth": 20
+    },
+    {
+     "fen": "4kb1r/p2B1ppp/4qn2/4p1B1/4P3/1Q6/PPP2PPP/2KR4 b k - 0 15",
+     "eval": {
+      "type": "cp",
+      "value": 989
+     },
+     "best": "e6d7",
+     "bestSan": "Qxd7",
+     "depth": 20
+    },
+    {
+     "fen": "4kb1r/p2n1ppp/4q3/4p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 0 16",
+     "eval": {
+      "type": "mate",
+      "value": 2
+     },
+     "best": "b3b8",
+     "bestSan": "Qb8+",
+     "depth": 20
+    },
+    {
+     "fen": "1Q2kb1r/p2n1ppp/4q3/4p1B1/4P3/8/PPP2PPP/2KR4 b k - 1 16",
+     "eval": {
+      "type": "mate",
+      "value": 1
+     },
+     "best": "d7b8",
+     "bestSan": "Nxb8",
+     "depth": 20
+    }
+   ]
+  },
+  "quiz-noahs-ark-qxd4": {
+   "line": "r1bqkbnr/2p2ppp/p1np4/1p2p3/3PP3/1B3N2/PPP2PPP/RNBQK2R b KQkq - 1 6|c6d4 f3d4 e5d4 d1d4",
+   "positions": [
+    {
+     "fen": "r1bqkbnr/2p2ppp/p1np4/1p2p3/3PP3/1B3N2/PPP2PPP/RNBQK2R b KQkq - 1 6",
+     "eval": {
+      "type": "cp",
+      "value": 7
+     },
+     "best": "c6d4",
+     "bestSan": "Nxd4",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/2p2ppp/p2p4/1p2p3/3nP3/1B3N2/PPP2PPP/RNBQK2R w KQkq - 0 7",
+     "eval": {
+      "type": "cp",
+      "value": 14
+     },
+     "best": "f3d4",
+     "bestSan": "Nxd4",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/2p2ppp/p2p4/1p2p3/3NP3/1B6/PPP2PPP/RNBQK2R b KQkq - 0 7",
+     "eval": {
+      "type": "cp",
+      "value": 0
+     },
+     "best": "e5d4",
+     "bestSan": "exd4",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/2p2ppp/p2p4/1p6/3pP3/1B6/PPP2PPP/RNBQK2R w KQkq - 0 8",
+     "eval": {
+      "type": "cp",
+      "value": 14
+     },
+     "best": "a2a4",
+     "bestSan": "a4",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/2p2ppp/p2p4/1p6/3QP3/1B6/PPP2PPP/RNB1K2R b KQkq - 0 8",
+     "eval": {
+      "type": "cp",
+      "value": -366
+     },
+     "best": "c7c5",
+     "bestSan": "c5",
+     "depth": 20
+    }
+   ]
+  },
+  "quiz-reti-qd8": {
+   "line": "rnb1kb1r/pp3ppp/2p2n2/4q3/4N3/3Q4/PPPB1PPP/R3KBNR w KQkq - 0 8|e1c1 f6e4 d3d8",
+   "positions": [
+    {
+     "fen": "rnb1kb1r/pp3ppp/2p2n2/4q3/4N3/3Q4/PPPB1PPP/R3KBNR w KQkq - 0 8",
+     "eval": {
+      "type": "cp",
+      "value": 144
+     },
+     "best": "e1c1",
+     "bestSan": "O-O-O",
+     "depth": 20
+    },
+    {
+     "fen": "rnb1kb1r/pp3ppp/2p2n2/4q3/4N3/3Q4/PPPB1PPP/2KR1BNR b kq - 1 8",
+     "eval": {
+      "type": "cp",
+      "value": 152
+     },
+     "best": "f8e7",
+     "bestSan": "Be7",
+     "depth": 20
+    },
+    {
+     "fen": "rnb1kb1r/pp3ppp/2p5/4q3/4n3/3Q4/PPPB1PPP/2KR1BNR w kq - 0 9",
+     "eval": {
+      "type": "mate",
+      "value": 3
+     },
+     "best": "d3d8",
+     "bestSan": "Qd8+",
+     "depth": 20
+    },
+    {
+     "fen": "rnbQkb1r/pp3ppp/2p5/4q3/4n3/8/PPPB1PPP/2KR1BNR b kq - 1 9",
+     "eval": {
+      "type": "mate",
+      "value": 2
+     },
+     "best": "e8d8",
+     "bestSan": "Kxd8",
+     "depth": 20
+    }
+   ]
   }
  }
 }

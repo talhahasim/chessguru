@@ -24,8 +24,8 @@ import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import { BANDS, LESSONS, defenseOf } from "../src/lessons/index.ts";
 import { HANDLE } from "../src/brand.ts";
-import { BAND_LABEL } from "../src/theme.ts";
 import type { Lesson } from "../src/types.ts";
+import { marker } from "./marker.ts";
 import { renderLesson } from "./render-lib.ts";
 
 const IG_API = `https://graph.instagram.com/${process.env.IG_API_VERSION ?? "v23.0"}`;
@@ -45,12 +45,25 @@ const HASHTAGS = [
   "#chessgame",
 ];
 
-/** Line that identifies a lesson in a caption; also used to detect what is already posted. */
-const marker = (lesson: Lesson) => `♟ ${lesson.title} | ${BAND_LABEL[lesson.band]} Elo`;
 
 export const buildCaption = (lesson: Lesson) => {
   const plain = (s: string) => s.replace(/\*/g, "");
   const tag = `#${lesson.title.normalize("NFD").replace(/[^A-Za-z0-9]/g, "")}`;
+  // Quizzes: the answer lives only in our comment replies (scripts/reply-comments.ts), never in the caption.
+  if (lesson.kind === "quiz")
+    return [
+      `${plain(lesson.hook[0])} ${plain(lesson.hook[1])}`,
+      "",
+      marker(lesson),
+      "",
+      "🤔 Brilliant (!!) or blunder (??)? Comment your answer 👇",
+      "💬 I reply to every answer. No spoilers!",
+      "📩 Send this to a friend and test them",
+      "",
+      `Follow @${HANDLE} for a new chess puzzle and trap every day!`,
+      "",
+      [...HASHTAGS, "#brilliantorblunder", "#chesspuzzle"].join(" "),
+    ].join("\n");
   return [
     `${plain(lesson.hook[0])} ${plain(lesson.hook[1])}`,
     "",
@@ -73,13 +86,20 @@ export const buildCaption = (lesson: Lesson) => {
   ].join("\n");
 };
 
+/** Quizzes start after this many trap+defense pairs (the first 7 pairs were posted before quizzes existed). */
+const QUIZ_AFTER_PAIRS = 7;
+
 /**
  * Posting order: traps rotate through the Elo bands (0-300, 300-600, 600-900, 900-1500, 0-300, …)
  * and each trap is followed by its defense video, so one day = a trap + how to stop it.
+ * From pair QUIZ_AFTER_PAIRS on, one "brilliant or blunder?" quiz follows each pair.
+ * The first unposted lesson in this list is posted next, so quizzes must never sit before posted pairs.
  */
 export const postingOrder = (): Lesson[] => {
-  const traps = BANDS.map((b) => LESSONS.filter((l) => l.band === b && l.kind !== "defense"));
+  const traps = BANDS.map((b) => LESSONS.filter((l) => l.band === b && l.kind !== "defense" && l.kind !== "quiz"));
+  const quizzes = LESSONS.filter((l) => l.kind === "quiz");
   const out: Lesson[] = [];
+  let pairs = 0;
   for (let i = 0; i < Math.max(...traps.map((l) => l.length)); i++)
     for (const list of traps) {
       const trap = list[i];
@@ -87,8 +107,9 @@ export const postingOrder = (): Lesson[] => {
       out.push(trap);
       const defense = defenseOf(trap);
       if (defense) out.push(defense);
+      if (++pairs >= QUIZ_AFTER_PAIRS && quizzes.length) out.push(quizzes.shift()!);
     }
-  // Defense videos without a matching trap still get posted, at the end.
+  // Defense videos without a matching trap and leftover quizzes still get posted, at the end.
   for (const l of LESSONS) if (!out.includes(l)) out.push(l);
   return out;
 };
