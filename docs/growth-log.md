@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-23 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Beat the Blackburne Trap (15:39, savunma) | 22 sn | **1209** | 995 | 10 | 0 | 0 | 4 | 8,2 sn | ~%37 |
+| Blackburne Shilling (22.10 22:38, "send" etiketi) | 27,2 sn | 1595 | 1316 | 20 | 0 | 8 | 15 | 11,7 sn | ~%43 |
+| Avoid Fool's Mate (22.10 15:39, savunma) | 24 sn | 397 | 341 | 2 | 0 | 1 | 1 | 7,8 sn | ~%32 |
+
+Takipçi: **19 (+1)**. 18:17 yedek cron'u 21:23'te başladı ve atladı.
+
+**Teşhis:** Beat the Blackburne 7 saatte 1209 izlenme, yeni hook'lu savunmalar arasında ikinci büyük başarı (Beat the
+Englund 1375). Desen: savunma videosu, tuzağı çok izlenen ve iyi bilinen bir açılış olduğunda (Englund, Blackburne)
+tutuyor; Lasker / Fool's Mate savunmaları zayıf. Blackburne tuzağı 1595 izlenme ve 8 paylaşımla en iyi video olmaya devam ediyor.
+
+**Değişiklik:** Yok ("send" etiketi bu geceki Elephant Trap ile 2. testini alıyor). Ayrıca sahibin isteğiyle bugün
+"Brilliant or Blunder" quiz formatı ve otomatik yorum cevaplama eklendi (18b4d3f); ilk quiz yarın 22:35'te.
+
+**Paylaşım:** Elephant Trap 22:38 UTC → https://www.instagram.com/reel/De2pcVTziKF/
+
+**Sonraki hipotez:** Elephant'ta paylaşım/erişim > %0,5 → etiket kalıcı. Quiz: yorum sayısı > 5 (şimdiye kadar tüm
+videolarda toplam 3 yorum var).
+
+---
+
 ## 2026-10-23 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
