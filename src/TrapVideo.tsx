@@ -311,7 +311,16 @@ const Sounds: React.FC<{ tl: Timeline }> = ({ tl }) => {
         <Html5Audio src={sfx("whoosh")} volume={0.6 * v} />
       </Sequence>
       {tl.moves.map((m) => {
-        const name = /[+#]/.test(m.move.san) ? "check" : m.move.captured ? "capture" : "move";
+        const san = m.move.san;
+        const name = san.includes("#")
+          ? "mate"
+          : /[+=]/.test(san)
+            ? "check"
+            : san.startsWith("O-O")
+              ? "castle"
+              : m.move.captured
+                ? "capture"
+                : "move";
         return (
           <Sequence key={m.ply} from={m.end - 2} durationInFrames={15}>
             <Html5Audio src={sfx(name)} volume={0.9 * v} />

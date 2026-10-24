@@ -1,6 +1,6 @@
 /**
- * Generates the small sound effects in public/sfx procedurally,
- * so the project ships no third-party audio.  npx tsx scripts/gen-sfx.ts
+ * Generates the UI sound effects in public/sfx procedurally (whoosh, pop, impact).
+ * The chess move sounds are recordings (public/sfx/SOURCES.md) and are not touched here.  npx tsx scripts/gen-sfx.ts
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -39,23 +39,9 @@ const make = (seconds: number, fn: (t: number, i: number) => number) => {
   return out;
 };
 
-/** Wooden "tock": resonant body + short filtered noise click. */
-const knock = (freq: number, decay: number, noise: number) => {
-  let lp = 0;
-  return (t: number) => {
-    lp += 0.25 * (rand() - lp);
-    const body = Math.sin(2 * Math.PI * freq * t) * Math.exp(-t * decay) + 0.5 * Math.sin(2 * Math.PI * freq * 2.7 * t) * Math.exp(-t * decay * 1.8);
-    return body + noise * lp * Math.exp(-t * 90);
-  };
-};
-
 fs.mkdirSync(outDir, { recursive: true });
 
-writeWav("move.wav", make(0.18, knock(520, 38, 1.6)));
-const k1 = knock(430, 30, 2.2);
-const k2 = knock(610, 40, 1.4);
-writeWav("capture.wav", make(0.26, (t) => k1(t) + (t > 0.045 ? 0.9 * k2(t - 0.045) : 0)));
-writeWav("check.wav", make(0.35, (t) => knock(700, 22, 1)(t) + 0.6 * Math.sin(2 * Math.PI * 1320 * t) * Math.exp(-t * 14)));
+// move / capture / check / castle / mate are real recordings, not generated: see public/sfx/SOURCES.md.
 
 // Whoosh: noise with a moving band-pass.
 {
