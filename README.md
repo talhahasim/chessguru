@@ -188,7 +188,7 @@ src/
   components/     Board, EvalBar, PlayerBar, Caption (koç balonu), MoveBadge, Scenes (hook/final/outro)
   lib/            hamle oynatma, zaman çizelgesi, değerlendirme/sınıflandırma
   TrapVideo.tsx   ana kompozisyon
-scripts/          analyze, validate, render, gen-sfx, engine (UCI sarmalayıcı)
+scripts/          analyze, validate, render, engine (UCI sarmalayıcı)
 public/           taş SVG'leri, font, ses efektleri
 ```
 
@@ -198,7 +198,7 @@ public/           taş SVG'leri, font, ses efektleri
   chess.com'un kendi taş/tahta görselleri telifli olduğu için kopyalanmadı; renkler ve yerleşim chess.com "Green" temasına göre ayarlandı.
   Kendi lisanslı taş setiniz varsa `public/pieces/wK.svg … bP.svg` dosyalarını değiştirmeniz yeterli.
 - **Font:** Montserrat (SIL Open Font License, `public/fonts/OFL.txt`).
-- **Ses efektleri:** `scripts/gen-sfx.ts` ile prosedürel üretildi (telif yok).
+- **Ses efektleri:** sadece gerçek taş kayıtları (Pixabay, ticari kullanım serbest); kaynak `public/sfx/SOURCES.md`.
 - **Seslendirme:** Kokoro-82M (Apache 2.0), ticari kullanım serbest.
 - **Motor:** Stockfish 19 (GPLv3), sadece analiz için ayrı süreç olarak çalışır.
 - **Remotion:** bireyler ve ≤3 çalışanlı şirketler için ücretsiz; daha büyük şirketler şirket lisansı almalı (remotion.pro).
