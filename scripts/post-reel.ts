@@ -23,7 +23,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import { BANDS, LESSONS, defenseOf } from "../src/lessons/index.ts";
-import { HANDLE } from "../src/brand.ts";
+import { GUIDE_CTA, GUIDE_NAME, HANDLE } from "../src/brand.ts";
 import type { Lesson } from "../src/types.ts";
 import { marker } from "./marker.ts";
 import { renderLesson } from "./render-lib.ts";
@@ -71,6 +71,7 @@ export const buildCaption = (lesson: Lesson) => {
     "",
     ...lesson.takeaways.map((t) => `✅ ${plain(t)}`),
     "",
+    ...(GUIDE_CTA ? [`🎁 Comment TRAPS and I'll DM you a free PDF: ${GUIDE_NAME}`, ""] : []),
     lesson.kind === "defense" ? "Did you know this defense? YES or NO 👇" : "Have you ever fallen for this? YES or NO 👇",
     lesson.kind === "defense"
       ? "📩 Send this to a friend before they fall for it"

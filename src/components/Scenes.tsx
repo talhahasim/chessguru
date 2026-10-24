@@ -3,6 +3,7 @@ import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, us
 import { theme, BAND_LABEL } from "../theme";
 import type { Lesson } from "../types";
 import { LESSONS } from "../lessons";
+import { GUIDE_CTA, GUIDE_NAME } from "../brand";
 import { fontFamily } from "../fonts";
 import { RichText } from "./Caption";
 import { CLASS_INFO } from "../lib/classes";
@@ -223,10 +224,19 @@ export const Outro: React.FC<{
           color: "#ffe14d",
         }}
       >
-        <svg viewBox="0 0 24 24" width={46} height={46}>
-          <path d={SEND_ICON} fill="#ffe14d" />
+        <svg viewBox="0 0 24 24" width={46} height={46} style={{ flexShrink: 0 }}>
+          <path d={GUIDE_CTA ? COMMENT_ICON : SEND_ICON} fill="#ffe14d" />
         </svg>
-        {lesson.kind === "defense" ? "Send this to a friend before they fall for it" : "Send this to a friend who falls for it"}
+        {GUIDE_CTA ? (
+          <span>
+            Comment <span style={{ background: "#ffe14d", color: "#1d1d1b", borderRadius: 10, padding: "2px 12px" }}>TRAPS</span>{" "}
+            → free PDF: {GUIDE_NAME}
+          </span>
+        ) : lesson.kind === "defense" ? (
+          "Send this to a friend before they fall for it"
+        ) : (
+          "Send this to a friend who falls for it"
+        )}
       </div>
       <div
         style={{

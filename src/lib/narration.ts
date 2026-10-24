@@ -1,3 +1,4 @@
+import { GUIDE_CTA } from "../brand";
 import { LESSONS } from "../lessons";
 import type { Lesson } from "../types";
 
@@ -42,11 +43,15 @@ export const narrationSegments = (lesson: Lesson): NarrationSegment[] => [
     text:
       lesson.kind === "quiz"
         ? "Brilliant or blunder? Comment your answer. I reply to everyone!"
-        : lesson.kind === "defense"
-          ? "Send this to a friend before they fall for it. New trap tomorrow!"
-          : LESSONS.some((l) => l.defends === lesson.id)
-            ? "Send this to a friend who falls for it. The defense is in the next video. Follow!"
-            : "Send this to a friend who falls for it. Follow for more traps!",
+        : GUIDE_CTA
+          ? lesson.kind === "defense"
+            ? "Comment traps and I'll send you a free PDF with 30 traps and their defenses!"
+            : "Comment traps and I'll send you a free PDF with 30 traps. The defense is in the next video!"
+          : lesson.kind === "defense"
+            ? "Send this to a friend before they fall for it. New trap tomorrow!"
+            : LESSONS.some((l) => l.defends === lesson.id)
+              ? "Send this to a friend who falls for it. The defense is in the next video. Follow!"
+              : "Send this to a friend who falls for it. Follow for more traps!",
   },
 ];
 
