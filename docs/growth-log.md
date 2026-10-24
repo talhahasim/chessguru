@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-24 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok, ilk quiz)
+
+| Video | İzlenme | Beğeni | Yorum | Paylaşım | Kaydetme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- |
+| Dodge the Elephant Trap (24.10 15:39, savunma, ~7 saat) | **1230** | 12 | 1 | 0 | 2 | ~%41 |
+| Elephant Trap (23.10 22:38) | 1388 | 18 | 0 | 0 | 4 | ~%40 |
+| Beat the Blackburne Trap (23.10 15:39, savunma) | 1330 | 12 | 0 | 1 | 5 | ~%38 |
+| Blackburne Shilling (22.10 22:38) | 1610 | 20 | 0 | 8 | 15 | ~%43 |
+
+Takipçi: **21** (değişmedi).
+
+**Teşhis:** Tehdit tarzı savunma kancası üçüncü kez tuttu (Englund 1375, Blackburne 1330, Dodge Elephant 1230 ilk 7 saatte);
+savunmalar artık tuzaklarla aynı bantta (~1200–1400). Erişim tavanı hâlâ ~1400: yeni bir kaldıraç gerekiyor.
+
+**Değişiklik:** Yok. Test edilecek yeni değişken bu turda ilk "Brilliant or Blunder" quiz'inin kendisi (yeni format);
+aynı anda başka bir şeyi değiştirmek etkisini ölçmeyi bozardı. "Comment TRAPS" çağrısı hâlâ PDF'in yüklenmesini bekliyor.
+
+**Paylaşım:** Brilliant or Blunder #1 (quiz-scholars-nf6) 22:38 UTC → https://www.instagram.com/reel/De5OSP-JCI_/
+
+**Sonraki hipotez:** Quiz formatı, cevap verilmediği için video başına 5+ yorum getirir (tuzak videolarında 0–1);
+cevap botu ilk gerçek yorumlara yanıt yazdığında yazma izni de doğrulanmış olur.
+
+---
+
 ## 2026-10-24 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
