@@ -70,7 +70,7 @@ const PDF_PUBLIC = [
 const pdfMessage = () =>
   [
     "Here's your free guide 🎁",
-    "♟ 10 Chess Traps Every Beginner Must Know",
+    "♟ 30 Chess Traps for 400–1000 Elo (and how to stop each one)",
     PDF_URL,
     "",
     "A new trap every day on @checksmatedaily. Good luck in your games!",
