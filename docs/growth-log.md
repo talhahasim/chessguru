@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-24 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Elephant Trap (23.10 22:38, "send" etiketi) | 26,8 sn | 1388 | 1157 | 18 | 0 | **0** | 4 | 10,8 sn | ~%40 |
+| Beat the Blackburne Trap (23.10 15:39, savunma) | 22 sn | **1326** | 1083 | 12 | 0 | 1 | 5 | 8,5 sn | ~%38 |
+| Blackburne Shilling (22.10 22:38, "send" etiketi) | 27,2 sn | 1603 | 1318 | 20 | 0 | 8 | 15 | 11,7 sn | ~%43 |
+
+Takipçi: **21 (+2)**. Yedek cron'lar atladı. reply-comments saatlik cron'u GitHub'da ~5 saatte bir çalışıyor
+(01:40, 07:23, 12:45): quiz cevapları ve PDF DM'leri birkaç saat gecikebilir.
+
+**Teşhis ("send" etiketi, 2 test):** Blackburne 8 paylaşım, Elephant 0 → etiketin paylaşıma etkisi tutarlı değil;
+Blackburne'deki paylaşımlar büyük ihtimalle konudan (popüler, "arkadaşıma göstereyim" tuzağı). Etiket zararsız
+(izlenme oranı düşmedi), o yüzden kalıyor. Savunma videoları artık tutarlı: Beat the Blackburne 1326, Beat the Englund 1375.
+
+**Değişiklik:** Yok. Paylaşım/erişim kaldıracında küçük bir değişkenin net etkisi yok; sıradaki büyük kaldıraç
+"Comment TRAPS → ücretsiz PDF" çağrısı (yorum + DM). Kod hazır (`GUIDE_CTA`), PDF Payhip'e yüklenip DM test edilince açılacak.
+
+**Paylaşım:** Dodge the Elephant Trap 15:39 UTC → https://www.instagram.com/reel/De4eP2jxco-/
+
+**Sonraki hipotez:** GUIDE_CTA açıldığında yorum sayısı video başına 0–2'den 10+'ya çıkar; yorumlar erişimi büyütür.
+
+---
+
 ## 2026-10-23 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
