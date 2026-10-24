@@ -1,7 +1,7 @@
 /**
  * Comment automation (official Instagram API with Instagram Login):
  *
- * "PDF" comments (any Reel, when FREE_PDF_URL is set): the commenter gets the free guide link as a private DM
+ * "TRAPS" (or "PDF") comments (any Reel, when FREE_PDF_URL is set): the commenter gets the free guide link as a private DM
  * (Instagram "private reply", one per comment, within 7 days), then a short public "check your DMs" reply.
  *
  * Quiz answers under our "Brilliant or blunder?" Reels:
@@ -76,8 +76,9 @@ const pdfMessage = () =>
     "A new trap every day on @checksmatedaily. Good luck in your games!",
   ].join("\n");
 
-/** "PDF", "pdf please", "Pdf!" … */
-export const wantsPdf = (text: string) => /(^|[^a-z])pdf([^a-z]|$)/i.test(text);
+/** The CTA keyword "TRAPS" ("traps!", "Traps please" …); "PDF" also works. Singular "trap" doesn't, so normal
+ * comments like "this trap is crazy" don't get an unasked-for DM. */
+export const wantsGuide = (text: string) => /(^|[^a-z])(traps|pdf)([^a-z]|$)/i.test(text);
 
 /** What a comment answers, or null when it says neither (or both). */
 export const readAnswer = (text: string): Answer | null => {
@@ -164,7 +165,7 @@ const main = async () => {
       if (!c.text || c.username === myName) continue;
       if (c.replies?.data.some((r) => r.username === myName)) continue;
       // Free PDF: private DM first; the public reply also marks the comment as handled.
-      if (PDF_URL && wantsPdf(c.text) && Date.now() - time(c.timestamp) < DM_WINDOW_MS) {
+      if (PDF_URL && wantsGuide(c.text) && Date.now() - time(c.timestamp) < DM_WINDOW_MS) {
         const reply = pick(PDF_PUBLIC, c.id);
         console.log(`  @${c.username}: "${c.text.slice(0, 60)}" → PDF DM + "${reply}"`);
         if (!DRY_RUN) {

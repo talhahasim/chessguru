@@ -68,9 +68,9 @@ The first frame of every video must be a finished cover that can be used as the 
 
 ## Free PDF via DM
 
-- A comment containing "PDF" (any Reel) gets the free guide link as an Instagram private reply (DM, one per comment,
-  ≤ 7 days old), then a public "📩 Sent! Check your DMs" reply (`scripts/reply-comments.ts`). Off until the repo
-  variable `FREE_PDF_URL` is set. Only add "Comment PDF" CTAs to videos/captions once it is on and tested.
+- A comment containing "TRAPS" (the CTA keyword; "PDF" works too, singular "trap" doesn't) on any Reel gets the
+  free guide link as an Instagram private reply (DM, one per comment, ≤ 7 days old), then a public "📩 Sent! Check your DMs" reply (`scripts/reply-comments.ts`). Off until the repo
+  variable `FREE_PDF_URL` is set. Only add "Comment TRAPS" CTAs to videos/captions once it is on and tested.
 
 ## Retention & engagement (from the first stats: 13 s average watch on a 48 s video)
 

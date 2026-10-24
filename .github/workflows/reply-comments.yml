@@ -1,7 +1,7 @@
 name: Reply to comments
 
 # Answers "brilliant" / "blunder" comments under the "Brilliant or blunder?" quiz Reels and DMs the free PDF
-# to "PDF" comments once the repo variable FREE_PDF_URL is set (scripts/reply-comments.ts).
+# to "TRAPS" / "PDF" comments once the repo variable FREE_PDF_URL is set (scripts/reply-comments.ts).
 # Hourly: GitHub often starts schedules late, which is fine here.
 on:
   schedule:
