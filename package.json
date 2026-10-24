@@ -11,6 +11,7 @@
     "render": "tsx scripts/render.ts",
     "still": "remotion still",
     "timeline": "tsx scripts/timeline.ts",
+    "sfx": "tsx scripts/gen-sfx.ts",
     "typecheck": "tsc --noEmit",
     "voice": "tsx scripts/voice.ts",
     "post": "tsx scripts/post-reel.ts",

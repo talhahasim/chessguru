@@ -294,7 +294,6 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
 };
 
 const Sounds: React.FC<{ tl: Timeline }> = ({ tl }) => {
-  // Only real piece recordings (public/sfx/SOURCES.md); no synthesized whooshes or pops.
   const sfx = (name: string) => staticFile(`sfx/${name}.wav`);
   // Sound effects sit under the voiceover when there is one.
   const v = tl.voice.length ? 0.6 : 1;
@@ -305,6 +304,12 @@ const Sounds: React.FC<{ tl: Timeline }> = ({ tl }) => {
           <Html5Audio src={staticFile(c.file)} volume={1} />
         </Sequence>
       ))}
+      <Sequence from={0} durationInFrames={30}>
+        <Html5Audio src={sfx("impact")} volume={0.9 * v} />
+      </Sequence>
+      <Sequence from={tl.hook.end - 6} durationInFrames={20}>
+        <Html5Audio src={sfx("whoosh")} volume={0.6 * v} />
+      </Sequence>
       {tl.moves.map((m) => {
         const san = m.move.san;
         const name = san.includes("#")
@@ -322,6 +327,16 @@ const Sounds: React.FC<{ tl: Timeline }> = ({ tl }) => {
           </Sequence>
         );
       })}
+      {tl.steps.map((s) =>
+        s.moves.length ? (
+          <Sequence key={`pop-${s.index}`} from={s.settled} durationInFrames={8}>
+            <Html5Audio src={sfx("pop")} volume={0.35 * v} />
+          </Sequence>
+        ) : null,
+      )}
+      <Sequence from={tl.outro.start} durationInFrames={20}>
+        <Html5Audio src={sfx("whoosh")} volume={0.5 * v} />
+      </Sequence>
     </>
   );
 };

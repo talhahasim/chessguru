@@ -97,5 +97,6 @@ The first frame of every video must be a finished cover that can be used as the 
 - After changing moves run `npm run analyze` then `npm run validate` (must report 0 errors).
 - Move badges come from Stockfish; only add `badge` overrides for human judgement (brilliant/great) and keep them honest.
 - Don't use chess.com logos, names or their proprietary piece/board art in the videos.
-- Sound: only the real wooden piece recordings in `public/sfx` (see `SOURCES.md`); no synthesized SFX (whoosh, pop,
-  impact, beeps): the owner finds them artificial. Never copy chess.com's sound files.
+- Piece sounds (move, capture, check, castle, mate) are only the real wooden recordings in `public/sfx` (see
+  `SOURCES.md`), never synthesized: the owner finds generated piece sounds artificial. The generated UI sounds
+  (whoosh, pop, impact from `scripts/gen-sfx.ts`) stay. Never copy chess.com's sound files.
