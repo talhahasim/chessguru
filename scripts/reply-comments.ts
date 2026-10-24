@@ -1,5 +1,10 @@
 /**
- * Replies to answers under our "Brilliant or blunder?" quiz Reels (official Instagram API with Instagram Login).
+ * Comment automation (official Instagram API with Instagram Login):
+ *
+ * "PDF" comments (any Reel, when FREE_PDF_URL is set): the commenter gets the free guide link as a private DM
+ * (Instagram "private reply", one per comment, within 7 days), then a short public "check your DMs" reply.
+ *
+ * Quiz answers under our "Brilliant or blunder?" Reels:
  *
  *  - Quiz Reels are found by their "♟ <title> | <band> Elo" caption line; the answer comes from the lesson.
  *  - A comment that says "brilliant" or "blunder" (typos, !!/?? and "not a …" included) gets a
@@ -9,6 +14,8 @@
  *
  * Env:
  *   IG_ACCESS_TOKEN   long-lived Instagram User token with instagram_business_manage_comments
+ *                     (+ instagram_business_manage_messages for the PDF DMs)
+ *   FREE_PDF_URL      link sent in the DM; the PDF feature is off while it is empty
  *   DRY_RUN=1         print what would be replied, post nothing
  *   MAX_REPLIES       per run, default 40
  *   MAX_AGE_DAYS      only quizzes posted in the last N days, default 14
@@ -24,6 +31,9 @@ const IG_API = `https://graph.instagram.com/${process.env.IG_API_VERSION ?? "v23
 const DRY_RUN = process.env.DRY_RUN === "1" || process.env.DRY_RUN === "true";
 const MAX_REPLIES = Number(process.env.MAX_REPLIES ?? 40);
 const MAX_AGE_DAYS = Number(process.env.MAX_AGE_DAYS ?? 14);
+const PDF_URL = process.env.FREE_PDF_URL?.trim() || "";
+/** Instagram only allows a private reply within 7 days of the comment. */
+const DM_WINDOW_MS = 7 * 86_400_000 - 3_600_000;
 
 type Answer = "brilliant" | "blunder";
 
@@ -48,6 +58,26 @@ const WRONG = [
   "❌ Sorry, not correct! New puzzle tomorrow 🙌",
   "❌ Nope! Check every capture and check 👀",
 ];
+
+const PDF_PUBLIC = [
+  "📩 Sent! Check your DMs",
+  "📩 Done! The free guide is in your DMs",
+  "📩 Check your inbox! (Look in message requests too)",
+  "📩 Sent it! Enjoy the traps ♟",
+  "📩 On its way! Check your DMs 🎁",
+];
+
+const pdfMessage = () =>
+  [
+    "Here's your free guide 🎁",
+    "♟ 10 Chess Traps Every Beginner Must Know",
+    PDF_URL,
+    "",
+    "A new trap every day on @checksmatedaily. Good luck in your games!",
+  ].join("\n");
+
+/** "PDF", "pdf please", "Pdf!" … */
+export const wantsPdf = (text: string) => /(^|[^a-z])pdf([^a-z]|$)/i.test(text);
 
 /** What a comment answers, or null when it says neither (or both). */
 export const readAnswer = (text: string): Answer | null => {
@@ -121,16 +151,33 @@ const main = async () => {
   }
 
   const cutoff = Date.now() - MAX_AGE_DAYS * 86_400_000;
+  const time = (iso: string) => new Date(iso.replace(/\+0000$/, "Z")).getTime();
+  if (!PDF_URL) console.log("FREE_PDF_URL is not set: PDF DMs are off.");
   let replied = 0;
   for (const m of media) {
     const quiz = quizzes.find((q) => m.caption?.includes(marker(q)));
-    if (!quiz || new Date(m.timestamp.replace(/\+0000$/, "Z")).getTime() < cutoff || !m.comments_count) continue;
+    if ((!quiz && !PDF_URL) || time(m.timestamp) < cutoff || !m.comments_count) continue;
     const comments = await commentsOf(m.id);
-    console.log(`${quiz.title} (${quiz.answer}): ${comments.length} comments  ${m.permalink}`);
+    console.log(`${quiz ? `${quiz.title} (${quiz.answer})` : "Reel"}: ${comments.length} comments  ${m.permalink}`);
     for (const c of comments) {
       if (replied >= MAX_REPLIES) break;
       if (!c.text || c.username === myName) continue;
       if (c.replies?.data.some((r) => r.username === myName)) continue;
+      // Free PDF: private DM first; the public reply also marks the comment as handled.
+      if (PDF_URL && wantsPdf(c.text) && Date.now() - time(c.timestamp) < DM_WINDOW_MS) {
+        const reply = pick(PDF_PUBLIC, c.id);
+        console.log(`  @${c.username}: "${c.text.slice(0, 60)}" → PDF DM + "${reply}"`);
+        if (!DRY_RUN) {
+          await ig("POST", `${me.user_id}/messages`, {
+            recipient: JSON.stringify({ comment_id: c.id }),
+            message: JSON.stringify({ text: pdfMessage() }),
+          });
+          await ig("POST", `${c.id}/replies`, { message: reply });
+        }
+        replied++;
+        continue;
+      }
+      if (!quiz) continue;
       const answer = readAnswer(c.text);
       if (!answer) continue;
       const message = pick(answer === quiz.answer ? CORRECT : WRONG, c.id);

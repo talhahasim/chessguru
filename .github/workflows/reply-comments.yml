@@ -1,7 +1,8 @@
-name: Reply to quiz comments
+name: Reply to comments
 
-# Answers "brilliant" / "blunder" comments under the "Brilliant or blunder?" quiz Reels
-# (scripts/reply-comments.ts). Hourly: GitHub often starts schedules late, which is fine here.
+# Answers "brilliant" / "blunder" comments under the "Brilliant or blunder?" quiz Reels and DMs the free PDF
+# to "PDF" comments once the repo variable FREE_PDF_URL is set (scripts/reply-comments.ts).
+# Hourly: GitHub often starts schedules late, which is fine here.
 on:
   schedule:
     - cron: "23 * * * *"
@@ -31,3 +32,4 @@ jobs:
         env:
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '0' }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          FREE_PDF_URL: ${{ vars.FREE_PDF_URL }}

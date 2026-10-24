@@ -66,6 +66,12 @@ The first frame of every video must be a finished cover that can be used as the 
   are ignored. "Already replied" = one of the comment's replies is ours (no state stored).
 - Posting order: from the 8th trap+defense pair on, one quiz follows each pair (`QUIZ_AFTER_PAIRS`).
 
+## Free PDF via DM
+
+- A comment containing "PDF" (any Reel) gets the free guide link as an Instagram private reply (DM, one per comment,
+  ≤ 7 days old), then a public "📩 Sent! Check your DMs" reply (`scripts/reply-comments.ts`). Off until the repo
+  variable `FREE_PDF_URL` is set. Only add "Comment PDF" CTAs to videos/captions once it is on and tested.
+
 ## Retention & engagement (from the first stats: 13 s average watch on a 48 s video)
 
 - No title card after the hook; opening moves play fast (`T.move`, `T.quickGap`); target length 20–30 s.
