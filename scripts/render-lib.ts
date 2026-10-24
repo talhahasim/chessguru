@@ -51,3 +51,12 @@ export const renderLesson = async (lesson: Lesson) => {
   console.log(`\r✓ ${path.relative(root, video)} + cover            `);
   return { video, cover };
 };
+
+/** Renders one static board (the "diagram" composition) to a PNG, e.g. for the PDF guide. */
+export const renderDiagram = async (props: import("../src/Diagram.tsx").DiagramProps, output: string) => {
+  const url = await getServeUrl();
+  const composition = await selectComposition({ serveUrl: url, id: "diagram", inputProps: props, browserExecutable });
+  fs.mkdirSync(path.dirname(output), { recursive: true });
+  await renderStill({ composition, serveUrl: url, frame: 0, output, imageFormat: "png", inputProps: props, browserExecutable });
+  return output;
+};
