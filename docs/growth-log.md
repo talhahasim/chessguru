@@ -10,6 +10,33 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-25 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok, quiz formatı tuttu)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #1** (24.10 22:38, quiz) | 15 sn | **1676** | 1145 | 17 | **10** | 0 | 0 | 10,4 sn | **%68** |
+| Dodge the Elephant Trap (24.10 15:39, savunma) | 25 sn | 1484 | 1133 | 14 | 2 | 1 | 3 | 10,9 sn | %44 |
+| Elephant Trap (23.10 22:38) | 27 sn | 1391 | 1158 | 18 | 0 | 0 | 4 | 10,8 sn | %40 |
+
+Takipçi: **23 (+2)**. 06:08'deki yedek cron doğru şekilde atladı.
+
+**Teşhis:** Quiz hipotezi doğrulandı: 10 yorum (önceki rekor 2), %68 izlenme oranı (rekor), ~1400 tavanının üstünde
+1676 izlenme. Zayıf taraf: paylaşım/kaydetme 0 (cevap verilmediği için saklanacak bir şey yok, beklenen durum).
+**Sorun:** reply-comments botu (11:43) quiz'de "0 comments" okudu, oysa istatistik 10 yorum diyor → Instagram API
+yorumları uygulamaya döndürmüyor. En olası sebep: Meta uygulaması Development modunda / Standard Access'te; yorum
+içeriği yalnızca uygulamada rolü olan hesaplar için dönüyor. Koddan düzeltilemez; uygulamanın Live moda alınması
+(gerekirse instagram_business_manage_comments için App Review) gerekiyor. Sahibine bildirildi.
+
+**Değişiklik:** Yok. Quiz formatı sadece 1 paylaşımda test edildi (kural: ≥ 2). Sahibinin isteğiyle tahta
+koordinatları artık her zaman Beyaz tarafında (deney değil, düzeltme); bugünkü Fishing Pole Trap bunu ilk kullanan video.
+
+**Paylaşım:** bkz. aşağıdaki satır (15:35 dispatch).
+
+**Sonraki hipotez:** Quiz #2 (Opera, 26.10 civarı) de ≥ 5 yorum ve ≥ %55 izlenme oranı alırsa quiz sıklığını artır
+(ör. her çiftten sonra değil, her tuzak/savunma arasında bir quiz).
+
+---
+
 ## 2026-10-24 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok, ilk quiz)
 
 | Video | İzlenme | Beğeni | Yorum | Paylaşım | Kaydetme | İzlenme oranı |
