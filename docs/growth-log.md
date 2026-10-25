@@ -30,7 +30,7 @@ içeriği yalnızca uygulamada rolü olan hesaplar için dönüyor. Koddan düze
 **Değişiklik:** Yok. Quiz formatı sadece 1 paylaşımda test edildi (kural: ≥ 2). Sahibinin isteğiyle tahta
 koordinatları artık her zaman Beyaz tarafında (deney değil, düzeltme); bugünkü Fishing Pole Trap bunu ilk kullanan video.
 
-**Paylaşım:** bkz. aşağıdaki satır (15:35 dispatch).
+**Paylaşım:** Fishing Pole Trap 15:40 UTC → https://www.instagram.com/reel/De7DOQ9hJpn/
 
 **Sonraki hipotez:** Quiz #2 (Opera, 26.10 civarı) de ≥ 5 yorum ve ≥ %55 izlenme oranı alırsa quiz sıklığını artır
 (ör. her çiftten sonra değil, her tuzak/savunma arasında bir quiz).
