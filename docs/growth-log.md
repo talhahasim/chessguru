@@ -27,7 +27,7 @@ Live moda alınmayı bekliyor, sahibine bildirildi).
 
 **Değişiklik:** Yok. Son test edilen değişken (quiz formatı) yalnızca 1 paylaşımda; Quiz #2 bu çiftten sonra geliyor.
 
-**Paylaşım:** bkz. aşağıdaki satır (22:35 dispatch).
+**Paylaşım:** Dodge the Fishing Pole Trap 22:40 UTC → https://www.instagram.com/reel/De7zPmLtPrx/
 
 **Sonraki hipotez:** Quiz #2 (Opera) ≥ 5 yorum ve ≥ %55 izlenme oranı alırsa quiz sıklığını artır.
 
