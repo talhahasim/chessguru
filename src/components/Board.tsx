@@ -203,13 +203,20 @@ export const Board: React.FC<BoardProps> = ({
         const light = isLight(s);
         let bg = light ? theme.light : theme.dark;
         if (highlightSquares.includes(s)) bg = light ? theme.lightHighlight : theme.darkHighlight;
-        const showRank = x === 0;
-        const showFile = y === 7;
+        // Coordinates always sit on White's side (a-file and 1st rank), like on a real board, even when Black is at
+        // the bottom: then the letters run along the top edge and the numbers down the right edge.
+        const white = orientation === "w";
+        const showRank = s[0] === "a";
+        const showFile = s[1] === "1";
         return (
           <div key={s} style={{ position: "absolute", left: x * sq, top: y * sq, width: sq, height: sq, background: bg }}>
             {classColor && s === lastMove!.to ? <div style={{ position: "absolute", inset: 0, background: classColor }} /> : null}
-            {showRank ? <div style={{ ...coordStyle(light), left: sq * 0.06, top: sq * 0.06 }}>{s[1]}</div> : null}
-            {showFile ? <div style={{ ...coordStyle(light), right: sq * 0.07, bottom: sq * 0.05 }}>{s[0]}</div> : null}
+            {showRank ? (
+              <div style={{ ...coordStyle(light), ...(white ? { left: sq * 0.06, top: sq * 0.06 } : { right: sq * 0.07, bottom: sq * 0.05 }) }}>{s[1]}</div>
+            ) : null}
+            {showFile ? (
+              <div style={{ ...coordStyle(light), ...(white ? { right: sq * 0.07, bottom: sq * 0.05 } : { left: sq * 0.06, top: sq * 0.06 }) }}>{s[0]}</div>
+            ) : null}
           </div>
         );
       })}
