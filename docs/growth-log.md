@@ -10,6 +10,29 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-25 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Fishing Pole Trap** (25.10 15:40, ~7 saat) | 27 sn | **1620** | 1307 | 19 | 1 | 4 | **16** | 13,0 sn | %48 |
+| Brilliant or Blunder #1 (24.10 22:38, quiz) | 15 sn | 1685 | 1154 | 17 | 10 | 0 | 0 | 10,4 sn | %68 |
+| Dodge the Elephant Trap (24.10 15:39) | 25 sn | 1487 | 1136 | 14 | 2 | 1 | 3 | 10,9 sn | %44 |
+
+Takipçi: **23** (değişmedi). 20:50'deki yedek cron doğru şekilde atladı.
+
+**Teşhis:** Fishing Pole ilk 7 saatte 1620 izlenme: Blackburne'den (1615) beri en iyi tuzak; 16 kaydetme ve %48
+izlenme oranıyla en güçlü tuzaklardan biri. Kısaltılmış format (kilit an ≤ 12 sn) tuzaklarda %44–51 bandında
+tutarlı. Takipçi artışı hâlâ en zayıf kaldıraç (2 günde +2). Yorum botu hâlâ yorumları göremiyor (Meta uygulaması
+Live moda alınmayı bekliyor, sahibine bildirildi).
+
+**Değişiklik:** Yok. Son test edilen değişken (quiz formatı) yalnızca 1 paylaşımda; Quiz #2 bu çiftten sonra geliyor.
+
+**Paylaşım:** bkz. aşağıdaki satır (22:35 dispatch).
+
+**Sonraki hipotez:** Quiz #2 (Opera) ≥ 5 yorum ve ≥ %55 izlenme oranı alırsa quiz sıklığını artır.
+
+---
+
 ## 2026-10-25 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok, quiz formatı tuttu)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
