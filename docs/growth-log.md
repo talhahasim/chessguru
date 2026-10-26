@@ -10,6 +10,33 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-26 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #2 (26.10 15:40, quiz, ~7 saat) | 14 sn | 1509 | 1086 | **3** | 3 | 0 | 0 | 8,1 sn | %59 |
+| Dodge the Fishing Pole (25.10 22:39) | 23 sn | 1368 | 1109 | 10 | 1 | 0 | 1 | 10,1 sn | %43 |
+| Fishing Pole Trap (25.10 15:40) | 27 sn | 1640 | 1322 | 19 | 1 | 4 | 16 | 12,9 sn | %48 |
+| Brilliant or Blunder #1 (24.10 22:38, quiz) | 15 sn | 1696 | 1157 | 17 | 10 | 0 | 0 | 10,5 sn | %68 |
+
+Takipçi: **24** (değişmedi).
+
+**Teşhis:** Quiz hipotezi (≥ 5 yorum, ≥ %55 izlenme oranı) yarım tuttu: izlenme oranı %59 (iyi), ama yorum 3 ve beğeni
+sadece 3 (Quiz #1'de 10 yorum / 17 beğeni). Fark büyük ihtimalle konudan: #1 herkesin tanıdığı Scholar's Mate
+pozisyonu (cevap vermek kolay), #2 bir oyundan alınmış ortaoyun pozisyonu (Opera Game; düşük Elo izleyici için zor,
+cevap veremeyince yorum da yapmıyor). Quiz cevaplarına botun hiç yanıt verememesi (Meta uygulaması hâlâ Development
+modunda) yorum sohbetini de büyütmüyor.
+
+**Değişiklik:** Yok. Quiz sıklığını artırma kararı ertelendi (2 testten 1'i net başarılı). Sıradaki quiz'ler (#3 Noah's
+Ark, #4 Réti) zaten hazır; açılış tuzaklarından tanıdık pozisyon mu (#3) ortaoyun mu (#4) daha çok yorum alıyor, bakılacak.
+
+**Paylaşım:** bkz. aşağıdaki satır (22:35 dispatch).
+
+**Sonraki hipotez:** Tanıdık açılış pozisyonlu quiz'ler (#1, #3) ortaoyun quiz'lerinden (#2, #4) belirgin şekilde daha
+çok yorum alır → yeni quiz'ler açılış tuzaklarından seçilmeli.
+
+---
+
 ## 2026-10-26 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #2)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
