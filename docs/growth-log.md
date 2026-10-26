@@ -30,7 +30,7 @@ modunda) yorum sohbetini de büyütmüyor.
 **Değişiklik:** Yok. Quiz sıklığını artırma kararı ertelendi (2 testten 1'i net başarılı). Sıradaki quiz'ler (#3 Noah's
 Ark, #4 Réti) zaten hazır; açılış tuzaklarından tanıdık pozisyon mu (#3) ortaoyun mu (#4) daha çok yorum alıyor, bakılacak.
 
-**Paylaşım:** bkz. aşağıdaki satır (22:35 dispatch).
+**Paylaşım:** Back-Rank Mate 22:40 UTC → https://www.instagram.com/reel/De-YE7Wxipf/ (22:39 yedek cron aynı anda başladı, doğru şekilde atladı)
 
 **Sonraki hipotez:** Tanıdık açılış pozisyonlu quiz'ler (#1, #3) ortaoyun quiz'lerinden (#2, #4) belirgin şekilde daha
 çok yorum alır → yeni quiz'ler açılış tuzaklarından seçilmeli.
