@@ -33,7 +33,8 @@ const sqXY = (sq: string, orientation: Color) => {
   return orientation === "w" ? { x: f, y: 8 - r } : { x: 7 - f, y: r - 1 };
 };
 
-const isLight = (sq: string) => (FILES.indexOf(sq[0]) + Number(sq[1])) % 2 === 1;
+// a1 is a dark square ("light on the right": h1 is light).
+const isLight = (sq: string) => (FILES.indexOf(sq[0]) + Number(sq[1])) % 2 === 0;
 
 const ALL_SQUARES = Array.from({ length: 64 }, (_, i) => `${FILES[i % 8]}${8 - Math.floor(i / 8)}`);
 

@@ -102,6 +102,7 @@ The first frame of every video must be a finished cover that can be used as the 
 - Lessons live in `src/lessons/band-*.ts`; keep captions short, very simple English, `*stars*` for emphasis.
 - After changing moves run `npm run analyze` then `npm run validate` (must report 0 errors).
 - Move badges come from Stockfish; only add `badge` overrides for human judgement (brilliant/great) and keep them honest.
+- Square colours: a1 is dark, h1 is light ("light on the right"), a8 light: `isLight` in `Board.tsx`.
 - Board coordinates always sit on White's side (letters next to the 1st rank, numbers next to the a-file), also
   when Black is at the bottom (then letters run along the top edge, numbers down the right edge). `Board.tsx`.
 - Don't use chess.com logos, names or their proprietary piece/board art in the videos.
