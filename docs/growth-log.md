@@ -10,6 +10,29 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-26 15:35 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #2)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dodge the Fishing Pole (25.10 22:39, savunma) | 23 sn | 1367 | 1108 | 10 | 1 | 0 | 1 | 10,1 sn | %43 |
+| Fishing Pole Trap (25.10 15:40) | 27 sn | **1638** | 1320 | 19 | 1 | 4 | 16 | 13,0 sn | %48 |
+| Brilliant or Blunder #1 (24.10 22:38, quiz) | 15 sn | 1696 | 1157 | 17 | 10 | 0 | 0 | 10,5 sn | %68 |
+
+Takipçi: **24 (+1)**. 06:14'teki yedek cron doğru şekilde atladı.
+
+**Teşhis:** Savunma videoları artık istikrarlı (~1350–1490). Tuzaklar ~1400–1640, quiz 1696. Zayıf kaldıraç hâlâ
+takipçi artışı (~1 takipçi / 1000 erişim) ve savunmalarda kaydetme/paylaşım. Sahibinin tespitiyle tahta kare renkleri
+düzeltildi (a1 artık koyu); bu bir hata düzeltmesi, deney değil.
+
+**Değişiklik:** Yok. Bugün Quiz #2 (Opera) çıkıyor: quiz formatının 2. testi, sonucu beklenmeli.
+
+**Paylaşım:** bkz. aşağıdaki satır (15:35 dispatch).
+
+**Sonraki hipotez:** Quiz #2 ≥ 5 yorum ve ≥ %55 izlenme oranı alırsa quiz sıklığı artırılır (ör. her çiftten sonra
+yerine her tuzak ile savunma arasında).
+
+---
+
 ## 2026-10-25 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
