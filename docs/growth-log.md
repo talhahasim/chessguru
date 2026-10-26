@@ -26,7 +26,7 @@ düzeltildi (a1 artık koyu); bu bir hata düzeltmesi, deney değil.
 
 **Değişiklik:** Yok. Bugün Quiz #2 (Opera) çıkıyor: quiz formatının 2. testi, sonucu beklenmeli.
 
-**Paylaşım:** bkz. aşağıdaki satır (15:35 dispatch).
+**Paylaşım:** Brilliant or Blunder #2 (quiz-opera-qb8) 15:40 UTC → https://www.instagram.com/reel/De9oA6uAHkI/
 
 **Sonraki hipotez:** Quiz #2 ≥ 5 yorum ve ≥ %55 izlenme oranı alırsa quiz sıklığı artırılır (ör. her çiftten sonra
 yerine her tuzak ile savunma arasında).
