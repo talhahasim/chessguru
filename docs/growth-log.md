@@ -27,7 +27,7 @@ düştü (Fishing Pole 35 → 11, 3, 7). En zayıf kaldıraç takipçi artışı
 **Değişiklik:** Yok. Rutin geç başladığı için paylaşımı geciktirecek bir değişiklik yapmadım; ayrıca tek gözlemle
 (1 tuzak) bir değişkeni değiştirmek erken.
 
-**Paylaşım:** bkz. aşağıdaki satır (15:43 dispatch).
+**Paylaşım:** Stop the Back-Rank Mate 15:47 UTC → https://www.instagram.com/reel/DfANmFAJKqK/
 
 **Sonraki hipotez:** Takipçi artışı videonun sonunda değil, ortasında (kilit andan hemen sonra) gelen bir "Follow for a
 new trap every day" çağrısıyla artar; bir sonraki incelemede, Stop the Back-Rank Mate verisiyle birlikte değerlendir.
