@@ -28,7 +28,7 @@ takipçi artışı ve kaydetme.
 **Değişiklik:** Yok. Sahibi bir başka hesabın edit stilini incelememi istedi (video dosyası bekleniyor); stil
 değişikliği o incelemeden sonra tek değişken olarak denenecek.
 
-**Paylaşım:** bkz. aşağıdaki satır (22:35 dispatch).
+**Paylaşım:** Brilliant or Blunder #3 (quiz-noahs-ark-qxd4) 22:39 UTC → https://www.instagram.com/reel/DfA8x56N4W5/
 
 **Sonraki hipotez:** Quiz #3 (Noah's Ark, tanıdık açılış pozisyonu) Quiz #2'den (ortaoyun) belirgin şekilde fazla
 yorum alır (≥ 5).
