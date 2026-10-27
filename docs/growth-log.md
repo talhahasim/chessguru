@@ -10,6 +10,31 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-27 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #3)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Stop Back Rank Mate** (27.10 15:47, savunma, ~7 saat) | 24 sn | **1521** | 1117 | 17 | 1 | 0 | 2 | 13,4 sn | **%55** |
+| Back Rank Mate (26.10 22:40) | 22 sn | 1333 | 1099 | 7 | 0 | 3 | 0 | 12,5 sn | %57 |
+| Brilliant or Blunder #2 (26.10 15:40, quiz) | 14 sn | 1524 | 1095 | 3 | 3 | 0 | 0 | 8,2 sn | %59 |
+
+Takipçi: **25 (+1)**. 22:13'teki yedek cron doğru şekilde atladı.
+
+**Teşhis:** Stop Back Rank Mate şimdiye kadarki en iyi savunma videosu (ilk 7 saatte 1521 izlenme, %55 izlenme
+oranı, 17 beğeni); savunma ile tuzak arasındaki fark artık tamamen kapandı. Back-rank çifti (tuzak + savunma) tüm
+videolar arasında en yüksek izlenme oranlarına sahip (%55–57): kısa (22–24 sn) ve tek fikirli. Zayıf kaldıraç hâlâ
+takipçi artışı ve kaydetme.
+
+**Değişiklik:** Yok. Sahibi bir başka hesabın edit stilini incelememi istedi (video dosyası bekleniyor); stil
+değişikliği o incelemeden sonra tek değişken olarak denenecek.
+
+**Paylaşım:** bkz. aşağıdaki satır (22:35 dispatch).
+
+**Sonraki hipotez:** Quiz #3 (Noah's Ark, tanıdık açılış pozisyonu) Quiz #2'den (ortaoyun) belirgin şekilde fazla
+yorum alır (≥ 5).
+
+---
+
 ## 2026-10-27 15:43 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
