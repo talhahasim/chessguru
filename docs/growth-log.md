@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-27 15:43 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Back Rank Mate (26.10 22:40, ~17 saat) | 22 sn | 1330 | 1097 | 7 | 0 | 3 | **0** | 12,4 sn | **%57** |
+| Brilliant or Blunder #2 (26.10 15:40, quiz) | 14 sn | 1521 | 1091 | 3 | 3 | 0 | 0 | 8,1 sn | %59 |
+| Dodge the Fishing Pole (25.10 22:39) | 23 sn | 1371 | 1112 | 10 | 1 | 0 | 1 | 10,1 sn | %43 |
+
+Takipçi: **24** (2 gündür değişmedi). 06:17'deki yedek cron doğru şekilde atladı. Rutin 8 dk geç tetiklendi.
+
+**Teşhis:** Back Rank Mate en yüksek tuzak izlenme oranlarından birini aldı (%57, 22 sn), ama kaydetme 0 ve beğeni 7:
+izleniyor, fakat "saklanacak / takip edilecek" bir değer hissi bırakmıyor. Son 3 paylaşımda beğeni+kaydetme belirgin
+düştü (Fishing Pole 35 → 11, 3, 7). En zayıf kaldıraç takipçi artışı: ~4400 erişimde 0 yeni takipçi.
+
+**Değişiklik:** Yok. Rutin geç başladığı için paylaşımı geciktirecek bir değişiklik yapmadım; ayrıca tek gözlemle
+(1 tuzak) bir değişkeni değiştirmek erken.
+
+**Paylaşım:** bkz. aşağıdaki satır (15:43 dispatch).
+
+**Sonraki hipotez:** Takipçi artışı videonun sonunda değil, ortasında (kilit andan hemen sonra) gelen bir "Follow for a
+new trap every day" çağrısıyla artar; bir sonraki incelemede, Stop the Back-Rank Mate verisiyle birlikte değerlendir.
+
+---
+
 ## 2026-10-26 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
