@@ -10,6 +10,29 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-28 22:36 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Stafford Gambit Trap (28.10 15:41, ~7 saat) | 25 sn | 1322 | 1110 | 20 | 0 | 0 | **13** | 8,9 sn | **%35** |
+| Brilliant or Blunder #3 (27.10 22:39, quiz) | 14 sn | 1624 | 1108 | 6 | 5 | 0 | 0 | 9,7 sn | %70 |
+| Stop Back Rank Mate (27.10 15:47) | 24 sn | 1545 | 1138 | 17 | 1 | 0 | 2 | 13,4 sn | %55 |
+
+Takipçi: **26 (+1)**. 22:34'teki yedek cron doğru şekilde atladı.
+
+**Teşhis:** Stafford kaydetme/beğeni açısından güçlü (13 kaydetme, 20 beğeni = son tuzakların en iyisi) ama izlenme
+oranı düşük (%35, ort. 8,9 sn): izleyici kilit andan önce çıkıyor olabilir (Stafford'da kurulum hamleleri uzun).
+Tek video; kısaltma kararı için bir sonraki uzun kurulumlu tuzakta (Kieninger) da bakılmalı.
+
+**Değişiklik:** Yok (tek gözlem).
+
+**Paylaşım:** bkz. aşağıdaki satır (22:36 dispatch).
+
+**Sonraki hipotez:** Ort. izlenme kilit an zamanının altında kalan tuzaklarda (Stafford gibi) kurulum adımını
+kısaltmak izlenme oranını %45+ seviyesine çıkarır; Kieninger verisiyle karşılaştır.
+
+---
+
 ## 2026-10-28 15:37 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
