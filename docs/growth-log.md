@@ -10,6 +10,34 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-28 15:37 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #3** (27.10 22:39, quiz, ~17 saat) | 14 sn | **1621** | 1105 | 6 | **5** | 0 | 0 | 9,7 sn | **%70** |
+| Stop Back Rank Mate (27.10 15:47) | 24 sn | 1539 | 1134 | 17 | 1 | 0 | 2 | 13,4 sn | %55 |
+| Back Rank Mate (26.10 22:40) | 22 sn | 1333 | 1099 | 7 | 0 | 3 | 0 | 12,5 sn | %57 |
+
+Takipçi: **25** (değişmedi). 06:52'deki yedek cron doğru şekilde atladı.
+
+Ara not (27–28.10): Sahibinin tespitiyle Quiz #2 (Opera Qb8+) brilliant değildi (Qc3 de +4.9 ile kazanıyor) →
+quiz doğrulaması sıkılaştırıldı (brilliant = en iyi + gerçek feda + tek kazanç yolu; blunder = ≤ %25), Opera
+listeden çıkarıldı, 6 yeni doğrulanmış quiz (#5–#10) eklendi.
+
+**Teşhis:** Hipotez tuttu: tanıdık açılış pozisyonlu Quiz #3 → 5 yorum, %70 izlenme oranı (rekor); ortaoyun Quiz #2 → 3
+yorum, %59. Quiz formatı 3 testte de en yüksek izlenme oranlarını veriyor (%68 / %59 / %70) ama beğeni ve kaydetme
+düşük (cevap verilmediği için). Yeni quiz'lerin hepsi açılış pozisyonu, bu doğrultuda. Takipçi artışı hâlâ en zayıf.
+
+**Değişiklik:** Yok. Quiz kararları zaten içerikte uygulandı (yeni quiz'ler açılış pozisyonu); başka bir değişkeni
+aynı anda oynatmıyorum.
+
+**Paylaşım:** bkz. aşağıdaki satır (15:37 dispatch).
+
+**Sonraki hipotez:** Takipçi artışı için en güçlü aday hâlâ "Comment TRAPS → ücretsiz PDF" (GUIDE_CTA), PDF linki ve
+Meta uygulamasının Live moda alınmasını bekliyor.
+
+---
+
 ## 2026-10-27 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #3)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
