@@ -26,7 +26,7 @@ Tek video; kısaltma kararı için bir sonraki uzun kurulumlu tuzakta (Kieninger
 
 **Değişiklik:** Yok (tek gözlem).
 
-**Paylaşım:** bkz. aşağıdaki satır (22:36 dispatch).
+**Paylaşım:** Beat the Stafford Gambit 22:39 UTC → https://www.instagram.com/reel/DfDhmhHpZoB/
 
 **Sonraki hipotez:** Ort. izlenme kilit an zamanının altında kalan tuzaklarda (Stafford gibi) kurulum adımını
 kısaltmak izlenme oranını %45+ seviyesine çıkarır; Kieninger verisiyle karşılaştır.
