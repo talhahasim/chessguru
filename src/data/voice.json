@@ -1116,6 +1116,138 @@
     "file": "voice/quiz-reti-qd8/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-englund-bc3": {
+   "hook": {
+    "text": "White hunts the queen. Brilliant or blunder?",
+    "file": "voice/quiz-englund-bc3/hook-42742b62.mp3",
+    "seconds": 2.428
+   },
+   "step-0": {
+    "text": "Black checks and grabs the pawn on b2.",
+    "file": "voice/quiz-englund-bc3/step-0-9daf5ba6.mp3",
+    "seconds": 2.196
+   },
+   "step-1": {
+    "text": "Bishop to c3 attacks the queen. Brilliant... Or blunder?",
+    "file": "voice/quiz-englund-bc3/step-1-5fc8bf42.mp3",
+    "seconds": 3.347
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-englund-bc3/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-legal-nxe5": {
+   "hook": {
+    "text": "The knight ignores the pin! Brilliant or blunder?",
+    "file": "voice/quiz-legal-nxe5/hook-def68174.mp3",
+    "seconds": 2.612
+   },
+   "step-0": {
+    "text": "Black pins the knight to the queen.",
+    "file": "voice/quiz-legal-nxe5/step-0-f3671ab1.mp3",
+    "seconds": 1.593
+   },
+   "step-1": {
+    "text": "Knight takes e5 and leaves the queen. Brilliant... Or blunder?",
+    "file": "voice/quiz-legal-nxe5/step-1-486eb7e7.mp3",
+    "seconds": 3.487
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-legal-nxe5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-elephant-nxd5": {
+   "hook": {
+    "text": "A free pawn in the center? Brilliant or blunder?",
+    "file": "voice/quiz-elephant-nxd5/hook-f4e4e2ff.mp3",
+    "seconds": 2.527
+   },
+   "step-0": {
+    "text": "The pawn on d5 looks loose.",
+    "file": "voice/quiz-elephant-nxd5/step-0-88713530.mp3",
+    "seconds": 1.673
+   },
+   "step-1": {
+    "text": "Knight grabs it. Brilliant... Or blunder?",
+    "file": "voice/quiz-elephant-nxd5/step-1-8a3464e2.mp3",
+    "seconds": 2.184
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-elephant-nxd5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-fried-liver-nxf7": {
+   "hook": {
+    "text": "A knight for one pawn? Brilliant or blunder?",
+    "file": "voice/quiz-fried-liver-nxf7/hook-1c6e11d8.mp3",
+    "seconds": 2.441
+   },
+   "step-0": {
+    "text": "White attacks f7. Black takes back on d5.",
+    "file": "voice/quiz-fried-liver-nxf7/step-0-f6c658f9.mp3",
+    "seconds": 3.111
+   },
+   "step-1": {
+    "text": "Knight takes f7 and gives itself up. Brilliant... Or blunder?",
+    "file": "voice/quiz-fried-liver-nxf7/step-1-b7244d39.mp3",
+    "seconds": 3.549
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-fried-liver-nxf7/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-blackburne-nxf7": {
+   "hook": {
+    "text": "A fork on queen and rook! Brilliant or blunder?",
+    "file": "voice/quiz-blackburne-nxf7/hook-8d5f5bb5.mp3",
+    "seconds": 2.558
+   },
+   "step-0": {
+    "text": "White grabs e5. Black's queen comes out.",
+    "file": "voice/quiz-blackburne-nxf7/step-0-1ea10b17.mp3",
+    "seconds": 2.62
+   },
+   "step-1": {
+    "text": "Knight forks the queen and the rook. Brilliant... Or blunder?",
+    "file": "voice/quiz-blackburne-nxf7/step-1-9b09df85.mp3",
+    "seconds": 3.075
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-blackburne-nxf7/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-lasker-fxg1n": {
+   "hook": {
+    "text": "A pawn becomes a knight?! Brilliant or blunder?",
+    "file": "voice/quiz-lasker-fxg1n/hook-7edca69f.mp3",
+    "seconds": 2.437
+   },
+   "step-0": {
+    "text": "White takes the bishop. The pawn gives check.",
+    "file": "voice/quiz-lasker-fxg1n/step-0-d58dcb35.mp3",
+    "seconds": 2.356
+   },
+   "step-1": {
+    "text": "The pawn takes and becomes a knight, not a queen. Brilliant... Or blunder?",
+    "file": "voice/quiz-lasker-fxg1n/step-1-0fc9fe33.mp3",
+    "seconds": 3.861
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-lasker-fxg1n/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }
