@@ -58,8 +58,10 @@ The first frame of every video must be a finished cover that can be used as the 
 ## "Brilliant or blunder?" quizzes
 
 - `src/lessons/quizzes.ts`, `kind: "quiz"`: the last move is the question; `answer` must match Stockfish
-  (`npm run validate`: a blunder must be classed blunder; a brilliant must be the engine's best move AND a real
-  sacrifice). The video NEVER reveals the answer: no eval bar, no move badges/chips, neutral yellow cover arrow,
+  (`npm run validate`): a blunder must be classed blunder AND leave the mover ≤ 25% win chance; a brilliant must be
+  the engine's best move, a real sacrifice (material can be won by a capture) AND the only way to win: the best
+  other move (`quizAlt` in `analysis.json`, from `npm run analyze`) must be below +2 and not a mate. Never post a
+  quiz whose move is merely "best" or "mistake" (the Opera Qb8+ quiz was dropped for this). The video NEVER reveals the answer: no eval bar, no move badges/chips, neutral yellow cover arrow,
   quiz outro ("WHAT DO YOU THINK? !! Brilliant / ?? Blunder – Comment your answer!"), no answer in the caption.
 - `scripts/reply-comments.ts` (`reply-comments.yml`, hourly) replies under quiz Reels: correct answers get a ✅ reply,
   wrong ones a ❌ "not quite" reply (varied pools, never giving the answer away); comments with no clear answer

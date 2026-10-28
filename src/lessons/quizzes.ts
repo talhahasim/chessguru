@@ -22,22 +22,6 @@ export const quizScholarsNf6: Lesson = {
   takeaways: [],
 };
 
-export const quizOperaQb8: Lesson = {
-  id: "quiz-opera-qb8",
-  kind: "quiz",
-  answer: "brilliant",
-  band: "300-600",
-  title: "Brilliant or Blunder #2",
-  hero: "w",
-  startFen: "4kb1r/p2r1ppp/4qn2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 2 15",
-  hook: ["He gives away his *queen*!", "*Brilliant* or *blunder*?"],
-  steps: [
-    { moves: ["Bxd7+", "Nxd7"], say: "Bishop takes. The knight takes back." },
-    { moves: ["Qb8+"], say: "Queen to b8, *check*! *Brilliant*... or *blunder*?" },
-  ],
-  takeaways: [],
-};
-
 export const quizNoahsArkQxd4: Lesson = {
   id: "quiz-noahs-ark-qxd4",
   kind: "quiz",
@@ -70,4 +54,4 @@ export const quizRetiQd8: Lesson = {
   takeaways: [],
 };
 
-export const QUIZZES: Lesson[] = [quizScholarsNf6, quizOperaQb8, quizNoahsArkQxd4, quizRetiQd8];
+export const QUIZZES: Lesson[] = [quizScholarsNf6, quizNoahsArkQxd4, quizRetiQd8];

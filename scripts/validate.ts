@@ -11,14 +11,29 @@
 import { Chess } from "chess.js";
 import { LESSONS, compositionId } from "../src/lessons/index.ts";
 import { engineDataFor } from "../src/lib/analysis.ts";
-import { classify } from "../src/lib/evals.ts";
+import { classify, whiteWinPercent } from "../src/lib/evals.ts";
 import { replayLesson } from "../src/lib/line.ts";
 import { buildTimeline, FPS } from "../src/lib/timeline.ts";
 import { parseMark } from "../src/theme.ts";
 import { narrationSegments } from "../src/lib/narration.ts";
 import { voiceClipsFor } from "../src/lib/voice.ts";
 import analysis from "../src/data/analysis.json" with { type: "json" };
-import type { AnalysisFile } from "../src/types.ts";
+import type { AnalysisFile, WhiteEval } from "../src/types.ts";
+
+const VALUE: Record<string, number> = { p: 1, n: 3, b: 3, r: 5, q: 9, k: 0 };
+/** Most material the side to move can win with one capture, minus the capturer when it can be taken back. */
+const sacrificeGain = (fen: string) => {
+  const c = new Chess(fen);
+  let gain = 0;
+  for (const mv of c.moves({ verbose: true })) {
+    if (!mv.captured) continue;
+    const t = new Chess(fen);
+    t.move(mv);
+    const retake = t.moves({ verbose: true }).some((r) => r.to === mv.to && r.captured);
+    gain = Math.max(gain, VALUE[mv.captured] - (retake ? VALUE[mv.piece] : 0));
+  }
+  return gain;
+};
 
 const a = analysis as unknown as AnalysisFile;
 let errors = 0;
@@ -80,19 +95,32 @@ for (const lesson of LESSONS) {
     }
   }
   // Quizzes: the hidden answer must be honest, or the comment replies would tell people the wrong thing.
+  // A quiz move must be clearly one or the other, never just a "best" or "mistake" move.
   if (lesson.kind === "quiz") {
     const last = line.moves.at(-1);
     if (!lesson.answer) err(lesson.id, "quiz without an answer");
     else if (last && data.fresh) {
       const cls = data.classes[last.ply - 1];
-      const best = a.lessons[lesson.id].positions[last.ply - 1].best;
-      if (lesson.answer === "blunder" && cls !== "blunder")
-        err(lesson.id, `answer is blunder but Stockfish calls ${last.move.san} ${cls}`);
+      const pos = a.lessons[lesson.id].positions;
+      const mover = last.move.color;
+      const pov = (e: WhiteEval) => (mover === "w" ? whiteWinPercent(e) : 100 - whiteWinPercent(e));
+      const cpFor = (e: WhiteEval) => (e.type === "cp" ? (mover === "w" ? e.value : -e.value) : null);
+      if (lesson.answer === "blunder") {
+        const after = pos[last.ply].eval;
+        if (cls !== "blunder") err(lesson.id, `answer is blunder but Stockfish calls ${last.move.san} ${cls}`);
+        // Losing at least ~2 pawns (or getting mated), so nobody can argue it is "only a mistake".
+        else if (pov(after) > 25) err(lesson.id, `answer is blunder but ${last.move.san} still leaves the mover ok (${(pov(after)).toFixed(0)}% win chance)`);
+      }
       if (lesson.answer === "brilliant") {
-        const after = new Chess(line.fens[last.ply]);
-        const canTake = after.moves({ verbose: true }).some((mv) => mv.to === last.move.to && mv.captured);
+        const best = pos[last.ply - 1].best;
+        const alt = a.lessons[lesson.id].quizAlt;
         if (best !== last.move.lan) err(lesson.id, `answer is brilliant but ${last.move.san} is not Stockfish's best move (${best})`);
-        if (!canTake) err(lesson.id, `answer is brilliant but ${last.move.san} sacrifices nothing (the piece can't be taken)`);
+        if (sacrificeGain(line.fens[last.ply]) < 2)
+          err(lesson.id, `answer is brilliant but ${last.move.san} sacrifices nothing (no piece can be won by capturing)`);
+        // chess.com-style rule: not brilliant if another move also wins clearly (+2 or a forced mate).
+        if (!alt) err(lesson.id, "no second-best eval for the brilliant check. Run: npm run analyze");
+        else if (alt.type !== "cp" || (cpFor(alt) ?? 0) >= 200)
+          err(lesson.id, `answer is brilliant but ${last.move.san} is not the only way to win (best other move: ${alt.type === "cp" ? (cpFor(alt)! / 100).toFixed(2) : alt.type === "mate" ? `M${alt.value}` : "mate"})`);
       }
     }
   }

@@ -87,8 +87,9 @@ export const buildCaption = (lesson: Lesson) => {
   ].join("\n");
 };
 
-/** Quizzes start after this many trap+defense pairs (the first 7 pairs were posted before quizzes existed). */
-const QUIZ_AFTER_PAIRS = 7;
+/** Quizzes start after this many trap+defense pairs (8 = where the next unposted quiz keeps its slot after the
+ * dropped Opera quiz; posted lessons are matched by caption, so this only moves upcoming quizzes). */
+const QUIZ_AFTER_PAIRS = 8;
 
 /**
  * Posting order: traps rotate through the Elo bands (0-300, 300-600, 600-900, 900-1500, 0-300, …)

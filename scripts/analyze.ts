@@ -54,7 +54,8 @@ const main = async () => {
     if (only.length && !only.includes(lesson.id)) continue;
     const line = replayLesson(lesson);
     const prev = existing.lessons[lesson.id];
-    if (!force && prev && prev.line === line.fingerprint && existing.depth >= depth) {
+    const needsAlt = lesson.kind === "quiz" && !prev?.quizAlt;
+    if (!force && prev && prev.line === line.fingerprint && existing.depth >= depth && !needsAlt) {
       console.log(`✓ ${lesson.id} (up to date)`);
       continue;
     }
@@ -74,7 +75,17 @@ const main = async () => {
       const r = await engine.analyse(fen, { depth });
       positions.push({ fen, eval: toWhite(r.score, stm), best: r.bestMove, bestSan: uciToSan(fen, r.bestMove), depth: r.depth });
     }
-    result.lessons[lesson.id] = { line: line.fingerprint, positions };
+    // Quizzes: how good is the best alternative to the question move? A "brilliant" sacrifice must be the only way
+    // to win; if a quiet move wins just as clearly, chess.com-style reviews call the sacrifice just "best".
+    let quizAlt: WhiteEval | undefined;
+    if (lesson.kind === "quiz") {
+      const q = line.moves.at(-1)!;
+      const fen = line.fens[q.ply - 1];
+      const stm = new Chess(fen).turn();
+      const alt = (await engine.analyseMulti(fen, 2, { depth })).find((r) => r.pv[0] && r.pv[0] !== q.move.lan);
+      if (alt) quizAlt = toWhite(alt.score, stm);
+    }
+    result.lessons[lesson.id] = { line: line.fingerprint, positions, ...(quizAlt ? { quizAlt } : {}) };
     const evs = positions.map((p) => (p.eval.type === "cp" ? (p.eval.value / 100).toFixed(1) : p.eval.type === "mate" ? `M${p.eval.value}` : "#"));
     console.log(`✓ ${lesson.id}: ${evs.join(" ")}`);
   }

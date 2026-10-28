@@ -1073,28 +1073,6 @@
     "seconds": 3.615
    }
   },
-  "quiz-opera-qb8": {
-   "hook": {
-    "text": "He gives away his queen! Brilliant or blunder?",
-    "file": "voice/quiz-opera-qb8/hook-64301284.mp3",
-    "seconds": 2.484
-   },
-   "step-0": {
-    "text": "Bishop takes. The knight takes back.",
-    "file": "voice/quiz-opera-qb8/step-0-171a24d4.mp3",
-    "seconds": 1.741
-   },
-   "step-1": {
-    "text": "Queen to b8, check! Brilliant... Or blunder?",
-    "file": "voice/quiz-opera-qb8/step-1-b28a71c5.mp3",
-    "seconds": 2.567
-   },
-   "cta": {
-    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
-    "file": "voice/quiz-opera-qb8/cta-770325e1.mp3",
-    "seconds": 3.615
-   }
-  },
   "quiz-noahs-ark-qxd4": {
    "hook": {
     "text": "White wins the pawn back. Brilliant or blunder?",

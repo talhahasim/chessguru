@@ -86,6 +86,8 @@ export type LessonAnalysis = {
   /** Fingerprint of the analysed line, used to detect stale analysis. */
   line: string;
   positions: PositionAnalysis[];
+  /** Quizzes only: Stockfish's eval of the best move OTHER than the question move (for the "brilliant" check). */
+  quizAlt?: WhiteEval;
 };
 
 export type AnalysisFile = {
