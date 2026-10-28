@@ -31,7 +31,7 @@ düşük (cevap verilmediği için). Yeni quiz'lerin hepsi açılış pozisyonu,
 **Değişiklik:** Yok. Quiz kararları zaten içerikte uygulandı (yeni quiz'ler açılış pozisyonu); başka bir değişkeni
 aynı anda oynatmıyorum.
 
-**Paylaşım:** bkz. aşağıdaki satır (15:37 dispatch).
+**Paylaşım:** Stafford Trap 15:41 UTC → https://www.instagram.com/reel/DfCxuYaBlno/
 
 **Sonraki hipotez:** Takipçi artışı için en güçlü aday hâlâ "Comment TRAPS → ücretsiz PDF" (GUIDE_CTA), PDF linki ve
 Meta uygulamasının Live moda alınmasını bekliyor.
