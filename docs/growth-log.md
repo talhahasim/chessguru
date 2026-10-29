@@ -10,6 +10,28 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-29 15:42 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #4)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Beat the Stafford Gambit (28.10 22:39, savunma, ~17 saat) | 26 sn | 1450 | 1095 | 10 | 0 | 0 | 2 | 14,5 sn | **%55** |
+| Stafford Gambit Trap (28.10 15:41) | 25 sn | 1347 | 1121 | 20 | 0 | 0 | 13 | 9,0 sn | %36 |
+| Brilliant or Blunder #3 (27.10 22:39, quiz) | 14 sn | 1632 | 1110 | 6 | 6 | 0 | 1 | 9,8 sn | %70 |
+
+Takipçi: **26** (değişmedi). 07:06'daki yedek cron doğru şekilde atladı. Rutin 7 dk geç tetiklendi.
+
+**Teşhis:** Savunma videosu (Beat the Stafford) tuzaktan daha uzun izlendi (14,5 sn / %55 vs 9,0 sn / %36): aynı
+konu, savunmada kurulum kısa ve kilit an erken. Bu, "Stafford tuzak videosunda kurulum uzun" teşhisini destekliyor.
+Takipçi artışı 2 gündür durgun (25–26).
+
+**Değişiklik:** Yok. Kurulum kısaltma hipotezi için Kieninger tuzak verisini bekliyorum (bir sonraki tuzak).
+
+**Paylaşım:** bkz. aşağıdaki satır (15:42 dispatch).
+
+**Sonraki hipotez:** Quiz #4 (Réti, gerçek brilliant) ≥ 5 yorum ve ≥ %60 izlenme oranı alır.
+
+---
+
 ## 2026-10-28 22:36 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
