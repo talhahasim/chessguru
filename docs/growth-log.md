@@ -29,7 +29,7 @@ taşıyor (21 vs blunder quiz'lerde 6–17).
 değiştirmiyorum. **Uyarı:** sırada sadece 10 video kaldı (2 tuzak/savunma çifti + 6 quiz) → ~5 gün sonra içerik
 biter; en iyi performans quiz'lerde olduğu için yeni doğrulanmış quiz'ler eklenmeli.
 
-**Paylaşım:** bkz. aşağıdaki satır (22:35 dispatch).
+**Paylaşım:** Kieninger Trap 22:39 UTC → https://www.instagram.com/reel/DfGGXcYPNbi/
 
 **Sonraki hipotez:** Brilliant (fedalı) quiz'ler blunder quiz'lerinden daha çok beğeni/erişim alır (#5 Englund
 blunder vs #6 Légal brilliant ile karşılaştır).
