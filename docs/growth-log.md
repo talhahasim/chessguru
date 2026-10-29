@@ -10,6 +10,32 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-29 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #4** (29.10 15:45, quiz, ~7 saat) | 14 sn | **1980** | **1333** | **21** | **8** | 0 | 0 | 10,9 sn | **%77** |
+| Beat the Stafford Gambit (28.10 22:39) | 26 sn | 1454 | 1100 | 10 | 0 | 0 | 2 | 14,5 sn | %55 |
+| Stafford Gambit Trap (28.10 15:41) | 25 sn | 1351 | 1122 | 20 | 0 | 0 | 13 | 9,0 sn | %35 |
+
+Takipçi: **26** (değişmedi).
+
+**Teşhis:** Quiz #4 (Réti, gerçek brilliant) hesabın rekoru: ilk 7 saatte 1980 izlenme (önceki en iyi 1697),
+erişim 1333, %77 izlenme oranı, 21 beğeni, 8 yorum. Hipotez tuttu (≥ 5 yorum, ≥ %60). Quiz formatı 4 testin 3'ünde
+hedefi aştı; en zayıf olan (#2) zaten doğrulamadan geçemeyen hatalı quiz'di. Brilliant (fedalı) quiz'ler beğeniyi de
+taşıyor (21 vs blunder quiz'lerde 6–17).
+
+**Değişiklik:** Yok. Sıradaki Kieninger tuzağı, Stafford'daki "uzun kurulum" teşhisini test edecek; aynı anda sırayı
+değiştirmiyorum. **Uyarı:** sırada sadece 10 video kaldı (2 tuzak/savunma çifti + 6 quiz) → ~5 gün sonra içerik
+biter; en iyi performans quiz'lerde olduğu için yeni doğrulanmış quiz'ler eklenmeli.
+
+**Paylaşım:** bkz. aşağıdaki satır (22:35 dispatch).
+
+**Sonraki hipotez:** Brilliant (fedalı) quiz'ler blunder quiz'lerinden daha çok beğeni/erişim alır (#5 Englund
+blunder vs #6 Légal brilliant ile karşılaştır).
+
+---
+
 ## 2026-10-29 15:42 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #4)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
