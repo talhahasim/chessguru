@@ -26,7 +26,7 @@ Takipçi artışı 2 gündür durgun (25–26).
 
 **Değişiklik:** Yok. Kurulum kısaltma hipotezi için Kieninger tuzak verisini bekliyorum (bir sonraki tuzak).
 
-**Paylaşım:** bkz. aşağıdaki satır (15:42 dispatch).
+**Paylaşım:** Brilliant or Blunder #4 (quiz-reti-qd8) 15:45 UTC → https://www.instagram.com/reel/DfFW_wohauq/
 
 **Sonraki hipotez:** Quiz #4 (Réti, gerçek brilliant) ≥ 5 yorum ve ≥ %60 izlenme oranı alır.
 
