@@ -26,7 +26,7 @@ değişikliği henüz hiçbir paylaşımda test edilmedi (ilk: Siberian).
 
 **Değişiklik:** Yok (son değişiklik 0 paylaşımda test edildi).
 
-**Paylaşım:** bkz. aşağıdaki satır (22:36 dispatch).
+**Paylaşım:** Brilliant or Blunder #5 (quiz-englund-bc3) 22:39 UTC → https://www.instagram.com/reel/DfIrMpFpIME/
 
 **Sonraki hipotez:** Blunder quiz'i #5 (Englund) brilliant quiz'i #4'ten (1999) daha az beğeni/erişim alır.
 
