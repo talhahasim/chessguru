@@ -10,6 +10,28 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-30 22:36 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #5)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dodge the Kieninger Trap (30.10 16:25, savunma, ~6 saat) | 27 sn | **716** | 592 | 4 | 0 | 0 | 1 | 10,2 sn | %39 |
+| Kieninger Trap (29.10 22:39) | 29 sn | 1319 | 1126 | 15 | 0 | 4 | 9 | 11,7 sn | %40 |
+| Brilliant or Blunder #4 (29.10 15:45, quiz) | 14 sn | 1999 | 1345 | 21 | 8 | 0 | 0 | 10,9 sn | %77 |
+
+Takipçi: **29 (+1)**. 22:18'deki yedek cron doğru şekilde atladı.
+
+**Teşhis:** Dodge the Kieninger ilk 6 saatte 716 izlenmede (diğer savunmalar bu sürede ~1200+): uzun kurulumlu,
+%39 izlenme oranı ve 45 dk geç paylaşım. Kieninger konusu genel olarak zayıf (tuzak da 1319). Kurulum hızı
+değişikliği henüz hiçbir paylaşımda test edilmedi (ilk: Siberian).
+
+**Değişiklik:** Yok (son değişiklik 0 paylaşımda test edildi).
+
+**Paylaşım:** bkz. aşağıdaki satır (22:36 dispatch).
+
+**Sonraki hipotez:** Blunder quiz'i #5 (Englund) brilliant quiz'i #4'ten (1999) daha az beğeni/erişim alır.
+
+---
+
 ## 2026-10-30 16:20 UTC — planlı inceleme + paylaşım (DEĞİŞİKLİK: uzun kurulum adımları hızlı)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
