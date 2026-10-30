@@ -10,6 +10,35 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-30 16:20 UTC — planlı inceleme + paylaşım (DEĞİŞİKLİK: uzun kurulum adımları hızlı)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Kieninger Trap (29.10 22:39, ~17 saat) | 29 sn | 1319 | 1124 | 15 | 0 | 4 | 9 | 11,7 sn | **%40** |
+| Brilliant or Blunder #4 (29.10 15:45, quiz) | 14 sn | **1993** | 1339 | 21 | 8 | 0 | 0 | 10,9 sn | %77 |
+| Beat the Stafford Gambit (28.10 22:39) | 26 sn | 1454 | 1100 | 10 | 0 | 0 | 2 | 14,5 sn | %55 |
+
+Takipçi: **28 (+2)**. Rutin 45 dk geç tetiklendi (16:20); yedek cron'lar (22:44, 07:07) doğru şekilde atladı.
+İlk paylaşım denemesi Instagram'ın boş yanıtıyla düştü ("Unexpected end of JSON input", render'dan önce, hiçbir şey
+paylaşılmadı); tek yeniden deneme başarılı.
+
+**Teşhis:** Uzun kurulumlu iki tuzak (Stafford %35, Kieninger %40) kısa kurulumlulardan (Back Rank %57, Fishing Pole
+%48) belirgin şekilde az izlendi: Kieninger'de kilit an 12,3 sn, Stafford'da 11,8 sn, ama ortalama izleyici 9–12 sn'de
+çıkıyor. 2 gözlem → hipotez yeterince desteklendi.
+
+**Değişiklik (tek değişken: kurulum hızı):** 8'den fazla hamleli kurulum adımları artık hızlı oynanıyor (hamle başı
+0,33 sn yerine 0,5 sn; `T.fastAfter/fastMove/fastGap`, `src/lib/timeline.ts`). Sıradaki son tuzak Siberian'ın iki
+kurulum adımı tek adımda birleştirildi ("Smith-Morra Gambit. Queen and knight hit h2."), "h3" satırı kısaltıldı →
+kilit hamle Nd4 15,5 sn'den **11,0 sn**'ye, video 29,5 → 25,0 sn. Seslendirme yenilendi, validate 0 hata, kapak
+kontrol edildi, PDF rehberi yeniden üretildi.
+
+**Paylaşım:** Dodge the Kieninger Trap 16:25 UTC → https://www.instagram.com/reel/DfIAU7DztTT/
+
+**Sonraki hipotez:** Siberian Trap (kilit an 11 sn) %45+ izlenme oranı alır. **Uyarı:** sırada 8 video kaldı
+(Englund quiz, Siberian çifti, 5 quiz) → ~4 gün; yeni içerik gerekiyor.
+
+---
+
 ## 2026-10-29 22:35 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

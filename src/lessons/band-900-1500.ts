@@ -53,9 +53,8 @@ export const siberianTrap: Lesson = {
   bookPlies: 15,
   hook: ["Their queen *looks* safe.", "One knight jump: *checkmate*."],
   steps: [
-    { moves: ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4", "Qc7"], say: "The Smith-Morra Gambit. Our queen eyes *h2*.", arrows: ["c7h2"], pulse: ["h2"] },
-    { moves: ["O-O", "Nf6", "Qe2", "Ng4"], say: "Knight to g4. *Two pieces* hit h2.", arrows: ["g4h2", "c7h2"] },
-    { moves: ["h3"], say: "White kicks it. *Natural... but wrong!*" },
+    { moves: ["e4", "c5", "d4", "cxd4", "c3", "dxc3", "Nxc3", "Nc6", "Nf3", "e6", "Bc4", "Qc7", "O-O", "Nf6", "Qe2", "Ng4"], say: "Smith-Morra Gambit. Queen and knight hit *h2*.", arrows: ["g4h2", "c7h2"], pulse: ["h2"] },
+    { moves: ["h3"], say: "White kicks it. *Wrong!*" },
     { moves: ["Nd4"], say: "Knight to d4! It attacks the *queen*.", badge: "brilliant", arrows: ["r:d4e2"] },
     { moves: ["Nxd4"], say: "White takes it... now *nobody guards h2*." },
     { moves: ["Qh2#"], say: "Queen takes h2. *Checkmate!*" },

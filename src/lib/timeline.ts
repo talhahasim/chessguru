@@ -8,6 +8,9 @@ export const T = {
   hook: 96,
   move: 11, // frames a piece takes to slide
   quickGap: 4, // pause between quickly played moves in one step
+  fastAfter: 8, // steps with more moves than this are a setup and play faster:
+  fastMove: 8,
+  fastGap: 2,
   afterMove: 4, // delay before arrows / badge appear
   outro: 165,
   voiceLead: 3, // frames between a segment starting and its voice starting
@@ -73,12 +76,17 @@ export const buildTimeline = (lesson: Lesson): Timeline => {
     const start = t;
     const voiceDone = say(`step-${index}`, start + T.voiceLead);
     const stepMoves: MoveEvent[] = [];
+    // Long setup steps (a whole opening in one go) play faster, so the key moment still lands by ~12 s
+    // (the long-setup traps Stafford/Kieninger were watched far less: 35-40% vs 48-57%).
+    const fast = (step.moves?.length ?? 0) > T.fastAfter;
+    const moveFrames = fast ? T.fastMove : T.move;
+    const gap = fast ? T.fastGap : T.quickGap;
     (step.moves ?? []).forEach((_, i, arr) => {
       const played = line.moves[ply++];
-      const ev = { ...played, start: t, end: t + T.move };
+      const ev = { ...played, start: t, end: t + moveFrames };
       stepMoves.push(ev);
       moves.push(ev);
-      t += T.move + (i < arr.length - 1 ? T.quickGap : 0);
+      t += moveFrames + (i < arr.length - 1 ? gap : 0);
     });
     const settled = t + (stepMoves.length ? T.afterMove : 0);
     const minEnd = settled + (clips.has(`step-${index}`) ? 20 : readingFrames(step.say));

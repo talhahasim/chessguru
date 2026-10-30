@@ -522,33 +522,28 @@
     "seconds": 2.645
    },
    "step-0": {
-    "text": "The Smith-Morra Gambit. Our queen eyes h2.",
-    "file": "voice/siberian-trap/step-0-3e8873ce.mp3",
-    "seconds": 2.599
+    "text": "Smith-Morra Gambit. Queen and knight hit h2.",
+    "file": "voice/siberian-trap/step-0-fda727aa.mp3",
+    "seconds": 2.62
    },
    "step-1": {
-    "text": "Knight to g4. Two pieces hit h2.",
-    "file": "voice/siberian-trap/step-1-98e3a75b.mp3",
-    "seconds": 2.563
+    "text": "White kicks it. Wrong!",
+    "file": "voice/siberian-trap/step-1-202572ea.mp3",
+    "seconds": 1.237
    },
    "step-2": {
-    "text": "White kicks it. Natural... But wrong!",
-    "file": "voice/siberian-trap/step-2-f2b003ba.mp3",
-    "seconds": 2.036
-   },
-   "step-3": {
     "text": "Knight to d4! It attacks the queen.",
-    "file": "voice/siberian-trap/step-3-cc9c3b29.mp3",
+    "file": "voice/siberian-trap/step-2-cc9c3b29.mp3",
     "seconds": 2.109
    },
-   "step-4": {
+   "step-3": {
     "text": "White takes it... Now nobody guards h2.",
-    "file": "voice/siberian-trap/step-4-99c90720.mp3",
+    "file": "voice/siberian-trap/step-3-99c90720.mp3",
     "seconds": 2.536
    },
-   "step-5": {
+   "step-4": {
     "text": "Queen takes h2. Checkmate!",
-    "file": "voice/siberian-trap/step-5-59b5796a.mp3",
+    "file": "voice/siberian-trap/step-4-59b5796a.mp3",
     "seconds": 1.808
    },
    "cta": {
