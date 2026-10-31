@@ -10,6 +10,28 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-31 22:36 UTC — planlı inceleme + paylaşım (değişiklik yok)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Siberian Trap (31.10 15:39, hızlı kurulum, ~7 saat) | 25 sn | 1316 | 1108 | 13 | 0 | 3 | 8 | 11,3 sn | **%45** |
+| Brilliant or Blunder #5 (30.10 22:39, quiz) | 15 sn | 1862 | 1194 | 11 | 8 | 0 | 0 | 11,7 sn | %78 |
+| Dodge the Kieninger Trap (30.10 16:25) | 27 sn | 1317 | 1072 | 13 | 0 | 2 | 2 | 12,2 sn | %46 |
+
+Takipçi: **30** (değişmedi). 21:32'deki yedek cron doğru şekilde atladı.
+
+**Teşhis:** Hızlı kurulumun ilk testi: Siberian %45 (16 hamlelik kurulum, kilit an 11 sn) — eski uzun kurulumlu
+tuzaklar %35–40 idi. Hipotez (≥ %45) sınırda tuttu; ikinci test Dodge the Siberian (o da hızlı kurulumlu).
+Takipçi 30'da duraksadı.
+
+**Değişiklik:** Yok (hız değişikliği 1 paylaşımda test edildi).
+
+**Paylaşım:** bkz. aşağıdaki satır (22:36 dispatch).
+
+**Sonraki hipotez:** Dodge the Siberian %50+ izlenme oranı alır. Sırada 5 video kaldı (~2,5 gün): savunma + 4 quiz.
+
+---
+
 ## 2026-10-31 15:36 UTC — planlı inceleme + paylaşım (değişiklik yok, Siberian = hız testi)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
