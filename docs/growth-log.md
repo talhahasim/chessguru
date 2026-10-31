@@ -26,7 +26,7 @@ Takipçi 30'da duraksadı.
 
 **Değişiklik:** Yok (hız değişikliği 1 paylaşımda test edildi).
 
-**Paylaşım:** bkz. aşağıdaki satır (22:36 dispatch).
+**Paylaşım:** Dodge the Siberian Trap 22:39 UTC → https://www.instagram.com/reel/DfLP5NrBEJb/
 
 **Sonraki hipotez:** Dodge the Siberian %50+ izlenme oranı alır. Sırada 5 video kaldı (~2,5 gün): savunma + 4 quiz.
 
