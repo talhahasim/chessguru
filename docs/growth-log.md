@@ -10,6 +10,29 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-10-31 15:36 UTC — planlı inceleme + paylaşım (değişiklik yok, Siberian = hız testi)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #5** (30.10 22:39, blunder quiz, ~17 saat) | 15 sn | **1836** | 1180 | 11 | 8 | 0 | 0 | 11,7 sn | **%78** |
+| Dodge the Kieninger Trap (30.10 16:25) | 27 sn | 1317 | 1071 | 13 | 0 | 2 | 2 | 12,2 sn | %46 |
+| Brilliant or Blunder #4 (29.10 15:45, brilliant quiz) | 14 sn | 2001 | 1345 | 21 | 8 | 0 | 0 | 10,9 sn | %77 |
+
+Takipçi: **30 (+1)**. 06:59'daki yedek cron doğru şekilde atladı.
+
+**Teşhis:** Quiz'ler artık her seferinde 1600–2000 izlenme ve %70–78 izlenme oranı veriyor (tuzaklar 1300–1650,
+%35–57). Hipotez kısmen tuttu: blunder quiz'i #5 brilliant #4'e göre yarı beğeni aldı (11 vs 21), ama izlenme/yorum
+benzer (1836/8 vs 2001/8). Dodge the Kieninger geç yükseldi (6 saatte 716 → 1317), %46.
+
+**Değişiklik:** Yok. Bugün Siberian Trap çıkıyor: hızlı kurulum değişikliğinin ilk testi (kilit an 11 sn).
+
+**Paylaşım:** bkz. aşağıdaki satır (15:36 dispatch).
+
+**Sonraki hipotez:** Siberian Trap %45+ izlenme oranı alır (eski uzun kurulumlu tuzaklar %35–40).
+**Uyarı:** sırada 6 video kaldı (~3 gün).
+
+---
+
 ## 2026-10-30 22:36 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #5)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
