@@ -26,7 +26,7 @@ benzer (1836/8 vs 2001/8). Dodge the Kieninger geç yükseldi (6 saatte 716 → 
 
 **Değişiklik:** Yok. Bugün Siberian Trap çıkıyor: hızlı kurulum değişikliğinin ilk testi (kilit an 11 sn).
 
-**Paylaşım:** bkz. aşağıdaki satır (15:36 dispatch).
+**Paylaşım:** Siberian Trap 15:39 UTC → https://www.instagram.com/reel/DfKf5gtyC_8/
 
 **Sonraki hipotez:** Siberian Trap %45+ izlenme oranı alır (eski uzun kurulumlu tuzaklar %35–40).
 **Uyarı:** sırada 6 video kaldı (~3 gün).
