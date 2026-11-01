@@ -27,7 +27,7 @@ toparladı (558 → 924, %45). Takipçi artışı 3 gündür sıfır: erişim ~1
 **Değişiklik:** Yok. Sırada sadece 3 quiz kalıyor; takipçi kaldıracı için asıl adım "Comment TRAPS → PDF" (sahibinin
 PDF linki + Meta Live mod) ve yeni içerik (sahibinin onayı bekleniyor).
 
-**Paylaşım:** bkz. aşağıdaki satır (22:36 dispatch).
+**Paylaşım:** Brilliant or Blunder #7 (quiz-elephant-nxd5) 22:39 UTC → https://www.instagram.com/reel/DfN0w6hvmx2/
 
 **Sonraki hipotez:** Quiz #7 (Elephant, blunder) ~1700 izlenme, %70+ izlenme oranı alır (quiz tabanı).
 
