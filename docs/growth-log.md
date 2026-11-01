@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-01 15:36 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #6)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dodge the Siberian Trap (31.10 22:38, savunma, ~17 saat) | 28 sn | **558** | **415** | 3 | 0 | 0 | 3 | 11,4 sn | %41 |
+| Siberian Trap (31.10 15:39) | 25 sn | 1327 | 1114 | 13 | 0 | 3 | 8 | 11,3 sn | %45 |
+| Brilliant or Blunder #5 (30.10 22:39, quiz) | 15 sn | 1871 | 1196 | 11 | 9 | 0 | 0 | 11,8 sn | %78 |
+
+Takipçi: **30** (2 gündür değişmedi). 07:33'teki yedek cron doğru şekilde atladı.
+
+**Teşhis:** Dodge the Siberian 17 saatte sadece 558 izlenme / 415 erişim: hesabın son 2 haftadaki en düşük savunma
+erişimi (normal ~1100). İzlenme oranı %41 (hipotez ≥ %50 tutmadı). Muhtemel sebep: aynı konunun art arda ikinci
+videosu + 900–1500 Elo + uzun (28 sn); Instagram ilk test kitlesinde düşük tutunca dağıtımı kesmiş görünüyor.
+Hızlı kurulum: 2 testte %45 ve %41 → eski uzun kurulumlulardan (%35–40) biraz iyi, net bir kazanç değil.
+Savunma videoları belirgin şekilde zayıflıyor; quiz'ler istikrarlı en iyi format.
+
+**Değişiklik:** Yok. Sırada sadece quiz'ler var (5 adet), kurulum hızı onları etkilemiyor.
+
+**Paylaşım:** bkz. aşağıdaki satır (15:36 dispatch).
+
+**Sonraki hipotez:** Brilliant quiz #6 (Légal) ≥ 1800 izlenme ve ≥ 15 beğeni alır. İçerik ~2,5 gün içinde bitiyor.
+
+---
+
 ## 2026-10-31 22:36 UTC — planlı inceleme + paylaşım (değişiklik yok)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
