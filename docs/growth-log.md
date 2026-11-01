@@ -28,7 +28,7 @@ Savunma videoları belirgin şekilde zayıflıyor; quiz'ler istikrarlı en iyi f
 
 **Değişiklik:** Yok. Sırada sadece quiz'ler var (5 adet), kurulum hızı onları etkilemiyor.
 
-**Paylaşım:** bkz. aşağıdaki satır (15:36 dispatch).
+**Paylaşım:** Brilliant or Blunder #6 (quiz-legal-nxe5) 15:39 UTC → https://www.instagram.com/reel/DfNEwLahYfV/
 
 **Sonraki hipotez:** Brilliant quiz #6 (Légal) ≥ 1800 izlenme ve ≥ 15 beğeni alır. İçerik ~2,5 gün içinde bitiyor.
 
