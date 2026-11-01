@@ -10,6 +10,29 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-01 22:36 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #7)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #6 (01.11 15:39, Légal, ~7 saat) | 15 sn | 1671 | 1091 | 7 | 4 | **5** | 3 | 10,3 sn | %71 |
+| Dodge the Siberian Trap (31.10 22:38) | 28 sn | 924 | 693 | 6 | 0 | 0 | 3 | 12,5 sn | %45 |
+| Brilliant or Blunder #5 (30.10 22:39) | 15 sn | 1873 | 1198 | 11 | 9 | 0 | 0 | 11,8 sn | %78 |
+
+Takipçi: **30** (3 gündür değişmedi). 22:01'deki yedek cron doğru şekilde atladı.
+
+**Teşhis:** Quiz #6 hipotezi tutmadı (1671 izlenme, 7 beğeni; hedef ≥ 1800 / ≥ 15) ama ilk kez bir quiz paylaşıldı
+(5 paylaşım) ve kaydedildi (3): Légal'in vezir fedası "arkadaşına göster" tipi bir pozisyon. Dodge the Siberian geç
+toparladı (558 → 924, %45). Takipçi artışı 3 gündür sıfır: erişim ~1100–1300'de takılı, yeni kitleye ulaşamıyoruz.
+
+**Değişiklik:** Yok. Sırada sadece 3 quiz kalıyor; takipçi kaldıracı için asıl adım "Comment TRAPS → PDF" (sahibinin
+PDF linki + Meta Live mod) ve yeni içerik (sahibinin onayı bekleniyor).
+
+**Paylaşım:** bkz. aşağıdaki satır (22:36 dispatch).
+
+**Sonraki hipotez:** Quiz #7 (Elephant, blunder) ~1700 izlenme, %70+ izlenme oranı alır (quiz tabanı).
+
+---
+
 ## 2026-11-01 15:36 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #6)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
