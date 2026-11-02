@@ -30,7 +30,7 @@ Elephant Trap pozisyonu. Quiz'ler 1600–2000 izlenme bandında sabit; takipçi 
 
 **Değişiklik (içerik):** Yok.
 
-**Paylaşım:** bkz. aşağıdaki satır (16:41 dispatch).
+**Paylaşım:** Brilliant or Blunder #9 (quiz-blackburne-nxf7) 16:43 UTC → https://www.instagram.com/reel/DfPw1fKhuuG/
 
 **Sonraki hipotez:** Son quiz #10 (Lasker) yarın paylaşılınca içerik biter; sahibinin yeni içerik onayı gerekiyor.
 
