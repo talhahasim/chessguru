@@ -201,6 +201,12 @@ const recentPosts = async (userId: string) => {
  * late fallback, and this guard stops it from posting a second time in the same slot.
  */
 const MIN_GAP_HOURS = Number(process.env.MIN_GAP_HOURS ?? 5);
+/**
+ * Fallback (schedule) runs only post in the evening slots: a cron that GitHub starts 6 h late (e.g. the
+ * 01:17 run at 07:41) would otherwise pass the 9 h gap and post in the morning, off schedule. "4-14" = skip
+ * when the UTC hour is 4..14.
+ */
+const QUIET_HOURS_UTC = process.env.QUIET_HOURS_UTC?.match(/^(\d+)-(\d+)$/)?.slice(1).map(Number);
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
@@ -238,6 +244,11 @@ const main = async () => {
   } else if (DRY_RUN && !process.env.IG_ACCESS_TOKEN) {
     lesson = postingOrder()[0];
   } else {
+    const hour = new Date().getUTCHours();
+    if (!DRY_RUN && QUIET_HOURS_UTC && hour >= QUIET_HOURS_UTC[0] && hour <= QUIET_HOURS_UTC[1]) {
+      console.log(`Fallback run at ${hour}:xx UTC is outside the posting slots (quiet ${QUIET_HOURS_UTC.join("-")} UTC): skipping.`);
+      return;
+    }
     userId = await igUserId();
     const posts = await recentPosts(userId);
     const newest = posts[0] ? new Date(posts[0].timestamp.replace(/\+0000$/, "Z")) : null;

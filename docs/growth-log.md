@@ -10,6 +10,32 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-02 16:40 UTC — planlı inceleme + paylaşım (DÜZELTME: yedek cron sabah paylaşmasın)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #8 (02.11 **07:43**, Fried Liver, yedek cron) | 16 sn | 1615 | 1108 | 9 | 5 | 0 | 1 | 10,8 sn | %67 |
+| **Brilliant or Blunder #7** (01.11 22:39, Elephant, blunder) | 13 sn | 1674 | 1072 | 15 | **13** | 0 | 0 | 10,7 sn | **%80** |
+| Brilliant or Blunder #6 (01.11 15:39, Légal) | 15 sn | 1688 | 1105 | 7 | 5 | 5 | 3 | 10,3 sn | %71 |
+
+Takipçi: **30** (4 gündür değişmedi). Rutin 65 dk geç tetiklendi (16:40).
+
+**Sorun:** 01:17'lik yedek cron GitHub tarafından 07:41'de başlatıldı; son paylaşımdan (22:39) tam 9 saat geçtiği
+için 9 saat korumasını geçti ve Quiz #8'i sabah 07:43 UTC'de paylaştı (plan dışı, günde 3 paylaşım).
+**Düzeltme (operasyonel, deney değil):** yedek (schedule) çalıştırmalar artık 04:00–14:59 UTC arasında hiç paylaşmıyor
+(`QUIET_HOURS_UTC=4-14`, `post-reel.yml` + `post-reel.ts`); rutin dispatch'leri etkilenmiyor.
+
+**Teşhis:** Quiz #7 hesabın en yüksek izlenme oranı (%80) ve en çok yorumu (13): kısa (13 sn), herkesin bildiği
+Elephant Trap pozisyonu. Quiz'ler 1600–2000 izlenme bandında sabit; takipçi 4 gündür 30'da → erişim tavanı.
+
+**Değişiklik (içerik):** Yok.
+
+**Paylaşım:** bkz. aşağıdaki satır (16:41 dispatch).
+
+**Sonraki hipotez:** Son quiz #10 (Lasker) yarın paylaşılınca içerik biter; sahibinin yeni içerik onayı gerekiyor.
+
+---
+
 ## 2026-11-01 22:36 UTC — planlı inceleme + paylaşım (değişiklik yok, Quiz #7)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
