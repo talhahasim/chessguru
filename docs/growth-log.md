@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-02 22:41 UTC — planlı inceleme + paylaşım (son içerik; Elo'suz ilk video)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #9** (02.11 16:43, Blackburne, ~6 saat) | 15 sn | **1900** | 1202 | 15 | 10 | 0 | 0 | 12,0 sn | **%79** |
+| Brilliant or Blunder #8 (02.11 07:43, Fried Liver) | 16 sn | 1621 | 1110 | 9 | 5 | 0 | 1 | 10,8 sn | %67 |
+| Brilliant or Blunder #7 (01.11 22:39, Elephant) | 13 sn | 1678 | 1076 | 15 | 13 | 0 | 0 | 10,7 sn | %80 |
+
+Takipçi: **30** (4 gündür değişmedi). 18:17 yedek cron'u bu sefer hiç çalışmadı (GitHub); rutin 6 dk geç.
+
+**Teşhis:** Quiz #9 ilk 6 saatte 1900 izlenme (#4'ten sonra en hızlı), %79. Tanıdık açılış quiz'leri sabit
+%70–80 izlenme oranı ve 5–13 yorum veriyor. Sabah 07:43'te çıkan #8 en düşük oranı aldı (%67): saat etkisi olabilir.
+
+**Değişiklik (sahibinin isteği, deney):** Videolardan Elo bandı ve oyuncu puanları kaldırıldı ("0–300 ELO" etiketi →
+DAILY TRAP / THE DEFENSE / QUIZ; "You (250)" → "You"). İlk test: bu akşamki Quiz #10. Ölçüt: erişim ve izlenme
+oranı, Elo'lu quiz'lerle (#5–#9: 1600–1900 izlenme, %67–80) karşılaştır.
+
+**Paylaşım:** Brilliant or Blunder #10 (quiz-lasker-fxg1n, Elo'suz) 22:43 UTC → https://www.instagram.com/reel/DfQaAimvsH1/
+
+**Uyarı:** Paylaşım sırası BİTTİ. Yarın 16:00'da yeni ders yoksa post-reel "All lessons are already posted" hatası
+verecek. Sahibinden yeni içerik onayı bekleniyor (ayrıca 3D önizleme deneniyor).
+
+---
+
 ## 2026-11-02 16:40 UTC — planlı inceleme + paylaşım (DÜZELTME: yedek cron sabah paylaşmasın)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
