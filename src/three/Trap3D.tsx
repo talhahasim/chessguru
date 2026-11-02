@@ -21,7 +21,7 @@ const KEY = 8; // index of Nxe5
 // Frames per ply: fast setup, slow key move, dramatic finish.
 const PLY_FRAMES = [12, 12, 12, 12, 12, 12, 12, 12, 46, 30, 30, 22, 40];
 const HOOK = 70;
-const GAP_AFTER = [6, 6, 6, 6, 6, 6, 6, 14, 20, 16, 12, 8, 0];
+const GAP_AFTER = [6, 6, 6, 6, 6, 6, 6, 14, 20, 16, 12, 8, 55]; // last: hold on the mate before the outro
 const OUTRO = 75;
 
 type Track = { id: number; type: PieceType; color: "w" | "b" };
