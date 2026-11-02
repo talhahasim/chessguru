@@ -4,7 +4,9 @@ import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import { Chess } from "chess.js";
 import * as THREE from "three";
-import { Piece3D, usePieceMaterials, type PieceType } from "./Pieces3D";
+import { type PieceType } from "./Pieces3D";
+import { useBoardClone, useChessSet, usePieceClone } from "./ChessSet";
+import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";
 import { KindPill } from "../components/Scenes";
 import { fontFamily } from "../fonts";
 import { theme } from "../theme";
@@ -118,11 +120,11 @@ const CAMS: [number, Cam][] = [
   [HOOK, { theta: -0.18, phi: 1.02, dist: 14, tx: 0, tz: -0.2 }],
   [HOOK + 18, { theta: 0, phi: 0.9, dist: 14, tx: 0, tz: 0.3 }],
   [keyMove.start - 6, { theta: 0.08, phi: 0.88, dist: 13.5, tx: 0, tz: 0.3 }],
-  [keyMove.end, { theta: 0.3, phi: 0.62, dist: 7.5, tx: 0.5, tz: -0.2 }],
+  [keyMove.end, { theta: 0.3, phi: 0.82, dist: 9.5, tx: 0.5, tz: -0.4 }],
   [GAME.moves[KEY + 1].end + 6, { theta: 0.1, phi: 0.8, dist: 10, tx: -0.2, tz: 1.2 }],
-  [GAME.moves[KEY + 3].end, { theta: -0.35, phi: 0.75, dist: 9.5, tx: 0.3, tz: -1.6 }],
-  [mateMove.end + 10, { theta: -0.75, phi: 0.6, dist: 7.5, tx: 0.5, tz: -2.2 }],
-  [GAME.end + OUTRO, { theta: -1.05, phi: 0.7, dist: 9, tx: 0.5, tz: -2 }],
+  [GAME.moves[KEY + 3].end, { theta: -0.35, phi: 0.82, dist: 10.5, tx: 0.3, tz: -1.6 }],
+  [mateMove.end + 10, { theta: -0.75, phi: 0.72, dist: 9, tx: 0.5, tz: -2.2 }],
+  [GAME.end + OUTRO, { theta: -1.05, phi: 0.78, dist: 10.5, tx: 0.5, tz: -2 }],
 ];
 const camAt = (frame: number): Cam => {
   let i = CAMS.findIndex(([f]) => f > frame);
@@ -146,28 +148,45 @@ const CameraRig: React.FC = () => {
   return null;
 };
 
-const Board: React.FC = () => {
-  const squares = useMemo(() => {
-    const out: { x: number; z: number; light: boolean }[] = [];
-    for (let f = 0; f < 8; f++) for (let r = 0; r < 8; r++) out.push({ x: f - 3.5, z: 3.5 - r, light: (f + r) % 2 === 1 });
-    return out;
-  }, []);
+type SetData = ReturnType<typeof useChessSet>;
+
+const Board: React.FC<{ set: SetData }> = ({ set }) => {
+  const board = useBoardClone(set);
   return (
     <group>
-      {squares.map((s, i) => (
-        <mesh key={i} position={[s.x, -0.05, s.z]} receiveShadow>
-          <boxGeometry args={[1, 0.1, 1]} />
-          <meshStandardMaterial color={s.light ? theme.light : theme.dark} roughness={0.55} />
-        </mesh>
-      ))}
-      <mesh position={[0, -0.2, 0]} receiveShadow castShadow>
-        <boxGeometry args={[8.9, 0.3, 8.9]} />
-        <meshStandardMaterial color="#4a2f1b" roughness={0.45} />
-      </mesh>
-      <mesh position={[0, -0.36, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
-        <planeGeometry args={[60, 60]} />
+      {board && <primitive object={board} />}
+      <mesh position={[0, -0.6, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
+        <planeGeometry args={[80, 80]} />
         <meshStandardMaterial color="#1b1a18" roughness={0.9} />
       </mesh>
+    </group>
+  );
+};
+
+/** Soft studio reflections for the PBR materials (no HDRI download needed). */
+const Environment: React.FC = () => {
+  const { gl, scene } = useThree();
+  useMemo(() => {
+    const pmrem = new THREE.PMREMGenerator(gl);
+    scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    scene.environmentIntensity = 0.55;
+  }, [gl, scene]);
+  return null;
+};
+
+const PieceModel: React.FC<{ set: SetData; type: PieceType; color: "w" | "b"; position: [number, number, number]; rotation: [number, number, number]; scale: number }> = ({
+  set,
+  type,
+  color,
+  position,
+  rotation,
+  scale,
+}) => {
+  const obj = usePieceClone(set, type, color);
+  if (!obj) return null;
+  return (
+    <group position={position} rotation={rotation} scale={scale}>
+      <primitive object={obj} />
     </group>
   );
 };
@@ -217,10 +236,9 @@ const Burst: React.FC<{ origin: [number, number]; t: number }> = ({ origin, t })
   </group>
 );
 
-const Scene: React.FC = () => {
+const Scene: React.FC<{ set: SetData }> = ({ set }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const mats = usePieceMaterials();
   const pos = piecePositions(frame);
   const last = frame >= HOOK + 18 ? lastMove(frame) : mateMove;
   const keyK = (frame - keyMove.end) / 30;
@@ -252,7 +270,8 @@ const Scene: React.FC = () => {
       />
       <spotLight position={[6, 6, -8]} intensity={40} angle={0.6} penumbra={0.8} color="#9fd4ff" />
       {keyK > -1.5 && keyK < 1.5 && <pointLight position={[0.5, 1.2, -0.5]} intensity={keyK < 0 ? 0 : 25 * (1 - keyK / 1.5)} color="#1baca6" distance={5} />}
-      <Board />
+      <Environment />
+      <Board set={set} />
       {last && <SquareGlow sq={last.from} color={theme.lightHighlight} opacity={0.55} />}
       {last && <SquareGlow sq={last.to} color={theme.lightHighlight} opacity={0.65} />}
       {keyK >= 0 && keyK < 1.6 && <SquareGlow sq="e5" color="#1baca6" opacity={0.75 * Math.min(1, 1.6 - keyK)} y={0.01} />}
@@ -263,14 +282,14 @@ const Scene: React.FC = () => {
         const t = GAME.pieces[Number(id)];
         const isMatedKing = Number(id) === blackKingId && mated && frame >= HOOK + 18;
         return (
-          <Piece3D
+          <PieceModel
             key={id}
+            set={set}
             type={t.type}
             color={t.color}
             position={[p.x, p.y, p.z]}
             rotation={[p.tilt + (isMatedKing ? topple * 1.45 : 0), p.spin, isMatedKing ? topple * 0.3 : 0]}
             scale={p.scale}
-            material={mats[t.color]}
           />
         );
       })}
@@ -365,11 +384,15 @@ const sfx = (name: string) => staticFile(`sfx/${name}.wav`);
 
 export const Trap3D: React.FC = () => {
   const { width, height } = useVideoConfig();
+  // Load the model before the canvas exists, so its first render already has every piece.
+  const set = useChessSet();
   return (
     <AbsoluteFill style={{ background: "#1f1d1b" }}>
-      <ThreeCanvas width={width} height={height} shadows camera={{ fov: 60, near: 0.1, far: 100 }} gl={{ antialias: true, preserveDrawingBuffer: true }}>
-        <Scene />
-      </ThreeCanvas>
+      {set && (
+        <ThreeCanvas width={width} height={height} shadows camera={{ fov: 60, near: 0.1, far: 100 }} gl={{ antialias: true, preserveDrawingBuffer: true }}>
+          <Scene set={set} />
+        </ThreeCanvas>
+      )}
       <Overlay />
       <Sequence from={HOOK + 12} durationInFrames={20}>
         <Html5Audio src={sfx("whoosh")} volume={0.6} />
