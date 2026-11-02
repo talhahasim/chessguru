@@ -30,13 +30,12 @@ export const PlayerBar: React.FC<{
   width: number;
   height: number;
   name: string;
-  rating: number;
   color: Color;
   isHero: boolean;
   board: BoardMap;
   clock: number;
   active: boolean;
-}> = ({ width, height, name, rating, color, isHero, board, clock, active }) => {
+}> = ({ width, height, name, color, isHero, board, clock, active }) => {
   const opp: Color = color === "w" ? "b" : "w";
   const captured = capturedOf(board, opp);
   const adv = material(board, color) - material(board, opp);
@@ -61,7 +60,6 @@ export const PlayerBar: React.FC<{
       <div style={{ display: "flex", flexDirection: "column", flex: 1, gap: 4, minWidth: 0 }}>
         <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
           <span style={{ color: theme.text, fontWeight: 800, fontSize: height * 0.34 }}>{name}</span>
-          <span style={{ color: theme.textMuted, fontWeight: 600, fontSize: height * 0.3 }}>({rating})</span>
         </div>
         <div style={{ display: "flex", alignItems: "center", height: icon }}>
           {captured.map((t, i) => (

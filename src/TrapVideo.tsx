@@ -12,7 +12,7 @@ import { boardFromFen, isCheck, kingSquare, sideToMove } from "./lib/line";
 import { boardStateAt, buildTimeline, FPS, stepAt, type Timeline } from "./lib/timeline";
 import { getLesson } from "./lessons";
 import { theme } from "./theme";
-import type { Band, Color, Lesson } from "./types";
+import type { Color, Lesson } from "./types";
 
 export type TrapVideoProps = { lessonId: string };
 
@@ -32,13 +32,6 @@ const L = {
 };
 const boardX = (L.W - L.boardSize - L.evalW - L.evalGap) / 2 + L.evalW + L.evalGap;
 const bottomBarY = L.boardY + L.boardSize + 10;
-
-const RATINGS: Record<Band, [number, number]> = {
-  "0-300": [250, 235],
-  "300-600": [480, 512],
-  "600-900": [760, 791],
-  "900-1500": [1240, 1206],
-};
 
 const START_CLOCK = 10 * 60;
 
@@ -143,7 +136,6 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
   // ---- Players ------------------------------------------------------------
   const boardNow = boardFromFen(shownFen);
   const clocks = clocksAt(tl, frame, sideToMove(tl.line.startFen));
-  const [heroRating, villainRating] = RATINGS[lesson.band];
   const gameOver = frame >= tl.outro.start || inHook;
 
   // ---- Caption ------------------------------------------------------------
@@ -188,7 +180,6 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
             width={L.boardSize}
             height={L.barH}
             name="Opponent"
-            rating={villainRating}
             color={villain}
             isHero={false}
             board={boardNow}
@@ -233,7 +224,6 @@ export const TrapVideo: React.FC<TrapVideoProps> = ({ lessonId }) => {
             width={L.boardSize}
             height={L.barH}
             name="You"
-            rating={heroRating}
             color={hero}
             isHero
             board={boardNow}
