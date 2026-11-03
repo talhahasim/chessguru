@@ -10,6 +10,31 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-03 22:37 UTC — planlı inceleme + paylaşım (3D'nin ilk sonucu)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Légal's Mate 3D** (03.11 15:40, ~7 saat) | 24 sn | **549** | **424** | 10 | 0 | 0 | **8** | 9,6 sn | %40 |
+| Brilliant or Blunder #10 (02.11 22:43, Elo'suz) | 16 sn | 1892 | 1194 | 16 | 11 | 0 | 0 | 13,5 sn | %86 |
+| Brilliant or Blunder #9 (02.11 16:43) | 15 sn | 1939 | 1221 | 15 | 10 | 0 | 0 | 12,0 sn | %79 |
+
+Takipçi: **31** (+1, 5 gün sonra ilk artış). YouTube Shorts: 2. Short 19:48'de yüklendi (cron ~1 saat geç).
+
+**Teşhis:** 3D video ilk 7 saatte 2D'nin yarısından az erişim aldı (424 vs. quiz'ler 6 saatte ~1100–1200), izlenme
+oranı %40 (24 sn; 2D tuzak videolarıyla aynı seviye, quiz'lerin çok altında). Buna karşılık erişim başına etkileşim
+hesabın en yükseği: beğeni %2,4, **kaydetme %1,9** (2D'de en iyi ~%1,4), toplam %3,3. Yorum 0 (soru yok, quiz değil).
+Yorum: 3D'yi izleyenler beğeniyor/kaydediyor ama Instagram onu daha az kişiye gösteriyor; ilk 9,6 sn'de çıkış yüksek.
+Tek veri noktası; 3D videonun render maliyeti (~1 saat) şu an karşılığını vermiyor.
+
+**Değişiklik (içerik):** Yok (Elo deneyi 1 paylaşımda, 3D 1 paylaşımda test edildi; yeterli veri yok).
+
+**Paylaşım:** Brilliant or Blunder #11 (quiz-fools-g4, blunder) — Elo'suz quiz'in 2. ölçümü.
+
+**Sonraki hipotez:** Quiz #11 de ≥ %80 izlenme oranı alırsa Elo'suz düzen kalıcı kabul edilir. 3D için yarın erişim
+tekrar ölçülür; 24 saatte < 1000 erişimde kalırsa 3D'yi yalnızca quiz formatında (kısa, soru soran) denemeyi öner.
+
+---
+
 ## 2026-11-03 15:37 UTC — planlı inceleme + paylaşım (ilk 3D video)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
