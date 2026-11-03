@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-03 15:37 UTC — planlı inceleme + paylaşım (ilk 3D video)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #10** (02.11 22:43, Lasker fxg1=N, **Elo'suz**, ~17 saat) | 16 sn | 1889 | 1193 | 16 | 11 | 0 | 0 | 13,6 sn | **%86** |
+| Brilliant or Blunder #9 (02.11 16:43, Blackburne) | 15 sn | 1931 | 1214 | 15 | 10 | 0 | 0 | 12,1 sn | %80 |
+| Brilliant or Blunder #8 (02.11 07:43, Fried Liver) | 16 sn | 1629 | 1112 | 9 | 5 | 0 | 1 | 10,8 sn | %67 |
+
+Takipçi: **30** (5 gündür değişmedi). Paylaşım hataları yok (07:55'teki yedek cron sessiz saatte doğru şekilde atladı).
+
+**Teşhis:** Elo'suz ilk video (Quiz #10) hesabın **en yüksek izlenme oranını** aldı (%86, ort. 13,6 sn) ve erişimi
+Elo'lu quiz'lerle aynı bantta (1189–1214). Tek veri noktası: olumlu ama henüz kesin değil (≥ 2 paylaşım gerekli).
+Erişim hâlâ ~1100–1350 tavanında, takipçi artmıyor: asıl darboğaz keşfet/erişim.
+
+**Değişiklik (içerik):** Yok (Elo kaldırma deneyi yalnızca 1 paylaşımda test edildi). Bugün ayrıca YouTube Shorts
+otomasyonu başladı (eski Reel'ler günde 4, 6 saat arayla; ilk Short: https://youtube.com/shorts/TzPIwCgwlj4).
+
+**Paylaşım:** Légal's Mate **3D** (prerendered, sesli, 24 sn) — ilk 3D deney.
+
+**Sonraki hipotez:** 3D görünüm erişimi (keşfet) ve izlenme oranını 2D quiz'lerin üstüne çıkarır mı? Ölçüt: 3D videonun
+erişimi > 1350 ve izlenme oranı ≥ %60 (24 sn'lik video için). Bir sonraki Elo'suz quiz (#11 Fool's g4) Elo deneyinin 2. ölçümü.
+
+---
+
 ## 2026-11-02 22:41 UTC — planlı inceleme + paylaşım (son içerik; Elo'suz ilk video)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
