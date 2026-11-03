@@ -1,0 +1,80 @@
+name: Post YouTube Shorts
+
+# Re-uploads the Reels that are already on Instagram to YouTube Shorts, oldest first (scripts/post-shorts.ts).
+# "Already uploaded" is read from the marker line in the channel's video descriptions, so no state is stored.
+# Needs the repository secrets YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (Google OAuth, YouTube Data API v3)
+# and IG_ACCESS_TOKEN. Scheduled runs are skipped until the YouTube secrets exist, or while SHORTS_PAUSED=true.
+on:
+  schedule:
+    - cron: "41 12 * * *"
+    - cron: "41 20 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only check the keys/channel and print the next title + description (no render, no upload)"
+        type: boolean
+        default: true
+      max_uploads:
+        description: "How many Shorts to upload in this run"
+        type: string
+        default: "1"
+
+concurrency:
+  group: post-shorts
+  cancel-in-progress: false
+
+jobs:
+  shorts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - name: Check configuration
+        id: cfg
+        env:
+          YT: ${{ secrets.YT_REFRESH_TOKEN }}
+          PAUSED: ${{ vars.SHORTS_PAUSED }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          elif [ -z "$YT" ]; then
+            echo "::notice::YouTube secrets are not set yet, skipping."
+          elif [ "$PAUSED" = "true" ]; then
+            echo "::notice::Shorts uploads are paused (repository variable SHORTS_PAUSED=true)."
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.cfg.outputs.ok == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.cfg.outputs.ok == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+        if: steps.cfg.outputs.ok == 'true'
+
+      - name: Install Chrome dependencies for Remotion
+        if: steps.cfg.outputs.ok == 'true' && !(github.event_name == 'workflow_dispatch' && inputs.dry_run)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libnss3 libdbus-1-3 libatk1.0-0 libgbm-dev libasound2t64 libxrandr2 \
+            libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 libcups2
+
+      - run: npx remotion browser ensure
+        if: steps.cfg.outputs.ok == 'true' && !(github.event_name == 'workflow_dispatch' && inputs.dry_run)
+
+      - name: Render and upload
+        if: steps.cfg.outputs.ok == 'true'
+        run: npx tsx scripts/post-shorts.ts
+        env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '0' }}
+          MAX_UPLOADS: ${{ inputs.max_uploads || '1' }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}

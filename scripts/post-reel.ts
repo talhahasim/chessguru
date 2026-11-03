@@ -32,7 +32,7 @@ const IG_API = `https://graph.instagram.com/${process.env.IG_API_VERSION ?? "v23
 const DRY_RUN = process.env.DRY_RUN === "1" || process.env.DRY_RUN === "true";
 const BUCKET = process.env.SUPABASE_BUCKET || "chessguru-reels";
 
-const HASHTAGS = [
+export const HASHTAGS = [
   "#chess",
   "#chesstips",
   "#chesstraps",
@@ -162,7 +162,7 @@ const igAccount = async () => {
   const me = await ig("GET", "me", { fields: "user_id,username" });
   return { id: String(me.user_id), username: String(me.username) };
 };
-const igUserId = async () => process.env.IG_USER_ID || (await igAccount()).id;
+export const igUserId = async () => process.env.IG_USER_ID || (await igAccount()).id;
 
 /** Supabase client with the public bucket created on first use. */
 const storage = async () => {
@@ -200,7 +200,7 @@ const checkSetup = async (cover: string) => {
 
 /** Captions of the account's recent posts (enough to cover every lesson we have). */
 /** Captions and timestamps of the account's recent posts (newest first). */
-const recentPosts = async (userId: string) => {
+export const recentPosts = async (userId: string) => {
   const posts: { caption: string; timestamp: string }[] = [];
   let after: string | undefined;
   for (let page = 0; page < 10; page++) {

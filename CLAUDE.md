@@ -116,3 +116,10 @@ The first frame of every video must be a finished cover that can be used as the 
 - Piece sounds (move, capture, check, castle, mate) are only the real wooden recordings in `public/sfx` (see
   `SOURCES.md`), never synthesized: the owner finds generated piece sounds artificial. The generated UI sounds
   (whoosh, pop, impact from `scripts/gen-sfx.ts`) stay. Never copy chess.com's sound files.
+
+## YouTube Shorts
+
+- `.github/workflows/post-shorts.yml` (`scripts/post-shorts.ts`) re-uploads the Reels already on Instagram to YouTube
+  Shorts, oldest first, 1 per run (12:41 / 20:41 UTC), via the official YouTube Data API v3 (OAuth refresh token:
+  secrets `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN`). "Already uploaded" = the same `marker()` line in
+  the video description. Skipped until the secrets exist; set the repo variable `SHORTS_PAUSED=true` to pause.
