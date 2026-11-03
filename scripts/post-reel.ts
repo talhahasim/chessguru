@@ -22,7 +22,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
-import { BANDS, LESSONS, defenseOf } from "../src/lessons/index.ts";
+import { BANDS, LESSONS, defenseOf, getLesson } from "../src/lessons/index.ts";
 import { GUIDE_CTA, GUIDE_NAME, HANDLE } from "../src/brand.ts";
 import type { Lesson } from "../src/types.ts";
 import { marker } from "./marker.ts";
@@ -45,6 +45,21 @@ const HASHTAGS = [
   "#chessgame",
 ];
 
+
+/**
+ * Videos rendered ahead of time (the 3D experiments take ~1 h to render without a GPU): they are posted from
+ * prerendered/ instead of being rendered in CI, and go first in the posting order.
+ */
+type Prerendered = { lesson: Lesson; video: string; cover: string; credit: string };
+export const PRERENDERED: Prerendered[] = [
+  {
+    lesson: { ...getLesson("legals-mate"), id: "legals-mate-3d", title: "Légal's Mate 3D" },
+    video: "prerendered/legals-mate-3d.mp4",
+    cover: "prerendered/legals-mate-3d-cover.jpg",
+    credit: "3D chess set: \"A Beautiful Game\" by ASWF / MaterialX and Ed Mackey, CC BY 4.0",
+  },
+];
+const prerendered = (lesson: Lesson) => PRERENDERED.find((p) => p.lesson.id === lesson.id);
 
 export const buildCaption = (lesson: Lesson) => {
   const plain = (s: string) => s.replace(/\*/g, "");
@@ -84,6 +99,7 @@ export const buildCaption = (lesson: Lesson) => {
         : `Follow @${HANDLE} for a new chess trap every day!`,
     "",
     [...HASHTAGS, tag].join(" "),
+    ...(prerendered(lesson) ? ["", prerendered(lesson)!.credit] : []),
   ].join("\n");
 };
 
@@ -100,7 +116,7 @@ const QUIZ_AFTER_PAIRS = 8;
 export const postingOrder = (): Lesson[] => {
   const traps = BANDS.map((b) => LESSONS.filter((l) => l.band === b && l.kind !== "defense" && l.kind !== "quiz"));
   const quizzes = LESSONS.filter((l) => l.kind === "quiz");
-  const out: Lesson[] = [];
+  const out: Lesson[] = PRERENDERED.map((p) => p.lesson);
   let pairs = 0;
   for (let i = 0; i < Math.max(...traps.map((l) => l.length)); i++)
     for (const list of traps) {
@@ -267,7 +283,8 @@ const main = async () => {
 
   console.log(`Next lesson: ${lesson.id} (${lesson.band})`);
   const caption = buildCaption(lesson);
-  const { video, cover } = await renderLesson(lesson);
+  const pre = prerendered(lesson);
+  const { video, cover } = pre ? { video: path.resolve(pre.video), cover: path.resolve(pre.cover) } : await renderLesson(lesson);
 
   if (DRY_RUN) {
     console.log(`\n--- DRY RUN: not posting ---\n${caption}\n`);

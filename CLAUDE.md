@@ -52,7 +52,9 @@ The first frame of every video must be a finished cover that can be used as the 
   `kind: "defense"`, `defends: <trap id>`), shown from the side the trap is aimed at. Never put both in one video.
 - Defense videos use the blue shield "THE DEFENSE" pill and "THE DEFENSE" intro; their hero moves must be Stockfish best/excellent.
 - Trap videos end with the CTA "How to defend it? Next video!" (+ voice "...Follow so you don't miss it!").
-- Posting order = trap, then its defense (`postingOrder()` in `scripts/post-reel.ts`).
+- Posting order = trap, then its defense (`postingOrder()` in `scripts/post-reel.ts`). Prerendered videos
+  (`PRERENDERED`, files in `prerendered/`, e.g. the 3D experiments that take ~1 h to render without a GPU) go first;
+  the 3D chess set is CC BY 4.0, so their caption carries the credit line (`public/models/SOURCES.md`).
 - No end banner ("CHECKMATE! / White wins"): after the last step the video goes straight to REMEMBER.
 
 ## "Brilliant or blunder?" quizzes
