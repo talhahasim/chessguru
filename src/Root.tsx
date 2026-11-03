@@ -6,7 +6,7 @@ import { getLesson } from "./lessons";
 import { TrapVideo, type TrapVideoProps } from "./TrapVideo";
 import { ProfilePic, type ProfilePicProps } from "./ProfilePic";
 import { Diagram, DIAGRAM_SIZE, type DiagramProps } from "./Diagram";
-import { Trap3D, TRAP3D_DURATION } from "./three/Trap3D";
+import { Trap3D, TRAP3D_DURATION, type Trap3DProps } from "./three/Trap3D";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -33,7 +33,7 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     {/* Experiment: 3D-style preview (not in the posting queue). */}
     <Folder name="experiments">
-      <Composition id="preview-3d-legal" component={Trap3D} width={1080} height={1920} fps={FPS} durationInFrames={TRAP3D_DURATION} />
+      <Composition id="preview-3d-legal" component={Trap3D} width={1080} height={1920} fps={FPS} durationInFrames={TRAP3D_DURATION} defaultProps={{ quality: "lite" } satisfies Trap3DProps} />
     </Folder>
     {BANDS.map((band) => (
       <Folder key={band} name={`elo-${band}`}>

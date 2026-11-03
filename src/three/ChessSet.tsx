@@ -15,16 +15,40 @@ const NODE: Record<PieceType, string> = { k: "King", q: "Queen", r: "Castle", n:
 
 type Loaded = { scene: THREE.Group; surface: number };
 
-let cache: Promise<Loaded> | null = null;
-const load = () =>
-  (cache ??= new Promise<Loaded>((resolve, reject) =>
+export type Quality = "full" | "lite";
+
+/**
+ * "lite" swaps the glass pawn tops (KHR_materials_transmission, which makes three.js draw the whole scene a second
+ * time every frame) for a glossy see-through material that looks almost the same and renders much faster.
+ */
+const liteGlass = (m: THREE.MeshPhysicalMaterial) => {
+  const g = new THREE.MeshPhysicalMaterial({
+    color: m.color,
+    roughness: 0.05,
+    metalness: 0,
+    clearcoat: 1,
+    clearcoatRoughness: 0.05,
+    transparent: true,
+    opacity: 0.55,
+    envMapIntensity: 1.6,
+  });
+  g.name = `${m.name}-lite`;
+  return g;
+};
+
+const cache: Partial<Record<Quality, Promise<Loaded>>> = {};
+const load = (quality: Quality) =>
+  (cache[quality] ??= new Promise<Loaded>((resolve, reject) =>
     new GLTFLoader().load(
       staticFile("models/a-beautiful-game.glb"),
       (gltf) => {
         gltf.scene.traverse((o) => {
-          if ((o as THREE.Mesh).isMesh) {
-            o.castShadow = true;
-            o.receiveShadow = true;
+          const mesh = o as THREE.Mesh;
+          if (mesh.isMesh) {
+            mesh.castShadow = true;
+            mesh.receiveShadow = true;
+            const mat = mesh.material as THREE.MeshPhysicalMaterial;
+            if (quality === "lite" && mat?.transmission > 0) mesh.material = liteGlass(mat);
           }
         });
         // Board surface height = where the kings stand.
@@ -35,11 +59,11 @@ const load = () =>
       reject,
     )));
 
-export const useChessSet = () => {
+export const useChessSet = (quality: Quality = "lite") => {
   const [set, setSet] = useState<Loaded | null>(null);
   const [handle] = useState(() => delayRender("Loading the 3D chess set"));
   useEffect(() => {
-    load()
+    load(quality)
       .then((s) => {
         setSet(s);
         continueRender(handle);
@@ -48,7 +72,7 @@ export const useChessSet = () => {
         console.error(e);
         continueRender(handle);
       });
-  }, [handle]);
+  }, [handle, quality]);
   return set;
 };
 

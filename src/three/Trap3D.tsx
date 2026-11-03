@@ -5,7 +5,7 @@ import { useThree } from "@react-three/fiber";
 import { Chess } from "chess.js";
 import * as THREE from "three";
 import { type PieceType } from "./Pieces3D";
-import { useBoardClone, useChessSet, usePieceClone } from "./ChessSet";
+import { useBoardClone, useChessSet, usePieceClone, type Quality } from "./ChessSet";
 import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";
 import { KindPill } from "../components/Scenes";
 import { fontFamily } from "../fonts";
@@ -236,7 +236,7 @@ const Burst: React.FC<{ origin: [number, number]; t: number }> = ({ origin, t })
   </group>
 );
 
-const Scene: React.FC<{ set: SetData }> = ({ set }) => {
+const Scene: React.FC<{ set: SetData; shadowSize: number }> = ({ set, shadowSize }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const pos = piecePositions(frame);
@@ -260,8 +260,8 @@ const Scene: React.FC<{ set: SetData }> = ({ set }) => {
         position={[-5, 11, 6]}
         intensity={2.4}
         castShadow
-        shadow-mapSize-width={2048}
-        shadow-mapSize-height={2048}
+        shadow-mapSize-width={shadowSize}
+        shadow-mapSize-height={shadowSize}
         shadow-camera-left={-7}
         shadow-camera-right={7}
         shadow-camera-top={7}
@@ -382,15 +382,17 @@ const Overlay: React.FC = () => {
 
 const sfx = (name: string) => staticFile(`sfx/${name}.wav`);
 
-export const Trap3D: React.FC = () => {
+export type Trap3DProps = { quality?: Quality };
+
+export const Trap3D: React.FC<Trap3DProps> = ({ quality = "lite" }) => {
   const { width, height } = useVideoConfig();
   // Load the model before the canvas exists, so its first render already has every piece.
-  const set = useChessSet();
+  const set = useChessSet(quality);
   return (
     <AbsoluteFill style={{ background: "#1f1d1b" }}>
       {set && (
         <ThreeCanvas width={width} height={height} shadows camera={{ fov: 60, near: 0.1, far: 100 }} gl={{ antialias: true, preserveDrawingBuffer: true }}>
-          <Scene set={set} />
+          <Scene set={set} shadowSize={quality === "full" ? 2048 : 1024} />
         </ThreeCanvas>
       )}
       <Overlay />
