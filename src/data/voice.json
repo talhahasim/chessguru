@@ -1243,6 +1243,226 @@
     "file": "voice/quiz-lasker-fxg1n/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-fools-g4": {
+   "hook": {
+    "text": "Two pawn moves to attack. Brilliant or blunder?",
+    "file": "voice/quiz-fools-g4/hook-0a501726.mp3",
+    "seconds": 2.74
+   },
+   "step-0": {
+    "text": "White opens with a strange pawn move.",
+    "file": "voice/quiz-fools-g4/step-0-59f4ab1c.mp3",
+    "seconds": 1.953
+   },
+   "step-1": {
+    "text": "Another pawn up. Brilliant... Or blunder?",
+    "file": "voice/quiz-fools-g4/step-1-42170068.mp3",
+    "seconds": 2.327
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-fools-g4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-siberian-nd4": {
+   "hook": {
+    "text": "Our knight is attacked... Brilliant or blunder?",
+    "file": "voice/quiz-siberian-nd4/hook-a4efe056.mp3",
+    "seconds": 2.29
+   },
+   "step-0": {
+    "text": "White kicks our knight with h3.",
+    "file": "voice/quiz-siberian-nd4/step-0-6534188c.mp3",
+    "seconds": 1.58
+   },
+   "step-1": {
+    "text": "Knight to d4 attacks the queen. Brilliant... Or blunder?",
+    "file": "voice/quiz-siberian-nd4/step-1-261eaf3b.mp3",
+    "seconds": 3.27
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-siberian-nd4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-petrov-nf6": {
+   "hook": {
+    "text": "Just pull the knight back? Brilliant or blunder?",
+    "file": "voice/quiz-petrov-nf6/hook-18dd5bc8.mp3",
+    "seconds": 2.361
+   },
+   "step-0": {
+    "text": "Both sides grab a pawn. White's queen pins our knight.",
+    "file": "voice/quiz-petrov-nf6/step-0-e2f9d415.mp3",
+    "seconds": 3.024
+   },
+   "step-1": {
+    "text": "Knight back to f6. Brilliant... Or blunder?",
+    "file": "voice/quiz-petrov-nf6/step-1-817861cb.mp3",
+    "seconds": 2.698
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-petrov-nf6/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-magnus-bxf7": {
+   "hook": {
+    "text": "A bishop for one pawn? Brilliant or blunder?",
+    "file": "voice/quiz-magnus-bxf7/hook-991cf331.mp3",
+    "seconds": 2.483
+   },
+   "step-0": {
+    "text": "We push e5. Black takes the pawn.",
+    "file": "voice/quiz-magnus-bxf7/step-0-ac431ef3.mp3",
+    "seconds": 2.03
+   },
+   "step-1": {
+    "text": "Bishop takes f7, check! Brilliant... Or blunder?",
+    "file": "voice/quiz-magnus-bxf7/step-1-c4273933.mp3",
+    "seconds": 2.969
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-magnus-bxf7/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-fishing-hxg4": {
+   "hook": {
+    "text": "A free knight! Brilliant or blunder?",
+    "file": "voice/quiz-fishing-hxg4/hook-bef3cf9a.mp3",
+    "seconds": 1.912
+   },
+   "step-0": {
+    "text": "Black's knight jumps in. We kick it, and Black plays h5.",
+    "file": "voice/quiz-fishing-hxg4/step-0-eeac135d.mp3",
+    "seconds": 3.412
+   },
+   "step-1": {
+    "text": "We take the free knight. Brilliant... Or blunder?",
+    "file": "voice/quiz-fishing-hxg4/step-1-7509fc88.mp3",
+    "seconds": 2.437
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-fishing-hxg4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-traxler-bxf2": {
+   "hook": {
+    "text": "Ignore the fork?! Brilliant or blunder?",
+    "file": "voice/quiz-traxler-bxf2/hook-a6ec2610.mp3",
+    "seconds": 2.191
+   },
+   "step-0": {
+    "text": "White's knight forks our queen and rook.",
+    "file": "voice/quiz-traxler-bxf2/step-0-af097924.mp3",
+    "seconds": 1.793
+   },
+   "step-1": {
+    "text": "Bishop takes f2, check! Brilliant... Or blunder?",
+    "file": "voice/quiz-traxler-bxf2/step-1-45da7474.mp3",
+    "seconds": 2.799
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-traxler-bxf2/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-stafford-bg5": {
+   "hook": {
+    "text": "Pin the knight to the queen. Brilliant or blunder?",
+    "file": "voice/quiz-stafford-bg5/hook-118f939f.mp3",
+    "seconds": 2.466
+   },
+   "step-0": {
+    "text": "The Stafford Gambit. Black's bishop aims at f2.",
+    "file": "voice/quiz-stafford-bg5/step-0-e8296b0d.mp3",
+    "seconds": 2.874
+   },
+   "step-1": {
+    "text": "Bishop pins the knight to the queen. Brilliant... Or blunder?",
+    "file": "voice/quiz-stafford-bg5/step-1-bcf2ebba.mp3",
+    "seconds": 3.155
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-stafford-bg5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-halosar-nb5": {
+   "hook": {
+    "text": "Leave the queen hanging? Brilliant or blunder?",
+    "file": "voice/quiz-halosar-nb5/hook-fa1c4bbe.mp3",
+    "seconds": 2.299
+   },
+   "step-0": {
+    "text": "Black's bishop attacks our queen.",
+    "file": "voice/quiz-halosar-nb5/step-0-3daa34eb.mp3",
+    "seconds": 1.621
+   },
+   "step-1": {
+    "text": "We ignore it: Knight to b5. Brilliant... Or blunder?",
+    "file": "voice/quiz-halosar-nb5/step-1-49cbf04e.mp3",
+    "seconds": 2.941
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-halosar-nb5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-lasker-bxb4": {
+   "hook": {
+    "text": "A free bishop. Brilliant or blunder?",
+    "file": "voice/quiz-lasker-bxb4/hook-a5c920c6.mp3",
+    "seconds": 2.066
+   },
+   "step-0": {
+    "text": "Black gambits a pawn and checks with the bishop.",
+    "file": "voice/quiz-lasker-bxb4/step-0-244a99d4.mp3",
+    "seconds": 2.246
+   },
+   "step-1": {
+    "text": "We take the bishop. Brilliant... Or blunder?",
+    "file": "voice/quiz-lasker-bxb4/step-1-c62cbabd.mp3",
+    "seconds": 2.352
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-lasker-bxb4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-kieninger-axb4": {
+   "hook": {
+    "text": "Black left a bishop hanging. Brilliant or blunder?",
+    "file": "voice/quiz-kieninger-axb4/hook-efdf81ab.mp3",
+    "seconds": 2.644
+   },
+   "step-0": {
+    "text": "Black's queen lines up on the e-file.",
+    "file": "voice/quiz-kieninger-axb4/step-0-e9ff0429.mp3",
+    "seconds": 1.806
+   },
+   "step-1": {
+    "text": "We grab the bishop. Brilliant... Or blunder?",
+    "file": "voice/quiz-kieninger-axb4/step-1-bf58b223.mp3",
+    "seconds": 2.41
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-kieninger-axb4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }

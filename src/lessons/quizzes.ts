@@ -150,6 +150,165 @@ export const quizLaskerUnderpromotion: Lesson = {
   takeaways: [],
 };
 
+export const quizFoolsG4: Lesson = {
+  id: "quiz-fools-g4",
+  kind: "quiz",
+  answer: "blunder",
+  band: "0-300",
+  title: "Brilliant or Blunder #11",
+  hero: "w",
+  hook: ["Two pawn moves to *attack*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["f3", "e5"], say: "White opens with a *strange* pawn move." },
+    { moves: ["g4"], say: "Another pawn up. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizSiberianNd4: Lesson = {
+  id: "quiz-siberian-nd4",
+  kind: "quiz",
+  answer: "brilliant",
+  band: "900-1500",
+  title: "Brilliant or Blunder #12",
+  hero: "b",
+  startFen: "r1b1kb1r/ppqp1ppp/2n1pn2/8/2B1P3/2N2N2/PP3PPP/R1BQ1RK1 w kq - 4 8",
+  hook: ["Our knight is *attacked*...", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Qe2", "Ng4", "h3"], say: "White kicks our knight with *h3*." },
+    { moves: ["Nd4"], say: "Knight to d4 attacks the *queen*. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizPetrovNf6: Lesson = {
+  id: "quiz-petrov-nf6",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #13",
+  hero: "b",
+  startFen: "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+  hook: ["Just pull the *knight* back?", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Nxe5", "Nxe4", "Qe2"], say: "Both sides grab a pawn. White's queen *pins* our knight." },
+    { moves: ["Nf6"], say: "Knight back to f6. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizMagnusBxf7: Lesson = {
+  id: "quiz-magnus-bxf7",
+  kind: "quiz",
+  answer: "brilliant",
+  band: "900-1500",
+  title: "Brilliant or Blunder #14",
+  hero: "w",
+  startFen: "r1bqkb1r/pp2pp1p/2np1np1/8/2BNP3/2N5/PPP2PPP/R1BQK2R w KQkq - 0 7",
+  hook: ["A bishop for *one pawn*?", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Nxc6", "bxc6", "e5", "dxe5"], say: "We push e5. Black takes the pawn." },
+    { moves: ["Bxf7+"], say: "Bishop takes f7, *check*! *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizFishingHxg4: Lesson = {
+  id: "quiz-fishing-hxg4",
+  kind: "quiz",
+  answer: "blunder",
+  band: "900-1500",
+  title: "Brilliant or Blunder #15",
+  hero: "w",
+  startFen: "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+  hook: ["A *free* knight!", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["O-O", "Ng4", "h3", "h5"], say: "Black's knight jumps in. We kick it, and Black plays *h5*." },
+    { moves: ["hxg4"], say: "We take the free knight. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizTraxlerBxf2: Lesson = {
+  id: "quiz-traxler-bxf2",
+  kind: "quiz",
+  answer: "brilliant",
+  band: "600-900",
+  title: "Brilliant or Blunder #16",
+  hero: "b",
+  startFen: "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+  hook: ["Ignore the *fork*?!", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Ng5", "Bc5", "Nxf7"], say: "White's knight forks our *queen* and *rook*." },
+    { moves: ["Bxf2+"], say: "Bishop takes f2, *check*! *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizStaffordBg5: Lesson = {
+  id: "quiz-stafford-bg5",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #17",
+  hero: "w",
+  startFen: "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+  hook: ["Pin the knight to the *queen*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Nxe5", "Nc6", "Nxc6", "dxc6", "d3", "Bc5"], say: "The Stafford Gambit. Black's bishop aims at *f2*." },
+    { moves: ["Bg5"], say: "Bishop pins the knight to the *queen*. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizHalosarNb5: Lesson = {
+  id: "quiz-halosar-nb5",
+  kind: "quiz",
+  answer: "brilliant",
+  band: "600-900",
+  title: "Brilliant or Blunder #18",
+  hero: "w",
+  startFen: "rnb1kb1r/ppp1pppp/5n2/8/3q4/2N2Q2/PPP3PP/R1B1KBNR w KQkq - 0 6",
+  hook: ["Leave the queen *hanging*?", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Be3", "Qb4", "O-O-O", "Bg4"], say: "Black's bishop attacks our *queen*." },
+    { moves: ["Nb5"], say: "We ignore it: knight to b5. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizLaskerBxb4: Lesson = {
+  id: "quiz-lasker-bxb4",
+  kind: "quiz",
+  answer: "blunder",
+  band: "900-1500",
+  title: "Brilliant or Blunder #19",
+  hero: "w",
+  startFen: "rnbqkbnr/ppp2ppp/8/3pp3/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+  hook: ["A *free* bishop.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["dxe5", "d4", "e3", "Bb4+", "Bd2", "dxe3"], say: "Black gambits a pawn and checks with the *bishop*." },
+    { moves: ["Bxb4"], say: "We take the bishop. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizKieningerAxb4: Lesson = {
+  id: "quiz-kieninger-axb4",
+  kind: "quiz",
+  answer: "blunder",
+  band: "600-900",
+  title: "Brilliant or Blunder #20",
+  hero: "w",
+  startFen: "r1bqkb1r/pppp1ppp/2n5/4P3/2P3n1/5N2/PP2PPPP/RNBQKB1R w KQkq - 3 5",
+  hook: ["Black left a bishop *hanging*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Bf4", "Bb4+", "Nbd2", "Qe7", "a3", "Ngxe5"], say: "Black's queen lines up on the *e-file*." },
+    { moves: ["axb4"], say: "We grab the bishop. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
   quizNoahsArkQxd4,
@@ -160,4 +319,14 @@ export const QUIZZES: Lesson[] = [
   quizFriedLiverNxf7,
   quizBlackburneNxf7,
   quizLaskerUnderpromotion,
+  quizFoolsG4,
+  quizSiberianNd4,
+  quizPetrovNf6,
+  quizMagnusBxf7,
+  quizFishingHxg4,
+  quizTraxlerBxf2,
+  quizStaffordBg5,
+  quizHalosarNb5,
+  quizLaskerBxb4,
+  quizKieningerAxb4,
 ];
