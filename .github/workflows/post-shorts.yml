@@ -6,8 +6,11 @@ name: Post YouTube Shorts
 # and IG_ACCESS_TOKEN. Scheduled runs are skipped until the YouTube secrets exist, or while SHORTS_PAUSED=true.
 on:
   schedule:
+    # 4 runs a day, 6 h apart, 1 Short each (03:41 / 09:41 / 15:41 / 21:41 Turkey time).
+    - cron: "41 0 * * *"
+    - cron: "41 6 * * *"
     - cron: "41 12 * * *"
-    - cron: "41 20 * * *"
+    - cron: "41 18 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -72,7 +75,7 @@ jobs:
         run: npx tsx scripts/post-shorts.ts
         env:
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '0' }}
-          MAX_UPLOADS: ${{ inputs.max_uploads || '2' }}
+          MAX_UPLOADS: ${{ inputs.max_uploads || '1' }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}

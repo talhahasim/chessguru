@@ -120,7 +120,7 @@ The first frame of every video must be a finished cover that can be used as the 
 ## YouTube Shorts
 
 - `.github/workflows/post-shorts.yml` (`scripts/post-shorts.ts`) re-uploads the Reels already on Instagram to YouTube
-  Shorts, oldest first, 2 per scheduled run (12:41 / 20:41 UTC = 4/day, ~6400 of the 10k daily quota, so the
-  backlog catches up with Instagram), via the official YouTube Data API v3 (OAuth refresh token:
+  Shorts, oldest first, 1 per run, 4 runs/day 6 h apart (00:41 / 06:41 / 12:41 / 18:41 UTC; ~6400 of the 10k daily
+  quota, so the backlog catches up with Instagram), via the official YouTube Data API v3 (OAuth refresh token:
   secrets `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN`). "Already uploaded" = the same `marker()` line in
   the video description. Skipped until the secrets exist; set the repo variable `SHORTS_PAUSED=true` to pause.
