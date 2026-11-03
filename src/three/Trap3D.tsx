@@ -11,6 +11,8 @@ import { KindPill } from "../components/Scenes";
 import { fontFamily } from "../fonts";
 import { theme } from "../theme";
 import { HANDLE } from "../brand";
+import { NARRATION_3D } from "./narration3d";
+import voice3d from "../data/voice-3d.json";
 
 /**
  * 3D preview (experiment): Légal's Mate on a real-looking board with camera moves, slow motion on the key move,
@@ -22,12 +24,16 @@ const KEY = 8; // index of Nxe5
 
 // Frames per ply: fast setup, slow key move, dramatic finish.
 const PLY_FRAMES = [12, 12, 12, 12, 12, 12, 12, 12, 46, 30, 30, 22, 40];
-const HOOK = 70;
 const GAP_AFTER = [6, 6, 6, 6, 6, 6, 6, 14, 20, 16, 12, 8, 55]; // last: hold on the mate before the outro
-const OUTRO = 75;
+
+/** Voiceover clip length in frames (the timeline waits for each line to finish). */
+const clipFrames = (key: string) => Math.ceil(((voice3d.clips as Record<string, { seconds: number }>)[key]?.seconds ?? 0) * 30);
+const HOOK = Math.max(70, 2 + clipFrames("hook") + 8);
+const MOVES_START = HOOK + 18;
 
 type Track = { id: number; type: PieceType; color: "w" | "b" };
 type Move = { start: number; end: number; from: string; to: string; id: number; captured?: number; san: string };
+export type VoiceCue = { key: string; from: number; frames: number; caption: string };
 
 const sqPos = (sq: string): [number, number] => ["abcdefgh".indexOf(sq[0]) - 3.5, 3.5 - (Number(sq[1]) - 1)];
 
@@ -45,9 +51,18 @@ const buildGame = () => {
       start[id] = p.square;
     }),
   );
+  const line = (key: string) => NARRATION_3D.find((l) => l.key === key)!;
+  const voice: VoiceCue[] = [{ key: "hook", from: 2, frames: clipFrames("hook"), caption: line("hook").caption }];
+  let busyUntil = 0;
   const moves: Move[] = [];
-  let t = HOOK + 18;
+  let t = MOVES_START;
   LINE.forEach((san, i) => {
+    const cue = NARRATION_3D.find((l) => l.ply === i);
+    if (cue) {
+      t = Math.max(t, busyUntil); // never start a new line over the previous one
+      voice.push({ key: cue.key, from: t, frames: clipFrames(cue.key), caption: cue.caption });
+      busyUntil = t + clipFrames(cue.key) + 6;
+    }
     const m = c.move(san);
     const id = at[m.from];
     const captured = m.captured ? at[m.to] : undefined;
@@ -56,20 +71,21 @@ const buildGame = () => {
     moves.push({ start: t, end: t + PLY_FRAMES[i], from: m.from, to: m.to, id, captured, san: m.san });
     t += PLY_FRAMES[i] + GAP_AFTER[i];
   });
-  const finalFen = c.fen();
-  const finalAt = { ...at };
-  return { pieces, start, moves, finalAt, end: t, finalFen };
+  const end = Math.max(t, busyUntil + 8);
+  voice.push({ key: "outro", from: end + 6, frames: clipFrames("outro"), caption: line("outro").caption });
+  const outro = Math.max(75, clipFrames("outro") + 24);
+  return { pieces, start, moves, finalAt: { ...at }, end, outro, voice, finalFen: c.fen() };
 };
 
 export const GAME = buildGame();
-export const TRAP3D_DURATION = GAME.end + OUTRO;
+export const TRAP3D_DURATION = GAME.end + GAME.outro;
 
 const ease = Easing.bezier(0.45, 0, 0.25, 1);
 
 /** Where every piece is at `frame` (hook = final position). */
 const piecePositions = (frame: number) => {
   const out: Record<number, { x: number; y: number; z: number; spin: number; scale: number; tilt: number }> = {};
-  if (frame < HOOK + 18) {
+  if (frame < MOVES_START) {
     Object.entries(GAME.finalAt).forEach(([sq, id]) => {
       const [x, z] = sqPos(sq);
       out[id] = { x, y: 0, z, spin: 0, scale: 1, tilt: 0 };
@@ -118,13 +134,13 @@ type Cam = { theta: number; phi: number; dist: number; tx: number; tz: number };
 const CAMS: [number, Cam][] = [
   [0, { theta: -0.3, phi: 1.02, dist: 14.5, tx: 0, tz: -0.2 }],
   [HOOK, { theta: -0.18, phi: 1.02, dist: 14, tx: 0, tz: -0.2 }],
-  [HOOK + 18, { theta: 0, phi: 0.9, dist: 14, tx: 0, tz: 0.3 }],
+  [MOVES_START, { theta: 0, phi: 0.9, dist: 14, tx: 0, tz: 0.3 }],
   [keyMove.start - 6, { theta: 0.08, phi: 0.88, dist: 13.5, tx: 0, tz: 0.3 }],
   [keyMove.end, { theta: 0.3, phi: 0.82, dist: 9.5, tx: 0.5, tz: -0.4 }],
   [GAME.moves[KEY + 1].end + 6, { theta: 0.1, phi: 0.8, dist: 10, tx: -0.2, tz: 1.2 }],
   [GAME.moves[KEY + 3].end, { theta: -0.35, phi: 0.82, dist: 10.5, tx: 0.3, tz: -1.6 }],
   [mateMove.end + 10, { theta: -0.75, phi: 0.72, dist: 9, tx: 0.5, tz: -2.2 }],
-  [GAME.end + OUTRO, { theta: -1.05, phi: 0.78, dist: 10.5, tx: 0.5, tz: -2 }],
+  [GAME.end + GAME.outro, { theta: -1.05, phi: 0.78, dist: 10.5, tx: 0.5, tz: -2 }],
 ];
 const camAt = (frame: number): Cam => {
   let i = CAMS.findIndex(([f]) => f > frame);
@@ -133,7 +149,7 @@ const camAt = (frame: number): Cam => {
   const [f0, a] = CAMS[i - 1];
   const [f1, b] = CAMS[i];
   // Hard cut from the hook to the start position.
-  if (f0 === HOOK) return frame < HOOK + 18 ? a : b;
+  if (f0 === HOOK) return frame < MOVES_START ? a : b;
   const k = ease(Math.min(1, (frame - f0) / Math.max(1, f1 - f0)));
   const mix = (p: number, q: number) => p + (q - p) * k;
   return { theta: mix(a.theta, b.theta), phi: mix(a.phi, b.phi), dist: mix(a.dist, b.dist), tx: mix(a.tx, b.tx), tz: mix(a.tz, b.tz) };
@@ -240,10 +256,10 @@ const Scene: React.FC<{ set: SetData; shadowSize: number }> = ({ set, shadowSize
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const pos = piecePositions(frame);
-  const last = frame >= HOOK + 18 ? lastMove(frame) : mateMove;
+  const last = frame >= MOVES_START ? lastMove(frame) : mateMove;
   const keyK = (frame - keyMove.end) / 30;
   const check = frame >= GAME.moves[KEY + 2].end && frame < GAME.moves[KEY + 3].start;
-  const mated = frame >= mateMove.end || frame < HOOK + 18;
+  const mated = frame >= mateMove.end || frame < MOVES_START;
   const blackKingId = GAME.finalAt[Object.keys(GAME.finalAt).find((sq) => GAME.pieces[GAME.finalAt[sq]].type === "k" && GAME.pieces[GAME.finalAt[sq]].color === "b")!];
   const kingSq = mated ? "e7" : check ? "e8" : null;
   const topple = frame >= mateMove.end ? interpolate(frame - mateMove.end, [8, 30], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bounce }) : 0;
@@ -280,7 +296,7 @@ const Scene: React.FC<{ set: SetData; shadowSize: number }> = ({ set, shadowSize
       {kingSq && <SquareGlow sq={kingSq} color={theme.red} opacity={0.75} y={0.012} />}
       {Object.entries(pos).map(([id, p]) => {
         const t = GAME.pieces[Number(id)];
-        const isMatedKing = Number(id) === blackKingId && mated && frame >= HOOK + 18;
+        const isMatedKing = Number(id) === blackKingId && mated && frame >= MOVES_START;
         return (
           <PieceModel
             key={id}
@@ -329,7 +345,7 @@ const Overlay: React.FC = () => {
         <Stars text={label} size={58} />
       </div>
     ) : null;
-  const hook = frame < HOOK + 18;
+  const hook = frame < MOVES_START;
   const outro = frame >= GAME.end;
   return (
     <AbsoluteFill>
@@ -353,14 +369,12 @@ const Overlay: React.FC = () => {
           <div style={{ ...text, fontSize: 56 }}>Légal's Mate</div>
         </div>
       )}
-      {caption("Black pins our knight to the *queen*.", GAME.moves[5].start, GAME.moves[KEY].start)}
-      {caption("Knight takes e5... and *leaves the queen!*", keyMove.start, keyMove.end + 26)}
+      {GAME.voice
+        .filter((v) => v.key !== "hook" && v.key !== "outro")
+        .map((v, i, all) => <React.Fragment key={v.key}>{caption(v.caption, v.from, Math.max(v.from + v.frames + 20, all[i + 1]?.from ?? GAME.end))}</React.Fragment>)}
       {banner("!! BRILLIANT", "#3ee6dc", keyMove.end, keyMove.end + 26, 104)}
-      {caption("Black grabs the queen. *Big mistake.*", GAME.moves[KEY + 1].start, GAME.moves[KEY + 2].start)}
       {banner("CHECK!", "#ff5a4f", GAME.moves[KEY + 2].end, GAME.moves[KEY + 3].start + 4)}
-      {caption("Bishop takes f7. The king has *one square*.", GAME.moves[KEY + 2].start, mateMove.start)}
       {banner("CHECKMATE", "#ffd84a", mateMove.end, GAME.end, 120)}
-      {caption("Three small pieces *beat a queen.*", mateMove.end + 14, GAME.end)}
       {frame >= mateMove.end && frame < mateMove.end + 6 && <AbsoluteFill style={{ background: "#fff", opacity: 1 - (frame - mateMove.end) / 6 }} />}
       {outro && (
         <>
@@ -396,6 +410,11 @@ export const Trap3D: React.FC<Trap3DProps> = ({ quality = "lite" }) => {
         </ThreeCanvas>
       )}
       <Overlay />
+      {GAME.voice.map((v) => (
+        <Sequence key={v.key} from={v.from} durationInFrames={v.frames + 10}>
+          <Html5Audio src={staticFile((voice3d.clips as Record<string, { file: string }>)[v.key].file)} volume={1} />
+        </Sequence>
+      ))}
       <Sequence from={HOOK + 12} durationInFrames={20}>
         <Html5Audio src={sfx("whoosh")} volume={0.6} />
       </Sequence>

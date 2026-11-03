@@ -1,0 +1,41 @@
+{
+ "voice": "af_heart",
+ "speed": 1.1,
+ "clips": {
+  "hook": {
+   "text": "Give away your queen... And checkmate two moves later.",
+   "file": "voice/preview-3d-legal/hook-df8c90fe.mp3",
+   "seconds": 2.594
+  },
+  "pin": {
+   "text": "Black pins our knight to the queen.",
+   "file": "voice/preview-3d-legal/pin-1e5e80fd.mp3",
+   "seconds": 1.568
+  },
+  "key": {
+   "text": "Knight takes e5... And leaves the queen!",
+   "file": "voice/preview-3d-legal/key-09d65f1f.mp3",
+   "seconds": 2.362
+  },
+  "grab": {
+   "text": "Black grabs the queen. Big mistake.",
+   "file": "voice/preview-3d-legal/grab-2aa4a3aa.mp3",
+   "seconds": 2.104
+  },
+  "check": {
+   "text": "Bishop takes f7. Check! The king has one square.",
+   "file": "voice/preview-3d-legal/check-324bec0c.mp3",
+   "seconds": 2.861
+  },
+  "mate": {
+   "text": "Knight to d5. Checkmate! Three small pieces beat a queen.",
+   "file": "voice/preview-3d-legal/mate-00626847.mp3",
+   "seconds": 3.565
+  },
+  "outro": {
+   "text": "A new trap every day. Follow checks mate daily!",
+   "file": "voice/preview-3d-legal/outro-7a9245fd.mp3",
+   "seconds": 2.763
+  }
+ }
+}

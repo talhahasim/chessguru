@@ -22,15 +22,18 @@ export type Quality = "full" | "lite";
  * time every frame) for a glossy see-through material that looks almost the same and renders much faster.
  */
 const liteGlass = (m: THREE.MeshPhysicalMaterial) => {
+  // Clear glass = mostly see-through with bright reflections: a dark, low-opacity, mirror-smooth surface.
   const g = new THREE.MeshPhysicalMaterial({
-    color: m.color,
-    roughness: 0.05,
+    color: "#0d0f0f",
+    roughness: 0.02,
     metalness: 0,
     clearcoat: 1,
-    clearcoatRoughness: 0.05,
+    clearcoatRoughness: 0.02,
     transparent: true,
-    opacity: 0.55,
-    envMapIntensity: 1.6,
+    opacity: 0.32,
+    depthWrite: false,
+    envMapIntensity: 3,
+    specularIntensity: 1,
   });
   g.name = `${m.name}-lite`;
   return g;
