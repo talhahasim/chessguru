@@ -28,7 +28,7 @@ Tek veri noktası; 3D videonun render maliyeti (~1 saat) şu an karşılığın�
 
 **Değişiklik (içerik):** Yok (Elo deneyi 1 paylaşımda, 3D 1 paylaşımda test edildi; yeterli veri yok).
 
-**Paylaşım:** Brilliant or Blunder #11 (quiz-fools-g4, blunder) — Elo'suz quiz'in 2. ölçümü.
+**Paylaşım:** Brilliant or Blunder #11 (quiz-fools-g4, blunder) — Elo'suz quiz'in 2. ölçümü, 22:40 UTC → https://www.instagram.com/reel/DfS-aJJRQ1A/
 
 **Sonraki hipotez:** Quiz #11 de ≥ %80 izlenme oranı alırsa Elo'suz düzen kalıcı kabul edilir. 3D için yarın erişim
 tekrar ölçülür; 24 saatte < 1000 erişimde kalırsa 3D'yi yalnızca quiz formatında (kısa, soru soran) denemeyi öner.
