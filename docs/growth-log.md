@@ -27,7 +27,7 @@ Erişim hâlâ ~1100–1350 tavanında, takipçi artmıyor: asıl darboğaz keş
 **Değişiklik (içerik):** Yok (Elo kaldırma deneyi yalnızca 1 paylaşımda test edildi). Bugün ayrıca YouTube Shorts
 otomasyonu başladı (eski Reel'ler günde 4, 6 saat arayla; ilk Short: https://youtube.com/shorts/TzPIwCgwlj4).
 
-**Paylaşım:** Légal's Mate **3D** (prerendered, sesli, 24 sn) — ilk 3D deney.
+**Paylaşım:** Légal's Mate **3D** (prerendered, sesli, 24 sn) — ilk 3D deney, 15:40 UTC → https://www.instagram.com/reel/DfSOW2mqipm/
 
 **Sonraki hipotez:** 3D görünüm erişimi (keşfet) ve izlenme oranını 2D quiz'lerin üstüne çıkarır mı? Ölçüt: 3D videonun
 erişimi > 1350 ve izlenme oranı ≥ %60 (24 sn'lik video için). Bir sonraki Elo'suz quiz (#11 Fool's g4) Elo deneyinin 2. ölçümü.
