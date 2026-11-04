@@ -31,7 +31,7 @@ Takipçi: **32** (+2 son 24 saatte; 3D'den sonra 5 günlük durgunluk bitti). Pa
 **Değişiklik (içerik):** Yok. 3D'yi artırmak tek satırlık küçük bir değişiklik değil (her video ~1 saat render, yeni
 3D sahnesi gerekiyor) → sahibine öneri olarak iletildi: haftada 2–3 3D video (önce 3D quiz formatı).
 
-**Paylaşım:** Brilliant or Blunder #12 (quiz-siberian-nd4, brilliant).
+**Paylaşım:** Brilliant or Blunder #12 (quiz-siberian-nd4, brilliant) 15:39 UTC → https://www.instagram.com/reel/DfUzGimhMf1/
 
 **Sonraki hipotez:** 3D formatı (özellikle beğeni/kaydetme) tekrarlanabilir mi? 2. bir 3D video (tercihen quiz) ile
 test et; ölçüt: 24 saatte erişim ≥ 1000 ve etkileşim ≥ %3.
