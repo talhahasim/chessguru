@@ -10,6 +10,34 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-04 15:37 UTC — planlı inceleme + paylaşım (3D 24 saatte rekor etkileşim)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #11 (03.11 22:40, Fool's g4, Elo'suz, ~17 saat) | 14 sn | 1513 | 1028 | 7 | 11 | 1 | 0 | 9,0 sn | %65 |
+| **Légal's Mate 3D** (03.11 15:40, ~24 saat) | 24 sn | 1283 | 1006 | **42** | 0 | **5** | **23** | 11,4 sn | %48 |
+| Brilliant or Blunder #10 (02.11 22:43, Elo'suz) | 16 sn | 1894 | 1194 | 16 | 11 | 0 | 0 | 13,5 sn | %86 |
+
+Takipçi: **32** (+2 son 24 saatte; 3D'den sonra 5 günlük durgunluk bitti). Paylaşım/Shorts hatası yok (6 Short yüklendi).
+
+**Teşhis:**
+- **3D yavaş başladı ama 24 saatte toparlandı:** erişim 424 → 1006 (2D ile aynı bant), ve hesabın **açık ara en iyi
+  etkileşimi**: beğeni/erişim %4,2 (2D en iyi ~%2,5), kaydetme/erişim %2,3, 5 paylaşım; toplam %5,6 (önceki rekor %3,8).
+  Ort. izlenme 11,4 sn (24 sn'lik videoda %48), 2D tuzak videolarının üstünde. Instagram'ın ağırlık verdiği
+  beğeni/erişim ve paylaşım/erişim sinyallerinde 3D net kazanıyor.
+- **Elo'suz quiz 2. ölçüm:** #11 %65 (#10 %86). Fool's g4 çok basit/kısa (14 sn, 9 sn ort.); fark Elo'dan çok
+  pozisyondan geliyor gibi. Erişim değişmedi (1028–1194). Sonuç: Elo kaldırma zarar vermedi, kalıcı.
+
+**Değişiklik (içerik):** Yok. 3D'yi artırmak tek satırlık küçük bir değişiklik değil (her video ~1 saat render, yeni
+3D sahnesi gerekiyor) → sahibine öneri olarak iletildi: haftada 2–3 3D video (önce 3D quiz formatı).
+
+**Paylaşım:** Brilliant or Blunder #12 (quiz-siberian-nd4, brilliant).
+
+**Sonraki hipotez:** 3D formatı (özellikle beğeni/kaydetme) tekrarlanabilir mi? 2. bir 3D video (tercihen quiz) ile
+test et; ölçüt: 24 saatte erişim ≥ 1000 ve etkileşim ≥ %3.
+
+---
+
 ## 2026-11-03 22:37 UTC — planlı inceleme + paylaşım (3D'nin ilk sonucu)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
