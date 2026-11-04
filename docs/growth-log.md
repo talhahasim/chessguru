@@ -10,6 +10,28 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-04 22:37 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #12 (04.11 15:39, Siberian Nd4, brilliant, ~7 saat) | 14 sn | 1587 | 1057 | 12 | 4 | 0 | 1 | 10,7 sn | %75 |
+| Brilliant or Blunder #11 (03.11 22:40, Fool's g4) | 14 sn | 1515 | 1029 | 7 | 11 | 1 | 0 | 9,0 sn | %65 |
+| Légal's Mate 3D (03.11 15:40, ~31 saat) | 24 sn | 1284 | 1006 | 42 | 0 | 5 | 23 | 11,4 sn | %48 |
+
+Takipçi: **33** (+1; 3D'den bu yana +3). Paylaşım, Shorts (8. çalışma) ve yanıt botu sorunsuz.
+
+**Teşhis:** Quiz'ler yine 1000–1200 erişim / %65–86 izlenme bandında; #12 normal (%75). 3D'nin erişimi 1006'da
+durdu (24 saatten sonra büyümüyor) ama beğeni/kaydetme oranı tüm hesabın 2 katı. Takipçi artışı 3D'den sonra
+başladı (30 → 33 iki günde) — zayıf ama ilk olumlu sinyal. Darboğaz hâlâ erişim (~1000–1350 tavan).
+
+**Değişiklik (içerik):** Yok. Önerilen tek anlamlı adım (2. 3D video / 3D quiz) büyük iş; sahibinin onayı bekleniyor.
+
+**Paylaşım:** Brilliant or Blunder #13 (quiz-magnus-bxf7, brilliant).
+
+**Sonraki hipotez:** Aynı (2. 3D videoyla erişim ≥ 1000 ve etkileşim ≥ %3 tekrar edilebilir mi?).
+
+---
+
 ## 2026-11-04 15:37 UTC — planlı inceleme + paylaşım (3D 24 saatte rekor etkileşim)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
