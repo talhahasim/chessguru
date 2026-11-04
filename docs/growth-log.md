@@ -26,7 +26,7 @@ başladı (30 → 33 iki günde) — zayıf ama ilk olumlu sinyal. Darboğaz hâ
 
 **Değişiklik (içerik):** Yok. Önerilen tek anlamlı adım (2. 3D video / 3D quiz) büyük iş; sahibinin onayı bekleniyor.
 
-**Paylaşım:** Brilliant or Blunder #13 (quiz-magnus-bxf7, brilliant).
+**Paylaşım:** Brilliant or Blunder #13 (quiz-petrov-nf6, blunder) 22:40 UTC → https://www.instagram.com/reel/DfVjN7AoG9k/
 
 **Sonraki hipotez:** Aynı (2. 3D videoyla erişim ≥ 1000 ve etkileşim ≥ %3 tekrar edilebilir mi?).
 
