@@ -30,7 +30,7 @@ Kalan içerik: 7 quiz (~3,5 gün). Sonra paylaşım sırası biter.
 
 **Değişiklik (içerik):** Yok (tek değişken kuralı; 3D önerisi sahibinin onayında).
 
-**Paylaşım:** Brilliant or Blunder #14 (quiz-magnus-bxf7, brilliant).
+**Paylaşım:** Brilliant or Blunder #14 (quiz-magnus-bxf7, brilliant) 22:40 UTC → https://www.instagram.com/reel/DfYICL4tfJK/
 
 **Sonraki hipotez:** Tanıdık tuzak pozisyonları (isimli tuzaklar) quiz'lerde daha çok yorum getirir. Yeni içerik
 gerektiğinde ünlü tuzaklardan quiz/3D seçilmeli. Sahibine: içerik ~9 Kasım'da biter.
