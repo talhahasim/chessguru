@@ -10,6 +10,33 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-05 22:36 UTC — planlı inceleme + paylaşım (16:00 paylaşımı KAÇTI)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #13 (04.11 22:40, Petrov Nf6, blunder, ~24 saat) | 15 sn | 1515 | 1047 | 3 | 3 | 0 | 0 | 10,9 sn | %72 |
+| Brilliant or Blunder #12 (04.11 15:39, Siberian Nd4) | 14 sn | 1597 | 1065 | 12 | 4 | 0 | 1 | 10,7 sn | %75 |
+| Légal's Mate 3D (03.11 15:40) | 24 sn | 1287 | 1008 | 42 | 0 | 5 | 23 | 11,4 sn | %48 |
+
+Takipçi: **33** (değişmedi).
+
+**Sorun (operasyonel):** 15:35 incelemesi istatistik aşamasında yarıda kaldı ve 16:00 paylaşımı yapılmadı; 18:17
+yedek cron'unu da GitHub hiç çalıştırmadı. Bugün yalnızca 1 Reel çıkıyor (son paylaşımdan ~24 saat sonra).
+Yedek cron'a güvenilemiyor (GitHub zamanlamaları sık sık atlıyor/geciktiriyor).
+
+**Teşhis:** Petrov quiz'i izlenme oranında normal (%72) ama etkileşim çok düşük (3 beğeni, 3 yorum, %0,4): tanıdık
+olmayan pozisyon (Petrov) yorum getirmiyor; Elephant/Blackburne/Légal gibi bilinen tuzaklar 10–15 yorum alıyor.
+Kalan içerik: 7 quiz (~3,5 gün). Sonra paylaşım sırası biter.
+
+**Değişiklik (içerik):** Yok (tek değişken kuralı; 3D önerisi sahibinin onayında).
+
+**Paylaşım:** Brilliant or Blunder #14 (quiz-magnus-bxf7, brilliant).
+
+**Sonraki hipotez:** Tanıdık tuzak pozisyonları (isimli tuzaklar) quiz'lerde daha çok yorum getirir. Yeni içerik
+gerektiğinde ünlü tuzaklardan quiz/3D seçilmeli. Sahibine: içerik ~9 Kasım'da biter.
+
+---
+
 ## 2026-11-04 22:37 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
