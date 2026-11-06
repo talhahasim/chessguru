@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-06 15:37 UTC — planlı inceleme + paylaşım (önce paylaşım, sonra inceleme)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #14 (05.11 22:40, Magnus Bxf7, brilliant, ~17 saat) | 15 sn | 1683 | 1150 | 11 | 2 | 2 | 0 | 10,5 sn | %72 |
+| Brilliant or Blunder #13 (04.11 22:40, Petrov Nf6) | 15 sn | 1515 | 1047 | 3 | 3 | 0 | 0 | 10,9 sn | %72 |
+| Légal's Mate 3D (03.11 15:40) | 24 sn | 1287 | 1008 | 42 | 0 | 5 | 23 | 11,4 sn | %48 |
+
+Takipçi: **33** (3 gündür aynı).
+
+**Süreç:** Dünkü kaçan paylaşımdan sonra bu inceleme paylaşımı EN BAŞTA tetikledi (bekleyen içerik değişikliği
+yoktu); istatistik/kayıt sonra yapıldı. İçerik değişikliği gerektiğinde sıra yine "değiştir → doğrula → paylaş" olmalı.
+
+**Teşhis:** Quiz'ler sabit bant (1000–1150 erişim, %72). Magnus quiz'i 2 paylaşım aldı ama yorum az (2). Yorumlar
+tanıdık/isimli tuzaklarda yüksek kalıyor (#7 Elephant 15, #10/#11 11). Takipçi 33'te durdu.
+
+**Değişiklik (içerik):** Yok.
+
+**Paylaşım:** Brilliant or Blunder #15 (quiz-fishing-hxg4, blunder) 15:38 UTC → https://www.instagram.com/reel/DfZ8kgqBVhO/
+
+**Uyarı:** Sırada 5 quiz kaldı (~2,5 gün; 8 Kasım akşamı biter). Sahibinden yeni içerik onayı gerekiyor.
+
+---
+
 ## 2026-11-05 22:36 UTC — planlı inceleme + paylaşım (16:00 paylaşımı KAÇTI)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
