@@ -10,6 +10,27 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-06 22:36 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #15 (06.11 15:38, Fishing Pole hxg4, blunder, ~7 saat) | 15 sn | 1531 | 1062 | 10 | 6 | 0 | 0 | 10,2 sn | %67 |
+| Brilliant or Blunder #14 (05.11 22:40, Magnus Bxf7) | 15 sn | 1685 | 1154 | 11 | 2 | 2 | 0 | 10,5 sn | %72 |
+| Brilliant or Blunder #13 (04.11 22:40, Petrov Nf6) | 15 sn | 1515 | 1047 | 3 | 3 | 0 | 0 | 10,9 sn | %72 |
+
+Takipçi: **33** (4 gündür aynı).
+
+**Teşhis:** Fishing Pole (isimli, daha önce tuzak videosu olarak da paylaşılmış) 7 saatte 6 yorum aldı; Petrov'un 3
+ve Magnus'un 2 yorumuna göre daha iyi → "tanıdık tuzak = daha çok yorum" hipotezi tutuyor. Erişim/izlenme bandı değişmedi.
+
+**Değişiklik (içerik):** Yok.
+
+**Paylaşım:** Brilliant or Blunder #16 (quiz-traxler-bxf2, brilliant) 22:38 UTC → https://www.instagram.com/reel/DfaskVFB1_H/
+
+**Uyarı:** Sırada 4 quiz kaldı (stafford-bg5, halosar-nb5, lasker-bxb4, kieninger-axb4) → 8 Kasım akşamı biter.
+
+---
+
 ## 2026-11-06 15:37 UTC — planlı inceleme + paylaşım (önce paylaşım, sonra inceleme)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
