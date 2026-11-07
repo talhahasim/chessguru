@@ -10,6 +10,28 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-07 22:37 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #17 (07.11 15:37, Stafford Bg5, blunder, ~7 saat) | 16 sn | 1564 | 1117 | 12 | 3 | 0 | 0 | 9,5 sn | %60 |
+| Brilliant or Blunder #16 (06.11 22:38, Traxler Bxf2) | 14 sn | 1770 | 1155 | 18 | 4 | 0 | 0 | 11,0 sn | %78 |
+| Brilliant or Blunder #15 (06.11 15:38, Fishing Pole hxg4) | 15 sn | 1603 | 1106 | 10 | 6 | 0 | 0 | 10,3 sn | %67 |
+
+Takipçi: **33** (5 gündür aynı).
+
+**Teşhis:** Stafford quiz'i 16 sn ile en uzun quiz'lerden; izlenme oranı %60 (son 10 quiz'in en düşüğü). Uzun kurulum
+(7 hamle) ve 16 sn süre izlenmeyi düşürüyor; 13–14 sn'lik quiz'ler %75–80 alıyor. Yeni quiz'lerde süre ≤ 14 sn
+ve kurulum ≤ 5 hamle hedeflenmeli.
+
+**Değişiklik (içerik):** Yok (kalan 2 quiz zaten hazır/paylaşım sırasında).
+
+**Paylaşım:** Brilliant or Blunder #18 (quiz-halosar-nb5, brilliant) 22:39 UTC → https://www.instagram.com/reel/DfdReiBhZ4C/
+
+**Uyarı:** Sırada 2 quiz kaldı (lasker-bxb4, kieninger-axb4) → yarın 16:00 ve 23:00. 9 Kasım'dan itibaren içerik YOK.
+
+---
+
 ## 2026-11-07 15:36 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
