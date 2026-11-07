@@ -10,6 +10,29 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-07 15:36 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #16 (06.11 22:38, Traxler Bxf2, brilliant, ~17 saat) | 14 sn | 1767 | 1154 | **18** | 4 | 0 | 0 | 10,9 sn | %78 |
+| Brilliant or Blunder #15 (06.11 15:38, Fishing Pole hxg4) | 15 sn | 1600 | 1104 | 10 | 6 | 0 | 0 | 10,3 sn | %67 |
+| Brilliant or Blunder #14 (05.11 22:40, Magnus Bxf7) | 15 sn | 1686 | 1154 | 11 | 2 | 2 | 0 | 10,5 sn | %72 |
+
+Takipçi: **33** (5 gündür aynı).
+
+**Teşhis:** Traxler (brilliant, gösterişli Bxf2+ fedası) son quiz'lerin en çok beğenisini aldı (18) ve %78 izlenme.
+"Brilliant quiz'ler daha çok beğeni alır" gözlemi devam ediyor (#4 Réti 21, #10 Lasker 16, #16 Traxler 18).
+Erişim bandı (1000–1200) ve takipçi değişmiyor: quiz formatı tavanda.
+
+**Değişiklik (içerik):** Yok.
+
+**Paylaşım:** Brilliant or Blunder #17 (quiz-stafford-bg5, blunder) 15:37 UTC → https://www.instagram.com/reel/DfchOessvts/
+
+**Uyarı:** Sırada 3 quiz kaldı (halosar-nb5, lasker-bxb4, kieninger-axb4) → 8 Kasım 22:40 son paylaşım; 9 Kasım
+16:00'da post-reel "All lessons are already posted" ile duracak. Sahibinin yeni içerik onayı gerekiyor.
+
+---
+
 ## 2026-11-06 22:36 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
