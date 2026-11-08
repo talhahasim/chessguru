@@ -309,6 +309,86 @@ export const quizKieningerAxb4: Lesson = {
   takeaways: [],
 };
 
+export const quizCaroSmotheredNgf6: Lesson = {
+  id: "quiz-caro-smothered-ngf6",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #21",
+  hero: "b",
+  startFen: "r1bqkbnr/pp1npppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR w KQkq - 1 5",
+  hook: ["Black just *develops*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Qe2"], say: "White's queen goes to *e2*." },
+    { moves: ["Ngf6"], say: "Knight to f6, a normal move. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizQgaCxb5: Lesson = {
+  id: "quiz-qga-cxb5",
+  kind: "quiz",
+  answer: "blunder",
+  band: "600-900",
+  title: "Brilliant or Blunder #22",
+  hero: "b",
+  startFen: "rnbqkbnr/p3pppp/2p5/1p6/P1pP4/4P3/1P3PPP/RNBQKBNR w KQkq - 0 5",
+  hook: ["Black keeps the *extra pawn*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["axb5"], say: "White hits the pawn chain on *b5*." },
+    { moves: ["cxb5"], say: "Black takes back. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizFromNc3: Lesson = {
+  id: "quiz-from-nc3",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #23",
+  hero: "w",
+  startFen: "rnbqkbnr/ppp2ppp/3p4/4P3/8/8/PPPPP1PP/RNBQKBNR w KQkq - 0 3",
+  hook: ["White is a *pawn up*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["exd6", "Bxd6"], say: "White grabs a pawn. The bishop eyes the *king*." },
+    { moves: ["Nc3"], say: "Knight to c3 develops. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizDamianoNxe5: Lesson = {
+  id: "quiz-damiano-nxe5",
+  kind: "quiz",
+  answer: "brilliant",
+  band: "300-600",
+  title: "Brilliant or Blunder #24",
+  hero: "w",
+  startFen: "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+  hook: ["White gives the *knight* away?", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["f6"], say: "Black defends e5 with the *f-pawn*." },
+    { moves: ["Nxe5"], say: "Knight takes e5 anyway. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizStauntonRh6: Lesson = {
+  id: "quiz-staunton-rh6",
+  kind: "quiz",
+  answer: "blunder",
+  band: "600-900",
+  title: "Brilliant or Blunder #25",
+  hero: "b",
+  startFen: "rnbqkbnr/ppppp3/8/6pp/3P1p2/4P1B1/PPP2PPP/RN1QKBNR w KQkq - 0 6",
+  hook: ["Black's rook joins the *attack*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Bd3"], say: "White's bishop aims at *g6*." },
+    { moves: ["Rh6"], say: "Rook to h6, guarding the king side. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
   quizNoahsArkQxd4,
@@ -329,4 +409,9 @@ export const QUIZZES: Lesson[] = [
   quizHalosarNb5,
   quizLaskerBxb4,
   quizKieningerAxb4,
+  quizCaroSmotheredNgf6,
+  quizQgaCxb5,
+  quizFromNc3,
+  quizDamianoNxe5,
+  quizStauntonRh6,
 ];

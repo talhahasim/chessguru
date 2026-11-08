@@ -1463,6 +1463,116 @@
     "file": "voice/quiz-kieninger-axb4/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-caro-smothered-ngf6": {
+   "hook": {
+    "text": "Black just develops. Brilliant or blunder?",
+    "file": "voice/quiz-caro-smothered-ngf6/hook-c5af0a97.mp3",
+    "seconds": 2.37
+   },
+   "step-0": {
+    "text": "White's queen goes to e2.",
+    "file": "voice/quiz-caro-smothered-ngf6/step-0-4ca7dda9.mp3",
+    "seconds": 1.502
+   },
+   "step-1": {
+    "text": "Knight to f6, a normal move. Brilliant... Or blunder?",
+    "file": "voice/quiz-caro-smothered-ngf6/step-1-1cfe764e.mp3",
+    "seconds": 3.287
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-caro-smothered-ngf6/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-qga-cxb5": {
+   "hook": {
+    "text": "Black keeps the extra pawn. Brilliant or blunder?",
+    "file": "voice/quiz-qga-cxb5/hook-8ebe7564.mp3",
+    "seconds": 2.794
+   },
+   "step-0": {
+    "text": "White hits the pawn chain on b5.",
+    "file": "voice/quiz-qga-cxb5/step-0-9b3612ea.mp3",
+    "seconds": 1.923
+   },
+   "step-1": {
+    "text": "Black takes back. Brilliant... Or blunder?",
+    "file": "voice/quiz-qga-cxb5/step-1-16e5b7da.mp3",
+    "seconds": 2.35
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-qga-cxb5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-from-nc3": {
+   "hook": {
+    "text": "White is a pawn up. Brilliant or blunder?",
+    "file": "voice/quiz-from-nc3/hook-46b2060f.mp3",
+    "seconds": 2.222
+   },
+   "step-0": {
+    "text": "White grabs a pawn. The bishop eyes the king.",
+    "file": "voice/quiz-from-nc3/step-0-06321c06.mp3",
+    "seconds": 2.51
+   },
+   "step-1": {
+    "text": "Knight to c3 develops. Brilliant... Or blunder?",
+    "file": "voice/quiz-from-nc3/step-1-8eda317d.mp3",
+    "seconds": 2.874
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-from-nc3/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-damiano-nxe5": {
+   "hook": {
+    "text": "White gives the knight away? Brilliant or blunder?",
+    "file": "voice/quiz-damiano-nxe5/hook-4725c076.mp3",
+    "seconds": 2.477
+   },
+   "step-0": {
+    "text": "Black defends e5 with the f-pawn.",
+    "file": "voice/quiz-damiano-nxe5/step-0-06c6716b.mp3",
+    "seconds": 2.046
+   },
+   "step-1": {
+    "text": "Knight takes e5 anyway. Brilliant... Or blunder?",
+    "file": "voice/quiz-damiano-nxe5/step-1-5e12b6c6.mp3",
+    "seconds": 2.994
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-damiano-nxe5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-staunton-rh6": {
+   "hook": {
+    "text": "Black's rook joins the attack. Brilliant or blunder?",
+    "file": "voice/quiz-staunton-rh6/hook-3194d132.mp3",
+    "seconds": 2.844
+   },
+   "step-0": {
+    "text": "White's bishop aims at g6.",
+    "file": "voice/quiz-staunton-rh6/step-0-2fd45e38.mp3",
+    "seconds": 1.779
+   },
+   "step-1": {
+    "text": "Rook to h6, guarding the king side. Brilliant... Or blunder?",
+    "file": "voice/quiz-staunton-rh6/step-1-45c3abc5.mp3",
+    "seconds": 3.595
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-staunton-rh6/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }
