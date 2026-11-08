@@ -10,6 +10,27 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-08 15:37 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #18** (07.11 22:39, Halosar Nb5, brilliant, ~17 saat) | 15 sn | **1949** | **1234** | 7 | 5 | 0 | 1 | 11,8 sn | **%81** |
+| Brilliant or Blunder #17 (07.11 15:37, Stafford Bg5) | 16 sn | 1577 | 1122 | 12 | 3 | 0 | 0 | 9,5 sn | %61 |
+| Brilliant or Blunder #16 (06.11 22:38, Traxler Bxf2) | 14 sn | 1774 | 1155 | 18 | 4 | 0 | 0 | 11,0 sn | %78 |
+
+Takipçi: **33** (6 gündür aynı).
+
+**Teşhis:** Halosar quiz'i son 10 günün en yüksek erişimini (1234) ve %81 izlenme oranını aldı: 5 hamlelik kısa kurulum,
+tek net soru. Stafford'un (7 hamle, %61) tam tersi. Kısa kurulum = yüksek izlenme hipotezi güçlendi.
+
+**Değişiklik (içerik):** Yok.
+
+**Paylaşım:** Brilliant or Blunder #19 (quiz-lasker-bxb4, blunder) 15:38 UTC → https://www.instagram.com/reel/DffGICBhswC/
+
+**Uyarı:** Son quiz (kieninger-axb4) bu akşam 23:00'te. 9 Kasım 16:00'dan itibaren paylaşacak içerik YOK.
+
+---
+
 ## 2026-11-07 22:37 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
