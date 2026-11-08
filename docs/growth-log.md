@@ -10,6 +10,31 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-08 22:37 UTC — planlı inceleme + paylaşım (UYARI: Quiz #19 dağıtılmadı)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #19** (08.11 15:38, Lasker Bxb4, ~7 saat) | 15 sn | **3** | **0** | 0 | 0 | 0 | 0 | 2,8 sn | – |
+| Brilliant or Blunder #18 (07.11 22:39, Halosar Nb5) | 15 sn | 1956 | 1240 | 7 | 5 | 0 | 1 | 11,8 sn | %81 |
+| Brilliant or Blunder #17 (07.11 15:37, Stafford Bg5) | 16 sn | 1578 | 1122 | 12 | 3 | 0 | 0 | 9,5 sn | %60 |
+
+Takipçi: **33**.
+
+**Sorun:** Quiz #19 7 saatte yalnızca 3 izlenme / 0 erişim aldı (diğer tüm Reel'ler ilk 7 saatte 1000+). Paylaşım
+logu normal ("✓ Posted"). Olası nedenler: Instagram tarafında işlenme/dağıtım takıldı ya da Reel "öneriye uygun
+değil" işaretlendi. API'den görülemiyor → sahibinin uygulamada Reel'e ve "Hesap Durumu"na bakması gerekiyor.
+
+**İçerik:** 5 yeni quiz eklendi ve Stockfish ile doğrulandı (#21 Caro-Kann boğmaca mat Ngf6??, #22 QGA cxb5??,
+#23 From Gambiti Nc3??, #24 Damiano Nxe5!!, #25 Staunton Rh6??); kurulum 1–2 hamle, sesler üretildi, validate 0 hata.
+Sıra 9 Kasım'dan itibaren bunlarla devam ediyor (~2,5 gün).
+
+**Paylaşım:** Brilliant or Blunder #20 (quiz-kieninger-axb4, blunder) 22:39 UTC → https://www.instagram.com/reel/Dff2TUnig6O/
+
+**Sonraki hipotez:** #20 normal dağıtılırsa #19 tek seferlik bir Instagram aksaklığıdır; #20 de ~0 erişim alırsa
+hesap düzeyinde bir kısıtlama olabilir.
+
+---
+
 ## 2026-11-08 15:37 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
