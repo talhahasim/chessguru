@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-09 22:37 UTC — planlı inceleme + paylaşım (dağıtım hâlâ düşük → hashtag testi)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #21 (09.11 15:39, Caro-Kann Ngf6, ~7 saat) | 14 sn | **167** | **120** | 0 | 0 | 0 | 0 | 7,8 sn | %54 |
+| Brilliant or Blunder #20 (08.11 22:39, Kieninger axb4, ~24 saat) | 15 sn | 437 | 323 | 2 | 1 | 0 | 0 | 8,9 sn | %59 |
+| Brilliant or Blunder #19 (08.11 15:38, Lasker Bxb4) | 15 sn | 7 | 3 | 0 | 0 | 0 | 0 | 3,8 sn | – |
+
+Takipçi: **33**.
+
+**Teşhis:** 3. Reel üst üste bastırılmış (#21: 7 saatte 120 erişim; normal 1000+). İzlenme oranı da düştü (%54–59):
+Instagram videoyu yabancı kitle yerine az sayıda kişiye gösteriyor. Sahibinden hesap durumu bilgisi henüz yok.
+
+**Değişiklik (tek değişken):** Quiz açıklamalarında her gönderide aynı olan 12'li hashtag bloğu → 4 hashtag
+(`#chess #chesspuzzle #brilliantorblunder #learnchess`, `QUIZ_HASHTAGS` in `scripts/post-reel.ts`). Hipotez:
+birebir tekrarlanan uzun hashtag bloğu spam/otomasyon sinyali. `marker()` satırı değişmedi.
+
+**Paylaşım:** Brilliant or Blunder #22 (quiz-qga-cxb5) — yeni açıklamayla ilk gönderi.
+
+**Sonraki hipotez:** #22 ve #23 erişimi > 500'e dönerse hashtag bloğu sorundu; dönmezse hesap düzeyinde kısıtlama /
+tekrarlı şablon → format değişikliği (3D, farklı kapak) gerekli.
+
+---
+
 ## 2026-11-09 15:37 UTC — planlı inceleme + paylaşım (UYARI: dağıtım çöktü)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

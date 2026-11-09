@@ -45,6 +45,7 @@ export const HASHTAGS = [
   "#chessgame",
 ];
 
+const QUIZ_HASHTAGS = ["#chess", "#chesspuzzle", "#brilliantorblunder", "#learnchess"];
 
 /**
  * Videos rendered ahead of time (the 3D experiments take ~1 h to render without a GPU): they are posted from
@@ -77,7 +78,8 @@ export const buildCaption = (lesson: Lesson) => {
       "",
       `Follow @${HANDLE} for a new chess puzzle and trap every day!`,
       "",
-      [...HASHTAGS, "#brilliantorblunder", "#chesspuzzle"].join(" "),
+      // 4 tags instead of the same 12-tag block on every post (reach collapsed on 8 Nov; spam-signal test).
+      QUIZ_HASHTAGS.join(" "),
     ].join("\n");
   return [
     `${plain(lesson.hook[0])} ${plain(lesson.hook[1])}`,
