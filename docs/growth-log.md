@@ -10,6 +10,31 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-09 15:37 UTC — planlı inceleme + paylaşım (UYARI: dağıtım çöktü)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #20 (08.11 22:39, Kieninger axb4, ~17 saat) | 15 sn | **353** | **253** | 1 | 1 | 0 | 0 | 8,6 sn | %57 |
+| Brilliant or Blunder #19 (08.11 15:38, Lasker Bxb4, ~24 saat) | 15 sn | **7** | **3** | 0 | 0 | 0 | 0 | 4,4 sn | – |
+| Brilliant or Blunder #18 (07.11 22:39, Halosar Nb5) | 15 sn | 1967 | 1247 | 7 | 6 | 0 | 1 | 11,8 sn | %81 |
+
+Takipçi: **33**.
+
+**Sorun:** 8 Kasım'dan beri Instagram dağıtımı çöktü: #19 24 saatte 3 erişim, #20 17 saatte 253 erişim (normal: ilk
+saatlerde 1000+). İçerik/format #18 ile aynı, paylaşım logları normal → sorun hesap/içerik düzeyinde bir Instagram
+kısıtlaması gibi görünüyor. Olası nedenler: (1) art arda ~15 neredeyse aynı şablonda "Brilliant or Blunder" Reel'i
+(tekrarlı/özgün olmayan içerik sinyali), (2) her gönderide aynı açıklama kalıbı + hashtag bloğu, (3) otomatik
+paylaşım. API'den hesap durumu görülemiyor.
+
+**Değişiklik (içerik):** Yok (önce sahibinin "Hesap Durumu"nu kontrol etmesi gerekiyor; kör bir değişiklik teşhisi bozar).
+
+**Paylaşım:** Brilliant or Blunder #21 (quiz-caro-smothered-ngf6, blunder) 15:39 UTC → https://www.instagram.com/reel/Dfhq9zeOv7W/
+
+**Sonraki hipotez:** #21 de < 500 erişimde kalırsa format çeşitlendirilmeli (ör. 3D video / farklı açıklama şablonu)
+ve sahibinin hesap durumunu kontrol etmesi şart.
+
+---
+
 ## 2026-11-08 22:37 UTC — planlı inceleme + paylaşım (UYARI: Quiz #19 dağıtılmadı)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
