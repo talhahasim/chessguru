@@ -27,7 +27,7 @@ Instagram videoyu yabancı kitle yerine az sayıda kişiye gösteriyor. Sahibind
 (`#chess #chesspuzzle #brilliantorblunder #learnchess`, `QUIZ_HASHTAGS` in `scripts/post-reel.ts`). Hipotez:
 birebir tekrarlanan uzun hashtag bloğu spam/otomasyon sinyali. `marker()` satırı değişmedi.
 
-**Paylaşım:** Brilliant or Blunder #22 (quiz-qga-cxb5) — yeni açıklamayla ilk gönderi.
+**Paylaşım:** Brilliant or Blunder #22 (quiz-qga-cxb5) — yeni açıklamayla ilk gönderi, 22:40 UTC → https://www.instagram.com/reel/DfibQ5ShUSo/
 
 **Sonraki hipotez:** #22 ve #23 erişimi > 500'e dönerse hashtag bloğu sorundu; dönmezse hesap düzeyinde kısıtlama /
 tekrarlı şablon → format değişikliği (3D, farklı kapak) gerekli.
