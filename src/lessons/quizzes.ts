@@ -389,6 +389,55 @@ export const quizStauntonRh6: Lesson = {
   takeaways: [],
 };
 
+export const quizFrenchNxd4: Lesson = {
+  id: "quiz-french-nxd4",
+  kind: "quiz",
+  answer: "blunder",
+  band: "600-900",
+  title: "Brilliant or Blunder #26",
+  hero: "b",
+  startFen: "r1b1kbnr/pp3ppp/1qn1p3/2ppP3/3P4/2PB1N2/PP3PPP/RNBQK2R b KQkq - 4 6",
+  hook: ["Black grabs a *free pawn*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["cxd4", "cxd4"], say: "Pawns trade. The pawn on *d4* looks weak." },
+    { moves: ["Nxd4"], say: "Knight takes d4. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizTarraschQd7: Lesson = {
+  id: "quiz-tarrasch-qd7",
+  kind: "quiz",
+  answer: "blunder",
+  band: "900-1500",
+  title: "Brilliant or Blunder #27",
+  hero: "b",
+  startFen: "r2q1rk1/2p1bppp/p1n1b3/1p1pP3/4n3/1BP2N2/PP3PPP/RNBQR1K1 w - - 3 11",
+  hook: ["Black guards the *bishop*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Nd4"], say: "White's knight jumps to *d4*." },
+    { moves: ["Qd7"], say: "Queen to d7 guards e6. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+
+export const quizPhilidorDxe5: Lesson = {
+  id: "quiz-philidor-dxe5",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #28",
+  hero: "b",
+  startFen: "r1bqk1nr/pppnbppp/3p4/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R w KQkq - 3 5",
+  hook: ["Black just takes *back*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["dxe5"], say: "White trades in the *center*." },
+    { moves: ["dxe5"], say: "Pawn takes back. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
   quizNoahsArkQxd4,
@@ -414,4 +463,7 @@ export const QUIZZES: Lesson[] = [
   quizFromNc3,
   quizDamianoNxe5,
   quizStauntonRh6,
+  quizFrenchNxd4,
+  quizTarraschQd7,
+  quizPhilidorDxe5,
 ];

@@ -1573,6 +1573,72 @@
     "file": "voice/quiz-staunton-rh6/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-french-nxd4": {
+   "hook": {
+    "text": "Black grabs a free pawn. Brilliant or blunder?",
+    "file": "voice/quiz-french-nxd4/hook-a30f586c.mp3",
+    "seconds": 2.619
+   },
+   "step-0": {
+    "text": "Pawns trade. The pawn on d4 looks weak.",
+    "file": "voice/quiz-french-nxd4/step-0-9f827f55.mp3",
+    "seconds": 2.578
+   },
+   "step-1": {
+    "text": "Knight takes d4. Brilliant... Or blunder?",
+    "file": "voice/quiz-french-nxd4/step-1-e8bf785c.mp3",
+    "seconds": 2.575
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-french-nxd4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-tarrasch-qd7": {
+   "hook": {
+    "text": "Black guards the bishop. Brilliant or blunder?",
+    "file": "voice/quiz-tarrasch-qd7/hook-16094bce.mp3",
+    "seconds": 2.469
+   },
+   "step-0": {
+    "text": "White's knight jumps to d4.",
+    "file": "voice/quiz-tarrasch-qd7/step-0-22f641e1.mp3",
+    "seconds": 1.594
+   },
+   "step-1": {
+    "text": "Queen to d7 guards e6. Brilliant... Or blunder?",
+    "file": "voice/quiz-tarrasch-qd7/step-1-b315eef7.mp3",
+    "seconds": 3.561
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-tarrasch-qd7/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-philidor-dxe5": {
+   "hook": {
+    "text": "Black just takes back. Brilliant or blunder?",
+    "file": "voice/quiz-philidor-dxe5/hook-77abfd78.mp3",
+    "seconds": 2.424
+   },
+   "step-0": {
+    "text": "White trades in the center.",
+    "file": "voice/quiz-philidor-dxe5/step-0-6dd01e03.mp3",
+    "seconds": 1.27
+   },
+   "step-1": {
+    "text": "Pawn takes back. Brilliant... Or blunder?",
+    "file": "voice/quiz-philidor-dxe5/step-1-c7c1dd6d.mp3",
+    "seconds": 2.421
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-philidor-dxe5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }
