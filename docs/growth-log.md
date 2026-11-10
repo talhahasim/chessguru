@@ -27,7 +27,7 @@ ama güçlü bir sinyal: tekrarlanan 12'li hashtag bloğu dağıtımı baskılı
 
 **Paylaşım:** Brilliant or Blunder #23 (quiz-from-nc3, blunder) 15:39 UTC → https://www.instagram.com/reel/DfkPzlEzXFB/
 
-**Uyarı:** Sırada 2 quiz kaldı (#24 Damiano, #25 Staunton) → 11 Kasım 16:00'dan sonra içerik yok; yeni quiz seti hazırlanıyor.
+**İçerik:** 3 yeni quiz eklendi ve doğrulandı (#26 Fransız Nxd4??, #27 Tarrasch Qd7??, #28 Philidor dxe5??; Mortimer Nxe5 %33 ile kurala takıldı, çıkarıldı). Sırada 5 quiz → 12 Kasım akşamına kadar.
 
 ---
 
