@@ -51,13 +51,20 @@ const QUIZ_HASHTAGS = ["#chess", "#chesspuzzle", "#brilliantorblunder", "#learnc
  * Videos rendered ahead of time (the 3D experiments take ~1 h to render without a GPU): they are posted from
  * prerendered/ instead of being rendered in CI, and go first in the posting order.
  */
+const CREDIT_3D = "3D chess set: \"A Beautiful Game\" by ASWF / MaterialX and Ed Mackey, CC BY 4.0";
 type Prerendered = { lesson: Lesson; video: string; cover: string; credit: string };
 export const PRERENDERED: Prerendered[] = [
   {
     lesson: { ...getLesson("legals-mate"), id: "legals-mate-3d", title: "Légal's Mate 3D" },
     video: "prerendered/legals-mate-3d.mp4",
     cover: "prerendered/legals-mate-3d-cover.jpg",
-    credit: "3D chess set: \"A Beautiful Game\" by ASWF / MaterialX and Ed Mackey, CC BY 4.0",
+    credit: CREDIT_3D,
+  },
+  {
+    lesson: { ...getLesson("quiz-caro-smothered-ngf6"), id: "quiz-caro-smothered-ngf6-3d", title: "Brilliant or Blunder 3D #1" },
+    video: "prerendered/quiz-caro-smothered-3d.mp4",
+    cover: "prerendered/quiz-caro-smothered-3d-cover.jpg",
+    credit: CREDIT_3D,
   },
 ];
 const prerendered = (lesson: Lesson) => PRERENDERED.find((p) => p.lesson.id === lesson.id);
