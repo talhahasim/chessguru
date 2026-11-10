@@ -80,6 +80,7 @@ export const buildCaption = (lesson: Lesson) => {
       "",
       // 4 tags instead of the same 12-tag block on every post (reach collapsed on 8 Nov; spam-signal test).
       QUIZ_HASHTAGS.join(" "),
+      ...(prerendered(lesson) ? ["", prerendered(lesson)!.credit] : []),
     ].join("\n");
   return [
     `${plain(lesson.hook[0])} ${plain(lesson.hook[1])}`,

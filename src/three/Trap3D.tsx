@@ -35,7 +35,7 @@ type Track = { id: number; type: PieceType; color: "w" | "b" };
 type Move = { start: number; end: number; from: string; to: string; id: number; captured?: number; san: string };
 export type VoiceCue = { key: string; from: number; frames: number; caption: string };
 
-const sqPos = (sq: string): [number, number] => ["abcdefgh".indexOf(sq[0]) - 3.5, 3.5 - (Number(sq[1]) - 1)];
+export const sqPos = (sq: string): [number, number] => ["abcdefgh".indexOf(sq[0]) - 3.5, 3.5 - (Number(sq[1]) - 1)];
 
 const buildGame = () => {
   const c = new Chess();
@@ -80,7 +80,7 @@ const buildGame = () => {
 export const GAME = buildGame();
 export const TRAP3D_DURATION = GAME.end + GAME.outro;
 
-const ease = Easing.bezier(0.45, 0, 0.25, 1);
+export const ease = Easing.bezier(0.45, 0, 0.25, 1);
 
 /** Where every piece is at `frame` (hook = final position). */
 const piecePositions = (frame: number) => {
@@ -164,9 +164,9 @@ const CameraRig: React.FC = () => {
   return null;
 };
 
-type SetData = ReturnType<typeof useChessSet>;
+export type SetData = ReturnType<typeof useChessSet>;
 
-const Board: React.FC<{ set: SetData }> = ({ set }) => {
+export const Board: React.FC<{ set: SetData }> = ({ set }) => {
   const board = useBoardClone(set);
   return (
     <group>
@@ -180,7 +180,7 @@ const Board: React.FC<{ set: SetData }> = ({ set }) => {
 };
 
 /** Soft studio reflections for the PBR materials (no HDRI download needed). */
-const Environment: React.FC = () => {
+export const Environment: React.FC = () => {
   const { gl, scene } = useThree();
   useMemo(() => {
     const pmrem = new THREE.PMREMGenerator(gl);
@@ -190,7 +190,7 @@ const Environment: React.FC = () => {
   return null;
 };
 
-const PieceModel: React.FC<{ set: SetData; type: PieceType; color: "w" | "b"; position: [number, number, number]; rotation: [number, number, number]; scale: number }> = ({
+export const PieceModel: React.FC<{ set: SetData; type: PieceType; color: "w" | "b"; position: [number, number, number]; rotation: [number, number, number]; scale: number }> = ({
   set,
   type,
   color,
@@ -208,7 +208,7 @@ const PieceModel: React.FC<{ set: SetData; type: PieceType; color: "w" | "b"; po
 };
 
 /** Flat glowing square marks (last move, brilliant, check). */
-const SquareGlow: React.FC<{ sq: string; color: string; opacity: number; y?: number }> = ({ sq, color, opacity, y = 0.006 }) => {
+export const SquareGlow: React.FC<{ sq: string; color: string; opacity: number; y?: number }> = ({ sq, color, opacity, y = 0.006 }) => {
   const [x, z] = sqPos(sq);
   return (
     <mesh position={[x, y, z]} rotation={[-Math.PI / 2, 0, 0]}>
@@ -218,7 +218,7 @@ const SquareGlow: React.FC<{ sq: string; color: string; opacity: number; y?: num
   );
 };
 
-const Ring: React.FC<{ sq: string; color: string; k: number }> = ({ sq, color, k }) => {
+export const Ring: React.FC<{ sq: string; color: string; k: number }> = ({ sq, color, k }) => {
   const [x, z] = sqPos(sq);
   return (
     <mesh position={[x, 0.02, z]} rotation={[-Math.PI / 2, 0, 0]} scale={0.6 + k * 1.6}>
@@ -314,7 +314,7 @@ const Scene: React.FC<{ set: SetData; shadowSize: number }> = ({ set, shadowSize
   );
 };
 
-const Stars: React.FC<{ text: string; size: number }> = ({ text, size }) => (
+export const Stars: React.FC<{ text: string; size: number }> = ({ text, size }) => (
   <>
     {text.split(/(\*[^*]+\*)/).map((part, i) =>
       part.startsWith("*") ? (
@@ -328,7 +328,7 @@ const Stars: React.FC<{ text: string; size: number }> = ({ text, size }) => (
   </>
 );
 
-const pop = (frame: number, at: number) => interpolate(frame - at, [0, 6, 10], [0.4, 1.15, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+export const pop = (frame: number, at: number) => interpolate(frame - at, [0, 6, 10], [0.4, 1.15, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
 const Overlay: React.FC = () => {
   const frame = useCurrentFrame();

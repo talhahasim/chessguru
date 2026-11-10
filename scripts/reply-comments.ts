@@ -24,6 +24,7 @@
  */
 import path from "node:path";
 import { LESSONS } from "../src/lessons/index.ts";
+import { PRERENDERED } from "./post-reel.ts";
 import type { Lesson } from "../src/types.ts";
 import { marker } from "./marker.ts";
 
@@ -141,7 +142,7 @@ const commentsOf = async (mediaId: string) => {
 const main = async () => {
   const me = await ig("GET", "me", { fields: "user_id,username" });
   const myName = String(me.username);
-  const quizzes = LESSONS.filter((l): l is Lesson & { answer: Answer } => l.kind === "quiz" && !!l.answer);
+  const quizzes = [...PRERENDERED.map((p) => p.lesson), ...LESSONS].filter((l): l is Lesson & { answer: Answer } => l.kind === "quiz" && !!l.answer);
   const media = (await ig("GET", `${me.user_id}/media`, { fields: "id,caption,timestamp,comments_count,permalink", limit: "40" }))
     .data as { id: string; caption?: string; timestamp: string; comments_count?: number; permalink: string }[];
 

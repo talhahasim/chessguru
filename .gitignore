@@ -3,4 +3,4 @@ out/
 .DS_Store
 *.log
 .venv/
-models/
+/models/
