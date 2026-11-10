@@ -69,6 +69,10 @@ The first frame of every video must be a finished cover that can be used as the 
   wrong ones a ❌ "not quite" reply (varied pools, never giving the answer away); comments with no clear answer
   are ignored. "Already replied" = one of the comment's replies is ours (no state stored).
 - Posting order: from the 8th trap+defense pair on, one quiz follows each pair (`QUIZ_AFTER_PAIRS`).
+- 3D quizzes: `quiz-3d` composition (`src/three/Quiz3D.tsx`, prop `lessonId`) renders any quiz lesson on the 3D set,
+  reusing the lesson's voice clips; same no-spoiler rules. Render locally (~30 min, `--gl=swangle`), put the MP4 +
+  frame-0 cover in `prerendered/` and add a `PRERENDERED` entry (id `<quiz id>-3d`, title `… 3D`). The 3D model
+  `public/models/a-beautiful-game.glb` is committed (CC BY 4.0, credit line in every caption).
 
 ## Free PDF via DM
 
