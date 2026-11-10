@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-10 22:37 UTC — planlı inceleme + paylaşım (dağıtım normale döndü; ilk 3D quiz)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #23** (10.11 15:39, From Nc3, 4 hashtag, ~7 saat) | 15 sn | 1486 | **951** | 6 | 5 | 0 | 0 | 10,3 sn | %69 |
+| **Brilliant or Blunder #22** (09.11 22:40, QGA cxb5, 4 hashtag, ~24 saat) | 14 sn | 1438 | **1000** | 5 | 2 | 0 | 1 | 9,4 sn | %68 |
+| Brilliant or Blunder #21 (09.11 15:39, Caro-Kann, 12 hashtag) | 14 sn | 172 | 124 | 0 | 0 | 0 | 0 | 7,6 sn | %54 |
+
+Takipçi: **33**.
+
+**Teşhis:** 4 hashtag'li iki gönderi de normal dağıtıma döndü (#22: 1000, #23 7 saatte 951 erişim) — 12'li hashtag
+bloğu dönemindeki 3–327 erişime karşı. Hipotez 2 paylaşımda doğrulandı: her gönderide birebir aynı uzun hashtag
+bloğu dağıtımı baskılıyordu. **4 hashtag kalıcı.** Erişim henüz eski ~1150 seviyesine tam dönmedi; izlenme %68–69.
+
+**Değişiklik (içerik):** Yok (bu turda yeni değişken yok; 3D quiz ayrı bir format testi, sahibinin onayıyla).
+
+**Paylaşım:** **Brilliant or Blunder 3D #1** (Caro-Kann boğmaca matı, prerendered 3D quiz, 13,7 sn) 22:38 UTC →
+https://www.instagram.com/reel/Dfk_wrpvlfN/
+
+**Sonraki hipotez:** 3D quiz, 2D quiz'lere göre daha fazla beğeni/kaydetme ve erişim getirir mi? (Légal 3D: %5,6
+etkileşim.) Ölçüt: 24 saatte erişim ≥ 1000 ve etkileşim ≥ %2.
+
+---
+
 ## 2026-11-10 15:37 UTC — planlı inceleme + paylaşım (4 hashtag sonrası toparlanma)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
