@@ -10,6 +10,27 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-10 15:37 UTC — planlı inceleme + paylaşım (4 hashtag sonrası toparlanma)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #22** (09.11 22:40, QGA cxb5, **4 hashtag**, ~17 saat) | 14 sn | **1276** | **884** | 4 | 2 | 0 | 1 | 9,1 sn | %66 |
+| Brilliant or Blunder #21 (09.11 15:39, Caro-Kann Ngf6, 12 hashtag) | 14 sn | 172 | 124 | 0 | 0 | 0 | 0 | 7,6 sn | %54 |
+| Brilliant or Blunder #20 (08.11 22:39, Kieninger, 12 hashtag) | 15 sn | 441 | 327 | 2 | 1 | 0 | 0 | 8,9 sn | %59 |
+
+Takipçi: **33**.
+
+**Teşhis:** 4 hashtag'li ilk gönderi (#22) erişimi 124–327'den **884'e** çıkardı (normalin ~%75'i). Tek veri noktası
+ama güçlü bir sinyal: tekrarlanan 12'li hashtag bloğu dağıtımı baskılıyor olabilir. Bir paylaşım daha gerekli.
+
+**Değişiklik (içerik):** Yok (hashtag değişikliği henüz 1 paylaşımda test edildi).
+
+**Paylaşım:** Brilliant or Blunder #23 (quiz-from-nc3, blunder) 15:39 UTC → https://www.instagram.com/reel/DfkPzlEzXFB/
+
+**Uyarı:** Sırada 2 quiz kaldı (#24 Damiano, #25 Staunton) → 11 Kasım 16:00'dan sonra içerik yok; yeni quiz seti hazırlanıyor.
+
+---
+
 ## 2026-11-09 22:37 UTC — planlı inceleme + paylaşım (dağıtım hâlâ düşük → hashtag testi)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
