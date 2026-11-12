@@ -73,6 +73,8 @@ The first frame of every video must be a finished cover that can be used as the 
   reusing the lesson's voice clips; same no-spoiler rules. Render locally (~30 min, `--gl=swangle`), put the MP4 +
   frame-0 cover in `prerendered/` and add a `PRERENDERED` entry (id `<quiz id>-3d`, title `… 3D`). The 3D model
   `public/models/a-beautiful-game.glb` is committed (CC BY 4.0, credit line in every caption).
+  Only make a 3D version of a quiz that was NEVER posted in 2D (then drop the 2D one from `QUIZZES`): the 3D re-run
+  of the already-posted Caro-Kann quiz, with the same voice clips, got 116 reach (duplicate-content suppression).
 
 ## Free PDF via DM
 
