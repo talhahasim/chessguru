@@ -10,6 +10,38 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-12 22:37 UTC — planlı inceleme + paylaşım (3 inceleme kaçtı; 3D quiz bastırıldı)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #24 (12.11 00:44, Damiano Nxe5, yedek cron, ~22 saat) | 15 sn | 1667 | **1100** | 12 | 8 | 0 | 0 | 10,9 sn | %75 |
+| **Brilliant or Blunder 3D #1** (10.11 22:38, Caro-Kann 3D, ~48 saat) | 14 sn | **146** | **116** | 1 | 2 | 0 | 0 | 6,4 sn | ~%46 |
+| Brilliant or Blunder #23 (10.11 15:39, From Nc3) | 15 sn | 1504 | 1039 | 6 | 5 | 0 | 0 | 10,3 sn | %69 |
+
+Takipçi: **34** (+1).
+
+**Süreç sorunu:** 11 Kasım 15:35 / 22:35 ve 12 Kasım 15:35 incelemeleri bu oturuma ancak 12 Kasım 22:36'da ulaştı
+(oturum kapalıydı). Arada yalnızca yedek cron 1 Reel paylaştı (12.11 00:44, Damiano); 18:17 yedek cron'larını GitHub
+hiç çalıştırmadı. ~48 saatte 4 yerine 1 paylaşım.
+
+**Teşhis:**
+- 2D quiz'ler normal: #24 1100 erişim, %75 izlenme, 8 yorum (4 hashtag düzeni çalışıyor).
+- **3D quiz #1 bastırıldı** (48 saatte 116 erişim), oysa ertesi günkü 2D quiz 1100 aldı. En olası neden: aynı
+  pozisyon + **birebir aynı seslendirme** 1,5 gün önce #21 olarak paylaşılmıştı → Instagram tekrarlanan/özgün olmayan
+  içerik (aynı ses parmak izi) olarak gördü. Légal 3D ise kendi ayrı seslendirmesiyle %5,6 etkileşim almıştı.
+- Ders: 3D quiz'ler **daha önce paylaşılmamış** bir quiz'den ve **yeni ses kayıtlarıyla** yapılmalı (aynı içerik
+  2D+3D olarak iki kez paylaşılmamalı).
+
+**Değişiklik (içerik):** Yok.
+
+**Paylaşım:** Brilliant or Blunder #25 (quiz-staunton-rh6, blunder) 22:39 UTC → https://www.instagram.com/reel/DfqJcfEMOrj/
+
+**Kalan içerik:** 3 quiz (#26 Fransız, #27 Tarrasch, #28 Philidor) → 14 Kasım öğlene kadar.
+
+**Sonraki hipotez:** Paylaşılmamış bir quiz'in 3D hali (ör. #26 Fransız, 2D yerine 3D) 2D ile en az aynı erişimi alır.
+
+---
+
 ## 2026-11-10 22:37 UTC — planlı inceleme + paylaşım (dağıtım normale döndü; ilk 3D quiz)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
