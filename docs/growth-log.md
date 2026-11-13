@@ -10,6 +10,34 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-13 22:36 UTC — planlı inceleme + paylaşım (16:00 yine kaçtı → yedek cron güçlendirildi)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #25** (12.11 22:39, Staunton Rh6, ~24 saat) | 15 sn | **131** | **111** | 0 | 0 | 0 | 0 | 6,5 sn | %43 |
+| Brilliant or Blunder #24 (12.11 00:44, Damiano Nxe5) | 15 sn | 1669 | 1100 | 12 | 8 | 0 | 0 | 10,9 sn | %75 |
+| Brilliant or Blunder 3D #1 (10.11 22:38) | 14 sn | 148 | 117 | 1 | 2 | 0 | 0 | 6,3 sn | – |
+
+Takipçi: **34**.
+
+**Süreç:** 15:35 incelemesi oturuma 16:03'te tetiklenip ancak 22:36'da ulaştı; 18:17 yedek cron'unu GitHub yine
+çalıştırmadı → 13 Kasım 16:00 paylaşımı yok (son 3 günde 8 slotun 4'ü kaçtı).
+**Düzeltme (operasyonel, içerik değil):** `post-reel.yml` yedek cron'ları 2 → 4 (16:47 / 18:17 / 23:47 / 01:17 UTC),
+schedule için `MIN_GAP_HOURS` 9 → 6 h. Rutin çalışırsa yedekler atlar; rutin kaçarsa ilk geçen yedek paylaşır
+(slotlar ~7 / ~17 saat arayla → 3. paylaşım olmaz).
+
+**Teşhis:** #25 (Staunton) yine bastırıldı (24 saatte 111 erişim) — aynı gün #24 1100 almıştı. Bastırılanlar:
+#19, #20, #21, 3D #1, #25; normal: #22, #23, #24. Ortak bir içerik/saat deseni yok → hesap düzeyinde aralıklı
+kısıtlama olabilir; sahibinin "Hesap Durumu" bilgisi hâlâ yok.
+
+**Değişiklik (içerik):** Yok.
+
+**Paylaşım:** Brilliant or Blunder #26 (quiz-french-nxd4, blunder) 22:39 UTC → https://www.instagram.com/reel/DfsuSjMBOyB/
+
+**Kalan içerik:** 2 quiz (#27 Tarrasch, #28 Philidor) → 14 Kasım 23:00'e kadar. Yeni set gerekli.
+
+---
+
 ## 2026-11-12 22:37 UTC — planlı inceleme + paylaşım (3 inceleme kaçtı; 3D quiz bastırıldı)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
