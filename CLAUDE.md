@@ -104,8 +104,8 @@ The first frame of every video must be a finished cover that can be used as the 
   to upcoming lessons (only with meaningful data; one variable at a time), validate, push, prepend a Turkish entry to
   `docs/growth-log.md`, then **dispatch `post-reel.yml` with `dry_run=false`** so the Reel goes out right after the
   review (~16:00 / ~23:00 UTC = 19:00 / 02:00 Turkey). Read the growth log before changing anything.
-- The GitHub cron in `post-reel.yml` (18:17 / 01:17 UTC) is only a fallback; `post-reel.ts` skips when the last post is
-  < `MIN_GAP_HOURS` old (9 h for these cron runs, 5 h for dispatches), so a late cron never adds a third daily post;
+- The GitHub cron in `post-reel.yml` (16:47 / 18:17 / 23:47 / 01:17 UTC) is only a fallback; `post-reel.ts` skips when the last post is
+  < `MIN_GAP_HOURS` old (6 h for these cron runs, 5 h for dispatches), so a late cron never adds a third daily post;
   fallback runs also skip 04:00–14:59 UTC (`QUIET_HOURS_UTC`) so a cron started hours late can't post in the morning.
 
 ## Other conventions
