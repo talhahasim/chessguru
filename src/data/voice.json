@@ -1639,6 +1639,72 @@
     "file": "voice/quiz-philidor-dxe5/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-vienna-nf6": {
+   "hook": {
+    "text": "Knight runs back. Brilliant or blunder?",
+    "file": "voice/quiz-vienna-nf6/hook-f2b911d8.mp3",
+    "seconds": 2.207
+   },
+   "step-0": {
+    "text": "White's queen attacks the knight.",
+    "file": "voice/quiz-vienna-nf6/step-0-e741401b.mp3",
+    "seconds": 1.39
+   },
+   "step-1": {
+    "text": "Knight back to f6 hits the queen. Brilliant... Or blunder?",
+    "file": "voice/quiz-vienna-nf6/step-1-ee066a5e.mp3",
+    "seconds": 3.501
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-vienna-nf6/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-owen-f5": {
+   "hook": {
+    "text": "Black hits the center. Brilliant or blunder?",
+    "file": "voice/quiz-owen-f5/hook-a2e7598c.mp3",
+    "seconds": 2.419
+   },
+   "step-0": {
+    "text": "White's bishop guards e4.",
+    "file": "voice/quiz-owen-f5/step-0-2e999544.mp3",
+    "seconds": 1.597
+   },
+   "step-1": {
+    "text": "Pawn to f5 attacks it. Brilliant... Or blunder?",
+    "file": "voice/quiz-owen-f5/step-1-9b7f00cf.mp3",
+    "seconds": 3.059
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-owen-f5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-kotov-nxf7": {
+   "hook": {
+    "text": "White gives the knight away? Brilliant or blunder?",
+    "file": "voice/quiz-kotov-nxf7/hook-4725c076.mp3",
+    "seconds": 2.477
+   },
+   "step-0": {
+    "text": "Black wants to trade knights.",
+    "file": "voice/quiz-kotov-nxf7/step-0-84f2dd88.mp3",
+    "seconds": 1.311
+   },
+   "step-1": {
+    "text": "Knight takes f7! Brilliant... Or blunder?",
+    "file": "voice/quiz-kotov-nxf7/step-1-0d5a88f4.mp3",
+    "seconds": 2.561
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-kotov-nxf7/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }

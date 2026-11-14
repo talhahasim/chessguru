@@ -438,6 +438,55 @@ export const quizPhilidorDxe5: Lesson = {
   takeaways: [],
 };
 
+export const quizViennaNf6: Lesson = {
+  id: "quiz-vienna-nf6",
+  kind: "quiz",
+  answer: "blunder",
+  band: "0-300",
+  title: "Brilliant or Blunder #29",
+  hero: "b",
+  startFen: "rnbqkb1r/pppp1ppp/8/4p3/2B1n3/2N5/PPPP1PPP/R1BQK1NR w KQkq - 0 4",
+  hook: ["Knight runs *back*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Qh5"], say: "White's queen attacks the *knight*." },
+    { moves: ["Nf6"], say: "Knight back to f6 hits the queen. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizOwenF5: Lesson = {
+  id: "quiz-owen-f5",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #30",
+  hero: "b",
+  startFen: "rn1qkbnr/pbpppppp/1p6/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 1 3",
+  hook: ["Black hits the *center*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Bd3"], say: "White's bishop guards *e4*." },
+    { moves: ["f5"], say: "Pawn to f5 attacks it. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizKotovNxf7: Lesson = {
+  id: "quiz-kotov-nxf7",
+  kind: "quiz",
+  answer: "brilliant",
+  band: "600-900",
+  title: "Brilliant or Blunder #31",
+  hero: "w",
+  startFen: "rnbqkb1r/ppp1pppp/8/3nN3/3P4/8/PPP2PPP/RNBQKB1R b KQkq - 0 5",
+  hook: ["White gives the *knight* away?", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Nd7"], say: "Black wants to trade knights." },
+    { moves: ["Nxf7"], say: "Knight takes f7! *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
   quizNoahsArkQxd4,
@@ -466,4 +515,7 @@ export const QUIZZES: Lesson[] = [
   quizFrenchNxd4,
   quizTarraschQd7,
   quizPhilidorDxe5,
+  quizViennaNf6,
+  quizOwenF5,
+  quizKotovNxf7,
 ];
