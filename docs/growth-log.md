@@ -10,6 +10,29 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-14 15:36 UTC — planlı inceleme + paylaşım (zamanında) + yeni quiz seti
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #26 (13.11 22:39, Fransız Nxd4, ~17 saat) | 15 sn | 1795 | **1196** | 12 | 2 | 0 | 1 | 11,3 sn | %77 |
+| Brilliant or Blunder #25 (12.11 22:39, Staunton Rh6) | 15 sn | 131 | 111 | 0 | 0 | 0 | 0 | 6,5 sn | %43 |
+| Brilliant or Blunder #24 (12.11 00:44, Damiano Nxe5) | 15 sn | 1669 | 1100 | 12 | 8 | 0 | 0 | 10,9 sn | %75 |
+
+Takipçi: **35** (+1).
+
+**Teşhis:** #26 normal ve güçlü (1196 erişim, %77). Bastırma aralıklı devam ediyor (#25) ama 4 hashtag sonrası
+5 gönderinin 3'ü normal. Fransız (tanıdık açılış) iyi izlendi ama yorum az (2).
+
+**Değişiklik (içerik):** Yok. 3 yeni quiz eklendi ve doğrulandı: #29 Viyana Nf6?? (mat-1), #30 Owen f5??, #31 Kotov
+tuzağı Nxf7!! (brilliant). Philidor'un mirası Qg8+ çıkarıldı (başka hamle de mat ediyor → "tek kazanç" değil).
+Viyana başlığı kısaltıldı (yatay taşıyordu).
+
+**Paylaşım:** Brilliant or Blunder #27 (quiz-tarrasch-qd7, blunder) 15:38 UTC → https://www.instagram.com/reel/Dfui4puBNbo/
+
+**Kalan içerik:** 4 quiz (#28 Philidor, #29 Viyana, #30 Owen, #31 Kotov) → 16 Kasım akşamına kadar.
+
+---
+
 ## 2026-11-13 22:36 UTC — planlı inceleme + paylaşım (16:00 yine kaçtı → yedek cron güçlendirildi)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
