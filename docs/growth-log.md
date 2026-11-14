@@ -10,6 +10,31 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-14 22:37 UTC — planlı inceleme (paylaşımı yedek cron yaptı)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #27 (14.11 15:38, Tarrasch Qd7, ~7 saat) | 15 sn | 1457 | 1078 | 6 | 4 | 0 | 0 | 8,6 sn | %59 |
+| Brilliant or Blunder #26 (13.11 22:39, Fransız Nxd4) | 15 sn | 1797 | 1198 | 12 | 2 | 0 | 1 | 11,3 sn | %77 |
+| Brilliant or Blunder #25 (12.11 22:39, Staunton) | 15 sn | 132 | 112 | 0 | 0 | 0 | 0 | 6,4 sn | %43 |
+
+Takipçi: **35**.
+
+**Süreç:** Yeni yedek cron'lar işe yaradı: 16:47 çalıştırmasını GitHub 5,5 saat geç (22:22) başlattı ve son
+paylaşımdan 6,8 saat sonra olduğu için #28'i 22:24'te paylaştı; rutinin 22:36 dispatch'i "0,2 saat önce paylaşıldı"
+diye doğru şekilde atladı. Günde 2 paylaşım korundu.
+
+**Teşhis:** #27 normal erişim (1078) ama izlenme oranı düşük (%59): Tarrasch pozisyonu kalabalık (çok taş,
+orta oyun) — basit açılış pozisyonları (%75–81) daha iyi izleniyor. Yeni quiz'lerde sade pozisyonlar tercih edilmeli.
+
+**Değişiklik (içerik):** Yok.
+
+**Paylaşım:** Brilliant or Blunder #28 (quiz-philidor-dxe5, blunder) 22:24 UTC (yedek cron) → https://www.instagram.com/reel/DfvRYV3BnxP/
+
+**Kalan içerik:** 3 quiz (#29 Viyana, #30 Owen, #31 Kotov) → 16 Kasım 16:00'ya kadar.
+
+---
+
 ## 2026-11-14 15:36 UTC — planlı inceleme + paylaşım (zamanında) + yeni quiz seti
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
