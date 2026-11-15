@@ -10,6 +10,28 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-15 22:36 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #29** (15.11 15:37, Viyana Nf6, mat-1, ~7 saat) | 14 sn | 1892 | **1220** | 6 | 5 | 0 | 1 | 11,5 sn | **%80** |
+| Brilliant or Blunder #28 (14.11 22:24, Philidor dxe5) | 13 sn | 1569 | 1099 | 9 | 5 | 0 | 0 | 8,9 sn | %67 |
+| Brilliant or Blunder #27 (14.11 15:38, Tarrasch Qd7) | 15 sn | 1467 | 1085 | 6 | 4 | 0 | 0 | 8,6 sn | %59 |
+
+Takipçi: **36**.
+
+**Teşhis:** Viyana quiz'i (sade açılış, 4 hamlelik pozisyon, mat-1 tehdidi) 7 saatte 1220 erişim ve %80 izlenme ile son
+haftanın en iyisi. "Sade pozisyon = yüksek izlenme" hipotezi güçleniyor: Viyana %80, Fransız %77, Philidor %67,
+Tarrasch (kalabalık orta oyun) %59. Dağıtım 4 gönderidir normal.
+
+**Değişiklik (içerik):** Yok (yeni quiz'ler zaten sade pozisyonlardan seçildi).
+
+**Paylaşım:** Brilliant or Blunder #30 (quiz-owen-f5, blunder) 22:38 UTC → https://www.instagram.com/reel/Dfx3tefNBI4/
+
+**Kalan içerik:** 4 quiz (#31 Kotov, #32 İki At h6, #33 London, #34 Hollanda) → 17 Kasım akşamına kadar.
+
+---
+
 ## 2026-11-15 15:36 UTC — planlı inceleme + paylaşım (zamanında) + yeni quiz seti
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
