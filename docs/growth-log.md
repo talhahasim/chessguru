@@ -10,6 +10,28 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-15 15:36 UTC — planlı inceleme + paylaşım (zamanında) + yeni quiz seti
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #28 (14.11 22:24, Philidor dxe5, ~17 saat) | 13 sn | 1569 | 1098 | 9 | 5 | 0 | 0 | 8,9 sn | %68 |
+| Brilliant or Blunder #27 (14.11 15:38, Tarrasch Qd7) | 15 sn | 1467 | 1085 | 6 | 4 | 0 | 0 | 8,6 sn | %59 |
+| Brilliant or Blunder #26 (13.11 22:39, Fransız Nxd4) | 15 sn | 1799 | 1200 | 12 | 2 | 0 | 1 | 11,2 sn | %77 |
+
+Takipçi: **36** (+1).
+
+**Teşhis:** Son 3 gönderi normal dağıtımda (1085–1200 erişim); bastırma 2 gönderidir yok. Takipçi yavaş ama düzenli
+artıyor (33 → 36, 4 günde). İzlenme oranı pozisyon sadeliğiyle ilişkili görünmeye devam ediyor.
+
+**Değişiklik (içerik):** Yok. 3 yeni sade-pozisyon quiz'i eklendi ve doğrulandı: #32 İki At h6??, #33 London
+Qxb2??, #34 Hollanda gxh4?? (mat-1). Qh5'e karşı Nf6 çıkarıldı (Stockfish "excellent" diyor — blunder değil).
+
+**Paylaşım:** Brilliant or Blunder #29 (quiz-vienna-nf6, blunder) 15:37 UTC → https://www.instagram.com/reel/DfxHoHpAPzL/
+
+**Kalan içerik:** 5 quiz (#30 Owen, #31 Kotov, #32–#34) → 18 Kasım öğlene kadar.
+
+---
+
 ## 2026-11-14 22:37 UTC — planlı inceleme (paylaşımı yedek cron yaptı)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
