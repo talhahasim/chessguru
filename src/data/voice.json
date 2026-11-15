@@ -1705,6 +1705,72 @@
     "file": "voice/quiz-kotov-nxf7/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-twoknights-h6": {
+   "hook": {
+    "text": "Black kicks the knight. Brilliant or blunder?",
+    "file": "voice/quiz-twoknights-h6/hook-0db27688.mp3",
+    "seconds": 2.268
+   },
+   "step-0": {
+    "text": "White's knight jumps to g5.",
+    "file": "voice/quiz-twoknights-h6/step-0-664d1b81.mp3",
+    "seconds": 1.751
+   },
+   "step-1": {
+    "text": "Pawn to h6 attacks it. Brilliant... Or blunder?",
+    "file": "voice/quiz-twoknights-h6/step-1-9dc2c30f.mp3",
+    "seconds": 3.036
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-twoknights-h6/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-london-qxb2": {
+   "hook": {
+    "text": "Black grabs a free pawn. Brilliant or blunder?",
+    "file": "voice/quiz-london-qxb2/hook-a30f586c.mp3",
+    "seconds": 2.619
+   },
+   "step-0": {
+    "text": "White leaves b2 open.",
+    "file": "voice/quiz-london-qxb2/step-0-504cdf68.mp3",
+    "seconds": 1.411
+   },
+   "step-1": {
+    "text": "Queen takes b2. Brilliant... Or blunder?",
+    "file": "voice/quiz-london-qxb2/step-1-5c9d30e1.mp3",
+    "seconds": 2.571
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-london-qxb2/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-dutch-gxh4": {
+   "hook": {
+    "text": "Black wins a bishop. Brilliant or blunder?",
+    "file": "voice/quiz-dutch-gxh4/hook-d807ac30.mp3",
+    "seconds": 2.344
+   },
+   "step-0": {
+    "text": "White ignores the attack on h4.",
+    "file": "voice/quiz-dutch-gxh4/step-0-eaafbda7.mp3",
+    "seconds": 1.871
+   },
+   "step-1": {
+    "text": "Pawn takes the bishop. Brilliant... Or blunder?",
+    "file": "voice/quiz-dutch-gxh4/step-1-6b0092f4.mp3",
+    "seconds": 2.623
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-dutch-gxh4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }

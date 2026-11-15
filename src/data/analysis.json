@@ -5101,6 +5101,123 @@
     "type": "cp",
     "value": 56
    }
+  },
+  "quiz-twoknights-h6": {
+   "line": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4|f3g5 h7h6",
+   "positions": [
+    {
+     "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+     "eval": {
+      "type": "cp",
+      "value": 16
+     },
+     "best": "d2d3",
+     "bestSan": "d3",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p1N1/2B1P3/8/PPPP1PPP/RNBQK2R b KQkq - 5 4",
+     "eval": {
+      "type": "cp",
+      "value": 11
+     },
+     "best": "d7d5",
+     "bestSan": "d5",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkb1r/pppp1pp1/2n2n1p/4p1N1/2B1P3/8/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+     "eval": {
+      "type": "cp",
+      "value": 744
+     },
+     "best": "g5f7",
+     "bestSan": "Nxf7",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 12
+   }
+  },
+  "quiz-london-qxb2": {
+   "line": "rnb1kbnr/pp2pppp/1q6/2pp4/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq - 1 4|b1c3 b6b2",
+   "positions": [
+    {
+     "fen": "rnb1kbnr/pp2pppp/1q6/2pp4/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq - 1 4",
+     "eval": {
+      "type": "cp",
+      "value": 66
+     },
+     "best": "b1c3",
+     "bestSan": "Nc3",
+     "depth": 20
+    },
+    {
+     "fen": "rnb1kbnr/pp2pppp/1q6/2pp4/3P1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq - 2 4",
+     "eval": {
+      "type": "cp",
+      "value": 58
+     },
+     "best": "e7e6",
+     "bestSan": "e6",
+     "depth": 20
+    },
+    {
+     "fen": "rnb1kbnr/pp2pppp/8/2pp4/3P1B2/2N1P3/PqP2PPP/R2QKBNR w KQkq - 0 5",
+     "eval": {
+      "type": "cp",
+      "value": 629
+     },
+     "best": "c3d5",
+     "bestSan": "Nxd5",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 66
+   }
+  },
+  "quiz-dutch-gxh4": {
+   "line": "rnbqkbnr/ppppp3/7p/5pp1/3P3B/8/PPP1PPPP/RN1QKBNR w KQkq - 0 4|e2e4 g5h4",
+   "positions": [
+    {
+     "fen": "rnbqkbnr/ppppp3/7p/5pp1/3P3B/8/PPP1PPPP/RN1QKBNR w KQkq - 0 4",
+     "eval": {
+      "type": "cp",
+      "value": 62
+     },
+     "best": "e2e3",
+     "bestSan": "e3",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqkbnr/ppppp3/7p/5pp1/3PP2B/8/PPP2PPP/RN1QKBNR b KQkq - 0 4",
+     "eval": {
+      "type": "cp",
+      "value": 29
+     },
+     "best": "f8g7",
+     "bestSan": "Bg7",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqkbnr/ppppp3/7p/5p2/3PP2p/8/PPP2PPP/RN1QKBNR w KQkq - 0 5",
+     "eval": {
+      "type": "mate",
+      "value": 1
+     },
+     "best": "d1h5",
+     "bestSan": "Qh5#",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 22
+   }
   }
  }
 }
