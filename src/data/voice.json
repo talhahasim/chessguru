@@ -1771,6 +1771,28 @@
     "file": "voice/quiz-dutch-gxh4/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-berlin-nxb5": {
+   "hook": {
+    "text": "Black takes the free bishop. Brilliant or blunder?",
+    "file": "voice/quiz-berlin-nxb5/hook-3282adc3.mp3",
+    "seconds": 2.597
+   },
+   "step-0": {
+    "text": "White's knight grabs e5.",
+    "file": "voice/quiz-berlin-nxb5/step-0-c21ec3d0.mp3",
+    "seconds": 1.557
+   },
+   "step-1": {
+    "text": "Knight takes the bishop. Brilliant... Or blunder?",
+    "file": "voice/quiz-berlin-nxb5/step-1-cc0c0fe5.mp3",
+    "seconds": 2.55
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-berlin-nxb5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }

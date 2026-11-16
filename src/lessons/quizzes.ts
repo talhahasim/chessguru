@@ -536,6 +536,24 @@ export const quizDutchGxh4: Lesson = {
   takeaways: [],
 };
 
+export const quizBerlinNxb5: Lesson = {
+  id: "quiz-berlin-nxb5",
+  kind: "quiz",
+  answer: "blunder",
+  band: "600-900",
+  title: "Brilliant or Blunder #35",
+  hero: "b",
+  startFen: "r1bqkb1r/pppp1ppp/2nn4/1B2p3/8/5N2/PPPP1PPP/RNBQR1K1 w kq - 2 6",
+  hook: ["Black takes the *free* bishop.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Nxe5"], say: "White's knight grabs *e5*." },
+    { moves: ["Nxb5"], say: "Knight takes the bishop. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+
+
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
   quizNoahsArkQxd4,
@@ -570,4 +588,5 @@ export const QUIZZES: Lesson[] = [
   quizTwoKnightsH6,
   quizLondonQxb2,
   quizDutchGxh4,
+  quizBerlinNxb5,
 ];
