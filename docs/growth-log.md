@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-16 15:37 UTC — planlı inceleme + paylaşım (zamanında)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #30 (15.11 22:37, Owen f5, ~17 saat) | 14 sn | 1550 | 1131 | 6 | 6 | 0 | 0 | 8,7 sn | %62 |
+| Brilliant or Blunder #29 (15.11 15:37, Viyana Nf6) | 14 sn | 1910 | 1236 | 7 | 5 | 0 | 1 | 11,5 sn | %80 |
+| Brilliant or Blunder #28 (14.11 22:24, Philidor dxe5) | 13 sn | 1571 | 1101 | 9 | 5 | 0 | 0 | 8,9 sn | %67 |
+
+Takipçi: **36**.
+
+**Teşhis:** Dağıtım 5 gönderidir normal (1086–1236). Owen quiz'i %62 izlenme: az bilinen açılış (Owen) daha zayıf;
+tanıdık açılışlar (Viyana %80, Fransız %77) daha iyi. Etkileşim (beğeni/erişim ~%0,6) düşük ve yatay; takipçi
+yavaş. Bir sonraki küçük test adayı: soru cümlesini daha kişisel yapmak (ör. "Would you play this?") — ama önce
+sade/tanıdık pozisyon etkisi tam ölçülsün diye şimdilik değişiklik yok.
+
+**Değişiklik (içerik):** Yok. 1 yeni quiz eklendi ve doğrulandı: #35 Berlin Nxb5?? (açılmış at ile vezir kaybı).
+Viyana Qg4 Nf6 (sadece "mistake") ve Hanham Bxf7+ (en iyi hamle değil, -1,4) çıkarıldı.
+
+**Paylaşım:** Brilliant or Blunder #31 (quiz-kotov-nxf7, brilliant) 15:38 UTC → https://www.instagram.com/reel/DfzshDthuq-/
+
+**Kalan içerik:** 4 quiz (#32 İki At h6, #33 London, #34 Hollanda, #35 Berlin) → 18 Kasım akşamına kadar.
+
+---
+
 ## 2026-11-15 22:36 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
