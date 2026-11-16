@@ -10,6 +10,27 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-16 22:37 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #31** (16.11 15:38, Kotov Nxf7, **brilliant**, ~7 saat) | 13 sn | 1879 | 1214 | **15** | **12** | 1 | 0 | 11,2 sn | **%84** |
+| Brilliant or Blunder #30 (15.11 22:37, Owen f5) | 14 sn | 1553 | 1133 | 6 | 6 | 0 | 0 | 8,7 sn | %62 |
+| Brilliant or Blunder #29 (15.11 15:37, Viyana Nf6) | 14 sn | 1911 | 1238 | 7 | 5 | 0 | 1 | 11,5 sn | %80 |
+
+**Teşhis:** Kotov quiz'i (brilliant, isimli tuzak, at fedası) 7 saatte %84 izlenme, 15 beğeni, 12 yorum, 1 paylaşım —
+son 2 haftanın en iyi etkileşimi (%1,5). Brilliant cevaplı quiz'ler beğeni/yorumda tutarlı biçimde önde (Réti, Traxler,
+Lasker, Kotov). Son 12 quiz'in sadece 3'ü brilliant → yeni sette brilliant oranı artırılmalı (zor: "tek kazanç" kuralı).
+
+**Değişiklik (içerik):** Yok.
+
+**Paylaşım:** Brilliant or Blunder #32 (quiz-twoknights-h6, blunder) 22:38 UTC → https://www.instagram.com/reel/Df0chxBTpLQ/
+
+**Kalan içerik:** 3 quiz (#33 London, #34 Hollanda, #35 Berlin) → 18 Kasım sabahına kadar. Sonraki setin hedefi:
+en az yarısı brilliant, sade/tanıdık pozisyon.
+
+---
+
 ## 2026-11-16 15:37 UTC — planlı inceleme + paylaşım (zamanında)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
