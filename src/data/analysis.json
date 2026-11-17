@@ -5257,6 +5257,45 @@
     "type": "cp",
     "value": 21
    }
+  },
+  "quiz-french-bxh7": {
+   "line": "r1bqk2r/pp1n1ppp/2n1p3/2bpP3/5B2/2NB1N2/PPP2PPP/R2QK2R b KQkq - 1 8|e8g8 d3h7",
+   "positions": [
+    {
+     "fen": "r1bqk2r/pp1n1ppp/2n1p3/2bpP3/5B2/2NB1N2/PPP2PPP/R2QK2R b KQkq - 1 8",
+     "eval": {
+      "type": "cp",
+      "value": -7
+     },
+     "best": "a7a6",
+     "bestSan": "a6",
+     "depth": 20
+    },
+    {
+     "fen": "r1bq1rk1/pp1n1ppp/2n1p3/2bpP3/5B2/2NB1N2/PPP2PPP/R2QK2R w KQ - 2 9",
+     "eval": {
+      "type": "cp",
+      "value": 211
+     },
+     "best": "d3h7",
+     "bestSan": "Bxh7+",
+     "depth": 20
+    },
+    {
+     "fen": "r1bq1rk1/pp1n1ppB/2n1p3/2bpP3/5B2/2N2N2/PPP2PPP/R2QK2R b KQ - 0 9",
+     "eval": {
+      "type": "cp",
+      "value": 254
+     },
+     "best": "g8h8",
+     "bestSan": "Kh8",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 10
+   }
   }
  }
 }

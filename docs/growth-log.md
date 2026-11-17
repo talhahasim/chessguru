@@ -10,6 +10,32 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-17 15:37 UTC — planlı inceleme + paylaşım (zamanında)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #32 (16.11 22:38, Two Knights h6, blunder, ~17 saat) | 14 sn | 1681 | 1147 | **15** | 4 | 0 | 0 | 10,6 sn | %74 |
+| **Brilliant or Blunder #31** (16.11 15:38, Kotov Nxf7, brilliant) | 13 sn | 1913 | 1234 | 15 | **13** | 1 | 0 | 11,2 sn | **%84** |
+| Brilliant or Blunder #30 (15.11 22:37, Owen f5) | 14 sn | 1553 | 1133 | 6 | 6 | 0 | 0 | 8,7 sn | %62 |
+
+36 takipçi (değişmedi).
+
+**Teşhis:** #32 (en bilinen açılış: İki At, sade pozisyon) %74 izlenme ve 15 beğeniyle ortalamanın üstünde; yorum
+az (4) çünkü cevap "kolay" görünüyor. Kotov (brilliant) hâlâ yorumda en iyi. Tanıdık açılış + brilliant cevap en güçlü
+kombinasyon hipotezi güçleniyor. Erişim 1100–1250 bandında sabit; takipçi artışı durmuş durumda (36) — en zayıf kaldıraç
+takip. Henüz tek değişkenlik test yapılacak anlamlı bir veri farkı yok.
+
+**Değişiklik (içerik):** Format değişikliği yok. Yeni quiz eklendi: **#36 Fransız savunması, Bxh7+ (Yunan hediyesi,
+brilliant)** — Stockfish: Bxh7+ +2,1, en iyi alternatif +0,1 civarı → "tek kazanç" kuralını geçiyor; validate 0 hata,
+kapak kontrol edildi.
+
+**Paylaşım:** Brilliant or Blunder #33 (quiz-london-qxb2, blunder) 15:37 UTC → https://www.instagram.com/reel/Df2RLeIhkWh/
+
+**Kalan içerik:** 3 quiz (#34 Hollanda, #35 Berlin, #36 Fransız Bxh7+) → 18 Kasım akşamına kadar. Sonraki hipotez:
+brilliant oranı artınca yorum/beğeni artar mı (#36 ilk test).
+
+---
+
 ## 2026-11-16 22:37 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

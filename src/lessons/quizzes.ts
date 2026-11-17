@@ -553,6 +553,22 @@ export const quizBerlinNxb5: Lesson = {
 };
 
 
+export const quizFrenchBxh7: Lesson = {
+  id: "quiz-french-bxh7",
+  kind: "quiz",
+  answer: "brilliant",
+  band: "600-900",
+  title: "Brilliant or Blunder #36",
+  hero: "w",
+  startFen: "r1bqk2r/pp1n1ppp/2n1p3/2bpP3/5B2/2NB1N2/PPP2PPP/R2QK2R b KQkq - 1 8",
+  hook: ["White gives the *bishop* away?", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["O-O"], say: "Black castles to safety." },
+    { moves: ["Bxh7+"], say: "Bishop takes h7, check! *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
@@ -589,4 +605,5 @@ export const QUIZZES: Lesson[] = [
   quizLondonQxb2,
   quizDutchGxh4,
   quizBerlinNxb5,
+  quizFrenchBxh7,
 ];
