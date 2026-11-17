@@ -10,6 +10,30 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-17 22:37 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #33 (17.11 15:37, London Qxb2, blunder, ~7 saat) | 13 sn | 1636 | 1071 | 13 | 6 | 0 | 0 | 10,2 sn | %76 |
+| Brilliant or Blunder #32 (16.11 22:38, Two Knights h6, blunder) | 14 sn | 1683 | 1150 | 15 | 4 | 0 | 0 | 10,6 sn | %74 |
+| **Brilliant or Blunder #31** (16.11 15:38, Kotov Nxf7, brilliant) | 13 sn | 1915 | 1235 | 15 | **13** | 1 | 0 | 11,2 sn | **%84** |
+
+**37 takipçi (+1).**
+
+**Teşhis:** Son 3 quiz %74–84 izlenme ile istikrarlı; #33 (London, "bedava piyon" tuzağı) 7 saatte 13 beğeni — sade
+pozisyonlar iyi gidiyor. Yorumda yine brilliant (#31) önde. Paylaşım/kaydetme neredeyse sıfır — en zayıf kaldıraç bu
+ve takip. Yeni bir değişkeni test etmek için önce #36 (brilliant) sonucunu görmek gerekiyor.
+
+**Değişiklik (içerik):** Yok. Yeni brilliant adayları denendi (Center Game Rxe4, Two Knights Bxf2+, Fajarowicz,
+Caro-Kann advance, Philidor Bxf7+, Danimarka, Scotch Gambit, Budapeşte, Evans, İskandinav, Pirc, Viyana Gambiti, Alekhine, Sicilya Poisoned Pawn): hiçbiri "tek kazanç" kuralını geçmedi (ya eşit ya da ikinci hamle de kazanıyor).
+
+**Paylaşım:** Brilliant or Blunder #34 (quiz-dutch-gxh4, blunder) 22:39 UTC → https://www.instagram.com/reel/Df3Bgg4qhSQ/
+
+**Kalan içerik:** 2 quiz (#35 Berlin, #36 Fransız Bxh7+) → 18 Kasım 22:35'e kadar. **Bir sonraki incelemede en az 2
+yeni quiz eklenmeli.**
+
+---
+
 ## 2026-11-17 15:37 UTC — planlı inceleme + paylaşım (zamanında)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
