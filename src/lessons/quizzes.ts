@@ -601,6 +601,38 @@ export const quizFrenchAdvNxd4: Lesson = {
   takeaways: [],
 };
 
+export const quizDragonNxe4: Lesson = {
+  id: "quiz-dragon-nxe4",
+  kind: "quiz",
+  answer: "blunder",
+  band: "600-900",
+  title: "Brilliant or Blunder #39",
+  hero: "b",
+  startFen: "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R w KQ - 3 9",
+  hook: ["Black grabs the *e4* pawn.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Bc4"], say: "White's bishop comes to *c4*." },
+    { moves: ["Nxe4"], say: "Knight takes e4. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizItalianWhiteNxe5: Lesson = {
+  id: "quiz-italian-white-nxe5",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #40",
+  hero: "w",
+  startFen: "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+  hook: ["White grabs a *free* pawn.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Bc4", "Bc5"], say: "Both bishops come out." },
+    { moves: ["Nxe5"], say: "Knight takes e5. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
@@ -640,4 +672,6 @@ export const QUIZZES: Lesson[] = [
   quizFrenchBxh7,
   quizItalianNxe5,
   quizFrenchAdvNxd4,
+  quizDragonNxe4,
+  quizItalianWhiteNxe5,
 ];

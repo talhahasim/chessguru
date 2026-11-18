@@ -1859,6 +1859,50 @@
     "file": "voice/quiz-french-adv-nxd4/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-dragon-nxe4": {
+   "hook": {
+    "text": "Black grabs the e4 pawn. Brilliant or blunder?",
+    "file": "voice/quiz-dragon-nxe4/hook-21b57e29.mp3",
+    "seconds": 2.894
+   },
+   "step-0": {
+    "text": "White's bishop comes to c4.",
+    "file": "voice/quiz-dragon-nxe4/step-0-eb4fd1b2.mp3",
+    "seconds": 1.694
+   },
+   "step-1": {
+    "text": "Knight takes e4. Brilliant... Or blunder?",
+    "file": "voice/quiz-dragon-nxe4/step-1-e6e0e3f8.mp3",
+    "seconds": 2.624
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-dragon-nxe4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-italian-white-nxe5": {
+   "hook": {
+    "text": "White grabs a free pawn. Brilliant or blunder?",
+    "file": "voice/quiz-italian-white-nxe5/hook-4b4ee25f.mp3",
+    "seconds": 2.605
+   },
+   "step-0": {
+    "text": "Both bishops come out.",
+    "file": "voice/quiz-italian-white-nxe5/step-0-2aeaeb57.mp3",
+    "seconds": 1.227
+   },
+   "step-1": {
+    "text": "Knight takes e5. Brilliant... Or blunder?",
+    "file": "voice/quiz-italian-white-nxe5/step-1-a2b021c4.mp3",
+    "seconds": 2.625
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-italian-white-nxe5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }

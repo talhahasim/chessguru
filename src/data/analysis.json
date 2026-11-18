@@ -5384,6 +5384,94 @@
     "type": "cp",
     "value": 0
    }
+  },
+  "quiz-dragon-nxe4": {
+   "line": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R w KQ - 3 9|f1c4 f6e4",
+   "positions": [
+    {
+     "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R w KQ - 3 9",
+     "eval": {
+      "type": "cp",
+      "value": 50
+     },
+     "best": "f1c4",
+     "bestSan": "Bc4",
+     "depth": 20
+    },
+    {
+     "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2BNP3/2N1BP2/PPPQ2PP/R3K2R b KQ - 4 9",
+     "eval": {
+      "type": "cp",
+      "value": 44
+     },
+     "best": "c6d4",
+     "bestSan": "Nxd4",
+     "depth": 20
+    },
+    {
+     "fen": "r1bq1rk1/pp2ppbp/2np2p1/8/2BNn3/2N1BP2/PPPQ2PP/R3K2R w KQ - 0 10",
+     "eval": {
+      "type": "cp",
+      "value": 601
+     },
+     "best": "f3e4",
+     "bestSan": "fxe4",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 41
+   }
+  },
+  "quiz-italian-white-nxe5": {
+   "line": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3|f1c4 f8c5 f3e5",
+   "positions": [
+    {
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+     "eval": {
+      "type": "cp",
+      "value": 20
+     },
+     "best": "f1b5",
+     "bestSan": "Bb5",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+     "eval": {
+      "type": "cp",
+      "value": 20
+     },
+     "best": "g8f6",
+     "bestSan": "Nf6",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+     "eval": {
+      "type": "cp",
+      "value": 19
+     },
+     "best": "e1g1",
+     "bestSan": "O-O",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqk1nr/pppp1ppp/2n5/2b1N3/2B1P3/8/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+     "eval": {
+      "type": "cp",
+      "value": -431
+     },
+     "best": "c6e5",
+     "bestSan": "Nxe5",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 18
+   }
   }
  }
 }

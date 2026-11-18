@@ -10,6 +10,33 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-18 22:37 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #35 (18.11 15:39, Berlin Nxb5, blunder, ~7 saat) | 14 sn | 1045 | 681 | 9 | 3 | 0 | 0 | 9,8 sn | %72 |
+| Brilliant or Blunder #34 (17.11 22:39, Hollanda gxh4, ~24 saat) | 14 sn | 399 | **281** | 5 | 3 | 0 | 0 | 9,7 sn | %69 |
+| Brilliant or Blunder #33 (17.11 15:37, London Qxb2) | 13 sn | 1646 | 1085 | 13 | 6 | 0 | 0 | 10,2 sn | %75 |
+
+36 takipçi (değişmedi).
+
+**Teşhis:** #34 bastırılmış olarak kaldı (24 saatte 281 erişim). #35 7 saatte 681 erişim — normalin biraz altında
+(#31 7 saatte 1214, #33 ~1070) ama bastırma seviyesinde değil; dağıtım toparlanıyor gibi. İzlenme oranı %72, normal.
+Paylaşım/kaydetme hâlâ ~0 ve takip sabit (36) → en zayıf kaldıraç bunlar. Bastırma döneminde format testi yapılmaz.
+
+**Değişiklik (içerik):** Format yok. Kuyruğa 2 yeni quiz eklendi (Stockfish doğrulandı, validate 0 hata, kapaklar
+kontrol edildi):
+- **#39 Sicilya Ejderha, 9...Nxe4 (blunder):** 10.Nxe4 → beyaz +6,0 (f3 piyonu korumalı e4'ü "bedava" sanmak).
+- **#40 İtalyan, 4.Nxe5 (blunder):** 4...Nxe5 → siyah +4,3 (klasik "bedava piyon" hatası).
+
+**Paylaşım:** Brilliant or Blunder #36 (quiz-french-bxh7, **brilliant**, Yunan hediyesi) 22:37 UTC →
+https://www.instagram.com/reel/Df5mGMFBBlL/
+
+**Kalan içerik:** 4 quiz (#37 İtalyan Nxe5, #38 Fransız İlerleme Nxd4, #39 Ejderha Nxe4, #40 İtalyan 4.Nxe5) → 20 Kasım
+akşamına kadar. Sonraki hipotez: #36 (brilliant) yorum sayısı blunder quiz'lerin (3–6) üstüne çıkar mı.
+
+---
+
 ## 2026-11-18 15:37 UTC — planlı inceleme + paylaşım (zamanında)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
