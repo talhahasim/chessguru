@@ -1815,6 +1815,50 @@
     "file": "voice/quiz-french-bxh7/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-italian-nxe5": {
+   "hook": {
+    "text": "Black takes back the pawn. Brilliant or blunder?",
+    "file": "voice/quiz-italian-nxe5/hook-cdae107a.mp3",
+    "seconds": 2.694
+   },
+   "step-0": {
+    "text": "White grabs the pawn on e5.",
+    "file": "voice/quiz-italian-nxe5/step-0-9acb3caf.mp3",
+    "seconds": 1.709
+   },
+   "step-1": {
+    "text": "Knight takes it back. Brilliant... Or blunder?",
+    "file": "voice/quiz-italian-nxe5/step-1-51bd9594.mp3",
+    "seconds": 2.375
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-italian-nxe5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-french-adv-nxd4": {
+   "hook": {
+    "text": "Black wins the d4 pawn. Brilliant or blunder?",
+    "file": "voice/quiz-french-adv-nxd4/hook-c89435aa.mp3",
+    "seconds": 2.869
+   },
+   "step-0": {
+    "text": "White takes back on d4.",
+    "file": "voice/quiz-french-adv-nxd4/step-0-5d40f6b8.mp3",
+    "seconds": 1.458
+   },
+   "step-1": {
+    "text": "Knight grabs the pawn. Brilliant... Or blunder?",
+    "file": "voice/quiz-french-adv-nxd4/step-1-cb7e6b0e.mp3",
+    "seconds": 2.584
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-french-adv-nxd4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }

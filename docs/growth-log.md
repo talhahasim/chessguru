@@ -10,6 +10,34 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-18 15:37 UTC — planlı inceleme + paylaşım (zamanında)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #34 (17.11 22:39, Hollanda gxh4, blunder, ~17 saat) | 14 sn | **398** | **280** | 5 | 3 | 0 | 0 | 9,7 sn | %69 |
+| Brilliant or Blunder #33 (17.11 15:37, London Qxb2) | 13 sn | 1645 | 1081 | 13 | 6 | 0 | 0 | 10,2 sn | %75 |
+| Brilliant or Blunder #32 (16.11 22:38, Two Knights h6) | 14 sn | 1683 | 1150 | 15 | 4 | 0 | 0 | 10,6 sn | %74 |
+
+36 takipçi (−1).
+
+**Teşhis:** #34 17 saatte sadece 280 erişim — yine kısmi bastırma (#19/#20/#21/#25 gibi). İzlenme oranı (%69) ve
+etkileşim oranı (%2,0) normal, yani içerik kötü değil; dağıtım kesilmiş. Ortak bir neden hâlâ görünmüyor (hashtag
+seti aynı, saat aynı, format aynı). Bastırılan videoların hepsi 22:3x paylaşımı değil (#19 15:38). Owner'dan Instagram
+"Account Status" kontrolü hâlâ bekleniyor. Diğer videolar 1050–1250 erişim bandında sabit.
+
+**Değişiklik (içerik):** Format değişikliği yok (bastırma varken tek değişkenli test anlamsız). Kuyruk tükenmek
+üzereydi → 2 yeni quiz eklendi, ikisi de Stockfish'le doğrulandı (validate 0 hata, kapaklar kontrol edildi):
+- **#37 İtalyan, 5...Nxe5 (blunder):** 6.Nxe5 dxe5 7.Qh5! → beyaz +3,2.
+- **#38 Fransız İlerleme, 7...Nxd4 (blunder):** 8.Nxd4 Qxd4 9.Bb5+ vezir gider → beyaz +5,5 (Milner-Barry fikri).
+Sıra: #36 Fransız Bxh7+ → #37 İtalyan → #38 Fransız İlerleme (iki Fransız arka arkaya gelmesin diye İtalyan araya).
+
+**Paylaşım:** Brilliant or Blunder #35 (quiz-berlin-nxb5, blunder) 15:39 UTC → https://www.instagram.com/reel/Df42P2-xPbP/
+
+**Kalan içerik:** 3 quiz (#36, #37, #38) → 20 Kasım sabahına kadar. Sonraki hipotez: #35'in erişimi normale dönerse
+#34 tek seferlik bastırmaydı.
+
+---
+
 ## 2026-11-17 22:37 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

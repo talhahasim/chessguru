@@ -5296,6 +5296,94 @@
     "type": "cp",
     "value": 10
    }
+  },
+  "quiz-italian-nxe5": {
+   "line": "r1bqk1nr/ppppbppp/2n5/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R b KQkq - 0 4|d7d6 d4e5 c6e5",
+   "positions": [
+    {
+     "fen": "r1bqk1nr/ppppbppp/2n5/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R b KQkq - 0 4",
+     "eval": {
+      "type": "cp",
+      "value": 49
+     },
+     "best": "e5d4",
+     "bestSan": "exd4",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqk1nr/ppp1bppp/2np4/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+     "eval": {
+      "type": "cp",
+      "value": 61
+     },
+     "best": "d4d5",
+     "bestSan": "d5",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqk1nr/ppp1bppp/2np4/4P3/2B1P3/5N2/PPP2PPP/RNBQK2R b KQkq - 0 5",
+     "eval": {
+      "type": "cp",
+      "value": 53
+     },
+     "best": "d6e5",
+     "bestSan": "dxe5",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqk1nr/ppp1bppp/3p4/4n3/2B1P3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
+     "eval": {
+      "type": "cp",
+      "value": 316
+     },
+     "best": "f3e5",
+     "bestSan": "Nxe5",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 51
+   }
+  },
+  "quiz-french-adv-nxd4": {
+   "line": "r1b1kbnr/pp3ppp/1qn1p3/3pP3/3p4/2PB1N2/PP3PPP/RNBQK2R w KQkq - 0 7|c3d4 c6d4",
+   "positions": [
+    {
+     "fen": "r1b1kbnr/pp3ppp/1qn1p3/3pP3/3p4/2PB1N2/PP3PPP/RNBQK2R w KQkq - 0 7",
+     "eval": {
+      "type": "cp",
+      "value": 23
+     },
+     "best": "e1g1",
+     "bestSan": "O-O",
+     "depth": 20
+    },
+    {
+     "fen": "r1b1kbnr/pp3ppp/1qn1p3/3pP3/3P4/3B1N2/PP3PPP/RNBQK2R b KQkq - 0 7",
+     "eval": {
+      "type": "cp",
+      "value": 0
+     },
+     "best": "c8d7",
+     "bestSan": "Bd7",
+     "depth": 20
+    },
+    {
+     "fen": "r1b1kbnr/pp3ppp/1q2p3/3pP3/3n4/3B1N2/PP3PPP/RNBQK2R w KQkq - 0 8",
+     "eval": {
+      "type": "cp",
+      "value": 547
+     },
+     "best": "f3d4",
+     "bestSan": "Nxd4",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 0
+   }
   }
  }
 }
