@@ -10,6 +10,37 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-19 22:37 UTC — planlı inceleme + paylaşım (15:35 slotu KAÇTI)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #36 (18.11 22:37, Fransız Bxh7+, **brilliant**, ~24 saat) | 14 sn | 1687 | 1078 | 15 | **2** | 0 | 0 | 11,0 sn | %79 |
+| Brilliant or Blunder #35 (18.11 15:39, Berlin Nxb5) | 14 sn | 1555 | 1033 | 13 | 5 | 0 | 0 | 9,9 sn | %73 |
+| Brilliant or Blunder #34 (17.11 22:39, Hollanda gxh4) | 14 sn | 401 | 283 | 5 | 3 | 0 | 0 | 9,6 sn | %69 |
+
+36 takipçi (değişmedi).
+
+**Kaçan slot:** 19.11 15:35 incelemesi oturuma ~7 saat geç ulaştı (oturum erişilemezdi) → o gün öğleden sonra
+paylaşım yok. Yedek cron'lar da kurtaramadı: GitHub zamanlanmış çalıştırmaları 5–7 saat geciktiriyor (18.11'in 16:47
+cron'u 23:09'da, 18:17'si 00:21'de, 23:47'si 04:31'de, 01:17'si 08:48'de çalıştı → hepsi "son paylaşım < 6 saat" ya da
+sessiz saat kuralıyla atladı; 19.11'in 16:47/18:17 cron'ları 22:36'ya kadar hiç başlamadı). Yani yedek mekanizma bu
+gecikme düzeyinde işe yaramıyor. Kod değişikliği yapılmadı (gecikme öngörülemez; daha fazla cron eklemek akşam
+paylaşımını kaydırma riski taşıyor) — owner'a not edildi.
+
+**Teşhis:** #35 normale döndü (1033 erişim) → #34 tek seferlik bastırmaydı. #36 (brilliant, Yunan hediyesi) izlenmede
+iyi (%79, 15 beğeni) ama sadece 2 yorum → "brilliant = daha çok yorum" hipotezi bu sefer tutmadı. Kotov/Réti'deki
+yüksek yorum muhtemelen "bedava taş verme" sürprizinden; Bxh7+ izleyiciye tanıdık bir kalıp olabilir.
+
+**Değişiklik (içerik):** Format yok. Kuyruğa 1 yeni quiz: **#41 İskandinav, 7...Qxd4 (blunder)** — 8.Qxb7! b7 ve a8
+kalesini birlikte vurur → beyaz +8,5 (validate 0 hata, kapak kontrol edildi).
+
+**Paylaşım:** Brilliant or Blunder #37 (quiz-italian-nxe5, blunder) 22:38 UTC → https://www.instagram.com/reel/Df8K-izv3X0/
+
+**Kalan içerik:** 4 quiz (#38 Fransız İlerleme, #39 Ejderha, #40 İtalyan 4.Nxe5, #41 İskandinav Qxd4) → 21 Kasım
+akşamına kadar.
+
+---
+
 ## 2026-11-18 22:37 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

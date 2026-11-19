@@ -1903,6 +1903,28 @@
     "file": "voice/quiz-italian-white-nxe5/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-scandi-qxd4": {
+   "hook": {
+    "text": "Black's queen grabs d4. Brilliant or blunder?",
+    "file": "voice/quiz-scandi-qxd4/hook-36b1fbaf.mp3",
+    "seconds": 2.943
+   },
+   "step-0": {
+    "text": "Black trades on f3.",
+    "file": "voice/quiz-scandi-qxd4/step-0-44bb1107.mp3",
+    "seconds": 1.278
+   },
+   "step-1": {
+    "text": "Queen takes d4. Brilliant... Or blunder?",
+    "file": "voice/quiz-scandi-qxd4/step-1-f32605cd.mp3",
+    "seconds": 2.621
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-scandi-qxd4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }

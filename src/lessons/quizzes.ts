@@ -633,6 +633,22 @@ export const quizItalianWhiteNxe5: Lesson = {
   takeaways: [],
 };
 
+export const quizScandiQxd4: Lesson = {
+  id: "quiz-scandi-qxd4",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #41",
+  hero: "b",
+  startFen: "rn1qkb1r/ppp1pppp/5n2/8/3P2b1/2N2N1P/PPP2PP1/R1BQKB1R b KQkq - 0 6",
+  hook: ["Black's queen grabs *d4*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Bxf3", "Qxf3"], say: "Black trades on *f3*." },
+    { moves: ["Qxd4"], say: "Queen takes d4. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
@@ -674,4 +690,5 @@ export const QUIZZES: Lesson[] = [
   quizFrenchAdvNxd4,
   quizDragonNxe4,
   quizItalianWhiteNxe5,
+  quizScandiQxd4,
 ];
