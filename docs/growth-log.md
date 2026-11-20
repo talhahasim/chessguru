@@ -10,6 +10,36 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-20 22:37 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #38 (20.11 15:38, Fransız İlerleme 7...Nxd4, ~7 saat) | 14 sn | **148** | **115** | 1 | 0 | 0 | 0 | **5,4 sn** | **%39** |
+| Brilliant or Blunder #37 (19.11 22:38, İtalyan 5...Nxe5) | 14 sn | 1547 | 1031 | 12 | 9 | 0 | 0 | 10,0 sn | %74 |
+| Brilliant or Blunder #36 (18.11 22:37, Fransız Bxh7+) | 14 sn | 1689 | 1078 | 15 | 2 | 0 | 0 | 11,0 sn | %79 |
+
+36 takipçi (değişmedi).
+
+**Teşhis:** #38 bastırıldı (7 saatte 115 erişim) ve bu sefer **izlenme oranı da çok düşük (%39, 5,4 sn)**. Bastırılan
+tüm videoların ilk-test izlenme oranına bakınca bir desen çıkıyor: #19 %25, #21 %52, #25 %42, #38 %39 (yalnız #34 %69
+istisna) — normal videolar %73–84. Yeni hipotez: Instagram videoyu önce küçük bir kitleye gösteriyor; ilk saniyelerde
+izlenme düşükse dağıtımı kesiyor. Düşük izlenenler hep **kalabalık / daha uzun pozisyonlar** (Caro 5 hamle, Staunton,
+Fransız İlerleme 7 hamle); yüksek izlenenler çok kısa, tanıdık açılışlar (İtalyan, İki At, Viyana, London).
+
+**Değişiklik (içerik):** Yok (bu gecenin paylaşımı zaten başlamıştı; tek değişkenli kural). Yeni quiz seçimi bu
+hipoteze göre yapılıyor: 2 yeni çok kısa (3 hamle) quiz eklendi, Stockfish doğrulandı, validate 0 hata, kapaklar
+kontrol edildi:
+- **#43 Philidor, 4.Ng5? (blunder):** f7'ye saldırıyor gibi ama 4...Bxg5 → siyah +6,6.
+- **#44 Vezir Gambiti, 3...Nc6? (blunder):** 4.Qxb7 → beyaz +4,6 (masum görünen gelişim hamlesi).
+
+**Paylaşım:** Brilliant or Blunder #39 (quiz-dragon-nxe4, blunder) 22:39 UTC → https://www.instagram.com/reel/Df-v0UBSc1w/
+
+**Kalan içerik:** 5 quiz (#40 İtalyan 4.Nxe5, #41 İskandinav, #42 Ruy/Bird, #43 Philidor, #44 VG) → 23 Kasım akşamına
+kadar. Sonraki hipotez: #39 Ejderha (9 hamle, kalabalık) düşük ilk izlenme → bastırma riski; #40–#44 (kısa) normal
+erişim alırsa "kalabalık pozisyon = bastırma" güçlenir ve uzun pozisyonlar tamamen bırakılır.
+
+---
+
 ## 2026-11-20 15:37 UTC — planlı inceleme + paylaşım (zamanında)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

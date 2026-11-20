@@ -1947,6 +1947,50 @@
     "file": "voice/quiz-ruy-bird-nxe5/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-philidor-ng5": {
+   "hook": {
+    "text": "White attacks f7. Brilliant or blunder?",
+    "file": "voice/quiz-philidor-ng5/hook-3e387382.mp3",
+    "seconds": 2.64
+   },
+   "step-0": {
+    "text": "Both sides develop.",
+    "file": "voice/quiz-philidor-ng5/step-0-00308241.mp3",
+    "seconds": 1.112
+   },
+   "step-1": {
+    "text": "Knight jumps to g5, eyeing f7. Brilliant... Or blunder?",
+    "file": "voice/quiz-philidor-ng5/step-1-725566fc.mp3",
+    "seconds": 3.89
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-philidor-ng5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-qg-nc6": {
+   "hook": {
+    "text": "Black just develops the knight. Brilliant or blunder?",
+    "file": "voice/quiz-qg-nc6/hook-19a514ed.mp3",
+    "seconds": 2.769
+   },
+   "step-0": {
+    "text": "White's queen comes to b3.",
+    "file": "voice/quiz-qg-nc6/step-0-652e95b5.mp3",
+    "seconds": 1.59
+   },
+   "step-1": {
+    "text": "Knight to c6. Brilliant... Or blunder?",
+    "file": "voice/quiz-qg-nc6/step-1-7671e961.mp3",
+    "seconds": 2.416
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-qg-nc6/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }
