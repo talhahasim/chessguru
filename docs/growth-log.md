@@ -10,6 +10,33 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-20 15:37 UTC — planlı inceleme + paylaşım (zamanında)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #37 (19.11 22:38, İtalyan 5...Nxe5, blunder, ~17 saat) | 14 sn | 1546 | 1029 | 12 | **9** | 0 | 0 | 10,0 sn | %74 |
+| Brilliant or Blunder #36 (18.11 22:37, Fransız Bxh7+, brilliant) | 14 sn | 1689 | 1078 | 15 | 2 | 0 | 0 | 11,0 sn | %79 |
+| Brilliant or Blunder #35 (18.11 15:39, Berlin Nxb5) | 14 sn | 1555 | 1034 | 13 | 5 | 0 | 0 | 9,9 sn | %73 |
+
+36 takipçi (değişmedi). Gece yedek cron'ları yine 6–7 saat gecikmeli çalıştı (23:15, 00:36, 04:18, 08:33) ve
+kurallara göre atladı — ekstra paylaşım yok.
+
+**Teşhis:** Erişim 1030–1080 bandında sabit, bastırma yok. #37 (en basit pozisyon: 4 hamlelik İtalyan, "piyonu geri
+al") 9 yorumla brilliant #36'yı (2) geçti → yorumu belirleyen şey cevap türü değil, izleyicinin "kendi oyunlarında
+yaptığı" hamle olması gibi görünüyor (Kotov 14, İtalyan 9, Réti 11, Traxler 15 — hepsi çok bilinen, kısa açılışlar).
+Paylaşım/kaydetme hâlâ 0, takip sabit.
+
+**Değişiklik (içerik):** Format yok — kuyruk zaten bu profile uyuyor. Bu profile uygun 1 yeni quiz eklendi: **#42 Ruy
+Lopez/Bird, 4.Nxe5 (blunder)** — 4...Qg5! hem e5 atını hem g2'yi vurur → siyah +4,1 (validate 0 hata, kapak kontrol edildi).
+
+**Paylaşım:** Brilliant or Blunder #38 (quiz-french-adv-nxd4, blunder) 15:38 UTC → https://www.instagram.com/reel/Df9_rdptio7/
+
+**Kalan içerik:** 4 quiz (#39 Ejderha, #40 İtalyan 4.Nxe5, #41 İskandinav Qxd4, #42 Ruy/Bird Nxe5) → 22 Kasım
+akşamına kadar. Sonraki
+hipotez: kısa/çok bilinen açılış quiz'leri (≤ 6 hamle) uzun olanlardan daha çok yorum alır — #40, #41, #42 ile test.
+
+---
+
 ## 2026-11-19 22:37 UTC — planlı inceleme + paylaşım (15:35 slotu KAÇTI)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

@@ -1925,6 +1925,28 @@
     "file": "voice/quiz-scandi-qxd4/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-ruy-bird-nxe5": {
+   "hook": {
+    "text": "White takes the e5 pawn. Brilliant or blunder?",
+    "file": "voice/quiz-ruy-bird-nxe5/hook-1e4c0b7c.mp3",
+    "seconds": 2.931
+   },
+   "step-0": {
+    "text": "Black's knight jumps to d4.",
+    "file": "voice/quiz-ruy-bird-nxe5/step-0-1cfddfcc.mp3",
+    "seconds": 1.58
+   },
+   "step-1": {
+    "text": "Knight takes e5. Brilliant... Or blunder?",
+    "file": "voice/quiz-ruy-bird-nxe5/step-1-a2b021c4.mp3",
+    "seconds": 2.625
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-ruy-bird-nxe5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }

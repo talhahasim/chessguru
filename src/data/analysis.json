@@ -5521,6 +5521,55 @@
     "type": "cp",
     "value": 82
    }
+  },
+  "quiz-ruy-bird-nxe5": {
+   "line": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3|f1b5 c6d4 f3e5",
+   "positions": [
+    {
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+     "eval": {
+      "type": "cp",
+      "value": 20
+     },
+     "best": "f1b5",
+     "bestSan": "Bb5",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+     "eval": {
+      "type": "cp",
+      "value": 19
+     },
+     "best": "g8f6",
+     "bestSan": "Nf6",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/pppp1ppp/8/1B2p3/3nP3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+     "eval": {
+      "type": "cp",
+      "value": 55
+     },
+     "best": "f3d4",
+     "bestSan": "Nxd4",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/pppp1ppp/8/1B2N3/3nP3/8/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+     "eval": {
+      "type": "cp",
+      "value": -408
+     },
+     "best": "d4b5",
+     "bestSan": "Nxb5",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 57
+   }
   }
  }
 }

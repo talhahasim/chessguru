@@ -649,6 +649,22 @@ export const quizScandiQxd4: Lesson = {
   takeaways: [],
 };
 
+export const quizRuyBirdNxe5: Lesson = {
+  id: "quiz-ruy-bird-nxe5",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #42",
+  hero: "w",
+  startFen: "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+  hook: ["White takes the *e5* pawn.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Bb5", "Nd4"], say: "Black's knight jumps to *d4*." },
+    { moves: ["Nxe5"], say: "Knight takes e5. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
@@ -691,4 +707,5 @@ export const QUIZZES: Lesson[] = [
   quizDragonNxe4,
   quizItalianWhiteNxe5,
   quizScandiQxd4,
+  quizRuyBirdNxe5,
 ];
