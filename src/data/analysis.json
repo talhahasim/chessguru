@@ -5678,6 +5678,55 @@
     "type": "cp",
     "value": 74
    }
+  },
+  "quiz-scholar-qb3": {
+   "line": "r1bqkbnr/pppp1p1p/2n3p1/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4|h5f3 g8f6 f3b3",
+   "positions": [
+    {
+     "fen": "r1bqkbnr/pppp1p1p/2n3p1/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
+     "eval": {
+      "type": "cp",
+      "value": -31
+     },
+     "best": "h5f3",
+     "bestSan": "Qf3",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/pppp1p1p/2n3p1/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR b KQkq - 1 4",
+     "eval": {
+      "type": "cp",
+      "value": -28
+     },
+     "best": "g8f6",
+     "bestSan": "Nf6",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkb1r/pppp1p1p/2n2np1/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR w KQkq - 2 5",
+     "eval": {
+      "type": "cp",
+      "value": -27
+     },
+     "best": "g1e2",
+     "bestSan": "Ne2",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkb1r/pppp1p1p/2n2np1/4p3/2B1P3/1Q6/PPPP1PPP/RNB1K1NR b KQkq - 3 5",
+     "eval": {
+      "type": "cp",
+      "value": -614
+     },
+     "best": "c6d4",
+     "bestSan": "Nd4",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": -27
+   }
   }
  }
 }

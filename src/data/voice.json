@@ -1991,6 +1991,28 @@
     "file": "voice/quiz-qg-nc6/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-scholar-qb3": {
+   "hook": {
+    "text": "White hits f7 again. Brilliant or blunder?",
+    "file": "voice/quiz-scholar-qb3/hook-78860bb4.mp3",
+    "seconds": 2.82
+   },
+   "step-0": {
+    "text": "Black blocks the queen.",
+    "file": "voice/quiz-scholar-qb3/step-0-7cb39420.mp3",
+    "seconds": 1.227
+   },
+   "step-1": {
+    "text": "Queen to b3, hitting f7. Brilliant... Or blunder?",
+    "file": "voice/quiz-scholar-qb3/step-1-df3e6dd3.mp3",
+    "seconds": 3.386
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-scholar-qb3/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }

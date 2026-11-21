@@ -697,6 +697,22 @@ export const quizQgNc6: Lesson = {
   takeaways: [],
 };
 
+export const quizScholarQb3: Lesson = {
+  id: "quiz-scholar-qb3",
+  kind: "quiz",
+  answer: "blunder",
+  band: "0-300",
+  title: "Brilliant or Blunder #45",
+  hero: "w",
+  startFen: "r1bqkbnr/pppp1p1p/2n3p1/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
+  hook: ["White hits *f7* again.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Qf3", "Nf6"], say: "Black blocks the queen." },
+    { moves: ["Qb3"], say: "Queen to b3, hitting f7. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
@@ -742,4 +758,5 @@ export const QUIZZES: Lesson[] = [
   quizRuyBirdNxe5,
   quizPhilidorNg5,
   quizQgNc6,
+  quizScholarQb3,
 ];

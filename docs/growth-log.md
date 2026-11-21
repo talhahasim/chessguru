@@ -10,6 +10,34 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-21 15:37 UTC — planlı inceleme + paylaşım (zamanında)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #39 (20.11 22:39, Sicilya Ejderha 9...Nxe4, ~17 saat) | 14 sn | 1517 | 1095 | **1** | 2 | 0 | 1 | **7,8 sn** | **%56** |
+| Brilliant or Blunder #38 (20.11 15:38, Fransız İlerleme 7...Nxd4) | 14 sn | 154 | 119 | 1 | 0 | 0 | 0 | 5,3 sn | %39 |
+| Brilliant or Blunder #37 (19.11 22:38, İtalyan 5...Nxe5) | 14 sn | 1548 | 1031 | 12 | 9 | 0 | 0 | 10,0 sn | %74 |
+
+**37 takipçi (+1).** Gece yedek cron'ları yine geç çalıştı (22:50, 23:58, 04:17, 08:17) ve atladı — ekstra paylaşım yok.
+
+**Teşhis:** #39 Ejderha (9 hamle, kalabalık tahta) bastırılmadı (1095 erişim) ama **izlenme %56 ve sadece 1 beğeni** —
+kanaldaki en düşük etkileşim. #38 (Fransız İlerleme 7 hamle) %39. Kısa/tanıdık açılışlar ise %73–84 ve 12–15 beğeni.
+"Kalabalık/uzun pozisyon = düşük izlenme ve etkileşim" hipotezi iki ardışık testle güçlendi. Bastırma bununla kısmen
+ilişkili görünüyor (düşük ilk izlenme), ama #39 bastırılmadığı için kesin değil.
+
+**Değişiklik (içerik):** Kod/format değişikliği yok. **Seçim kuralı:** bundan sonra quiz'ler en fazla ~4 hamlelik, tanıdık
+açılışlardan seçilecek (uzun pozisyonlar bırakıldı). Kuyruktakiler (#40 İtalyan 4 hamle, #41 İskandinav 7 hamle —
+tek istisna, #42–#44 3 hamle) zaten çoğunlukla uyuyor. Bu kurala göre 1 yeni quiz eklendi: **#45 Çoban matı kurulumu, 5.Qb3? (blunder)** — 5...Nd4!
+vezir ve c2'yi vurur → siyah +6,1 (validate 0 hata; kapakta ilk satır taşıyordu → hook "White hits *f7* again." olarak
+kısaltıldı, ses yeniden üretildi).
+
+**Paylaşım:** Brilliant or Blunder #40 (quiz-italian-white-nxe5, blunder) 15:38 UTC → https://www.instagram.com/reel/DgAkcdGBuf3/
+
+**Kalan içerik:** 5 quiz (#41 İskandinav, #42 Ruy/Bird, #43 Philidor, #44 VG, #45 Çoban Qb3) → 24 Kasım sabahına kadar.
+Sonraki hipotez: #40 ve #42–#44 (kısa) %70+ izlenme ve 10+ beğeni alır; #41 (7 hamle) daha düşük kalır.
+
+---
+
 ## 2026-11-20 22:37 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
