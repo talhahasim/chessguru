@@ -10,6 +10,31 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-21 22:37 UTC — planlı inceleme (paylaşım yedek cron'la 21:56'da gitti)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #40** (21.11 15:38, İtalyan 4.Nxe5, **4 hamle**, ~7 saat) | 13 sn | 1937 | 1164 | 12 | 7 | **1** | **1** | **11,6 sn** | **%87** |
+| Brilliant or Blunder #39 (20.11 22:39, Ejderha, 9 hamle) | 14 sn | 1530 | 1105 | 1 | 2 | 0 | 1 | 7,7 sn | %56 |
+| Brilliant or Blunder #38 (20.11 15:38, Fransız İlerleme, 7 hamle) | 14 sn | 156 | 121 | 1 | 0 | 0 | 0 | 5,2 sn | %38 |
+
+37 takipçi.
+
+**Paylaşım notu:** 18.11'in 16:47 yedek cron'u bugün 21:55'te (5 saat gecikmeyle) çalıştı; son paylaşımdan 6 saat geçtiği
+için #41'i 21:56'da paylaştı → https://www.instagram.com/reel/DgBPym7zcyy/ (quiz-scandi-qxd4). 22:36'daki planlı
+dispatch "son paylaşım 0,7 saat önce" diye doğru şekilde atladı. Günde 2 paylaşım korundu.
+
+**Teşhis:** Hipotez güçlü biçimde doğrulandı: **#40 (4 hamlelik İtalyan) %87 izlenme** — #10'dan beri en yüksek oran,
+7 saatte 1164 erişim, ayrıca ilk paylaşım ve kaydetme. Aynı günlerde uzun pozisyonlar %38 (#38) ve %56 (#39).
+Kısa/tanıdık pozisyon kuralı doğru yön.
+
+**Değişiklik (içerik):** Yok (kural zaten uygulanıyor; kuyrukta #42–#45 hepsi 3 hamle).
+
+**Kalan içerik:** 4 quiz (#42 Ruy/Bird, #43 Philidor, #44 VG, #45 Çoban Qb3) → 23 Kasım akşamına kadar. Sonraki
+hipotez: 3 hamlelik quiz'ler de %80+ izlenme alır; paylaşım/kaydetme artmaya başlar.
+
+---
+
 ## 2026-11-21 15:37 UTC — planlı inceleme + paylaşım (zamanında)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
