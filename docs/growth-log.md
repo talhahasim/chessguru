@@ -10,6 +10,34 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-22 15:37 UTC — planlı inceleme + paylaşım (zamanında)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #41 (21.11 21:56, İskandinav 7...Qxd4, **7 hamle**, ~18 saat) | 14 sn | 180 | **122** | 2 | 1 | 0 | 1 | 8,8 sn | %65 |
+| **Brilliant or Blunder #40** (21.11 15:38, İtalyan 4.Nxe5, 4 hamle) | 13 sn | 1983 | 1178 | 12 | 8 | 1 | 1 | 11,7 sn | **%88** |
+| Brilliant or Blunder #39 (20.11 22:39, Ejderha, 9 hamle) | 14 sn | 1530 | 1105 | 1 | 2 | 0 | 1 | 7,7 sn | %56 |
+
+37 takipçi.
+
+**Teşhis:** #41 (7 hamlelik İskandinav — kuyruktaki tek uzun pozisyon) bastırıldı: 18 saatte 122 erişim, %65 izlenme.
+Son 4 uzun pozisyonun (≥ 7 hamle) 2'si bastırıldı (#38, #41), 1'i çok düşük izlendi (#39 %56); kısa olan #40 %88.
+Ayrıca #41 yedek cron'la 21:56'da gitti (planlı 22:37 değil) — saat de etkilemiş olabilir ama tek örnek.
+"Kısa pozisyon" kuralı (≤ 4 hamle) artık kesin uygulanıyor; kuyrukta uzun pozisyon kalmadı.
+
+**Değişiklik (içerik):** Format yok. Kurala uygun 2 yeni 3 hamlelik quiz eklendi (Stockfish doğrulandı, validate 0 hata,
+kapaklar kontrol edildi):
+- **#46 İtalyan, 4.Bxf7+? (blunder, "Jerome gambiti"):** fil fedası kazanmıyor → siyah +4,4. İzleyici "brilliant mı?"
+  diye düşünecek — yorum testi.
+- **#47 Philidor, 4.Nxe5? (3...h6'dan sonra, blunder):** 4...dxe5 → siyah +5,7.
+
+**Paylaşım:** Brilliant or Blunder #42 (quiz-ruy-bird-nxe5, blunder, 3 hamle) 15:38 UTC → https://www.instagram.com/reel/DgDJTSkBPzu/
+
+**Kalan içerik:** 5 quiz (#43 Philidor Ng5, #44 VG Nc6, #45 Çoban Qb3, #46 Jerome Bxf7+, #47 Philidor Nxe5) →
+24 Kasım akşamına kadar. Sonraki hipotez: 3 hamlelik quiz'ler bastırılmaz ve %80+ izlenir.
+
+---
+
 ## 2026-11-21 22:37 UTC — planlı inceleme (paylaşım yedek cron'la 21:56'da gitti)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

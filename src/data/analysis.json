@@ -5727,6 +5727,104 @@
     "type": "cp",
     "value": -27
    }
+  },
+  "quiz-jerome-bxf7": {
+   "line": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3|f1c4 f8c5 c4f7",
+   "positions": [
+    {
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+     "eval": {
+      "type": "cp",
+      "value": 20
+     },
+     "best": "f1b5",
+     "bestSan": "Bb5",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+     "eval": {
+      "type": "cp",
+      "value": 20
+     },
+     "best": "g8f6",
+     "bestSan": "Nf6",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+     "eval": {
+      "type": "cp",
+      "value": 19
+     },
+     "best": "e1g1",
+     "bestSan": "O-O",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqk1nr/pppp1Bpp/2n5/2b1p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+     "eval": {
+      "type": "cp",
+      "value": -436
+     },
+     "best": "e8f7",
+     "bestSan": "Kxf7",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 19
+   }
+  },
+  "quiz-philidor-nxe5": {
+   "line": "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3|f1c4 h7h6 f3e5",
+   "positions": [
+    {
+     "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+     "eval": {
+      "type": "cp",
+      "value": 54
+     },
+     "best": "d2d4",
+     "bestSan": "d4",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 1 3",
+     "eval": {
+      "type": "cp",
+      "value": 26
+     },
+     "best": "g8f6",
+     "bestSan": "Nf6",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqkbnr/ppp2pp1/3p3p/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+     "eval": {
+      "type": "cp",
+      "value": 70
+     },
+     "best": "d2d4",
+     "bestSan": "d4",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqkbnr/ppp2pp1/3p3p/4N3/2B1P3/8/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+     "eval": {
+      "type": "cp",
+      "value": -565
+     },
+     "best": "d6e5",
+     "bestSan": "dxe5",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 66
+   }
   }
  }
 }

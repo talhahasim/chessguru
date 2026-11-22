@@ -2013,6 +2013,50 @@
     "file": "voice/quiz-scholar-qb3/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-jerome-bxf7": {
+   "hook": {
+    "text": "White gives up the bishop! Brilliant or blunder?",
+    "file": "voice/quiz-jerome-bxf7/hook-eed628b9.mp3",
+    "seconds": 2.491
+   },
+   "step-0": {
+    "text": "Both bishops come out.",
+    "file": "voice/quiz-jerome-bxf7/step-0-2aeaeb57.mp3",
+    "seconds": 1.227
+   },
+   "step-1": {
+    "text": "Bishop takes f7, check! Brilliant... Or blunder?",
+    "file": "voice/quiz-jerome-bxf7/step-1-c4273933.mp3",
+    "seconds": 2.969
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-jerome-bxf7/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-philidor-nxe5": {
+   "hook": {
+    "text": "White grabs the e5 pawn. Brilliant or blunder?",
+    "file": "voice/quiz-philidor-nxe5/hook-3221bea5.mp3",
+    "seconds": 2.978
+   },
+   "step-0": {
+    "text": "Black plays a slow pawn move.",
+    "file": "voice/quiz-philidor-nxe5/step-0-51ab50e6.mp3",
+    "seconds": 1.494
+   },
+   "step-1": {
+    "text": "Knight takes e5. Brilliant... Or blunder?",
+    "file": "voice/quiz-philidor-nxe5/step-1-a2b021c4.mp3",
+    "seconds": 2.625
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-philidor-nxe5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }
