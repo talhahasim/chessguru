@@ -10,6 +10,33 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-22 22:37 UTC — planlı inceleme (paylaşım yedek cron'la 22:12'de gitti)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #42 (22.11 15:38, Ruy/Bird 4.Nxe5, 3 hamle, ~7 saat) | 14 sn | 1639 | 1074 | 8 | 7 | 0 | 0 | 10,0 sn | %72 |
+| Brilliant or Blunder #41 (21.11 21:56, İskandinav, 7 hamle) | 14 sn | 183 | 123 | 2 | 1 | 0 | 1 | 8,9 sn | %65 |
+| Brilliant or Blunder #40 (21.11 15:38, İtalyan 4.Nxe5, 4 hamle) | 13 sn | 1985 | 1178 | 12 | 8 | 1 | 1 | 11,7 sn | %88 |
+
+37 takipçi.
+
+**Paylaşım notu:** 16:47 yedek cron'u yine ~5,5 saat gecikmeyle 22:09'da çalıştı ve #43'ü paylaştı (quiz-philidor-ng5,
+22:12 UTC → https://www.instagram.com/reel/DgD2S7SBGYx/). 22:36 dispatch doğru şekilde atladı. Son iki gecedir
+akşam paylaşımı fiilen ~22:00'de cron'la gidiyor.
+
+**Teşhis:** #42 (3 hamle) bastırılmadı, 7 saatte 1074 erişim, %72 izlenme, 7 yorum — normal bant. Kısa pozisyonlar
+bastırılmıyor (#40, #42); uzunlar bastırıldı (#38, #41). Kural çalışıyor. #42'nin izlenmesi #40'tan düşük (%72 vs
+%88) — Ruy/Bird'de "neden bu hamle kötü" daha az açık olabilir.
+
+**Değişiklik (içerik):** Format yok. Kurala uygun 1 yeni quiz: **#48 Fil Açılışı, 3...g6?? (blunder)** — 4.Qxe5+ şahı
+ve h8 kalesini çatallar → beyaz +8,9 (validate 0 hata; kapakta ilk satır taşıyordu → hook "Black attacks the *queen*."
+olarak değiştirildi, ses yeniden üretildi, kapak tekrar kontrol edildi).
+
+**Kalan içerik:** 5 quiz (#44 VG Nc6, #45 Çoban Qb3, #46 Jerome Bxf7+, #47 Philidor Nxe5, #48 Fil Açılışı g6) →
+25 Kasım sabahına kadar.
+
+---
+
 ## 2026-11-22 15:37 UTC — planlı inceleme + paylaşım (zamanında)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

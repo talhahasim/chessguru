@@ -5825,6 +5825,65 @@
     "type": "cp",
     "value": 66
    }
+  },
+  "quiz-bishops-g6": {
+   "line": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2|f1c4 f8c5 d1h5 g7g6",
+   "positions": [
+    {
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+     "eval": {
+      "type": "cp",
+      "value": 24
+     },
+     "best": "g1f3",
+     "bestSan": "Nf3",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq - 1 2",
+     "eval": {
+      "type": "cp",
+      "value": -8
+     },
+     "best": "g8f6",
+     "bestSan": "Nf6",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqk1nr/pppp1ppp/8/2b1p3/2B1P3/8/PPPP1PPP/RNBQK1NR w KQkq - 2 3",
+     "eval": {
+      "type": "cp",
+      "value": 11
+     },
+     "best": "g1f3",
+     "bestSan": "Nf3",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqk1nr/pppp1ppp/8/2b1p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 3 3",
+     "eval": {
+      "type": "cp",
+      "value": -10
+     },
+     "best": "d8e7",
+     "bestSan": "Qe7",
+     "depth": 20
+    },
+    {
+     "fen": "rnbqk1nr/pppp1p1p/6p1/2b1p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
+     "eval": {
+      "type": "cp",
+      "value": 886
+     },
+     "best": "h5e5",
+     "bestSan": "Qxe5+",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": -10
+   }
   }
  }
 }

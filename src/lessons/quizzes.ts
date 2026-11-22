@@ -745,6 +745,22 @@ export const quizPhilidorNxe5: Lesson = {
   takeaways: [],
 };
 
+export const quizBishopsG6: Lesson = {
+  id: "quiz-bishops-g6",
+  kind: "quiz",
+  answer: "blunder",
+  band: "0-300",
+  title: "Brilliant or Blunder #48",
+  hero: "b",
+  startFen: "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+  hook: ["Black attacks the *queen*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Bc4", "Bc5", "Qh5"], say: "White's queen comes out early." },
+    { moves: ["g6"], say: "Pawn to g6 hits the queen. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
@@ -793,4 +809,5 @@ export const QUIZZES: Lesson[] = [
   quizScholarQb3,
   quizJeromeBxf7,
   quizPhilidorNxe5,
+  quizBishopsG6,
 ];
