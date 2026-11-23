@@ -761,6 +761,22 @@ export const quizBishopsG6: Lesson = {
   takeaways: [],
 };
 
+export const quizVeresovNxd5: Lesson = {
+  id: "quiz-veresov-nxd5",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #49",
+  hero: "w",
+  startFen: "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+  hook: ["White grabs the *d5* pawn.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Nc3", "d5", "Bg5", "Nbd7"], say: "White pins the knight on *f6*." },
+    { moves: ["Nxd5"], say: "Knight takes d5. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
@@ -810,4 +826,5 @@ export const QUIZZES: Lesson[] = [
   quizJeromeBxf7,
   quizPhilidorNxe5,
   quizBishopsG6,
+  quizVeresovNxd5,
 ];

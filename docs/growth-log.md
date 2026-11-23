@@ -10,6 +10,28 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-23 22:37 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #44 (23.11 15:38, VG 3...Nc6?, 3 hamle, ~7 saat) | 14 sn | 1602 | 1078 | 8 | 4 | 0 | 0 | 9,7 sn | %72 |
+| **Brilliant or Blunder #43** (22.11 22:11, Philidor 4.Ng5?) | 15 sn | 1899 | 1238 | 10 | 11 | 1 | 0 | 11,0 sn | %76 |
+| Brilliant or Blunder #42 (22.11 15:38, Ruy/Bird 4.Nxe5) | 14 sn | 1644 | 1081 | 8 | 7 | 0 | 0 | 10,0 sn | %72 |
+
+**Teşhis:** Kısa pozisyon serisi 4/4 bastırılmadı (#40, #42, #43, #44), hepsi %72–88 izlenme ve 1080–1240 erişim.
+#44 (masum gelişim hamlesi Nc6) yorumda zayıf (4) — "bedava saldırı/taş kapma" hamleleri (#43 Ng5: 11, #37: 9) daha
+çok yorum alıyor; sessiz gelişim hamleleri daha az tartışma yaratıyor. Paylaşım/kaydetme hâlâ ~0, takip 37 civarı.
+
+**Değişiklik (içerik):** Format yok. Kuyruğa 1 yeni kısa quiz: **#49 Veresov, 4.Nxd5? (blunder)** — fil açmazına rağmen
+d5'i almak taş kaybettirir → siyah +3,6 (validate 0 hata, kapak kontrol edildi).
+
+**Paylaşım:** Brilliant or Blunder #45 (quiz-scholar-qb3, blunder, 3 hamle) 22:39 UTC → https://www.instagram.com/reel/DgGeNU2h719/
+
+**Kalan içerik:** 4 quiz (#46 Jerome Bxf7+, #47 Philidor Nxe5, #48 Fil Açılışı g6, #49 Veresov Nxd5) → 25 Kasım
+akşamına kadar. Sonraki hipotez: "taş kapma / feda" hamleleri (#46, #47, #49) sessiz hamlelerden daha çok yorum alır.
+
+---
+
 ## 2026-11-23 15:37 UTC — planlı inceleme + paylaşım (zamanında)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
