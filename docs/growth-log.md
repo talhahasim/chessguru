@@ -10,6 +10,28 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-23 15:37 UTC — planlı inceleme + paylaşım (zamanında)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Brilliant or Blunder #43** (22.11 22:11, Philidor 4.Ng5?, 3 hamle, ~17 saat) | 15 sn | 1894 | **1235** | 10 | **11** | **1** | 0 | 11,0 sn | %76 |
+| Brilliant or Blunder #42 (22.11 15:38, Ruy/Bird 4.Nxe5, 3 hamle) | 14 sn | 1643 | 1079 | 8 | 7 | 0 | 0 | 10,0 sn | %72 |
+| Brilliant or Blunder #41 (21.11 21:56, İskandinav, 7 hamle) | 14 sn | 183 | 123 | 2 | 1 | 0 | 1 | 8,9 sn | %65 |
+
+**Teşhis:** Kısa pozisyon serisi istikrarlı: #40 %88, #42 %72, #43 %76 — hiçbiri bastırılmadı. #43, #31'den bu yana
+en yüksek erişim (1235) ve 11 yorum + 1 paylaşım aldı. #43 de yedek cron'la ~22:11'de gitti ve normal dağıldı → #41'in
+bastırılması saatten değil, uzun pozisyondan. "Bedava saldırı gibi görünen ama taş kaybettiren" hamleler (Ng5, Nxe5)
+yorum çekiyor.
+
+**Değişiklik (içerik):** Yok (kural çalışıyor; tek değişken).
+
+**Paylaşım:** Brilliant or Blunder #44 (quiz-qg-nc6, blunder, 3 hamle) 15:38 UTC → https://www.instagram.com/reel/DgFuGWoMFvp/
+
+**Kalan içerik:** 4 quiz (#45 Çoban Qb3, #46 Jerome Bxf7+, #47 Philidor Nxe5, #48 Fil Açılışı g6) → 25 Kasım
+akşamına kadar. Sonraki hipotez: #46 Jerome (fedalı, "brilliant mı?" tartışması) yorumda #43'ü geçer.
+
+---
+
 ## 2026-11-22 22:37 UTC — planlı inceleme (paylaşım yedek cron'la 22:12'de gitti)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
