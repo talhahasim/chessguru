@@ -26,7 +26,7 @@ gelir). Takipçi büyümesi kısa pozisyon kuralından sonra hızlandı (günde 
 
 **Değişiklik (içerik):** Yok (kural çalışıyor; tek değişken, yeterli kuyruk).
 
-**Paylaşım:** Brilliant or Blunder #47 (quiz-philidor-nxe5) 22:37 UTC dispatch edildi — link bir sonraki girişte.
+**Paylaşım:** Brilliant or Blunder #47 (quiz-philidor-nxe5, blunder, 3 hamle) 22:39 UTC → https://www.instagram.com/reel/DgJC_blgzQl/
 
 **Kalan içerik:** 4 quiz (#48 Fil Açılışı g6, #49 Veresov, #50 Ruy Nxe5, #51 Erken vezir Qxe5) → 26 Kasım akşamına kadar.
 
