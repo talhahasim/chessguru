@@ -10,6 +10,31 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-24 15:37 UTC — planlı inceleme + paylaşım (zamanında)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #45 (23.11 22:39, Çoban kurulumu 5.Qb3?, 3 hamle, ~17 saat) | 14 sn | 1713 | 1085 | 9 | 7 | 0 | 0 | 11,5 sn | **%81** |
+| Brilliant or Blunder #44 (23.11 15:38, VG 3...Nc6?) | 14 sn | 1615 | 1088 | 8 | 4 | 0 | 0 | 9,8 sn | %72 |
+| Brilliant or Blunder #43 (22.11 22:11, Philidor 4.Ng5?) | 15 sn | 1903 | 1240 | 10 | 11 | 1 | 0 | 11,0 sn | %76 |
+
+**39 takipçi (+2, iki günde).**
+
+**Teşhis:** Kısa pozisyon serisi 5/5 bastırılmadı (#40, #42–#45), izlenme %72–88, erişim 1080–1240. Takipçi yeniden
+artmaya başladı (37 → 39). Yorum: saldırgan/taş kapma hamleleri (Ng5 11, Qb3 7) sessiz hamlelerden (Nc6 4) fazla.
+Paylaşım/kaydetme hâlâ en zayıf kaldıraç (~0).
+
+**Değişiklik (içerik):** Format yok. Kuyruğa 2 yeni kısa quiz (Stockfish doğrulandı, validate 0 hata, kapaklar kontrol edildi):
+- **#50 Ruy Lopez, 6.Nxe5? (blunder):** 6...Qd4! e5 atını ve f2'yi birlikte vurur → siyah +5,6.
+- **#51 Erken vezir, 4.Qxe5?? (blunder):** e5 Qe7 ile korunuyor; vezir gider → siyah +9,4.
+
+**Paylaşım:** Brilliant or Blunder #46 (quiz-jerome-bxf7, blunder, 3 hamle) 15:38 UTC → https://www.instagram.com/reel/DgIS5nPhSHy/
+
+**Kalan içerik:** 5 quiz (#47 Philidor Nxe5, #48 Fil Açılışı g6, #49 Veresov, #50 Ruy Nxe5, #51 Erken vezir Qxe5) →
+27 Kasım sabahına kadar.
+
+---
+
 ## 2026-11-23 22:37 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
