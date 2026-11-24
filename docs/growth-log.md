@@ -10,6 +10,28 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-24 22:37 UTC — planlı inceleme + paylaşım
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #46 (24.11 15:38, Jerome 4.Bxf7+?, 3 hamle, ~7 saat) | 14 sn | 1825 | 1184 | **13** | 4 | 0 | 0 | 10,7 sn | %78 |
+| Brilliant or Blunder #45 (23.11 22:39, Çoban 5.Qb3?) | 14 sn | 1721 | 1085 | 9 | 7 | 0 | 0 | 11,5 sn | %81 |
+| Brilliant or Blunder #44 (23.11 15:38, VG 3...Nc6?) | 14 sn | 1617 | 1088 | 8 | 4 | 0 | 0 | 9,8 sn | %72 |
+
+**40 takipçi (+1; 3 günde 37 → 40).**
+
+**Teşhis:** Kısa pozisyon serisi 6/6 bastırılmadı; #46 7 saatte 1184 erişim, %78 izlenme, 13 beğeni (serinin en yüksek
+beğenisi) ama yorum 4 — "feda = tartışma = yorum" hipotezi henüz tutmadı (7 saatlik veri; yorumlar genelde ilk günde
+gelir). Takipçi büyümesi kısa pozisyon kuralından sonra hızlandı (günde ~1).
+
+**Değişiklik (içerik):** Yok (kural çalışıyor; tek değişken, yeterli kuyruk).
+
+**Paylaşım:** Brilliant or Blunder #47 (quiz-philidor-nxe5) 22:37 UTC dispatch edildi — link bir sonraki girişte.
+
+**Kalan içerik:** 4 quiz (#48 Fil Açılışı g6, #49 Veresov, #50 Ruy Nxe5, #51 Erken vezir Qxe5) → 26 Kasım akşamına kadar.
+
+---
+
 ## 2026-11-24 15:37 UTC — planlı inceleme + paylaşım (zamanında)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
