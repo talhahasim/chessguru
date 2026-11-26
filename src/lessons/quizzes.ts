@@ -809,6 +809,38 @@ export const quizEarlyQueenQxe5: Lesson = {
   takeaways: [],
 };
 
+export const quizCaroQxd4: Lesson = {
+  id: "quiz-caro-qxd4",
+  kind: "quiz",
+  answer: "blunder",
+  band: "300-600",
+  title: "Brilliant or Blunder #52",
+  hero: "b",
+  startFen: "rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+  hook: ["Black's queen grabs *d4*.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Nf6", "Qd3"], say: "White's queen guards *d4*." },
+    { moves: ["Qxd4"], say: "Queen takes d4 anyway. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
+export const quizQe7Nxe5: Lesson = {
+  id: "quiz-qe7-nxe5",
+  kind: "quiz",
+  answer: "blunder",
+  band: "0-300",
+  title: "Brilliant or Blunder #53",
+  hero: "w",
+  startFen: "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+  hook: ["White takes the *e5* pawn.", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Nf3", "Qe7"], say: "Black's queen comes out early." },
+    { moves: ["Nxe5"], say: "Knight takes e5. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
@@ -861,4 +893,6 @@ export const QUIZZES: Lesson[] = [
   quizVeresovNxd5,
   quizRuyNxe5Qd4,
   quizEarlyQueenQxe5,
+  quizCaroQxd4,
+  quizQe7Nxe5,
 ];

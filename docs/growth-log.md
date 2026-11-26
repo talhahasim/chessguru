@@ -10,6 +10,36 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-26 22:37 UTC — planlı inceleme + paylaşım (25.11 15:35 → 26.11 15:35 arası 3 inceleme KAÇTI)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #48 (26.11 00:44, Fil Açılışı 3...g6??, 3 hamle, ~22 saat) | 14 sn | 1600 | 1069 | 10 | 8 | 0 | 0 | 10,2 sn | %70 |
+| Brilliant or Blunder #47 (24.11 22:38, Philidor 4.Nxe5?) | 14 sn | 1642 | 1088 | 9 | 4 | 0 | 0 | 10,2 sn | %74 |
+| Brilliant or Blunder #46 (24.11 15:38, Jerome 4.Bxf7+?) | 14 sn | 1833 | 1191 | 13 | 4 | 0 | 0 | 10,7 sn | %78 |
+
+**38 takipçi (−2).**
+
+**Kaçan slotlar:** 25.11 15:35, 25.11 22:35 ve 26.11 15:35 incelemeleri oturuma ~1 gün geç ulaştı (oturum erişilemezdi).
+Yedek cron'lar 5–7 saat gecikmeli çalıştı ve neredeyse hepsi sessiz saat / 6 saat kuralıyla atladı; sadece #48'i
+26.11 00:44'te paylaştı. Sonuç: 24.11 22:38 → 26.11 22:38 arasında **48 saatte yalnız 1 paylaşım** (normal 4). Takipçi
+40 → 38 düştü. Bu, en büyük sorun: oturum erişilemezken paylaşım güvencesi yok. Önerilen kalıcı çözüm owner'a iletildi
+(dış zamanlayıcı: örn. cron-job.org ile `post-reel.yml` workflow_dispatch'i 15:40 / 22:40 UTC'de tetiklemek).
+
+**Teşhis:** Kısa pozisyon serisi 8/8 bastırılmadı (%70–88). İçerik tarafı istikrarlı; büyümeyi frenleyen şey paylaşım
+sürekliliği. Yorum okuma: `reply-comments` her Reel için 0 yorum görüyor (Meta uygulaması Development modunda) —
+owner'a Chrome uzantısı talimatı verildi, sonuç bekleniyor.
+
+**Değişiklik (içerik):** Format yok. Kuyruk bitmek üzereydi → 2 yeni kısa quiz (validate 0 hata, kapaklar kontrol edildi):
+- **#52 Caro-Kann, 5...Qxd4?? (blunder):** d4 Qd3 ile korunuyor; vezir gider → beyaz +9,6.
+- **#53 Erken vezir, 3.Nxe5? (2...Qe7'den sonra, blunder):** 3...d6 ile at kaçarken Qxe4+ gelir → siyah +4,0.
+
+**Paylaşım:** Brilliant or Blunder #49 (quiz-veresov-nxd5, blunder, 3 hamle) 22:38 UTC → https://www.instagram.com/reel/DgOMiqHSFtG/
+
+**Kalan içerik:** 4 quiz (#50 Ruy Nxe5, #51 Erken vezir Qxe5, #52 Caro Qxd4, #53 Qe7 Nxe5) → 28 Kasım akşamına kadar.
+
+---
+
 ## 2026-11-24 22:37 UTC — planlı inceleme + paylaşım
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

@@ -2145,6 +2145,50 @@
     "file": "voice/quiz-early-queen-qxe5/cta-770325e1.mp3",
     "seconds": 3.615
    }
+  },
+  "quiz-caro-qxd4": {
+   "hook": {
+    "text": "Black's queen grabs d4. Brilliant or blunder?",
+    "file": "voice/quiz-caro-qxd4/hook-36b1fbaf.mp3",
+    "seconds": 2.943
+   },
+   "step-0": {
+    "text": "White's queen guards d4.",
+    "file": "voice/quiz-caro-qxd4/step-0-9dae4642.mp3",
+    "seconds": 1.548
+   },
+   "step-1": {
+    "text": "Queen takes d4 anyway. Brilliant... Or blunder?",
+    "file": "voice/quiz-caro-qxd4/step-1-d11a6c66.mp3",
+    "seconds": 2.992
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-caro-qxd4/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
+  },
+  "quiz-qe7-nxe5": {
+   "hook": {
+    "text": "White takes the e5 pawn. Brilliant or blunder?",
+    "file": "voice/quiz-qe7-nxe5/hook-1e4c0b7c.mp3",
+    "seconds": 2.931
+   },
+   "step-0": {
+    "text": "Black's queen comes out early.",
+    "file": "voice/quiz-qe7-nxe5/step-0-cd5e4c0a.mp3",
+    "seconds": 1.438
+   },
+   "step-1": {
+    "text": "Knight takes e5. Brilliant... Or blunder?",
+    "file": "voice/quiz-qe7-nxe5/step-1-a2b021c4.mp3",
+    "seconds": 2.625
+   },
+   "cta": {
+    "text": "Brilliant or blunder? Comment your answer. I reply to everyone!",
+    "file": "voice/quiz-qe7-nxe5/cta-770325e1.mp3",
+    "seconds": 3.615
+   }
   }
  }
 }
