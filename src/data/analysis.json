@@ -6169,6 +6169,55 @@
     "type": "cp",
     "value": 102
    }
+  },
+  "quiz-italian-ng5-hang": {
+   "line": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3|f1c4 f8c5 f3g5",
+   "positions": [
+    {
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+     "eval": {
+      "type": "cp",
+      "value": 20
+     },
+     "best": "f1b5",
+     "bestSan": "Bb5",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+     "eval": {
+      "type": "cp",
+      "value": 20
+     },
+     "best": "g8f6",
+     "bestSan": "Nf6",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+     "eval": {
+      "type": "cp",
+      "value": 19
+     },
+     "best": "e1g1",
+     "bestSan": "O-O",
+     "depth": 20
+    },
+    {
+     "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p1N1/2B1P3/8/PPPP1PPP/RNBQK2R b KQkq - 5 4",
+     "eval": {
+      "type": "cp",
+      "value": -663
+     },
+     "best": "d8g5",
+     "bestSan": "Qxg5",
+     "depth": 20
+    }
+   ],
+   "quizAlt": {
+    "type": "cp",
+    "value": 20
+   }
   }
  }
 }

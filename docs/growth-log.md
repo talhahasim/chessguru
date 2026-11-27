@@ -10,6 +10,29 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-27 22:37 UTC — planlı inceleme + paylaşım (zamanında)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #50 (27.11 15:38, Ruy 6.Nxe5?, 1.e4, ~7 saat) | 14 sn | 1694 | 1114 | 5 | 7 | 0 | **2** | 10,1 sn | %75 |
+| Brilliant or Blunder #49 (26.11 22:38, Veresov 4.Nxd5?, 1.d4) | 15 sn | 1632 | 1126 | 8 | 5 | 1 | 1 | 9,1 sn | %62 |
+| Brilliant or Blunder #48 (26.11 00:44, Fil Açılışı 3...g6??) | 14 sn | 1602 | 1069 | 10 | 8 | 0 | 0 | 10,2 sn | %70 |
+
+**39 takipçi (+1).**
+
+**Teşhis:** Kısa pozisyon serisi 10/10 bastırılmadı. #50 (1.e4 Ruy) %75 izlenme vs #49 (1.d4 Veresov) %62 → "1.e4
+açılışları daha iyi izlenir" hipotezini destekliyor (2. veri noktası). #50 ilk saatlerde 2 kaydetme aldı. Paylaşım
+düzeni 2 gündür normal; takip yeniden artıyor.
+
+**Değişiklik (içerik):** Format yok. Kuyruğa 1 yeni 1.e4 quiz: **#54 İtalyan, 4.Ng5?? (blunder)** — 4...Qxg5 ile at
+bedava gider → siyah +6,6 (validate 0 hata, kapak kontrol edildi).
+
+**Paylaşım:** Brilliant or Blunder #51 (quiz-early-queen-qxe5, blunder) 22:38 UTC → https://www.instagram.com/reel/DgQxQquhYaf/
+
+**Kalan içerik:** 3 quiz (#52 Caro Qxd4, #53 Qe7 Nxe5, #54 İtalyan Ng5) → 29 Kasım sabahına kadar.
+
+---
+
 ## 2026-11-27 15:37 UTC — planlı inceleme + paylaşım (zamanında)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |

@@ -841,6 +841,22 @@ export const quizQe7Nxe5: Lesson = {
   takeaways: [],
 };
 
+export const quizItalianNg5Hang: Lesson = {
+  id: "quiz-italian-ng5-hang",
+  kind: "quiz",
+  answer: "blunder",
+  band: "0-300",
+  title: "Brilliant or Blunder #54",
+  hero: "w",
+  startFen: "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+  hook: ["White goes for *f7*!", "*Brilliant* or *blunder*?"],
+  steps: [
+    { moves: ["Bc4", "Bc5"], say: "Both bishops come out." },
+    { moves: ["Ng5"], say: "Knight jumps to g5, hitting *f7*. *Brilliant*... or *blunder*?" },
+  ],
+  takeaways: [],
+};
+
 
 export const QUIZZES: Lesson[] = [
   quizScholarsNf6,
@@ -895,4 +911,5 @@ export const QUIZZES: Lesson[] = [
   quizEarlyQueenQxe5,
   quizCaroQxd4,
   quizQe7Nxe5,
+  quizItalianNg5Hang,
 ];
