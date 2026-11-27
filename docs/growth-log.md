@@ -10,6 +10,29 @@ Kurallar (inceleme oturumu için):
 
 ---
 
+## 2026-11-27 15:37 UTC — planlı inceleme + paylaşım (zamanında)
+
+| Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brilliant or Blunder #49 (26.11 22:38, Veresov 4.Nxd5?, 3 hamle, ~17 saat) | 15 sn | 1624 | 1121 | 8 | 5 | **1** | **1** | 9,1 sn | %62 |
+| Brilliant or Blunder #48 (26.11 00:44, Fil Açılışı 3...g6??) | 14 sn | 1600 | 1069 | 10 | 8 | 0 | 0 | 10,2 sn | %70 |
+| Brilliant or Blunder #47 (24.11 22:38, Philidor 4.Nxe5?) | 14 sn | 1642 | 1088 | 9 | 4 | 0 | 0 | 10,2 sn | %74 |
+
+38 takipçi (değişmedi).
+
+**Teşhis:** Kısa pozisyon serisi 9/9 bastırılmadı (erişim 1070–1240). #49 (Veresov, 1.d4 açılışı) izlenmede serinin en
+düşüğü (%62) — 1.e4 açılışları (İtalyan/Philidor/Fil) %70–88; d4/Veresov izleyiciye daha az tanıdık olabilir. Tek örnek,
+not edildi. Paylaşım/kaydetme yine ~0; takip 2 gün durdu (paylaşım boşluğunun etkisi).
+
+**Değişiklik (içerik):** Yok (tek değişken; kuyruk yeterli).
+
+**Paylaşım:** Brilliant or Blunder #50 (quiz-ruy-nxe5-qd4, blunder) 15:38 UTC → https://www.instagram.com/reel/DgQBPt1gLit/
+
+**Kalan içerik:** 3 quiz (#51 Erken vezir Qxe5, #52 Caro Qxd4, #53 Qe7 Nxe5) → 28 Kasım akşamına kadar. Sonraki hipotez:
+1.e4 açılışlı kısa pozisyonlar 1.d4'lülerden daha iyi izlenir.
+
+---
+
 ## 2026-11-26 22:37 UTC — planlı inceleme + paylaşım (25.11 15:35 → 26.11 15:35 arası 3 inceleme KAÇTI)
 
 | Video | Süre | İzlenme | Erişim | Beğeni | Yorum | Paylaşım | Kaydetme | Ort. izlenme | İzlenme oranı |
